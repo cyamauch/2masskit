@@ -1,12 +1,12 @@
 /* -*- Mode: C++ ; Coding: euc-japan -*- */
-/* Time-stamp: <2011-12-19 15:12:08 cyamauch> */
+/* Time-stamp: <2014-09-05 17:17:14 cyamauch> */
 
 /*
  *  mk_ucac3_dbdata.cc
  *  - Create DB files for 2massKit using original UCAC3 binary bz2 files.
  *
  *  Note:
- *  - This program requires SLLIB-1.1.0a or newer.  SLLIB is available at 
+ *  - This program requires SLLIB-1.4.0 or newer.  SLLIB is available at 
  *    http://www.ir.isas.jaxa.jp/~cyamauch/sli/
  *
  *  How to compile:
@@ -591,10 +591,12 @@ int main( int argc, char *argv[] )
     unsigned char cat_line_buffer[CAT_LINE_BYTE];
 
     ucac3_entry *main_table_ptr;
-    mdarray main_table(sizeof(*main_table_ptr), (void *)(&main_table_ptr));
+    mdarray main_table(sizeof(*main_table_ptr), true, 
+		       (void *)(&main_table_ptr));
 
     ipos_entry *ipos_table_ptr;
-    mdarray ipos_table(sizeof(*ipos_table_ptr), (void *)(&ipos_table_ptr));
+    mdarray ipos_table(sizeof(*ipos_table_ptr), true,
+		       (void *)(&ipos_table_ptr));
 
     /*
      * Check args

@@ -1,5 +1,5 @@
 /* -*- Mode: C++ ; Coding: euc-japan -*- */
-/* Time-stamp: <2012-04-12 21:05:19 cyamauch> */
+/* Time-stamp: <2014-09-05 17:24:32 cyamauch> */
 
 static const char *get_child_id( size_t ix, size_t n_ix, char *out )
 {
@@ -160,8 +160,7 @@ static int read_optimize_and_write_eqi( const char *cat_name,
     tstring fname, tmp_fname;
     size_t k, n_entries, l_begin;
     ipos_entry *ipos_tmp_ptr;
-    mdarray ipos_tmp(sizeof(*ipos_tmp_ptr),
-		     (void *)(&ipos_tmp_ptr));
+    mdarray ipos_tmp(sizeof(*ipos_tmp_ptr), true, (void *)(&ipos_tmp_ptr));
 
     /* read all of tmp */
     get_eqi_db_tmp_filename(cat_name, eqi_ix, 

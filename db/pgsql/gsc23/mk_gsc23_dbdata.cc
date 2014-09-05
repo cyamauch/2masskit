@@ -1,12 +1,12 @@
 /* -*- Mode: C++ ; Coding: euc-japan -*- */
-/* Time-stamp: <2011-12-19 15:14:41 cyamauch> */
+/* Time-stamp: <2014-09-05 17:21:35 cyamauch> */
 
 /*
  *  mk_gsc23_dbdata.cc
  *  - Create DB files for 2massKit using original GSC-2.3 FITS catalog files.
  *
  *  Note:
- *  - This program requires SLLIB-1.1.0a or newer and SFITSIO-1.1.0.
+ *  - This program requires SLLIB-1.4.0 and SFITSIO-1.4.0 or newer.
  *    SLLIB and SFITSIO is available at 
  *    http://www.ir.isas.jaxa.jp/~cyamauch/sli/
  *  - This program can read compressed (.gz or .bz2) FITS files.
@@ -423,7 +423,8 @@ int main( int argc, char *argv[] )
 	int max_zoneid = 0, min_zoneid = 0, n_zoneid;
 
 	ipos_entry *ipos_table_ptr;
-	mdarray ipos_table(sizeof(*ipos_table_ptr), (void *)(&ipos_table_ptr));
+	mdarray ipos_table(sizeof(*ipos_table_ptr), true,
+			   (void *)(&ipos_table_ptr));
 
 	/* read and prepare a FITS file  */
 	if ( read_and_process_fits( dir_name, cat_file_list, i, &fits, 
@@ -542,7 +543,8 @@ int main( int argc, char *argv[] )
 	size_t j;
 	tstring filename, cell;
 	ipos_entry *ipos_table_ptr;
-	mdarray ipos_table(sizeof(*ipos_table_ptr), (void *)(&ipos_table_ptr));
+	mdarray ipos_table(sizeof(*ipos_table_ptr), true,
+			   (void *)(&ipos_table_ptr));
 	char htm6[16];
 
 	long long n_unit_main = n_all_entries / N_MAIN_FILES;

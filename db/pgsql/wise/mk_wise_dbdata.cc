@@ -1,12 +1,12 @@
 /* -*- Mode: C++ ; Coding: euc-japan -*- */
-/* Time-stamp: <2012-05-07 11:06:33 cyamauch> */
+/* Time-stamp: <2014-09-05 17:18:45 cyamauch> */
 
 /*
  *  mk_wise_dbdata.cc
  *  - Create DB files for 2massKit using original WISE compressed text files.
  *
  *  Note:
- *  - This program requires SLLIB-1.1.0a or newer.  SLLIB is available at 
+ *  - This program requires SLLIB-1.4.0 or newer.  SLLIB is available at 
  *    http://www.ir.isas.jaxa.jp/~cyamauch/sli/
  *  - This program read compressed (.gz or .bz2) text files.
  *
@@ -364,7 +364,8 @@ int main( int argc, char *argv[] )
 
     /* to store j2000 table */
     ipos_entry *ipos_table_ptr;
-    mdarray ipos_table(sizeof(*ipos_table_ptr), (void *)(&ipos_table_ptr));
+    mdarray ipos_table(sizeof(*ipos_table_ptr), true,
+		       (void *)(&ipos_table_ptr));
 
     mdarray_int width_min, width_max;
     mdarray_double numeric_abs_max;

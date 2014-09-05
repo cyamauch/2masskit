@@ -1,12 +1,12 @@
 /* -*- Mode: C++ ; Coding: euc-japan -*- */
-/* Time-stamp: <2011-12-19 15:17:31 cyamauch> */
+/* Time-stamp: <2014-09-05 17:16:22 cyamauch> */
 
 /*
  *  mk_ppmxl_dbdata.cc
  *  - Create DB files for 2massKit using original PPMXL compressed text files.
  *
  *  Note:
- *  - This program requires SLLIB-1.1.0a or newer.  SLLIB is available at 
+ *  - This program requires SLLIB-1.4.0 or newer.  SLLIB is available at 
  *    http://www.ir.isas.jaxa.jp/~cyamauch/sli/
  *  - This program read compressed (.gz) text files.
  *
@@ -128,7 +128,8 @@ int main( int argc, char *argv[] )
     int eqi_ix;
 
     ipos_entry *ipos_table_ptr;
-    mdarray ipos_table(sizeof(*ipos_table_ptr), (void *)(&ipos_table_ptr));
+    mdarray ipos_table(sizeof(*ipos_table_ptr), true, 
+		       (void *)(&ipos_table_ptr));
 
     /*
      * Check args
