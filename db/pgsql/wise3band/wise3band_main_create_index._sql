@@ -1,0 +1,2 @@
+CREATE INDEX wise3band_@COL@ ON Wise3band (@COL@)
+ TABLESPACE @TS_PREFIX@wise3band_main_index;

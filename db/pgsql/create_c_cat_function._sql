@@ -1,0 +1,6 @@
+-- for @CAT@
+SELECT fRegisterCFunction('_f@CAT@GetSqlForRadialSearch(FLOAT8,FLOAT8,FLOAT8,BOOL)', 'TEXT', '_@LCAT@getsqlforradialsearch');
+SELECT fRegisterCFunction('_f@CAT@GetSqlForBoxSearchSimple(TEXT,FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'TEXT', '_@LCAT@getsqlforboxsearchsimple');
+SELECT fRegisterCFunction('_f@CAT@GetSqlForBoxSearchDiv(TEXT,FLOAT8,FLOAT8,INT4,INT4,FLOAT8,FLOAT8,INT4,INT4)', 'TEXT', '_@LCAT@getsqlforboxsearchdiv');
+SELECT fRegisterCFunction('_f@CAT@GetSqlForRectangularSearch(FLOAT8,FLOAT8,FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'TEXT', '_@LCAT@getsqlforrectangularsearch');
+

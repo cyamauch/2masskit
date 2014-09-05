@@ -1,0 +1,1883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="keywords" content="2MASS,Kit" />
+  <meta name="description" content="2MASS Catalog Server Kit" />
+  <title>2MASS Catalog Server Kit (日本語版): Home</title>
+<style type="text/css">
+ body {
+  background-color: #efefef;
+  color: black;
+ }
+ a:link { color: blue }
+ a:visited { color: #551a8b }
+ a:active { color: red }
+ em.c2 { font-size: 80% }
+ h1.c1 { text-align: center }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em }
+ li { margin-bottom: 0.4em }
+ pre { margin-top: 0.2em }
+ pre { margin-bottom: 0.2em }
+ p { text-align: justify; line-height: 1.5 }
+ ul { line-height: 1.5 }
+ pre { line-height: 1.3 }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; }
+ th { text-align: center; white-space: nowrap; font-weight: normal; }
+ td { text-align: center; white-space: nowrap; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ img.float_right {
+  float: right;
+  border: 0;
+  margin: 0 0 1em 1em;
+ }
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<h1 style="margin-bottom: 0;">2MASS Catalog Server Kit (日本語版)</h1>
+<p style="margin-top: 0;">
+<strong>Supports 2MASS, WISE, USNO-B1.0, UCAC3, PPMXL, GSC-2.3, etc.</strong>
+</p>
+
+<h2>2012年11月 Version 2.2</h2>
+
+<p>
+<strong>2MASS Kitを利用している研究機関・観測所:</strong><br>
+<a href="http://www.cfht.hawaii.edu/">CFHT観測所</a>, 
+<a href="http://www.ioa.s.u-tokyo.ac.jp/kisohp/">東京大学木曽観測所</a>, 
+<a href="http://www.isas.jaxa.jp/">ISAS/JAXA</a>, 
+<a href="http://www.nao.ac.jp/">国立天文台</a>,
+<a href="http://www.phys.nagoya-u.ac.jp/">名古屋大学</a>,
+<a href="http://www.ioa.s.u-tokyo.ac.jp/TAO/intro/intro4.html">miniTAO</a>
+</p>
+
+<pre>
+[HISTORY]
+Nov.2012  V. 2.2  Supported WISE 3-Band Cryo Source.
+May.2012  V. 2.1  Supported WISE All-Sky Release Catalog.
+                  Small improvements.
+Dec.2011  V. 2.0  A lot of improvements including design changes.
+                  Supports USNO-B1.0, UCAC3, GSC-2.3.2, and PPMXL.
+Sep.2011  V. 1.2  Supports fast box search.
+Aug.2011  V. 1.1  Supports Tycho2, AKARI IRC, AKARI FIS and IRAS PSC.
+                  Added a client tool: clients/sql2mass.php.
+Nov.2010  V. 1.0  Supports 2MASS PSC only.
+</pre>
+
+<h3>山内＠国立天文台/宇宙研</h3>
+
+<img class="float_right" src="postgresql.gif" alt="PostgreSQL Powered" />
+
+<p>
+Special Thanks: 瀧田怜様，大薮進喜様(Linuxでのテスト)，池田紀夫様(MacOSXへの対応)，板由房様(ドキュメントのレビュー)<br />
+<a href="http://adsabs.harvard.edu/abs/2011PASP..123.1324Y">技術論文 (2011PASP..123.1324Y)</a> を出版しました．
+</p>
+
+<hr />
+
+<p>
+ページ一覧: <br />
+<a href="index.ja.html">ホーム</a> /
+<a href="2mass.ja.html">大カタログの登録</a> /
+<a href="others.html">小カタログの登録</a> /
+<a href="tableinfo.html">テーブルカラム情報</a> /
+<a href="copyservice.html">HDDのコピーサービス</a>
+</p>
+
+<p>
+このページの目次:<br />
+<a href="#INTRO">イントロダクション</a> /
+<a href="#CATALOGS">サポートされているカタログ</a> /
+<a href="#REQUIREMENT">必要条件</a> /
+<a href="#DOWNLOAD">ダウンロード</a> /
+<a href="#INSTALL">インストール手順</a> /
+<a href="#CONFIG">PostgreSQLの各種設定</a> /
+<a href="#TUNE">チューニング</a> /
+<a href="#USE">使い方</a> /
+<a href="#FUNCTION">ストアドファンクション</a> /
+<a href="#CLIENTS">クライアント・ツール</a> /
+<a href="#FAQ">FAQ</a> 
+</p>
+
+<hr />
+
+<h2>
+<a id="INTRO" name="INTRO">
+イントロダクション
+</a>
+</h2>
+
+<p>
+2MASS Kitは，代表的な大天体カタログ・小天体カタログの
+高性能検索サーバを，御自身のPCに誰でも簡単に構築できる
+オープンソースソフトウェアです．
+ソフトウェアの名称に「2MASS」が入っていますが，
+もちろん 2MASS PSC 以外のカタログだけを登録して使う事も可能です．
+</p>
+
+<p>
+巨大テーブルの座標検索(Radial Search，Box Search，Rectangular Search)
+についてチューニングを施し，
+単一テーブルで単純にインデックスを作成する方法に比べて，
+一桁以上の高速化を実現しています
+(もちろん，WCSTools の scat よりもずっと高速です)．
+<!-- 
+特に他カタログとのマッチアップ(Cross-ID)に関しては
+徹底的にチューニングしてあり，
+-->
+最良の条件下においては2MASS PSCに対して秒間3000回以上の位置検索が可能です．
+</p>
+<p>
+このキットの大きな特徴は，「チューニングの柔軟性」です．
+巨大カタログにおいては，各テーブル・インデックスを
+6つのテーブルスペース(別々のディレクトリ)に登録する事により，
+必要な部分だけを高速デバイスに移動する事が簡単に行なえるようになっています．
+特に最近のSSDの速度性能の進化は凄まじいものがあり，
+予算に応じてテーブル・インデックスの一部，またはすべてを高速SSDに移せば，
+これまでデータセンターでしか実現できなかったような高性能サーバを
+低コストで構築できます．
+</p>
+<p>
+主な利用者としては，ネットワークが細いor不安定な観測所を想定していますが，
+個人PC，観測所PC，研究所PC，データセンターのサーバ等で幅広く利用可能です．
+</p>
+<p>
+なお，このキットではオープンソースRDBMSである 
+<a href="http://www.postgresql.org/">PostgreSQL</a>-8.4 を使っており，
+ソフトウェアに対するライセンス料は発生しません．
+</p>
+
+<h3>
+<a id="CATALOGS" name="CATALOGS">
+サポートされているカタログ
+</a>
+</h3>
+
+<h4>全天カタログ</h4>
+
+<ul>
+ <li>2MASS PSC:               470,992,970 rows</li>
+ <li>WISE All-Sky:            563,921,584 rows</li>
+ <li>USNO-B1.0:             1,045,175,762 rows</li>
+ <li>GSC-2.3.2:               945,592,683 rows</li>
+ <li>UCAC3:                   100,766,420 rows</li>
+ <li>PPMXL:                   910,468,710 rows</li>
+ <li>Tycho-2:                   2,539,913 rows</li>
+ <li>AKARI IRC PSC:               870,973 rows</li>
+ <li>AKARI FIS BSC:               427,071 rows</li>
+ <li>IRAS PSC:                    245,889 rows</li>
+</ul>
+
+<h4>非全天カタログ</h4>
+
+<ul>
+ <li>WISE 3-Band Cryo Source: 261,418,479 rows</li>
+ <li><a href="http://www.ir.isas.jaxa.jp/~takita/wisep_2masskit.html">WISE Preliminary Catalog (provided by Dr. Takita): 257,310,278 rows</a></li> 
+</ul>
+
+<h3>座標検索のパフォーマンス</h3>
+
+<p>
+最良の条件下での2MASS PSCの
+Radial Search，Box Search，Rectangular Search
+の検索速度の一例を示します．
+3回同じ条件で検索して経過時間を測り，その中間の値をとっています．
+</p>
+
+<p>
+<strong>ハードウェア</strong><br />
+CPU: Intel(R) Xeon(R) E5640 @ 2.67GHz<br />
+メインボード: SuperMicro X8STE<br />
+メモリ: DDR3-1333 24 GB
+</p>
+
+<p>
+<strong>ソフトウェア</strong><br />
+OS: <a href="http://www.centos.org/">CentOS</a> 5.6 64-bit<br />
+RDBMS: PostgreSQL-8.4.7<br />
+</p>
+
+<table>
+ <tr>
+  <th>検索条件</th><th>天体数</th><th>経過時間</th>
+  <th>使用したSQLステートメント</th>
+ </tr>
+ <tr>
+  <td>Radial (半径1')</td><td>2</td><td>0.001秒</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 1);</td>
+ </tr>
+ <tr>
+  <td>Radial (半径60')</td><td>5198</td><td>0.015秒</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 60);</td>
+ </tr>
+ <tr>
+  <td>Radial (半径180')</td><td>47632</td><td>0.102秒</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 180);</td>
+ </tr>
+ <tr>
+  <td>Radial (半径360')</td><td>189784</td><td>0.368秒</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 360);</td>
+ </tr>
+ <tr>
+  <td>Box (120'x120')</td><td>6644</td><td>0.023秒</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjFromBoxCel('j2000', 0,0, 60,60);</td>
+ </tr>
+ <tr>
+  <td>Box (120'x2400')</td><td>136579</td><td>0.498秒</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjFromBoxCel('j2000', 0,0, 60,1200);</td>
+ </tr>
+ <tr>
+  <td>Rectangular (2x2deg)</td><td>6644</td><td>0.006秒</td>
+  <td>SELECT count(*) FROM fTwomassGetObjFromRectEq(-1,1, -1,1);</td>
+ </tr>
+ <tr>
+  <td>Rectangular (10x10deg)</td><td>167266</td><td>0.107秒</td>
+  <td>SELECT count(*) FROM fTwomassGetObjFromRectEq(-5,5, -5,5);</td>
+ </tr>
+</table>
+
+<p>
+※上記は，メモリ上にテーブルとインデックスがキャッシュされている
+理想的な状態での結果です．
+特に，マシン起動直後はメモリ上のキャッシュが空っぽですから
+ディスクI/Oが頻繁に入るため，高速なSSDを使わない限り
+これらよりも遅くなります．
+マシンをRDBMS専用として，長期間落とさずに運用すれば，
+上記の値に近づいていくはずです．
+</p>
+
+
+<hr />
+
+<h2>
+<a id="REQUIREMENT" name="REQUIREMENT">
+必要条件
+</a>
+</h2>
+
+<ul>
+ <li>OS: Linux (RHEL-6, RHEL-5, CentOS-6, CentOS-5 の 64-bit 版を推奨)，MacOSX，
+         Solaris (ある程度のスキルを持つ方のみ)<br />
+      Redhatのβ版である，Fedoraでも問題なくインストールできると思います．<br />
+      パワーユーザの方は上記以外の OS でも挑戦してみてください．
+      動作報告をお待ちしております．
+ </li>
+ <li>メモリ: 3GB 以上</li>
+ <li>空きHDD: 
+      <ul>
+       <li>2MASS PSC: DB:227GB Work:190GB</li>
+       <li>WISE:      DB:763GB Work:852GB</li>
+       <li>USNO-B1.0: DB:445GB Work:290GB</li>
+       <li>GSC-2.3.2: DB:393GB Work:227GB</li>
+       <li>UCAC3:     DB:51GB  Work:32GB</li>
+       <li>PPMXL:     DB:401GB Work:212GB</li>
+      </ul>
+ </li>
+ <li>CPU: x86 系 CPU のように，シングルスレッドを高速に処理できる CPU を推奨</li>
+ <li>ハードディスク用のインタフェースが本来の性能を発揮している事
+     (BIOSのS-ATAの動作モードに注意)</li>
+</ul>
+
+<p>
+下記は大カタログの超高速検索を行ないたい場合，
+必要に応じて用意してください．
+</p>
+
+<ul>
+ <li>Cross-ID(秒間1000回以上)を行ないたい場合<br />
+     ランダムリードのIOPS値が高い低価格高速SSD(S-ATA3接続)<br />
+     例: <a href="http://www.plextoramericas.com/index.php/ssd/px-m3-pro-series">PLEXTOR PX-M3 Pro (75,000 IOPS)</a> 等<br />
+ </li>
+ <li>あらゆる面で最速の検索を実現したい場合<br />
+     大容量のメインメモリ，大容量の高速SSD
+ </li>
+ <li>高速 SSD を最適な状態で利用したいが
+     マザーボードに S-ATA3 ポートが無い場合，
+     S-ATA3 インタフェースカード
+     LSI 9211-4i などの購入をお勧めします．
+     PCIe x4 が使える空きスロットが無い場合，
+     <a href="http://www.elsa-jp.co.jp/products/graphicsboard/quadro_nvs290pciex1/">このようなディスプレイアダプタ</a>を
+     PCIe x1 スロットに接続するのも1つの方法です．<br />
+ </li>
+</ul>
+
+<hr />
+
+<h2>
+<a id="DOWNLOAD" name="DOWNLOAD">
+ダウンロード
+</a>
+</h2>
+
+<p>
+下記のパッケージをダウンロードしてください．
+</p>
+
+<ul>
+ <li><a href="2masskit-2.2.tar.gz">2masskit-2.2.tar.gz</a><br />
+ </li>
+</ul>
+
+<p>
+データベース登録のためのデータファイルは，
+<a href="http://darts.jaxa.jp/pub/ir/2masskit/v2">HTTP</a>
+または
+<a href="ftp://darts.jaxa.jp/pub/ir/2masskit/v2">FTP</a>
+からダウンロードできます.
+</p>
+
+<p>
+<a href="copyservice.html">HDDのコピーサービス</a>も行なっています.
+</p>
+
+<hr />
+
+<h2>
+<a id="INSTALL" name="INSTALL">
+インストール手順
+</a>
+</h2>
+
+<p>
+この文書では，
+Red Hat Enterprise Linux 6 or 5 (CentOS 6 or 5) 
+または MacOSX での手順を記載します．
+他のOSの場合は，適宜対応してください．
+</p>
+
+<h3>SELinuxのDisable</h3>
+
+<p>
+Linux の場合は，<pre>/etc/sysconfig/selinux</pre>の次の部分を編集して，
+SELinuxをDisableしてください．
+</p>
+
+<pre>
+SELINUX=disabled
+</pre>
+
+<p>
+この後，OSを再起動してください．
+</p>
+
+<h3>共有メモリの設定</h3>
+
+<p>
+<code>/etc/sysctl.conf</code>
+にて，次のように共有メモリ・セグメントの上限を十分大きな値にしておきます．
+この値は搭載メモリ量以上を設定しても問題ありません．
+RHEL, CentOSの場合はこの設定は不要です．
+</p>
+
+<h4>64-bit Linux の場合</h4>
+
+<pre>
+# Controls the maximum shared segment size, in bytes
+kernel.shmmax = 68719476736
+</pre>
+
+<h4>32-bit Linux の場合</h4>
+
+<pre>
+# Controls the maximum shared segment size, in bytes
+kernel.shmmax = 3221225472
+</pre>
+
+<h4>MacOSX 10.5 以降の場合</h4>
+
+<p>
+<code>/etc/sysctl.conf</code>
+が無ければ新規に作成してください．
+</p>
+
+<pre>
+kern.sysv.shmmax=68719476736
+</pre>
+
+<p>
+MacOSX 10.4以前の場合は <code>/etc/rc</code> を編集します．ただし，
+OS アップデートに伴って設定が書き変わってしまうので注意してください．
+</p>
+
+<p>
+上記パラメータの追加または書き換えを行なった場合は，
+OS を再起動してください．
+</p>
+
+<h3>PostgreSQL-8.4のインストール</h3>
+
+<p>
+Linux (CentOS-6,RHEL-6) の場合，
+postgresql，
+postgresql-libs，
+postgresql-devel，
+postgresql-server
+をインストールします．
+</p>
+
+<pre>
+$ su
+# yum install postgresql
+# yum install postgresql-devel
+# yum install postgresql-server
+</pre>
+
+<p>
+Linux (CentOS-5,RHEL-5) の場合，
+postgresql84，
+postgresql84-libs，
+postgresql84-devel，
+postgresql84-server
+をインストールします．
+</p>
+
+<pre>
+$ su
+# yum install postgresql84
+# yum install postgresql84-devel
+# yum install postgresql84-server
+</pre>
+
+<p>
+MacOSX の場合，次のように macports を使います．<br />
+各バイナリは
+<code>/opt/local/lib/postgresql84/bin/</code>
+に置かれます．
+</p>
+
+<pre>
+# port install postgresql84
+# port install postgresql84-server
+</pre>
+
+<p>
+もし，PostgreSQL サーバが動作している場合は，停止してください．
+</p>
+
+<p><strong>Linuxの場合</strong></p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql stop
+</pre>
+
+<p><strong>MacOSXの場合</strong></p>
+
+<pre>
+$ su
+# pg_ctl stop
+</pre>
+
+
+<h3>DB用ディレクトリの準備</h3>
+
+<p>
+PostgreSQL用のデータ保存ディレクトリを用意します．
+このキットでは，そのディレクトリを
+<code>/db</code>
+として解説します(Makefileを修正すれば変更可能です)．
+必要なディスクスペースを確保します．
+</p>
+
+<p>
+通常，ホームディレクトリ用のHDDパーティションは
+容量を大きくとると思います．ホーム用のパーティションが
+十分大きければ，下記のようにバインドを使って
+<code>/home</code>
+と
+<code>/db</code>
+とに分けると良いでしょう．
+次に，
+<code>/dev/sda4</code>
+をホーム用のパーティションとして使う場合を示します．
+</p>
+
+<pre>
+$ su
+# mkdir -p /mnt/sda4
+# mount /dev/sda4 /mnt/sda4
+# mkdir -p /mnt/sda4/home
+# mkdir -p /home
+# mount --bind /mnt/sda4/home /home
+# mkdir -p /mnt/sda4/db
+# mkdir -p /db
+# mount --bind /mnt/sda4/db /db
+</pre>
+
+<p>
+<code>/db</code>
+をHDDの1パーティションで用意できる場合は，
+マウントオプション「<code>-o noatime</code>」
+をつけておきます(若干高速化に効くかもしれません)．
+</p>
+
+<p>
+そして，<code>/etc/fstab</code>
+に次のように書いておきます．
+</p>
+
+<pre>
+/dev/sda4               /mnt/sda4               ext3    defaults        1 2
+/mnt/sda4/home          /home                   none    bind            0 0
+/mnt/sda4/db            /db                     none    bind            0 0
+</pre>
+
+<p>
+もちろん，上記の方法以外でもかまいませんが，
+いずれにしても，ホームディレクトリと，
+<code>/db</code>
+以下で必要なディスクスペースを確保してください．
+</p>
+
+<p>
+なお，この時点ではSSDは利用しません．
+SSDは高速化したい項目に応じて，DB構築後に使用します．
+</p>
+
+<h3>2MASSキットのビルド・DB初期化</h3>
+
+<p>
+キットを展開してください．</p>
+
+<pre>
+$ tar zxvf 2masskit-2.2.tar.gz
+$ cd 2masskit-2.2
+</pre>
+
+<p>
+適切なMakefileを選んでシンボリックリンクを作ってください．
+Makefileは数種類あり，
+Makefile.linux64(64-bit Linux用)，
+Makefile.linux32(32-bit Linux用)，
+Makefile.MacOSX64(64-bit MacOSX用)，
+Makefile.MacOSX32(32-bit MacOSX用)，
+Makefile.solaris64(64-bit Solaris Sparc用)
+があります．
+その後，Makefileを書き換えます．
+</p>
+
+<pre>
+$ ln -s Makefile.linux64 Makefile
+$ vi Makefile
+</pre>
+
+<p>
+PostgreSQLのデータを
+<code>/db</code>
+以下に保存し，かつ
+OS が RHEL 6 or 5，CentOS 6 or 5
+の場合は Makefile のディレクトリ項目の修正は不要です．
+これ以外の場合は，環境に応じて適宜修正してください．
+</p>
+
+<p>
+makeします．
+</p>
+
+<pre>
+$ make
+</pre>
+
+<p>
+必要なファイルをインストールし，DBを初期化します．
+</p>
+
+<p><strong>Linuxの場合</strong></p>
+
+<pre>
+$ su
+# make install
+# /sbin/service postgresql initdb
+</pre>
+
+<p><strong>MacOSXの場合</strong></p>
+
+<pre>
+$ su
+# make install
+# initdb -D /db/pgsql/data
+</pre>
+
+<p>
+<code>/db/pgsql/data</code>
+ディレクトリにファイルが存在すると，initdb に失敗します．
+その場合は，<code>/db</code> 以下を空にして，再度
+<code>make install</code>
+からやりなおしてください．<br />
+うまくいかない方は，<a href="#FAQ">FAQ</a>
+の「initdb に失敗します!」もご覧ください．
+</p>
+
+<h3>PostgreSQLのリソース量設定</h3>
+
+<p>
+initdb で作成された
+<code>/db/pgsql/data/postgresql.conf</code>
+をエディタで開き，下記のようにパラメータを変更します．
+</p>
+
+<pre>
+shared_buffers = 128MB
+work_mem = 512MB
+maintenance_work_mem = 128MB
+checkpoint_segments = 10
+effective_cache_size = 256MB
+</pre>
+
+<p>
+これらの値は用途や環境に応じて調整が必要になる事があります．
+より高い性能を求める方は，
+<a href="#TUNE">チューニング</a>
+もご覧ください．
+特に，1回の検索で<strong>大きな表を引き出す場合</strong>，
+<code>work_mem</code>の設定は非常に重要です．
+</p>
+
+
+<h3>PostgreSQLサーバの起動</h3>
+
+<p>
+rootになって，PostgreSQLサーバを起動します．
+</p>
+
+<p><strong>Linuxの場合</strong></p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql start
+</pre>
+
+<p><strong>MacOSXの場合</strong></p>
+
+<pre>
+$ su
+# pg_ctl start -D /db/pgsql/data
+</pre>
+
+
+<h3>PostgreSQL内アカウント，データベースの作成</h3>
+
+<p>
+次のようにして，UNIXのpostgresユーザになり，
+psqlを起動します．
+</p>
+
+<pre>
+$ su
+# su postgres
+% psql
+</pre>
+
+<p>
+PostgreSQL内アカウント(PostgreSQLではロールといいます)
+を設定，データベースを作成します．<br />
+ロールpostgresは，PostgreSQLのスーパーユーザ，
+ロールadminは，テーブルやストアドファンクションの登録を行なうためのユーザ，
+ロールguestは，DBを利用するためのユーザです．
+それぞれ <code>'xxxxxx'</code> のところにパスワードを設定してください:
+</p>
+
+<pre>
+postgres=# ALTER ROLE postgres PASSWORD 'xxxxxx';
+postgres=# CREATE ROLE admin LOGIN PASSWORD 'xxxxxx';
+postgres=# CREATE ROLE guest LOGIN PASSWORD 'xxxxxx';
+postgres=# CREATE DATABASE "2MASS";
+postgres=# \q
+</pre>
+
+<p>
+本ドキュメントでは，
+本キットのためのデータベースの名称は "2MASS" 
+としていますが，上記「<code>CREATE DATABASE</code>」
+では他の名前で行なってもかまいません．
+</p>
+
+<h3>pg_hba.confの変更</h3>
+
+<p>
+<code>/db/pgsql/data/pg_hba.conf</code> をエディタで開き，
+次のように local の認証 METHOD を md5 に変更します．
+</p>
+
+<pre>
+local   all         all                               md5
+</pre>
+
+
+<h3>PostgreSQLサーバの起動設定・再起動</h3>
+
+<p>
+rootになって，PostgreSQLサーバの起動設定を行ない，
+PostgreSQLサーバを再起動します．
+</p>
+
+<p><strong>Linuxの場合</strong></p>
+
+<pre>
+$ su
+# /sbin/chkconfig --level 2345 postgresql on
+# /etc/rc.d/init.d/postgresql restart
+</pre>
+
+<p><strong>MacOSXの場合</strong></p>
+
+<p>
+<code>/opt/local/etc/LaunchDaemons/org.macports.postgresql84-server/postgresql84-server.wrapper</code>
+の最初の方に，
+</p>
+
+<pre>
+POSTGRESQL84DATA=/db/pgsql/data
+</pre>
+
+<p>
+のように，DBのデータの置き場所を付け加えてください．
+その後，次のようにします．
+</p>
+
+<pre>
+$ su
+# launchctl load -w /Library/LaunchDaemons/org.macports.postgresql84-server.plist
+# pg_ctl restart -D /db/pgsql/data
+</pre>
+
+
+<h3>PostgreSQLのCストアドファンクション</h3>
+
+<p>
+UNIXの一般ユーザで，データベース "2MASS" に
+postgresロール(PostgreSQLのスーパーユーザ)でログインし，
+Cストアドファンクションを登録します．
+</p>
+
+<pre>
+$ psql -U postgres 2MASS
+Password for user postgres: xxxxxx
+psql (8.4.5)
+Type "help" for help.
+
+2MASS=# \i create_c_function.sql
+(登録されたストアドファンクションの名前が表示される)
+2MASS=# \q
+</pre>
+
+<h3>汎用ストアドファンクションの登録</h3>
+
+<p>
+UNIXの一般ユーザで，データベース "2MASS" に
+adminロールでログインし，
+汎用のストアドファンクションを登録します．
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type "help" for help.
+
+2MASS=&gt; \i create_function.sql
+</pre>
+
+<h3>カタログの登録</h3>
+
+<p>
+大カタログ
+(2MASS PSC, WISE, USNO-B1.0, UCAC3, GSC-2.3.2, and PPMXL)
+の登録は，
+「<a href="2mass.ja.html">大カタログの登録</a>」
+をご覧ください.
+</p>
+
+<p>
+小カタログ
+(Tycho-2, AKARI IRC, AKARI FIS, and IRAS PSC),
+の登録は，
+「<a href="others.html">Install Small Catalogs</a>」
+をご覧ください．
+</p>
+
+<p>
+WISE Preliminary catalogの登録については，
+<a href="http://www.ir.isas.jaxa.jp/~takita/wisep_2masskit.html">こちらのページ</a>
+をご覧ください．
+</p>
+
+
+<hr />
+
+<h2>
+<a id="CONFIG" name="CONFIG">
+PostgreSQLの各種設定
+</a>
+</h2>
+
+<h3>別のマシンのPostgreSQLクライアントから接続できるようにする</h3>
+
+<p>
+別のマシンの
+PostgreSQL のクライアント(psql や Web アプリケーション)
+から接続できるようにするには，
+postgresql.conf
+の設定とファイアウォールの設定が必要です
+次に手順を示します．
+</p>
+
+<p>
+<code>/db/pgsql/data/postgresql.conf</code> をエディタで開き，
+<code>listen_addresses</code>
+を次のように設定します．
+</p>
+
+<pre>
+listen_addresses = '*'
+</pre>
+
+<p>
+setupコマンドからファイアウォールの設定を行ないます
+(ファイアウォールが Disable に設定されている場合はこの設定は不要です)．
+</p>
+
+<pre>
+$ su
+# setup
+</pre>
+
+<p>
+ここで，
+Firewall configuration → Customize の Other ports に
+「<code>postgres:tcp</code>」と設定します．<br />
+これにより，次の設定が
+<code>/etc/sysconfig/iptables</code>
+に追加されます:
+</p>
+
+<pre>
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 5432 -j ACCEPT</pre>
+
+<p>
+iptables をリスタートさせます
+(ファイアウォールが Disable に設定されている場合はこの設定は不要です):
+</p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/iptables restart
+</pre>
+
+<p>
+MacOSX の場合は，システム環境設定→共有から行います．
+</p>
+
+<p>
+<code>/db/pgsql/data/pg_hba.conf</code> をエディタで開き，
+接続したいクライアントの IP アドレス
+<code>xxx.xxx.xxx.xxx</code> を
+次のように記述します:
+</p>
+
+<pre>
+host  all     guest   xxx.xxx.xxx.xxx    255.255.255.255 md5
+</pre>
+
+<p>
+上記の場合は，guestロールだけに利用を許可する場合です．
+すべてのロールでの利用を許可する場合は
+「<code>all</code>」と書きます．
+</p>
+
+<p>
+PostgreSQLサーバをリスタートします．
+</p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql restart
+</pre>
+
+<p>
+クライアントからは「<code>psql -h ホスト名 …</code>」
+とすれば，サーバ上のデータベースにアクセスする事ができます．
+</p>
+
+<h3>パスワード入力なしで psql を利用する</h3>
+
+<p>
+パスワード入力のプロンプトが出ると，
+スクリプトから利用したい場合に困った事になります．<br />
+その場合は，ホームディレクトリの
+<code>.pgpass</code>
+というファイルに，次のようにロール名とパスワードを設定しておけば，
+psql を利用する時にパスワード入力を省略できます．
+</p>
+
+<pre>
+*:*:*:guest:password
+</pre>
+
+<p>
+「<code>*</code>」は「何でも可」の設定です．
+必要に応じて，
+hostname:port:database:username:password
+の順に設定する事ができます．
+</p>
+
+<p>
+パーミッションを 600 に設定するのを忘れずに:
+</p>
+
+<pre>
+$ chmod 600 .pgpass
+</pre>
+
+<hr />
+
+<h2>
+<a id="TUNE" name="TUNE">
+チューニング
+</a>
+</h2>
+
+
+<h3>BIOSの設定</h3>
+
+<p>
+Intel系チップセットの場合は，省電力機能
+<code>C1E</code> (Enhanced HALT)
+を Disable にしておきましょう．
+Enable の時と比べて 10%〜20% 程度パフォーマンスが改善する事があります．<br />
+この設定は，Cross-ID のようにディスクI/Oが頻発する場合に
+パフォーマンスに影響を与えます．
+</p>
+
+<h3>cpuspeedの設定</h3>
+
+<p>
+最高のパフォーマンスを狙うなら，CPU のクロック可変を無効にします:
+</p>
+
+<pre>
+/etc/rc.d/init.d/cpuspeed stop
+</pre>
+
+<h3>hdparmの設定</h3>
+
+<p>
+<code>hdparm</code>
+コマンドで，ディスクの先読み量を少し増やすと
+パフォーマンスが良くなる事があります．下記のような
+設定を
+<code>/etc/rc.d/rc.local</code>
+に書いておきましょう．
+</p>
+
+<pre>
+/sbin/hdparm -a4096 /dev/sda
+</pre>
+
+
+<h3>PostgreSQLのリソース量調整</h3>
+
+<p>
+<code>/db/pgsql/data/postgresql.conf</code>
+の下記パラメータを必要に応じて調整します．
+</p>
+
+<ul>
+ <li><code>shared_buffers</code><br />
+      本キットがインストールされたマシンでPostgreSQLしか動かさないのであれば，
+      それほど多くとる必要はありませんが，
+      他のソフトウェア(特にメモリを消費するものや，ディスクに頻繁にアクセスするもの)
+      と同居する場合は，
+      大き目に設定してください．
+ </li>
+ <li><code>work_mem</code><br />
+      Radial Search，Box Search，Rectangular Searchのストアドファンクション，ソート，ジョイン
+      を実行する時のワークエリアとして使うメモリ量の上限です．
+      Radial Search，Box Search，Rectangular Searchで大きい範囲を検索する場合は，
+      この値を大きくしてみてください．
+ </li>
+</ul>
+
+<p>
+一般的に，
+OLTP (OnLine Transaction Processing)
+では<code>shared_buffers</code>が重要になりますが，
+OLAP (OnLine Analytical Processing)
+では，<code>work_mem</code>を十分に確保する必要があります．
+</p>
+
+
+<h3>ファイルシステム</h3>
+
+<p>
+SSD以外の場合はあまり気にしなくて良いと思います．
+我々の Cross-ID のテストでは，
+SSD使用時に，ext4 が ext3，xfs に比べて 1 パーセント程度
+良い結果を出していました．
+</p>
+
+<h3>高速SSDの利用</h3>
+
+<p>
+2MASS Kitでは，すべてのテーブル・インデックスは，
+いくつかの独立したディレクトリ(テーブルスペースと言います)
+に分けて保存するようになっています．
+</p>
+
+<p>
+それぞれの巨大カタログにつき，
+テーブルスペースは次のように6つ存在します．
+</p>
+
+<pre>
+# ls /db/pgsql/tablespace/twomass_*
+twomass_eqi               twomass_eqi_index_xyzi16  twomass_main_index
+twomass_eqi_index_radeci  twomass_main              twomass_main_pkey
+</pre>
+
+<p>
+上記のディレクトリの一部またはすべてを
+高速SSDにコピーし，上記ディレクトリにSSDをマウントすれば，
+検索速度を飛躍的に改善する事ができます．
+マウントする時は，
+bind(デバイスのかわりにディレクトリをマウントする機能)を使うと便利です．<br />
+次に，高速化の重要度の高いものから順に示します．
+</p>
+
+<ul>
+ <li>twomass_eqi_index_xyzi16 (約10GB)<br />
+      Radial Search用のインデックスがここに保存されます．
+      ディレクトリtwomass_eqiと合わせて
+      高速なディスクに移すと，Radial Search，Box Search，Cross-IDが速くなります．
+ </li>
+ <li>twomass_eqi (約20GB)<br />
+      位置検索専用テーブルがここに保存されます．
+      ディレクトリtwomass_eqi_index_xyzi16, twomass_eqi_index_radeciと合わせて
+      高速なディスクに移すと，位置検索が速くなります．
+ </li>
+ <li>twomass_eqi_index_radeci (約20GB)<br />
+      Rectangular Search用のインデックスがここに保存されます．
+      ディレクトリtwomass_eqiと合わせて
+      高速なディスクに移すと，Rectangular Searchが速くなります．
+ </li>
+ <li>twomass_main_pkey (約10GB)<br />
+      メインテーブルのプライマリキーがここに保存されます．
+      ここを高速なディスクに移すと，ジョインが速くなります．
+ </li>
+ <li>twomass_main_index(標準設定で約58GB)<br />
+      メインテーブルのインデックスがここに保存されます．
+      ここを高速なディスクに移すと，
+      メインテーブルに対する検索が速くなります．
+ </li>
+ <li>twomass_main (約140GB)<br />
+      メインテーブルがここに登録されます．
+      ここを高速なディスクに移すのは最後の最後で良いでしょう．
+ </li>
+</ul>
+
+<p>
+低コストで大きなパフォーマンスアップを狙うなら，
+256 GB の PLEXTOR PX-M3 Pro SSD を購入し，
+上から 4 つのディレクトリ(twomass_eqi_index_xyzi16 〜 twomass_main_pkey)
+を SSD にコピーすると良いでしょう．
+</p>
+
+<p>
+<strong>Cross-ID</strong>を高速化する方法の1つとして，
+twomass_eqi_index_xyzi16 を tmpfs (/dev/shm)のような ramdisk
+にコピーし，
+twomass_eqi を SSD にコピーする方法があります．
+</p>
+
+<p>
+次に，上記の一部を高速SSD(/dev/sdb)にコピーし，
+Radial Search，Box Search，Cross-IDを高速化する場合を示します．
+</p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql stop
+# mkdir -p /mnt/ssd_a
+# mount -o noatime /dev/sdb1 /mnt/ssd_a
+# mkdir -p /mnt/ssd_a/pgsql_tablespace
+# chown -R postgres:postgres /mnt/ssd_a/pgsql_tablespace
+# rsync -a --delete /db/pgsql/tablespace/twomass_eqi /mnt/ssd_a/pgsql_tablespace/.
+# rsync -a --delete /db/pgsql/tablespace/twomass_eqi_index_xyzi16 /mnt/ssd_a/pgsql_tablespace/.
+# mount --bind /mnt/ssd_a/pgsql_tablespace/twomass_eqi /db/pgsql/tablespace/twomass_eqi
+# mount --bind /mnt/ssd_a/pgsql_tablespace/twomass_eqi_index_xyzi16 /db/pgsql/tablespace/twomass_eqi_index_xyzi16
+# /etc/rc.d/init.d/postgresql start
+</pre>
+
+<hr />
+
+<h2>
+<a id="USE" name="USE">
+使い方
+</a>
+</h2>
+
+<p>
+ここでは，2MASS PSC の検索例を示します．
+他のカタログの場合は「<code>Twomass</code>」の部分を
+置き換えてください．
+</p>
+
+<p>
+通常の利用時は誤ってテーブルを壊さないように，
+guestロールで利用します:
+</p>
+
+<pre>
+$ psql -U guest 2MASS
+</pre>
+
+<p>
+psql の使い方については，
+<a href="http://lets.postgresql.jp/documents/tutorial/psql/">この日本語ページ</a>
+または
+<a href="http://www.postgresql.org/docs/8.4/static/app-psql.html">英語公式ページ</a>
+をご覧ください．
+</p>
+
+<h3>Radial Search</h3>
+
+<p>
+次のようにストアドファンクション
+fTwomassGetNearbyObjEq()
+か
+fTwomassGetNearbyObjCel()
+を利用します(大文字小文字は区別しません)．
+検索速度を重視する場合は前者を利用し，
+J2000から他の座標系への変換を行ないたい場合は後者を利用します．
+</p>
+
+<p>
+fTwomassGetNearbyObjEq() の引数は順に，
+R.A.(deg)，Dec.(deg)，サーチ半径(arcmin) です．
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetNearbyObjEq(0, 0, 3);
+</pre>
+
+<p>
+fTwomassGetNearbyObjCel() の引数は順に
+座標系(<code>'j2000'</code>，<code>'b1950'</code>，<code>'ecliptic'</code>，<code>'galactic'</code>)，
+longitude(deg), latitude(deg)，
+サーチ半径(arcmin) です．
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetNearbyObjCel('j2000', 0, 0, 3);
+</pre>
+
+<p>
+fTwomassGetNearbyObjEq()の場合は
+次のように，objid,lon,lat,distance のテーブルが返ります．
+distance の単位は arcmin です．
+</p>
+
+<pre>
+   objid   |    lon     |    lat    |     distance      
+-----------+------------+-----------+-------------------
+ 793571660 | 359.982569 |  0.044046 |  2.84218284794452
+ 793571662 | 359.989615 |  0.012327 | 0.967104621472398
+ 793571661 |  359.98931 |  0.027802 |  1.78718165359994
+ 792913920 |   0.009564 | -0.000827 | 0.575981326971027
+ 792913922 |    0.01738 | -0.032945 |  2.23489923964895
+ 792913925 |   0.021541 | -0.023737 |  1.92324084931489
+ 792913927 |   0.030595 | -0.006287 |  1.87405693715596
+ 792913929 |   0.034844 | -0.028304 |  2.69347254510121
+ 793236078 |   0.038972 |  0.001536 |  2.34013544202409
+ 792913932 |   0.047375 | -0.006703 |  2.87081085523336
+</pre>
+
+<p>
+メインテーブルの内容が必要な場合は，次のように
+ストアドファンクションの返り値とメインテーブルとを，
+プライマリキーobjidを使って
+ジョインします．
+この例では，座標，フラックス，フラックスのエラー，distanceを得ています．
+</p>
+
+<pre>
+SELECT o.ra,o.dec,o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom,n.distance
+FROM fTwomassGetNearbyObjEq(0,0,3) n, twomass o
+WHERE n.objid = o.objid;
+</pre>
+
+<p>
+次のような結果を得ます．
+</p>
+
+<pre>
+     ra     |    dec    |  j_m   |  h_m   |  k_m   | j_msigcom | h_msigcom | k_msigcom |     distance      
+------------+-----------+--------+--------+--------+-----------+-----------+-----------+-------------------
+ 359.982569 |  0.044046 | 12.842 | 12.374 | 12.335 |     0.022 |     0.021 |     0.029 |  2.84218284794452
+ 359.989615 |  0.012327 |  13.75 | 13.194 |  13.14 |     0.026 |      0.03 |     0.037 | 0.967104621472398
+  359.98931 |  0.027802 | 15.773 | 15.347 | 14.972 |     0.079 |      0.11 |      0.14 |  1.78718165359994
+   0.009564 | -0.000827 | 16.422 | 16.112 |  15.21 |      0.11 |     0.227 |           | 0.575981326971027
+    0.01738 | -0.032945 | 15.591 | 15.023 | 15.069 |     0.059 |     0.073 |     0.154 |  2.23489923964895
+   0.021541 | -0.023737 | 17.025 | 15.841 | 17.233 |      0.22 |     0.159 |           |  1.92324084931489
+   0.030595 | -0.006287 |  14.43 | 14.085 | 13.923 |     0.038 |     0.039 |     0.056 |  1.87405693715596
+   0.034844 | -0.028304 | 15.644 | 15.355 | 15.129 |     0.069 |     0.096 |     0.143 |  2.69347254510121
+   0.038972 |  0.001536 | 12.682 | 12.096 | 11.844 |     0.022 |     0.025 |     0.022 |  2.34013544202409
+   0.047375 | -0.006703 | 13.514 | 13.189 | 13.167 |     0.029 |     0.031 |     0.033 |  2.87081085523336
+</pre>
+
+<p>
+ストアドファンクション fTwomassGetNearbyObjEq()，fTwomassGetNearbyObjCel() は distance でのソートは
+行ないません．
+必要な場合は，次のように「<code>ORDER BY</code>」を追加してください．
+</p>
+
+<pre>
+SELECT o.ra,o.dec,o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom,n.distance
+FROM fTwomassGetNearbyObjEq(0,0,3) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+
+<h3>Box Search</h3>
+
+<p>
+ストアドファンクション
+fTwomassGetNearbyObjFromBoxCel()
+を利用します(大文字小文字は区別しません)．
+このストアドファンクションの引数は順に，
+座標系(<code>'j2000'</code>，<code>'b1950'</code>，<code>'ecliptic'</code>，<code>'galactic'</code>)，
+longitude(deg), latitude(deg)，
+search box half width(arcmin; 最大5400)，
+search box half height(arcmin; 最大5400) です．
+</p>
+
+<p>
+(l,b)=(12.0,34.0)を中心とする横幅6'，縦幅2'の領域を検索する例を示します．
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetNearbyObjFromBoxCel('galactic', 12,34, 3,1);
+</pre>
+
+<p>
+次のように，objid,lon,lat のテーブルが返ります．
+lon, lat は第一引数で指定された座標系での
+longitude(deg), latitude(deg)です．
+</p>
+
+<pre>
+   objid   |       lon        |       lat        
+-----------+------------------+------------------
+ 791409307 | 11.9461680949935 | 34.0096860074137
+ 791409308 | 11.9583757299871 |  34.015082591074
+ 791409311 | 11.9783906896371 | 34.0105966402837
+ 791409315 | 11.9505030961589 |  33.986455172412
+ 791409320 |  11.972281681199 | 33.9903131870409
+ 791409314 | 11.9812358007798 | 34.0060314550454
+ 791731741 | 12.0181080800759 | 34.0075228040278
+ 791409325 | 11.9916294535507 | 33.9913928836596
+ 791409328 | 11.9875644762627 | 33.9867387367315
+ 791731743 |  12.019301859339 | 34.0023027320602
+ 791731745 | 12.0481339981243 | 34.0058079804499
+ 791731746 |  12.046615046783 | 34.0033867068321
+ 791731752 | 12.0313248764534 | 33.9836666790509
+</pre>
+
+<p>
+メインテーブルの内容が必要な場合は，次のように
+ストアドファンクションの返り値とメインテーブルとを，
+プライマリキーobjidを使って
+ジョインします．
+この例では，座標，フラックス，フラックスのエラーを得ています．
+</p>
+
+<pre>
+SELECT o.ra,o.dec,n.lon as l, n.lat as b,
+       o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom
+FROM fTwomassGetNearbyObjFromBoxCel('galactic', 12,34, 3,1) n, twomass o
+WHERE n.objid = o.objid;
+</pre>
+
+<p>
+次のような結果を得ます．
+</p>
+
+<pre>
+     ra     |    dec    |        l         |        b         |  j_m   |  h_m   |  k_m   | j_msigcom | h_msigcom | k_msigcom 
+------------+-----------+------------------+------------------+--------+--------+--------+-----------+-----------+-----------
+ 243.573157 | -0.525274 | 11.9461680949935 | 34.0096860074137 | 16.137 | 15.373 |  15.25 |     0.104 |     0.138 |     0.216
+ 243.574301 | -0.513863 | 11.9583757299871 |  34.015082591074 | 15.281 | 14.835 | 14.586 |     0.056 |      0.07 |     0.117
+ 243.587256 | -0.502569 | 11.9783906896371 | 34.0105966402837 | 15.316 | 14.679 | 14.613 |     0.058 |     0.064 |     0.121
+ 243.594462 |  -0.53521 | 11.9505030961589 |  33.986455172412 | 15.913 | 15.168 | 14.912 |     0.092 |     0.094 |      0.15
+ 243.601299 | -0.518057 |  11.972281681199 | 33.9903131870409 | 16.041 | 15.671 | 15.173 |     0.113 |     0.149 |          
+ 243.592362 | -0.503147 | 11.9812358007798 | 34.0060314550454 | 15.935 | 15.398 | 15.408 |     0.093 |     0.125 |          
+ 243.608113 | -0.476909 | 12.0181080800759 | 34.0075228040278 | 16.299 | 15.204 | 14.744 |     0.137 |     0.098 |     0.153
+ 243.609321 | -0.504123 | 11.9916294535507 | 33.9913928836596 | 12.818 | 12.396 | 12.308 |     0.025 |     0.026 |     0.033
+ 243.611316 | -0.509512 | 11.9875644762627 | 33.9867387367315 |  16.43 | 15.689 | 16.224 |     0.147 |     0.133 |          
+ 243.613003 | -0.478987 |  12.019301859339 | 34.0023027320602 | 16.084 | 15.673 | 15.245 |     0.101 |     0.144 |     0.205
+ 243.623368 | -0.457166 | 12.0481339981243 | 34.0058079804499 | 15.955 | 15.405 | 15.527 |     0.096 |     0.102 |     0.242
+ 243.624682 | -0.459558 |  12.046615046783 | 34.0033867068321 | 16.816 |  15.84 | 15.839 |     0.201 |     0.159 |          
+ 243.634037 | -0.481054 | 12.0313248764534 | 33.9836666790509 | 15.595 |  15.18 | 15.008 |     0.071 |     0.098 |     0.157
+</pre>
+
+<h3>Rectangular Search</h3>
+
+<p>
+次のようにストアドファンクション
+fTwomassGetObjFromRectEq()
+を利用します(大文字小文字は区別しません)．
+このストアドファンクションの引数は順に
+R.A.1(deg)，R.A.2(deg)，Dec.1(deg)，Dec.2(deg) です．
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetObjFromRectEq(0,0.1, 1,1.1);
+</pre>
+
+<p>
+次のように，objid,lon,lat のテーブルが返ります．
+lon, lat は J2000 の R.A. と Dec. です．
+</p>
+
+<pre>
+   objid   |   lon    |   lat    
+-----------+----------+----------
+ 796325619 | 0.000857 | 1.024927
+ 796325620 | 0.000901 | 1.088982
+ 796325621 | 0.010481 | 1.091584
+ 796325622 | 0.012691 | 1.059668
+ 796325623 | 0.021387 |  1.06185
+ 796325624 | 0.022389 | 1.044861
+ 796325625 | 0.022943 | 1.076892
+ 796325626 | 0.026073 | 1.097096
+ 796325627 | 0.029074 | 1.012373
+ 796325628 | 0.044551 |  1.09418
+ 796325629 | 0.047209 | 1.004132
+ 796325630 |  0.04838 | 1.030788
+ 796325631 | 0.058135 |  1.01824
+ 796325632 | 0.063318 | 1.057747
+ 796325633 | 0.070774 | 1.089212
+ 796325634 | 0.071413 | 1.019535
+ 796325635 | 0.081828 | 1.000061
+ 796325636 | 0.084937 | 1.084082
+ 796325637 | 0.090331 | 1.089642
+ 796325638 | 0.091378 | 1.039778
+</pre>
+
+<p>
+メインテーブルの内容が必要な場合は，次のように
+ストアドファンクションの返り値とメインテーブルとを，
+プライマリキーobjidを使って
+ジョインします．
+この例では，座標，フラックス，フラックスのエラーを得ています．
+</p>
+
+<pre>
+SELECT o.ra,o.dec,o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom
+FROM fTwomassGetObjFromRectEq(0,0.1, 1,1.1) n, twomass o
+WHERE n.objid = o.objid;
+</pre>
+
+<p>
+次のような結果を得ます．
+</p>
+
+<pre>
+    ra    |   dec    |  j_m   |  h_m   |  k_m   | j_msigcom | h_msigcom | k_msigcom 
+----------+----------+--------+--------+--------+-----------+-----------+-----------
+ 0.000857 | 1.024927 | 16.617 | 15.804 | 15.515 |     0.113 |     0.135 |      0.16
+ 0.000901 | 1.088982 |  8.219 |  8.063 |   7.95 |     0.027 |     0.046 |     0.023
+ 0.010481 | 1.091584 | 14.662 | 14.041 |  14.01 |      0.03 |     0.036 |     0.049
+ 0.012691 | 1.059668 | 14.633 |  14.23 | 14.207 |     0.035 |     0.041 |      0.05
+ 0.021387 |  1.06185 | 16.225 | 15.745 | 15.592 |     0.078 |     0.106 |     0.174
+ 0.022389 | 1.044861 | 14.637 | 14.105 | 13.822 |     0.036 |     0.033 |     0.045
+ 0.022943 | 1.076892 | 16.962 | 16.611 | 15.644 |     0.146 |     0.234 |     0.188
+ 0.026073 | 1.097096 | 16.645 | 15.905 | 15.457 |     0.134 |     0.162 |      0.19
+ 0.029074 | 1.012373 | 16.243 | 15.586 | 15.026 |     0.093 |     0.125 |     0.121
+ 0.044551 |  1.09418 | 15.534 | 14.906 | 14.484 |     0.051 |     0.067 |      0.08
+ 0.047209 | 1.004132 | 16.932 | 16.155 | 15.264 |     0.182 |     0.238 |     0.166
+  0.04838 | 1.030788 | 16.468 | 15.803 | 14.991 |     0.129 |     0.206 |      0.13
+ 0.058135 |  1.01824 | 16.556 | 15.736 | 15.363 |     0.113 |     0.136 |     0.169
+ 0.063318 | 1.057747 | 16.131 | 15.499 | 15.535 |     0.096 |     0.122 |     0.192
+ 0.070774 | 1.089212 | 16.183 | 15.689 | 15.346 |           |     0.162 |          
+ 0.071413 | 1.019535 | 14.407 | 14.002 | 13.819 |     0.033 |     0.031 |     0.054
+ 0.081828 | 1.000061 |  14.45 | 13.841 | 13.682 |     0.032 |     0.033 |     0.049
+ 0.084937 | 1.084082 | 16.145 | 15.555 | 15.246 |      0.08 |     0.133 |     0.153
+ 0.090331 | 1.089642 | 16.741 | 16.307 | 15.551 |     0.157 |     0.246 |     0.194
+ 0.091378 | 1.039778 | 15.616 | 15.183 |  15.39 |     0.056 |     0.109 |     0.177
+</pre>
+
+<h3>テーブルのカラムを確認</h3>
+
+<p>
+次のように「<code>\d</code>」コマンドを使うと，
+テーブルのカラム情報を取得できます．<br />
+</p>
+
+<pre>
+2MASS=&gt; \d twomass
+ objid         | integer          | not null
+ designation   | character(17)    | not null
+ ra            | double precision | not null
+ dec           | double precision | not null
+ err_maj       | real             | not null
+ err_min       | real             | not null
+ err_ang       | smallint         | not null
+ j_m           | real             | 
+ j_cmsig       | real             | 
+ j_msigcom     | real             | 
+ j_snr         | real             | 
+ h_m           | real             | 
+ h_cmsig       | real             | 
+ h_msigcom     | real             | 
+ h_snr         | real             | 
+ k_m           | real             | 
+ k_cmsig       | real             | 
+ k_msigcom     | real             | 
+ k_snr         | real             | 
+(省略)
+</pre>
+
+<h3>Cross-ID (他カタログとのマッチアップ)</h3>
+
+<p>
+まず，マッチアップしたいカタログを，
+データベースにテーブルとして登録する必要があります．
+PostgreSQLの公式ドキュメントなどを参考にして，テーブルを作成してください．
+長期的に利用するテーブルを作成する時は，
+adminロールでそれを行なうと良いでしょう．
+なお，作成するテーブルには，
+J2000のR.A.(deg)とDec.(deg)がカラムに含まれている必要があります．
+</p>
+
+<p>
+次の例では，my_catalogに入ったカタログと2MASSカタログとのマッチアップ
+を半径 0.25 arcmin で行ない，その件数を得ます．
+</p>
+
+<pre>
+SELECT count(fTwomassGetNearestObjIDEq(o.ra, o.dec, 0.25))
+FROM ( SELECT * FROM my_catalog ORDER BY dec ) o;
+</pre>
+
+<p>
+次の例では，my_catalogの全行を取得し，マッチに成功したものは
+2MASSの座標(R.A.とDec.)とdistanceとを，my_catalogの右側に追加します．
+</p>
+
+<pre>
+SELECT p.*,
+       q1.objid, q1.ra, q1.dec,
+       (CASE (q1.objid IS NULL) WHEN true THEN null ELSE
+       fDistanceArcminEq(p.ra,p.dec,q1.ra,q1.dec) END) as distance
+FROM
+(
+  SELECT o.*
+  FROM my_table o
+  ORDER BY dec
+) p
+LEFT JOIN
+  Twomass q1
+ON 
+  fTwomassGetNearestObjIDEq(p.ra, p.dec, 0.25) = q1.objid
+</pre>
+
+<p>
+マッチに成功した行だけを取り出す場合は，もう少し簡単に書けます:
+</p>
+
+<pre>
+SELECT p.*,
+       q1.objid, q1.ra, q1.dec,
+       fDistanceArcminEq(p.ra,p.dec,q1.ra,q1.dec) as distance
+FROM
+(
+  SELECT o.*
+  FROM my_table o
+  ORDER BY dec
+) p
+JOIN
+  Twomass q1
+ON 
+  fTwomassGetNearestObjIDEq(p.ra, p.dec, 0.25) = q1.objid
+</pre>
+
+<hr />
+
+<h2>
+<a id="FUNCTION" name="FUNCTION">
+2MASS Kit特有の便利なストアドファンクション
+</a>
+</h2>
+
+<p>
+AKARI-CAS用に作成したストアドファンクションをいくつか収録しています．<br />
+PostgreSQL が提供している関数については，
+<a href="http://darts.jaxa.jp/ir/akari/cas/help/sql_general_reference.html">
+AKARI-CASのこのページ</a>
+をご覧ください．
+</p>
+
+<h3>角度の算出</h3>
+
+<p>
+<code>fDistanceArcminEq(ra1,dec1, ra2,dec2)</code>
+または
+<code>fDistanceArcMinXYZ(cx1,cy1,cz1, cx2,cy2,cz2)</code>
+により，2つの天体間の角度を求める事ができます．
+引数に
+<code>NULL</code>
+が与えられた場合の動作は未定義です．
+</p>
+
+<h3>deg→sexagesimal(xx:xx:xx.x)変換</h3>
+
+<p>
+次のように，
+fDeg2LonStr()，fDeg2LatStr()
+を利用すれば，deg単位の値をsexagesimal(xx:xx:xx.x)の形式に変換できます．
+</p>
+
+<pre>
+SELECT fDeg2LonStr(o.ra) as ra, fDeg2LatStr(o.dec) as dec,
+       o.j_m,o.h_m,o.k_m, n.distance
+FROM fTwomassGetNearbyObjEq(0,0,3) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+<p>
+次の結果を得ます．
+</p>
+
+<pre>
+     ra      |     dec     |  j_m   |  h_m   |  k_m   |     distance      
+-------------+-------------+--------+--------+--------+-------------------
+ 00:00:02.30 | -00:00:03.0 | 16.422 | 16.112 |  15.21 | 0.575981326971027
+ 23:59:57.51 | +00:00:44.4 |  13.75 | 13.194 |  13.14 | 0.967104621472398
+ 23:59:57.43 | +00:01:40.1 | 15.773 | 15.347 | 14.972 |  1.78718165359994
+ 00:00:07.34 | -00:00:22.6 |  14.43 | 14.085 | 13.923 |  1.87405693715596
+ 00:00:05.17 | -00:01:25.5 | 17.025 | 15.841 | 17.233 |  1.92324084931489
+ 00:00:04.17 | -00:01:58.6 | 15.591 | 15.023 | 15.069 |  2.23489923964895
+ 00:00:09.35 | +00:00:05.5 | 12.682 | 12.096 | 11.844 |  2.34013544202409
+ 00:00:08.36 | -00:01:41.9 | 15.644 | 15.355 | 15.129 |  2.69347254510121
+ 23:59:55.82 | +00:02:38.6 | 12.842 | 12.374 | 12.335 |  2.84218284794452
+ 00:00:11.37 | -00:00:24.1 | 13.514 | 13.189 | 13.167 |  2.87081085523336
+</pre>
+
+<h3>sexagesimal(xx:xx:xx.x)→deg変換</h3>
+
+<p>
+sexagesimal(xx:xx:xx.x)の形式で，座標を指定して検索ができます．
+</p>
+
+<pre>
+SELECT fDeg2LonStr(o.ra) as ra, fDeg2LatStr(o.dec) as dec,
+       o.j_m,o.h_m,o.k_m, n.distance
+FROM fTwomassGetNearbyObjEq(fLonStr2Deg('11:22:33.3'),fLatStr2Deg('22:33:44.4'),3) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+<p>
+次の結果を得ます．
+</p>
+
+<pre>
+     ra      |     dec     |  j_m   |  h_m   |  k_m   |     distance      
+-------------+-------------+--------+--------+--------+-------------------
+ 11:22:31.39 | +22:33:04.7 | 16.137 | 15.803 | 15.808 | 0.794373037809949
+ 11:22:36.24 | +22:34:12.4 | 16.728 | 15.787 | 15.138 | 0.823298100602107
+ 11:22:34.17 | +22:34:33.9 | 16.658 | 15.962 | 15.287 |  0.84883116250746
+ 11:22:37.70 | +22:33:42.5 | 16.746 | 15.973 |  15.79 |  1.01713844965725
+ 11:22:34.57 | +22:32:44.2 | 16.729 | 15.875 |     17 |  1.04481387810461
+ 11:22:29.11 | +22:34:25.0 | 16.971 | 16.102 | 15.431 |  1.17931773570099
+ 11:22:27.70 | +22:33:04.7 | 16.197 | 15.689 | 15.014 |  1.45335381456842
+ 11:22:36.10 | +22:35:29.7 | 16.009 | 15.623 | 14.811 |  1.86948967595817
+ 11:22:22.99 | +22:33:16.5 | 16.656 | 16.009 | 15.635 |  2.42576801128236
+ 11:22:33.53 | +22:36:25.4 | 16.165 | 15.278 | 14.937 |  2.68444346193211
+ 11:22:21.60 | +22:34:34.4 |   16.5 | 15.154 | 15.144 |  2.82628524515026
+ 11:22:45.61 | +22:34:13.3 | 13.216 | 12.736 | 12.668 |  2.88203892253219
+ 11:22:31.09 | +22:36:37.8 | 16.659 | 16.118 | 15.246 |  2.93504711436251
+ 11:22:31.65 | +22:30:48.1 |  16.29 |  15.87 | 15.435 |  2.96366827957033
+</pre>
+
+<h3>座標変換 (J2000 ⇔ B1950,Ecliptic,Galactic)</h3>
+
+<p>
+<a href="http://tdc-www.harvard.edu/wcstools/">WCSTools</a>
+のソースの一部を利用してストアドファンクションを登録する事により，
+SQL 文にて主要な座標系に対して座標変換ができるようになっています．
+</p>
+
+<p>
+B1950,Ecliptic,Galactic から J2000 へ変換するストアドファンクション:
+</p>
+
+<table>
+ <tr>
+  <th>ストアドファンクション</th><th>引数</th><th>返り値</th>
+ </tr>
+ <tr>
+  <td><code>fB2Ra(ra,dec)</code></td><td>B1950座標</td><td>J2000 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fB2Dec(ra,dec)</code></td><td>B1950座標</td><td>J2000 Dec.</td>
+ </tr>
+ <tr>
+  <td><code>fE2Ra(lon,lat)</code></td><td>Ecliptic座標</td><td>J2000 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fE2Dec(lon,lat)</code></td><td>Ecliptic座標</td><td>J2000 Dec.</td>
+ </tr>
+ <tr>
+  <td><code>fG2Ra(lon,lat)</code></td><td>Galactic座標</td><td>J2000 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fG2Dec(lon,lat)</code></td><td>Galactic座標</td><td>J2000 Dec.</td>
+ </tr>
+</table>
+
+<p>
+J2000 から B1950,Ecliptic,Galactic へ変換するストアドファンクション:
+</p>
+
+<table>
+ <tr>
+  <th>ストアドファンクション</th><th>引数</th><th>返り値</th>
+ </tr>
+ <tr>
+  <td><code>fJ2Ra1950(ra,dec)</code></td><td>J2000座標</td><td>B1950 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2Dec1950(ra,dec)</code></td><td>J2000座標</td><td>B1950 Dec.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2Lambda(ra,dec)</code></td><td>J2000座標</td><td>Ecliptic Lon.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2Beta(ra,dec)</code></td><td>J2000座標</td><td>Ecliptic Lat.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2L(ra,dec)</code></td><td>J2000座標</td><td>Galactic Lon.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2B(ra,dec)</code></td><td>J2000座標</td><td>Galactic Lat.</td>
+ </tr>
+</table>
+
+<p>
+次に，Galactic座標の (0,0) で Radial Search を行なう例を示します．
+</p>
+
+<pre>
+SELECT fJ2L(o.ra,o.dec) as l, fJ2B(o.ra,o.dec) as b,
+       o.j_m,o.h_m,o.k_m, n.distance
+FROM fTwomassGetNearbyObjEq(fG2Ra(0,0),fG2Dec(0,0),0.2) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+<p>
+次の結果を得ます．
+</p>
+
+<pre>
+          l           |           b           |  j_m   |  h_m   |  k_m   |      distance      
+----------------------+-----------------------+--------+--------+--------+--------------------
+ 0.000238199212139686 |  0.000245096272298005 | 17.133 |  13.88 | 11.912 | 0.0205064415510798
+     359.999429961829 |  -0.00149404269361704 | 17.089 | 13.623 | 12.001 | 0.0959458926395396
+  0.00199983911961157 | -4.01722558191383e-05 | 16.407 | 12.665 | 10.888 |  0.120014534784677
+     359.998106567874 |  0.000932992925588326 | 17.443 | 13.571 | 11.703 |  0.126649154498087
+  0.00287219868966155 |  0.000670744958130914 | 16.467 | 12.758 | 10.874 |  0.176968660924733
+  0.00261470909270918 |  -0.00204362165890217 | 16.831 | 13.607 | 12.482 |  0.199115956417241
+</pre>
+
+
+<hr />
+
+
+<h2>
+<a id="CLIENTS" name="CLIENTS">
+クライアント・ツール</a>
+</h2>
+
+<h3>sql2mass.php</h3>
+
+<p>
+<code>client/sql2mass.php</code> 
+は2MASS Kitクライアントのサンプルプログラムです．
+</p>
+
+<p>
+使う前に，次のようにして PHP といくつかのライブラリをインストールします:
+</p>
+
+<pre>
+# yum install php
+# yum install php-pgsql
+# yum install php-pear
+# pear install MDB2
+# pear install pear/MDB2#pgsql
+</pre>
+
+<p>
+<code>sql2mass.php</code>先頭付近の<code>$Dsn</code>変数の 
+<code>PASSWORD</code> 
+を
+実際のものに変更します:
+</p>
+
+<pre>
+$Dsn = "pgsql://guest:PASSWORD@127.0.0.1:5432/2MASS";
+</pre>
+
+<p>
+最初の引数にSQLステートメントをセットして，
+<code>sql2mass.php</code>を実行します．
+</p>
+
+<pre>
+$ php sql2mass.php "SELECT * FROM twomass LIMIT 10"
+</pre>
+
+<p>
+<strong>警告:</strong>
+このスクリプトにはセキュリティ対策のためのコードが無く，
+ダイレクトにSQLを入力させるWebアプリケーション等での流用には
+かなりの追加対策が必要です．
+</p>
+
+<hr />
+
+
+<h2>
+<a id="FAQ" name="FAQ">
+FAQ
+</a>
+</h2>
+
+<h3>Q: ちょっと試しに使ってみたいのだけど?</h3>
+
+<p>
+<a href="http://darts.jaxa.jp/ir/akari/cas.html">AKARI-CAS</a>
+の
+<a href="http://darts.jaxa.jp/ir/akari/cas/tools/search/sql.html">SQL Search</a>
+で2MASSカタログの検索が可能です．<br />
+(AKARI-CASの2MASSの検索も，基本的には2MASS Kitと同じ手法を用いています)．
+</p>
+
+<h3>Q: initdb に失敗します!</h3>
+
+<p>
+A: 例えば，<code>/aaa/bbb/db/pgsql</code>
+内にデータベースを構築しようとしていた場合，
+ディレクトリ
+<code>/aaa</code>，<code>/aaa/bbb</code>，<code>/aaa/bbb/db</code>
+はすべてオーナが
+root:root (OSによっては異なるかもしれません)，
+モードが 755 にセットされていなければなりません．
+</p>
+
+<h3>Q: データファイルのmd5が一致しているのに，データ登録に失敗します!</h3>
+
+<p>
+A: PostgreSQLサーバと同じバージョンの psql を使ってください．
+サーバと異なるバージョンの psql を使った場合，
+データベースの内部データが壊れたかのようなエラーが報告される事があります．
+</p>
+
+<h3>Q: メインテーブルのデータ登録が3日たっても終わりません!</h3>
+
+<p>
+A: 下記のようにして，HDDパフォーマンスの簡易測定を行なってみてください．
+</p>
+
+<pre>
+$ su
+# /sbin/hdparm -t /dev/sda
+</pre>
+
+<p>
+上記テストで，100MB/sec 出ていない場合，
+S-ATA インタフェースが本来の性能を発揮していない可能性があります．<br />
+チップセットによっては，S-ATAインタフェースが
+いくつかの動作モードを持っており，その場合は
+BIOS でそれを設定できるようになっている事がほとんどです．
+メーカー製PCの中には，BIOS のデフォルトの設定が
+Linux に最適な状態になっていない事があります．
+特に DELL の PC がそうで，実際多くの方がこの罠にハマってきました
+(これはDELLの優れた伝統の1つです)．<br />
+Linux だけをインストールしている場合は，
+<code>/etc/modprobe.conf</code> に
+「<code>alias scsi_hostadapter ata_piix</code> (Intelのチップセットの場合)」
+のように書いて initrd を再作成し，
+BIOS の S-ATA動作モードを「native」等に切り替えれば
+本来の性能が発揮できるようになります．<br />
+Windows とデュアルブートになっている場合や，
+initrd なんてわからないという方は，
+オンボード S-ATA インタフェースの本来の性能は諦め，
+S-ATAインタフェースカード
+(例: LSI 9211-4i，
+<a href="http://www.asus.com/product.aspx?P_ID=lGYmelQ8mJvPtYTv">ASUS U3S6</a>
+: ただし，PCIe x4 以上の空きスロットが必要)
+を増設し，そこに HDD を接続して DB を構築する方が良いと思います．
+</p>
+
+<h3>Q: objidって何ですか?</h3>
+
+<p>
+A: objidはオリジナルのカタログにはありませんが，
+高速化のためにこのキットにて勝手に追加したものです．objid は
+4バイトまたは8バイト整数「オフセット値 + 行番号」とし，プライマリキー
+として利用しています．
+このIDを論文等に載せてはいけません．
+</p>
+
+<h3>Q: マシン起動直後は検索が遅いです!!</h3>
+
+<p>
+A: ディスクが超高速では無い限り，起動直後の検索速度はどうしても
+ディスクの遅さにひっぱられます．
+この問題を解決するには，すべてのテーブル・インデックスを
+高速なSSDに移動させる必要があります．
+2MASS Kitでは，そういったニーズに応えるため，
+すべてのテーブル・インデックスをテーブルスペース内に
+作成するようになっています．
+<code>/db/pgsql/tablespace</code>以下のデータすべてを
+高速SSDにコピーし，bindで上からマウントすれば，
+マシン起動直後から高速な検索が可能になります．
+</p>
+
+<h3>Q: このキットのライセンスは?</h3>
+
+<p>
+A: GPL V2 に従います．
+   データセットはオリジナルのライセンスに従います．
+</p>
+
+
+
+<hr />
+
+
+</body>
+</html>

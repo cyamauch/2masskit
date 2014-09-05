@@ -1,0 +1,6 @@
+#define _TABLE_INFO_SRC__C "wise3band_table_info._c"
+#define _RADIALSEARCH_FNC_NAME _wise3bandgetsqlforradialsearch
+#define _BOXSEARCHSIMPLE_FNC_NAME _wise3bandgetsqlforboxsearchsimple
+#define _BOXSEARCHDIV_FNC_NAME _wise3bandgetsqlforboxsearchdiv
+#define _RECTANGULARSEARCH_FNC_NAME _wise3bandgetsqlforrectangularsearch
+#include "huge_search_fnc_template._c"

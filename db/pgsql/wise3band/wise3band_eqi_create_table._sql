@@ -1,0 +1,2048 @@
+CREATE TABLE wise3band_eqi_00
+ (CHECK(deci < -879752255))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_01
+ (CHECK(-879752255 <= deci AND deci < -867947215))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_02
+ (CHECK(-867947215 <= deci AND deci < -858774532))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_03
+ (CHECK(-858774532 <= deci AND deci < -851151192))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_04
+ (CHECK(-851151192 <= deci AND deci < -843483592))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_05
+ (CHECK(-843483592 <= deci AND deci < -836484431))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_06
+ (CHECK(-836484431 <= deci AND deci < -829361925))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_07
+ (CHECK(-829361925 <= deci AND deci < -822961209))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_08
+ (CHECK(-822961209 <= deci AND deci < -816631811))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_09
+ (CHECK(-816631811 <= deci AND deci < -810294658))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0a
+ (CHECK(-810294658 <= deci AND deci < -804918578))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0b
+ (CHECK(-804918578 <= deci AND deci < -799195717))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0c
+ (CHECK(-799195717 <= deci AND deci < -794082186))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0d
+ (CHECK(-794082186 <= deci AND deci < -789046999))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0e
+ (CHECK(-789046999 <= deci AND deci < -784015963))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0f
+ (CHECK(-784015963 <= deci AND deci < -779506544))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0g
+ (CHECK(-779506544 <= deci AND deci < -774929338))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0h
+ (CHECK(-774929338 <= deci AND deci < -770351918))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0i
+ (CHECK(-770351918 <= deci AND deci < -765765320))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0j
+ (CHECK(-765765320 <= deci AND deci < -761958612))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0k
+ (CHECK(-761958612 <= deci AND deci < -757803304))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0l
+ (CHECK(-757803304 <= deci AND deci < -753639774))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0m
+ (CHECK(-753639774 <= deci AND deci < -749672227))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0n
+ (CHECK(-749672227 <= deci AND deci < -746167720))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0o
+ (CHECK(-746167720 <= deci AND deci < -742140278))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0p
+ (CHECK(-742140278 <= deci AND deci < -737746171))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0q
+ (CHECK(-737746171 <= deci AND deci < -733567988))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0r
+ (CHECK(-733567988 <= deci AND deci < -728847831))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0s
+ (CHECK(-728847831 <= deci AND deci < -724061204))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0t
+ (CHECK(-724061204 <= deci AND deci < -719326015))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0u
+ (CHECK(-719326015 <= deci AND deci < -714700281))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0v
+ (CHECK(-714700281 <= deci AND deci < -709800527))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0w
+ (CHECK(-709800527 <= deci AND deci < -704757066))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0x
+ (CHECK(-704757066 <= deci AND deci < -700283640))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0y
+ (CHECK(-700283640 <= deci AND deci < -695281916))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_0z
+ (CHECK(-695281916 <= deci AND deci < -690186316))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_10
+ (CHECK(-690186316 <= deci AND deci < -685551795))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_11
+ (CHECK(-685551795 <= deci AND deci < -680434446))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_12
+ (CHECK(-680434446 <= deci AND deci < -675178644))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_13
+ (CHECK(-675178644 <= deci AND deci < -670448027))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_14
+ (CHECK(-670448027 <= deci AND deci < -665215786))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_15
+ (CHECK(-665215786 <= deci AND deci < -659943162))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_16
+ (CHECK(-659943162 <= deci AND deci < -655411342))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_17
+ (CHECK(-655411342 <= deci AND deci < -650479595))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_18
+ (CHECK(-650479595 <= deci AND deci < -645502281))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_19
+ (CHECK(-645502281 <= deci AND deci < -641220479))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1a
+ (CHECK(-641220479 <= deci AND deci < -636606461))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1b
+ (CHECK(-636606461 <= deci AND deci < -631973835))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1c
+ (CHECK(-631973835 <= deci AND deci < -627810809))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1d
+ (CHECK(-627810809 <= deci AND deci < -623284277))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1e
+ (CHECK(-623284277 <= deci AND deci < -618791283))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1f
+ (CHECK(-618791283 <= deci AND deci < -614287918))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1g
+ (CHECK(-614287918 <= deci AND deci < -610432434))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1h
+ (CHECK(-610432434 <= deci AND deci < -606138211))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1i
+ (CHECK(-606138211 <= deci AND deci < -601871817))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1j
+ (CHECK(-601871817 <= deci AND deci < -598023879))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1k
+ (CHECK(-598023879 <= deci AND deci < -594014386))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1l
+ (CHECK(-594014386 <= deci AND deci < -589910657))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1m
+ (CHECK(-589910657 <= deci AND deci < -585817489))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1n
+ (CHECK(-585817489 <= deci AND deci < -582237909))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1o
+ (CHECK(-582237909 <= deci AND deci < -578252736))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1p
+ (CHECK(-578252736 <= deci AND deci < -574260593))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1q
+ (CHECK(-574260593 <= deci AND deci < -570282392))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1r
+ (CHECK(-570282392 <= deci AND deci < -566848750))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1s
+ (CHECK(-566848750 <= deci AND deci < -563012721))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1t
+ (CHECK(-563012721 <= deci AND deci < -559171838))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1u
+ (CHECK(-559171838 <= deci AND deci < -555354561))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1v
+ (CHECK(-555354561 <= deci AND deci < -552064441))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1w
+ (CHECK(-552064441 <= deci AND deci < -548425208))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1x
+ (CHECK(-548425208 <= deci AND deci < -544758623))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1y
+ (CHECK(-544758623 <= deci AND deci < -541068501))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_1z
+ (CHECK(-541068501 <= deci AND deci < -537615956))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_20
+ (CHECK(-537615956 <= deci AND deci < -534328891))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_21
+ (CHECK(-534328891 <= deci AND deci < -530788821))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_22
+ (CHECK(-530788821 <= deci AND deci < -527247758))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_23
+ (CHECK(-527247758 <= deci AND deci < -523716076))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_24
+ (CHECK(-523716076 <= deci AND deci < -520713209))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_25
+ (CHECK(-520713209 <= deci AND deci < -517251018))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_26
+ (CHECK(-517251018 <= deci AND deci < -513827867))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_27
+ (CHECK(-513827867 <= deci AND deci < -510379387))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_28
+ (CHECK(-510379387 <= deci AND deci < -507245439))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_29
+ (CHECK(-507245439 <= deci AND deci < -504010459))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2a
+ (CHECK(-504010459 <= deci AND deci < -500598254))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2b
+ (CHECK(-500598254 <= deci AND deci < -497192850))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2c
+ (CHECK(-497192850 <= deci AND deci < -493805986))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2d
+ (CHECK(-493805986 <= deci AND deci < -490948269))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2e
+ (CHECK(-490948269 <= deci AND deci < -487674423))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2f
+ (CHECK(-487674423 <= deci AND deci < -484368668))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2g
+ (CHECK(-484368668 <= deci AND deci < -481077818))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2h
+ (CHECK(-481077818 <= deci AND deci < -477798256))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2i
+ (CHECK(-477798256 <= deci AND deci < -475071950))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2j
+ (CHECK(-475071950 <= deci AND deci < -471848844))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2k
+ (CHECK(-471848844 <= deci AND deci < -468623228))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2l
+ (CHECK(-468623228 <= deci AND deci < -465402226))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2m
+ (CHECK(-465402226 <= deci AND deci < -462186485))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2n
+ (CHECK(-462186485 <= deci AND deci < -459528417))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2o
+ (CHECK(-459528417 <= deci AND deci < -456382306))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2p
+ (CHECK(-456382306 <= deci AND deci < -453232037))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2q
+ (CHECK(-453232037 <= deci AND deci < -450084987))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2r
+ (CHECK(-450084987 <= deci AND deci < -446955145))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2s
+ (CHECK(-446955145 <= deci AND deci < -444310722))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2t
+ (CHECK(-444310722 <= deci AND deci < -441223059))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2u
+ (CHECK(-441223059 <= deci AND deci < -438125530))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2v
+ (CHECK(-438125530 <= deci AND deci < -435017649))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2w
+ (CHECK(-435017649 <= deci AND deci < -431901693))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2x
+ (CHECK(-431901693 <= deci AND deci < -429354574))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2y
+ (CHECK(-429354574 <= deci AND deci < -426320721))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_2z
+ (CHECK(-426320721 <= deci AND deci < -423272660))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_30
+ (CHECK(-423272660 <= deci AND deci < -420210878))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_31
+ (CHECK(-420210878 <= deci AND deci < -417157227))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_32
+ (CHECK(-417157227 <= deci AND deci < -414623092))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_33
+ (CHECK(-414623092 <= deci AND deci < -411611321))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_34
+ (CHECK(-411611321 <= deci AND deci < -408615587))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_35
+ (CHECK(-408615587 <= deci AND deci < -405596427))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_36
+ (CHECK(-405596427 <= deci AND deci < -402576574))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_37
+ (CHECK(-402576574 <= deci AND deci < -400080929))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_38
+ (CHECK(-400080929 <= deci AND deci < -397143004))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_39
+ (CHECK(-397143004 <= deci AND deci < -394216418))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3a
+ (CHECK(-394216418 <= deci AND deci < -391289745))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3b
+ (CHECK(-391289745 <= deci AND deci < -388331580))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3c
+ (CHECK(-388331580 <= deci AND deci < -385888525))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3d
+ (CHECK(-385888525 <= deci AND deci < -383025263))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3e
+ (CHECK(-383025263 <= deci AND deci < -380147439))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3f
+ (CHECK(-380147439 <= deci AND deci < -377252903))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3g
+ (CHECK(-377252903 <= deci AND deci < -374357702))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3h
+ (CHECK(-374357702 <= deci AND deci < -371442815))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3i
+ (CHECK(-371442815 <= deci AND deci < -369083023))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3j
+ (CHECK(-369083023 <= deci AND deci < -366241653))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3k
+ (CHECK(-366241653 <= deci AND deci < -363382925))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3l
+ (CHECK(-363382925 <= deci AND deci < -360513079))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3m
+ (CHECK(-360513079 <= deci AND deci < -357629335))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3n
+ (CHECK(-357629335 <= deci AND deci < -355231773))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3o
+ (CHECK(-355231773 <= deci AND deci < -352388304))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3p
+ (CHECK(-352388304 <= deci AND deci < -349546112))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3q
+ (CHECK(-349546112 <= deci AND deci < -346698509))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3r
+ (CHECK(-346698509 <= deci AND deci < -343846497))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3s
+ (CHECK(-343846497 <= deci AND deci < -340989113))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3t
+ (CHECK(-340989113 <= deci AND deci < -338684261))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3u
+ (CHECK(-338684261 <= deci AND deci < -335872111))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3v
+ (CHECK(-335872111 <= deci AND deci < -333040101))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3w
+ (CHECK(-333040101 <= deci AND deci < -330234419))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3x
+ (CHECK(-330234419 <= deci AND deci < -327427221))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3y
+ (CHECK(-327427221 <= deci AND deci < -325133486))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_3z
+ (CHECK(-325133486 <= deci AND deci < -322385317))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_40
+ (CHECK(-322385317 <= deci AND deci < -319636562))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_41
+ (CHECK(-319636562 <= deci AND deci < -316879133))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_42
+ (CHECK(-316879133 <= deci AND deci < -314112966))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_43
+ (CHECK(-314112966 <= deci AND deci < -311354484))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_44
+ (CHECK(-311354484 <= deci AND deci < -309104939))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_45
+ (CHECK(-309104939 <= deci AND deci < -306355537))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_46
+ (CHECK(-306355537 <= deci AND deci < -303615189))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_47
+ (CHECK(-303615189 <= deci AND deci < -300883368))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_48
+ (CHECK(-300883368 <= deci AND deci < -298121195))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_49
+ (CHECK(-298121195 <= deci AND deci < -295464433))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4a
+ (CHECK(-295464433 <= deci AND deci < -293166233))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4b
+ (CHECK(-293166233 <= deci AND deci < -290463490))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4c
+ (CHECK(-290463490 <= deci AND deci < -287750595))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4d
+ (CHECK(-287750595 <= deci AND deci < -285018565))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4e
+ (CHECK(-285018565 <= deci AND deci < -282271385))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4f
+ (CHECK(-282271385 <= deci AND deci < -279965042))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4g
+ (CHECK(-279965042 <= deci AND deci < -277283084))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4h
+ (CHECK(-277283084 <= deci AND deci < -274524995))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4i
+ (CHECK(-274524995 <= deci AND deci < -271764476))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4j
+ (CHECK(-271764476 <= deci AND deci < -268993693))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4k
+ (CHECK(-268993693 <= deci AND deci < -266234325))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4l
+ (CHECK(-266234325 <= deci AND deci < -263951467))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4m
+ (CHECK(-263951467 <= deci AND deci < -261155286))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4n
+ (CHECK(-261155286 <= deci AND deci < -258340465))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4o
+ (CHECK(-258340465 <= deci AND deci < -255547671))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4p
+ (CHECK(-255547671 <= deci AND deci < -252749603))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4q
+ (CHECK(-252749603 <= deci AND deci < -250038041))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4r
+ (CHECK(-250038041 <= deci AND deci < -247680368))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4s
+ (CHECK(-247680368 <= deci AND deci < -244912108))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4t
+ (CHECK(-244912108 <= deci AND deci < -242102992))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4u
+ (CHECK(-242102992 <= deci AND deci < -239329163))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4v
+ (CHECK(-239329163 <= deci AND deci < -236566137))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4w
+ (CHECK(-236566137 <= deci AND deci < -234306611))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4x
+ (CHECK(-234306611 <= deci AND deci < -231569558))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4y
+ (CHECK(-231569558 <= deci AND deci < -228847199))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_4z
+ (CHECK(-228847199 <= deci AND deci < -226144651))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_50
+ (CHECK(-226144651 <= deci AND deci < -223434259))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_51
+ (CHECK(-223434259 <= deci AND deci < -220731675))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_52
+ (CHECK(-220731675 <= deci AND deci < -218545401))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_53
+ (CHECK(-218545401 <= deci AND deci < -215878330))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_54
+ (CHECK(-215878330 <= deci AND deci < -213204944))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_55
+ (CHECK(-213204944 <= deci AND deci < -210544617))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_56
+ (CHECK(-210544617 <= deci AND deci < -207853674))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_57
+ (CHECK(-207853674 <= deci AND deci < -205175828))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_58
+ (CHECK(-205175828 <= deci AND deci < -202998518))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_59
+ (CHECK(-202998518 <= deci AND deci < -200351034))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5a
+ (CHECK(-200351034 <= deci AND deci < -197692640))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5b
+ (CHECK(-197692640 <= deci AND deci < -195010896))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5c
+ (CHECK(-195010896 <= deci AND deci < -192297613))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5d
+ (CHECK(-192297613 <= deci AND deci < -189594103))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5e
+ (CHECK(-189594103 <= deci AND deci < -187375784))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5f
+ (CHECK(-187375784 <= deci AND deci < -184661509))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5g
+ (CHECK(-184661509 <= deci AND deci < -181944565))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5h
+ (CHECK(-181944565 <= deci AND deci < -179233330))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5i
+ (CHECK(-179233330 <= deci AND deci < -176540783))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5j
+ (CHECK(-176540783 <= deci AND deci < -174124983))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5k
+ (CHECK(-174124983 <= deci AND deci < -171681490))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5l
+ (CHECK(-171681490 <= deci AND deci < -169000870))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5m
+ (CHECK(-169000870 <= deci AND deci < -166325344))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5n
+ (CHECK(-166325344 <= deci AND deci < -163627929))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5o
+ (CHECK(-163627929 <= deci AND deci < -160951067))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5p
+ (CHECK(-160951067 <= deci AND deci < -158774694))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5q
+ (CHECK(-158774694 <= deci AND deci < -156104382))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5r
+ (CHECK(-156104382 <= deci AND deci < -153422869))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5s
+ (CHECK(-153422869 <= deci AND deci < -150732905))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5t
+ (CHECK(-150732905 <= deci AND deci < -148040269))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5u
+ (CHECK(-148040269 <= deci AND deci < -145332145))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5v
+ (CHECK(-145332145 <= deci AND deci < -143130765))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5w
+ (CHECK(-143130765 <= deci AND deci < -140443346))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5x
+ (CHECK(-140443346 <= deci AND deci < -137740645))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5y
+ (CHECK(-137740645 <= deci AND deci < -135035042))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_5z
+ (CHECK(-135035042 <= deci AND deci < -132333660))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_60
+ (CHECK(-132333660 <= deci AND deci < -129624910))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_61
+ (CHECK(-129624910 <= deci AND deci < -127425478))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_62
+ (CHECK(-127425478 <= deci AND deci < -124736505))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_63
+ (CHECK(-124736505 <= deci AND deci < -122026207))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_64
+ (CHECK(-122026207 <= deci AND deci < -119314886))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_65
+ (CHECK(-119314886 <= deci AND deci < -116589789))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_66
+ (CHECK(-116589789 <= deci AND deci < -113881755))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_67
+ (CHECK(-113881755 <= deci AND deci < -111689512))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_68
+ (CHECK(-111689512 <= deci AND deci < -108966461))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_69
+ (CHECK(-108966461 <= deci AND deci < -106237379))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6a
+ (CHECK(-106237379 <= deci AND deci < -103522336))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6b
+ (CHECK(-103522336 <= deci AND deci < -100800593))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6c
+ (CHECK(-100800593 <= deci AND deci < -98377484))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6d
+ (CHECK(-98377484 <= deci AND deci < -95847844))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6e
+ (CHECK(-95847844 <= deci AND deci < -93131555))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6f
+ (CHECK(-93131555 <= deci AND deci < -90419642))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6g
+ (CHECK(-90419642 <= deci AND deci < -87684330))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6h
+ (CHECK(-87684330 <= deci AND deci < -84935069))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6i
+ (CHECK(-84935069 <= deci AND deci < -82682596))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6j
+ (CHECK(-82682596 <= deci AND deci < -79953589))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6k
+ (CHECK(-79953589 <= deci AND deci < -77215549))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6l
+ (CHECK(-77215549 <= deci AND deci < -74471009))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6m
+ (CHECK(-74471009 <= deci AND deci < -71721089))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6n
+ (CHECK(-71721089 <= deci AND deci < -68964932))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6o
+ (CHECK(-68964932 <= deci AND deci < -66716029))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6p
+ (CHECK(-66716029 <= deci AND deci < -63961869))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6q
+ (CHECK(-63961869 <= deci AND deci < -61213716))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6r
+ (CHECK(-61213716 <= deci AND deci < -58455666))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6s
+ (CHECK(-58455666 <= deci AND deci < -55704637))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6t
+ (CHECK(-55704637 <= deci AND deci < -53099299))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6u
+ (CHECK(-53099299 <= deci AND deci < -50696440))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6v
+ (CHECK(-50696440 <= deci AND deci < -47932427))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6w
+ (CHECK(-47932427 <= deci AND deci < -45143966))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6x
+ (CHECK(-45143966 <= deci AND deci < -42360292))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6y
+ (CHECK(-42360292 <= deci AND deci < -39591196))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_6z
+ (CHECK(-39591196 <= deci AND deci < -37319004))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_70
+ (CHECK(-37319004 <= deci AND deci < -34530893))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_71
+ (CHECK(-34530893 <= deci AND deci < -31741999))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_72
+ (CHECK(-31741999 <= deci AND deci < -28938959))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_73
+ (CHECK(-28938959 <= deci AND deci < -26162651))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_74
+ (CHECK(-26162651 <= deci AND deci < -23382503))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_75
+ (CHECK(-23382503 <= deci AND deci < -21112382))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_76
+ (CHECK(-21112382 <= deci AND deci < -18329767))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_77
+ (CHECK(-18329767 <= deci AND deci < -15563769))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_78
+ (CHECK(-15563769 <= deci AND deci < -12784441))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_79
+ (CHECK(-12784441 <= deci AND deci < -10014519))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7a
+ (CHECK(-10014519 <= deci AND deci < -7531488))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7b
+ (CHECK(-7531488 <= deci AND deci < -4963580))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7c
+ (CHECK(-4963580 <= deci AND deci < -2218541))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7d
+ (CHECK(-2218541 <= deci AND deci < 524484))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7e
+ (CHECK(524484 <= deci AND deci < 3289285))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7f
+ (CHECK(3289285 <= deci AND deci < 6049675))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7g
+ (CHECK(6049675 <= deci AND deci < 8333011))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7h
+ (CHECK(8333011 <= deci AND deci < 11095927))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7i
+ (CHECK(11095927 <= deci AND deci < 13863823))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7j
+ (CHECK(13863823 <= deci AND deci < 16621220))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7k
+ (CHECK(16621220 <= deci AND deci < 19374781))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7l
+ (CHECK(19374781 <= deci AND deci < 22124088))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7m
+ (CHECK(22124088 <= deci AND deci < 24392316))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7n
+ (CHECK(24392316 <= deci AND deci < 27175326))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7o
+ (CHECK(27175326 <= deci AND deci < 29955878))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7p
+ (CHECK(29955878 <= deci AND deci < 32729962))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7q
+ (CHECK(32729962 <= deci AND deci < 35487354))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7r
+ (CHECK(35487354 <= deci AND deci < 37937218))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7s
+ (CHECK(37937218 <= deci AND deci < 40559869))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7t
+ (CHECK(40559869 <= deci AND deci < 43355580))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7u
+ (CHECK(43355580 <= deci AND deci < 46168115))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7v
+ (CHECK(46168115 <= deci AND deci < 48963564))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7w
+ (CHECK(48963564 <= deci AND deci < 51752960))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7x
+ (CHECK(51752960 <= deci AND deci < 54058714))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7y
+ (CHECK(54058714 <= deci AND deci < 56863096))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_7z
+ (CHECK(56863096 <= deci AND deci < 59687208))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_80
+ (CHECK(59687208 <= deci AND deci < 62495007))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_81
+ (CHECK(62495007 <= deci AND deci < 65309982))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_82
+ (CHECK(65309982 <= deci AND deci < 68006068))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_83
+ (CHECK(68006068 <= deci AND deci < 70434791))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_84
+ (CHECK(70434791 <= deci AND deci < 73250791))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_85
+ (CHECK(73250791 <= deci AND deci < 76063479))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_86
+ (CHECK(76063479 <= deci AND deci < 78887095))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_87
+ (CHECK(78887095 <= deci AND deci < 81711233))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_88
+ (CHECK(81711233 <= deci AND deci < 84058871))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_89
+ (CHECK(84058871 <= deci AND deci < 86932324))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8a
+ (CHECK(86932324 <= deci AND deci < 89799210))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8b
+ (CHECK(89799210 <= deci AND deci < 92653721))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8c
+ (CHECK(92653721 <= deci AND deci < 95513293))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8d
+ (CHECK(95513293 <= deci AND deci < 98286765))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8e
+ (CHECK(98286765 <= deci AND deci < 100722758))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8f
+ (CHECK(100722758 <= deci AND deci < 103572539))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8g
+ (CHECK(103572539 <= deci AND deci < 106425361))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8h
+ (CHECK(106425361 <= deci AND deci < 109268662))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8i
+ (CHECK(109268662 <= deci AND deci < 112115812))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8j
+ (CHECK(112115812 <= deci AND deci < 114470885))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8k
+ (CHECK(114470885 <= deci AND deci < 117325470))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8l
+ (CHECK(117325470 <= deci AND deci < 120200205))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8m
+ (CHECK(120200205 <= deci AND deci < 123065218))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8n
+ (CHECK(123065218 <= deci AND deci < 125923095))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8o
+ (CHECK(125923095 <= deci AND deci < 128626857))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8p
+ (CHECK(128626857 <= deci AND deci < 131159864))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8q
+ (CHECK(131159864 <= deci AND deci < 134062411))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8r
+ (CHECK(134062411 <= deci AND deci < 136956023))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8s
+ (CHECK(136956023 <= deci AND deci < 139858841))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8t
+ (CHECK(139858841 <= deci AND deci < 142776088))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8u
+ (CHECK(142776088 <= deci AND deci < 145186032))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8v
+ (CHECK(145186032 <= deci AND deci < 148101640))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8w
+ (CHECK(148101640 <= deci AND deci < 151021505))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8x
+ (CHECK(151021505 <= deci AND deci < 153932627))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8y
+ (CHECK(153932627 <= deci AND deci < 156843699))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_8z
+ (CHECK(156843699 <= deci AND deci < 159256225))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_90
+ (CHECK(159256225 <= deci AND deci < 162170819))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_91
+ (CHECK(162170819 <= deci AND deci < 165091755))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_92
+ (CHECK(165091755 <= deci AND deci < 168009487))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_93
+ (CHECK(168009487 <= deci AND deci < 170925956))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_94
+ (CHECK(170925956 <= deci AND deci < 173819464))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_95
+ (CHECK(173819464 <= deci AND deci < 176199980))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_96
+ (CHECK(176199980 <= deci AND deci < 179095190))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_97
+ (CHECK(179095190 <= deci AND deci < 181990137))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_98
+ (CHECK(181990137 <= deci AND deci < 184893864))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_99
+ (CHECK(184893864 <= deci AND deci < 187799469))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9a
+ (CHECK(187799469 <= deci AND deci < 190204958))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9b
+ (CHECK(190204958 <= deci AND deci < 193149225))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9c
+ (CHECK(193149225 <= deci AND deci < 196101787))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9d
+ (CHECK(196101787 <= deci AND deci < 199059382))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9e
+ (CHECK(199059382 <= deci AND deci < 202022758))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9f
+ (CHECK(202022758 <= deci AND deci < 204590253))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9g
+ (CHECK(204590253 <= deci AND deci < 207482901))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9h
+ (CHECK(207482901 <= deci AND deci < 210451495))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9i
+ (CHECK(210451495 <= deci AND deci < 213432407))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9j
+ (CHECK(213432407 <= deci AND deci < 216394587))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9k
+ (CHECK(216394587 <= deci AND deci < 219351982))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9l
+ (CHECK(219351982 <= deci AND deci < 221844030))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9m
+ (CHECK(221844030 <= deci AND deci < 224819814))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9n
+ (CHECK(224819814 <= deci AND deci < 227806149))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9o
+ (CHECK(227806149 <= deci AND deci < 230811655))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9p
+ (CHECK(230811655 <= deci AND deci < 233810351))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9q
+ (CHECK(233810351 <= deci AND deci < 236331840))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9r
+ (CHECK(236331840 <= deci AND deci < 239395669))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9s
+ (CHECK(239395669 <= deci AND deci < 242432260))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9t
+ (CHECK(242432260 <= deci AND deci < 245479203))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9u
+ (CHECK(245479203 <= deci AND deci < 248492914))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9v
+ (CHECK(248492914 <= deci AND deci < 251001272))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9w
+ (CHECK(251001272 <= deci AND deci < 254014021))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9x
+ (CHECK(254014021 <= deci AND deci < 256998314))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9y
+ (CHECK(256998314 <= deci AND deci < 259991642))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_9z
+ (CHECK(259991642 <= deci AND deci < 262961379))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a0
+ (CHECK(262961379 <= deci AND deci < 265474629))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a1
+ (CHECK(265474629 <= deci AND deci < 268517474))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a2
+ (CHECK(268517474 <= deci AND deci < 271542461))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a3
+ (CHECK(271542461 <= deci AND deci < 274577777))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a4
+ (CHECK(274577777 <= deci AND deci < 277609632))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a5
+ (CHECK(277609632 <= deci AND deci < 280287922))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a6
+ (CHECK(280287922 <= deci AND deci < 283234391))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a7
+ (CHECK(283234391 <= deci AND deci < 286292640))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a8
+ (CHECK(286292640 <= deci AND deci < 289333075))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_a9
+ (CHECK(289333075 <= deci AND deci < 292389851))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_aa
+ (CHECK(292389851 <= deci AND deci < 295255949))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ab
+ (CHECK(295255949 <= deci AND deci < 298027623))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ac
+ (CHECK(298027623 <= deci AND deci < 301088294))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ad
+ (CHECK(301088294 <= deci AND deci < 304164454))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ae
+ (CHECK(304164454 <= deci AND deci < 307257885))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_af
+ (CHECK(307257885 <= deci AND deci < 310280849))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ag
+ (CHECK(310280849 <= deci AND deci < 313008304))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ah
+ (CHECK(313008304 <= deci AND deci < 316150342))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ai
+ (CHECK(316150342 <= deci AND deci < 319296365))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_aj
+ (CHECK(319296365 <= deci AND deci < 322448039))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ak
+ (CHECK(322448039 <= deci AND deci < 325464757))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_al
+ (CHECK(325464757 <= deci AND deci < 328281507))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_am
+ (CHECK(328281507 <= deci AND deci < 331478914))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_an
+ (CHECK(331478914 <= deci AND deci < 334645097))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ao
+ (CHECK(334645097 <= deci AND deci < 337805420))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ap
+ (CHECK(337805420 <= deci AND deci < 340721788))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_aq
+ (CHECK(340721788 <= deci AND deci < 343650749))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ar
+ (CHECK(343650749 <= deci AND deci < 346854085))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_as
+ (CHECK(346854085 <= deci AND deci < 350044369))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_at
+ (CHECK(350044369 <= deci AND deci < 353214429))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_au
+ (CHECK(353214429 <= deci AND deci < 356016024))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_av
+ (CHECK(356016024 <= deci AND deci < 359169403))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_aw
+ (CHECK(359169403 <= deci AND deci < 362438645))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ax
+ (CHECK(362438645 <= deci AND deci < 365675221))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ay
+ (CHECK(365675221 <= deci AND deci < 368925559))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_az
+ (CHECK(368925559 <= deci AND deci < 371682905))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b0
+ (CHECK(371682905 <= deci AND deci < 374960405))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b1
+ (CHECK(374960405 <= deci AND deci < 378225136))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b2
+ (CHECK(378225136 <= deci AND deci < 381479845))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b3
+ (CHECK(381479845 <= deci AND deci < 384723650))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b4
+ (CHECK(384723650 <= deci AND deci < 387507427))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b5
+ (CHECK(387507427 <= deci AND deci < 390809938))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b6
+ (CHECK(390809938 <= deci AND deci < 394096776))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b7
+ (CHECK(394096776 <= deci AND deci < 397352768))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b8
+ (CHECK(397352768 <= deci AND deci < 400599278))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_b9
+ (CHECK(400599278 <= deci AND deci < 403407039))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ba
+ (CHECK(403407039 <= deci AND deci < 406697637))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bb
+ (CHECK(406697637 <= deci AND deci < 409998524))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bc
+ (CHECK(409998524 <= deci AND deci < 413299624))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bd
+ (CHECK(413299624 <= deci AND deci < 416400347))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_be
+ (CHECK(416400347 <= deci AND deci < 419442843))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bf
+ (CHECK(419442843 <= deci AND deci < 422801058))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bg
+ (CHECK(422801058 <= deci AND deci < 426149952))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bh
+ (CHECK(426149952 <= deci AND deci < 429494384))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bi
+ (CHECK(429494384 <= deci AND deci < 432346749))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bj
+ (CHECK(432346749 <= deci AND deci < 435773442))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bk
+ (CHECK(435773442 <= deci AND deci < 439182040))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bl
+ (CHECK(439182040 <= deci AND deci < 442592718))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bm
+ (CHECK(442592718 <= deci AND deci < 445991017))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bn
+ (CHECK(445991017 <= deci AND deci < 448950414))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bo
+ (CHECK(448950414 <= deci AND deci < 452449658))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bp
+ (CHECK(452449658 <= deci AND deci < 455916174))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bq
+ (CHECK(455916174 <= deci AND deci < 459400559))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_br
+ (CHECK(459400559 <= deci AND deci < 462389907))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bs
+ (CHECK(462389907 <= deci AND deci < 465913858))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bt
+ (CHECK(465913858 <= deci AND deci < 469419179))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bu
+ (CHECK(469419179 <= deci AND deci < 472910796))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bv
+ (CHECK(472910796 <= deci AND deci < 476443201))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bw
+ (CHECK(476443201 <= deci AND deci < 479542577))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bx
+ (CHECK(479542577 <= deci AND deci < 483161338))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_by
+ (CHECK(483161338 <= deci AND deci < 486761737))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_bz
+ (CHECK(486761737 <= deci AND deci < 490353064))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c0
+ (CHECK(490353064 <= deci AND deci < 493503127))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c1
+ (CHECK(493503127 <= deci AND deci < 497194103))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c2
+ (CHECK(497194103 <= deci AND deci < 500895187))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c3
+ (CHECK(500895187 <= deci AND deci < 504589780))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c4
+ (CHECK(504589780 <= deci AND deci < 507791756))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c5
+ (CHECK(507791756 <= deci AND deci < 511557397))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c6
+ (CHECK(511557397 <= deci AND deci < 515337495))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c7
+ (CHECK(515337495 <= deci AND deci < 519145538))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c8
+ (CHECK(519145538 <= deci AND deci < 522579599))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_c9
+ (CHECK(522579599 <= deci AND deci < 526306727))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ca
+ (CHECK(526306727 <= deci AND deci < 530183397))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cb
+ (CHECK(530183397 <= deci AND deci < 534056714))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cc
+ (CHECK(534056714 <= deci AND deci < 537649629))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cd
+ (CHECK(537649629 <= deci AND deci < 541418229))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ce
+ (CHECK(541418229 <= deci AND deci < 545380351))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cf
+ (CHECK(545380351 <= deci AND deci < 549339959))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cg
+ (CHECK(549339959 <= deci AND deci < 552909770))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ch
+ (CHECK(552909770 <= deci AND deci < 556926982))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ci
+ (CHECK(556926982 <= deci AND deci < 561020156))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cj
+ (CHECK(561020156 <= deci AND deci < 565110684))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ck
+ (CHECK(565110684 <= deci AND deci < 568752391))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cl
+ (CHECK(568752391 <= deci AND deci < 573010984))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cm
+ (CHECK(573010984 <= deci AND deci < 577248689))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cn
+ (CHECK(577248689 <= deci AND deci < 581500192))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_co
+ (CHECK(581500192 <= deci AND deci < 585378431))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cp
+ (CHECK(585378431 <= deci AND deci < 589805400))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cq
+ (CHECK(589805400 <= deci AND deci < 594211323))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cr
+ (CHECK(594211323 <= deci AND deci < 598274229))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cs
+ (CHECK(598274229 <= deci AND deci < 602746008))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ct
+ (CHECK(602746008 <= deci AND deci < 607359006))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cu
+ (CHECK(607359006 <= deci AND deci < 612001672))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cv
+ (CHECK(612001672 <= deci AND deci < 616274497))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cw
+ (CHECK(616274497 <= deci AND deci < 621114061))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cx
+ (CHECK(621114061 <= deci AND deci < 625914228))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cy
+ (CHECK(625914228 <= deci AND deci < 630257456))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_cz
+ (CHECK(630257456 <= deci AND deci < 635171940))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d0
+ (CHECK(635171940 <= deci AND deci < 640028757))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d1
+ (CHECK(640028757 <= deci AND deci < 644460626))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d2
+ (CHECK(644460626 <= deci AND deci < 649597458))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d3
+ (CHECK(649597458 <= deci AND deci < 654760151))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d4
+ (CHECK(654760151 <= deci AND deci < 659542273))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d5
+ (CHECK(659542273 <= deci AND deci < 665052440))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d6
+ (CHECK(665052440 <= deci AND deci < 670517438))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d7
+ (CHECK(670517438 <= deci AND deci < 675530996))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d8
+ (CHECK(675530996 <= deci AND deci < 681016460))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_d9
+ (CHECK(681016460 <= deci AND deci < 686347509))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_da
+ (CHECK(686347509 <= deci AND deci < 691191872))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_db
+ (CHECK(691191872 <= deci AND deci < 696457571))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dc
+ (CHECK(696457571 <= deci AND deci < 701618403))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dd
+ (CHECK(701618403 <= deci AND deci < 706323425))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_de
+ (CHECK(706323425 <= deci AND deci < 711401628))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_df
+ (CHECK(711401628 <= deci AND deci < 716215650))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dg
+ (CHECK(716215650 <= deci AND deci < 720428171))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dh
+ (CHECK(720428171 <= deci AND deci < 724927343))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_di
+ (CHECK(724927343 <= deci AND deci < 728999263))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dj
+ (CHECK(728999263 <= deci AND deci < 733077162))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dk
+ (CHECK(733077162 <= deci AND deci < 736791265))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dl
+ (CHECK(736791265 <= deci AND deci < 741139406))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dm
+ (CHECK(741139406 <= deci AND deci < 745467742))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dn
+ (CHECK(745467742 <= deci AND deci < 749573310))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_do
+ (CHECK(749573310 <= deci AND deci < 754023182))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dp
+ (CHECK(754023182 <= deci AND deci < 758752559))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dq
+ (CHECK(758752559 <= deci AND deci < 763495806))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dr
+ (CHECK(763495806 <= deci AND deci < 768040667))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_ds
+ (CHECK(768040667 <= deci AND deci < 773212377))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dt
+ (CHECK(773212377 <= deci AND deci < 778367088))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_du
+ (CHECK(778367088 <= deci AND deci < 783415779))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dv
+ (CHECK(783415779 <= deci AND deci < 789111864))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dw
+ (CHECK(789111864 <= deci AND deci < 794748863))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dx
+ (CHECK(794748863 <= deci AND deci < 800752513))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dy
+ (CHECK(800752513 <= deci AND deci < 807269864))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_dz
+ (CHECK(807269864 <= deci AND deci < 813769621))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e0
+ (CHECK(813769621 <= deci AND deci < 821180240))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e1
+ (CHECK(821180240 <= deci AND deci < 828543610))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e2
+ (CHECK(828543610 <= deci AND deci < 836967217))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e3
+ (CHECK(836967217 <= deci AND deci < 845718700))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e4
+ (CHECK(845718700 <= deci AND deci < 855366968))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e5
+ (CHECK(855366968 <= deci AND deci < 866522517))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e6
+ (CHECK(866522517 <= deci AND deci < 878850308))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;
+CREATE TABLE wise3band_eqi_e7
+ (CHECK(878850308 <= deci))
+ INHERITS (Wise3band_eqi)
+ TABLESPACE @TS_PREFIX@wise3band_eqi;

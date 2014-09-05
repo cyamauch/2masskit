@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="keywords" content="2MASS,Kit" />
+  <meta name="description" content="2MASS Catalog Server Kit" />
+  <title>2MASS Catalog Server Kit: Install Small Catalogs</title>
+<style type="text/css">
+ body {
+  background-color: #efefef;
+  color: black;
+ }
+ a:link { color: blue; }
+ a:visited { color: #551a8b; }
+ a:active { color: red; }
+ em.c2 { font-size: 80%; }
+ h1.c1 { text-align: center; }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em; }
+ li { margin-bottom: 0.4em; }
+ pre { margin-top: 0.2em; }
+ pre { margin-bottom: 0.2em; }
+ p { text-align: justify; line-height: 1.5; }
+ ul { line-height: 1.5; }
+ pre { line-height: 1.3; }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; }
+ th { text-align: left; white-space: nowrap; font-weight: normal; }
+ td { text-align: left; white-space: nowrap; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ .no_border { border-style: none; }
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<h1>2MASS Catalog Server Kit</h1>
+
+<h2>Install Small Catalogs</h2>
+
+<hr />
+
+<p>
+Page Index:<br />
+<a href="index.html">HOME</a> /
+<a href="2mass.html">Install Huge Catalogs</a> /
+<a href="others.html">Install Small Catalogs</a> /
+<a href="tableinfo.html">Information about table columns</a> /
+<a href="copyservice.html">Hard Drive Copy Service</a>
+</p>
+
+<p>
+Index of Current Page:<br />
+<a href="#TYCHO2">Tycho-2 Catalogue</a> /
+<a href="#AKARIIRC">AKARI IRC PSC</a> /
+<a href="#AKARIFIS">AKARI FIS BSC</a> /
+<a href="#IRAS">IRAS PSC</a>
+</p>
+
+
+<hr />
+
+<h2>Before Installing Catalogs</h2>
+
+<p>
+Before installing catalogs, 
+you have to setup OS, PostgreSQL and 2MASS Kit following the
+<a href="index.html#INSTALL">installation procedure</a>.
+</p>
+
+
+<h2>
+<a id="TYCHO2" name="TYCHO2">
+Tycho-2 Catalogue
+</a>
+<a href="http://www.astro.ku.dk/~erik/Tycho-2/"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>2,539,913</strong>.
+</p>
+
+<p>
+Enter `small_catalogs' directory, and run make.
+</p>
+
+<pre>
+$ cd small_catalogs
+$ make
+</pre>
+
+<p>
+Use the script <code>mk_tycho2_dbdata.php</code>
+that downloads Tycho-2 Catalogue from ftp://cdsarc.u-strasbg.fr/pub/cats/I/259/
+and creates a file for database registration:
+</p>
+
+<!-- $ php mk_tycho2_dbdata.php -->
+<pre>
+$ wget http://darts.jaxa.jp/pub/ir/2masskit/v2/small_catalogs/tycho2_all.db.txt.gz
+$ gunzip tycho2_all.db.txt.gz
+</pre>
+
+<p>
+Confirm the number of rows in data file `<code>tycho2_all.db.txt</code>':
+</p>
+
+<pre>
+$ wc -l tycho2_all.db.txt
+2539913 tycho2_all.db.txt
+</pre>
+
+<p>
+As a normal user in UNIX log in to the database &quot;2MASS&quot; as
+&#39;admin&#39; to register a table:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i tycho2_create_table.sql
+</pre>
+
+<p>
+Register data, and create index and functions as follows:
+</p>
+
+<pre>
+2MASS=&gt; \i tycho2_copy.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i tycho2_update.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i tycho2_create_function.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i tycho2_create_index.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i tycho2_grant.sql
+</pre>
+
+<pre>
+2MASS=&gt; VACUUM ANALYZE tycho2;
+</pre>
+
+<p>
+The main table is <code><strong>tycho2</strong></code>.
+Stored functions for positional searches of Tycho-2 Catalogue 
+are registered:
+</p>
+<table>
+ <tr>
+  <th>Stored Functions</th><th>Description</th>
+ </tr>
+ <tr>
+  <td><code>fTycho2GetNearbyObjEq()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2GetNearbyObjCel()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2GetNearestObjIDEq()</code></td>
+  <td>CrossID for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2GetNearbyObjFromBoxCel()</code></td>
+  <td>Box Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2GetObjFromRectEq()</code></td>
+  <td>Rectangular Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2mGetNearbyObjEq()</code></td>
+  <td>Radial Search for (<code>ra_m</code>, <code>dec_m</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2mGetNearbyObjCel()</code></td>
+  <td>Radial Search for (<code>ra_m</code>, <code>dec_m</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2mGetNearestObjIDEq()</code></td>
+  <td>CrossID for (<code>ra_m</code>, <code>dec_m</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2mGetNearbyObjFromBoxCel()</code></td>
+  <td>Box Search for (<code>ra_m</code>, <code>dec_m</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fTycho2mGetObjFromRectEq()</code></td>
+  <td>Rectangular Search for (<code>ra_m</code>, <code>dec_m</code>).</td>
+ </tr>
+</table>
+<p>
+The usage of functions is same to 2MASS PSC.
+See <a href="index.html#USE">Usage for `twomass' table</a>.
+</p>
+
+
+<hr />
+
+
+<h2>
+<a id="AKARIIRC" name="AKARIIRC">
+AKARI IRC PSC v1
+</a>
+<a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>870,973</strong>.
+</p>
+
+<p>
+Enter `small_catalogs' directory, and run make.
+</p>
+
+<pre>
+$ cd small_catalogs
+$ make
+</pre>
+
+<p>
+Download a file for database registration:
+</p>
+
+<pre>
+$ wget http://darts.jaxa.jp/pub/ir/2masskit/v2/small_catalogs/akariirc_all.db.txt.gz
+$ gunzip akariirc_all.db.txt.gz
+</pre>
+
+<p>
+Confirm the number of rows in data file `<code>akariirc_all.db.txt</code>':
+</p>
+
+<pre>
+$ wc -l akariirc_all.db.txt
+870973 akariirc_all.db.txt
+</pre>
+
+<p>
+As a normal user in UNIX log in to the database &quot;2MASS&quot; as
+&#39;admin&#39; to register a table:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i akariirc_create_table.sql
+</pre>
+
+<p>
+Register data, and create index and functions as follows:
+</p>
+
+<pre>
+2MASS=&gt; \i akariirc_copy.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akariirc_update.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akariirc_create_function.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akariirc_create_index.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akariirc_grant.sql
+</pre>
+
+<pre>
+2MASS=&gt; VACUUM ANALYZE akariirc;
+</pre>
+
+<p>
+The main table is <code><strong>akariirc</strong></code>.
+Stored functions for positional searches of AKARI IRC PSC
+are registered:
+</p>
+<table>
+ <tr>
+  <th>Stored Functions</th><th>Description</th>
+ </tr>
+ <tr>
+  <td><code>fAkariIrcGetNearbyObjEq()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fAkariIrcGetNearbyObjCel()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fAkariIrcGetNearestObjIDEq()</code></td>
+  <td>CrossID for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fAkariIrcGetNearbyObjFromBoxCel()</code></td>
+  <td>Box Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fAkariIrcGetObjFromRectEq()</code></td>
+  <td>Rectangular Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+</table>
+<p>
+The usage of functions is same to 2MASS PSC.
+See <a href="index.html#USE">Usage for `twomass' table</a>.
+</p>
+
+
+<hr />
+<h2>
+<a id="AKARIFIS" name="AKARIFIS">
+AKARI FIS BSC v1
+</a>
+<a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>427,071</strong>.
+</p>
+
+<p>
+Enter `small_catalogs' directory, and run make.
+</p>
+
+<pre>
+$ cd small_catalogs
+$ make
+</pre>
+
+<p>
+Download a file for database registration:
+</p>
+
+<pre>
+$ wget http://darts.jaxa.jp/pub/ir/2masskit/v2/small_catalogs/akarifis_all.db.txt.gz
+$ gunzip akarifis_all.db.txt.gz
+</pre>
+
+<p>
+Confirm the number of rows in data file `<code>akarifis_all.db.txt</code>':
+</p>
+
+<pre>
+$ wc -l akarifis_all.db.txt
+427071 akarifis_all.db.txt
+</pre>
+
+<p>
+As a normal user in UNIX log in to the database &quot;2MASS&quot; as
+&#39;admin&#39; to register a table:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i akarifis_create_table.sql
+</pre>
+
+<p>
+Register data, and create index and functions as follows:
+</p>
+
+<pre>
+2MASS=&gt; \i akarifis_copy.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akarifis_update.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akarifis_create_function.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akarifis_create_index.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i akarifis_grant.sql
+</pre>
+
+<pre>
+2MASS=&gt; VACUUM ANALYZE akarifis;
+</pre>
+
+<p>
+The main table is <code><strong>akarifis</strong></code>.
+Stored functions for positional searches of AKARI FIS BSC
+are registered:
+</p>
+<table>
+ <tr>
+  <th>Stored Functions</th><th>Description</th>
+ </tr>
+ <tr>
+  <td><code>fAkariFisGetNearbyObjEq()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fAkariFisGetNearbyObjCel()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fAkariFisGetNearestObjIDEq()</code></td>
+  <td>CrossID for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fAkariFisGetNearbyObjFromBoxCel()</code></td>
+  <td>Box Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fAkariFisGetObjFromRectEq()</code></td>
+  <td>Rectangular Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+</table>
+<p>
+The usage of functions is same to 2MASS PSC.
+See <a href="index.html#USE">Usage for `twomass' table</a>.
+</p>
+
+
+<hr />
+
+
+<h2>
+<a id="IRAS" name="IRAS">
+IRAS PSC v2.1
+</a>
+<a href="http://irsa.ipac.caltech.edu/IRASdocs/iras.html"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>245,889</strong>.
+</p>
+
+<p>
+Enter `small_catalogs' directory, and run make.
+</p>
+
+<pre>
+$ cd small_catalogs
+$ make
+</pre>
+
+<p>
+Use the script <code>mk_iras_dbdata.sh</code>
+that downloads IRAS PSC from IRSA
+and creates a file for database registration:
+</p>
+
+<!-- $ sh mk_iras_dbdata.sh -->
+<pre>
+$ wget http://darts.jaxa.jp/pub/ir/2masskit/v2/small_catalogs/iras_all.db.txt.gz
+$ gunzip iras_all.db.txt.gz
+</pre>
+
+<p>
+Confirm the number of rows in data file `<code>iras_all.db.txt</code>':
+</p>
+
+<pre>
+$ wc -l iras_all.db.txt 
+245889 iras_all.db.txt
+</pre>
+
+<p>
+As a normal user in UNIX log in to the database &quot;2MASS&quot; as
+&#39;admin&#39; to register a table:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i iras_create_table.sql
+</pre>
+
+<p>
+Register data, and create index and functions as follows:
+</p>
+
+<pre>
+2MASS=&gt; \i iras_copy.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i iras_update.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i iras_create_function.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i iras_create_index.sql
+</pre>
+
+<pre>
+2MASS=&gt; \i iras_grant.sql
+</pre>
+
+<pre>
+2MASS=&gt; VACUUM ANALYZE iras;
+</pre>
+
+<p>
+The main table is <code><strong>iras</strong></code>.
+Stored functions for positional searches of IRAS PSC
+are registered:
+</p>
+<table>
+ <tr>
+  <th>Stored Functions</th><th>Description</th>
+ </tr>
+ <tr>
+  <td><code>fIrasGetNearbyObjEq()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fIrasGetNearbyObjCel()</code></td>
+  <td>Radial Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fIrasGetNearestObjIDEq()</code></td>
+  <td>CrossID for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+ <tr>
+  <td><code>fIrasGetNearbyObjFromBoxCel()</code></td>
+  <td>Box Search for (<code>ra</code>, <code>dec</code>).
+     A position in J2000, B1950, Ecliptic or Galactic is set to arguments.</td>
+ </tr>
+ <tr>
+  <td><code>fIrasGetObjFromRectEq()</code></td>
+  <td>Rectangular Search for (<code>ra</code>, <code>dec</code>).</td>
+ </tr>
+</table>
+<p>
+The usage of functions is same to 2MASS PSC.
+See <a href="index.html#USE">Usage for `twomass' table</a>.
+</p>
+
+
+<hr />
+
+
+</body>
+</html>

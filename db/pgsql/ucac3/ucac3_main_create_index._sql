@@ -1,0 +1,2 @@
+CREATE INDEX ucac3_@COL@ ON Ucac3 (@COL@)
+ TABLESPACE @TS_PREFIX@ucac3_main_index;

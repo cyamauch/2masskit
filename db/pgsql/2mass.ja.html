@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="keywords" content="2MASS,Kit" />
+  <meta name="description" content="2MASS Catalog Server Kit" />
+  <title>2MASS Catalog Server Kit: 大カタログの登録</title>
+<style type="text/css">
+ body {
+  background-color: #efefef;
+  color: black;
+ }
+ a:link { color: blue; }
+ a:visited { color: #551a8b; }
+ a:active { color: red; }
+ em.c2 { font-size: 80%; }
+ h1.c1 { text-align: center; }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em; }
+ li { margin-bottom: 0.4em; }
+ pre { margin-top: 0.2em; }
+ pre { margin-bottom: 0.2em; }
+ p { text-align: justify; line-height: 1.5; }
+ ul { line-height: 1.5; }
+ pre { line-height: 1.3; }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; }
+ th { text-align: left; white-space: nowrap; font-weight: normal; }
+ td { text-align: left; white-space: nowrap; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ .no_border { border-style: none; }
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<h1>2MASS Catalog Server Kit</h1>
+
+<h2>大カタログの登録</h2>
+
+<hr />
+
+<p>
+ページ一覧: <br />
+<a href="index.ja.html">ホーム</a> /
+<a href="2mass.ja.html">大カタログの登録</a> /
+<a href="others.html">小カタログの登録</a> /
+<a href="tableinfo.html">テーブルカラム情報</a> /
+<a href="copyservice.html">HDDのコピーサービス</a>
+</p>
+
+
+<hr />
+
+<h2>カタログ登録の前に</h2>
+
+<p>
+カタログを登録する前に，
+<a href="index.ja.html#INSTALL">インストール手順</a>
+に従って，OS と PostgreSQL のセットアップを行なってください．
+</p>
+
+<h2>2MASS PSC の登録</h2>
+
+<p>
+このページでは，
+2MASS PSC の登録手順を示します.
+他の大カタログも同様の手順でインストールできます．
+その場合，「<code>twomass</code>」を他に置き換えてください．
+</p>
+
+<h3>データファイルのダウンロード</h3>
+
+<p>
+必要となるデータファイルをダウンロードし，
+解凍しておいてください．
+データファイルの置き場所はどこでもかまいません．
+</p>
+
+<ul>
+ <li>Data files:
+  <a href="http://darts.jaxa.jp/pub/ir/2masskit/v2/">HTTP</a> /
+  <a href="ftp://darts.jaxa.jp/pub/ir/2masskit/v2/">FTP</a>
+ </li>
+</ul>
+
+<p>
+次に wget を使って 2MASS PSC に必要なデータファイルすべてを
+取得する例を示します．
+</p>
+
+<pre>
+$ mkdir twomass_data
+$ cd twomass_data
+$ wget -nd -r http://darts.jaxa.jp/pub/ir/2masskit/v2/twomass/
+</pre>
+
+<h3>データファイルのシンボリックリンクの作成</h3>
+
+<p>
+2MASS Kitを展開したディレクトリの「<code>twomass</code>」ディレクトリに入り，
+ダウンロードしたデータファイルに対して，
+下記のようにシンボリックリンクしておきます．
+</p>
+
+<pre>
+$ cd twomass
+$ ln -s (どこか)/twomass_data/*.db.txt .
+</pre>
+
+<h3>SQLファイル生成</h3>
+
+<p>
+Makefile をエディタで開きます．
+</p>
+
+<pre>
+$ vi Makefile
+</pre>
+
+<p>
+2MASS Kit では，2種類のテーブル「メインテーブル」「位置検索専用テーブル」
+を作成します．
+基本的に位置検索についてはストアドファンクション経由で
+「位置検索専用テーブル」を使って行なわれます．
+その他の検索は，平凡な <code>SELECT…FROM…WHERE…</code> 構文により
+「メインテーブル」で検索を行ないます．
+ただし，座標を条件に含まずいきなりフラックス等で検索する場合，
+インデックスを作成したとしてもその分布の中心付近では
+「<code>LIMIT</code>」句で数千件程度に制限をつけないと
+現実的な速度では検索できないと考えてください．
+</p>
+
+<p>
+Makefile の <code>INDICES</code> で，「メインテーブル」の
+どのカラムにインデックスを作成するかを指定できます．
+2MASS PSCの場合のデフォルトでは，<code>j_m,h_m,k_m</code> となっており，
+j,h,k のフラックスに対してインデックスを作成します．
+必要に応じて，カラム名を追加してください．
+ただし，<code>objid</code> に関しては
+指定しなくてもインデックスが作成されますので，追加しないようにしてください．
+</p>
+
+<p>
+Makefile の準備ができたら make します．
+</p>
+
+<pre>
+$ make
+</pre>
+
+<p>
+以上で，SQLファイルが生成されました．
+</p>
+
+
+<h3>テーブルスペースの登録</h3>
+
+<p>
+UNIXの一般ユーザで，データベース "2MASS" に
+postgresロール(PostgreSQLのスーパーユーザ)でログインし，
+テーブルスペースを登録します．
+</p>
+
+<pre>
+$ psql -U postgres 2MASS
+Password for user postgres: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=# \i twomass_create_tablespace.sql 
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+2MASS=# \q
+</pre>
+
+
+<h3>親テーブルの登録</h3>
+
+<p>
+UNIXの一般ユーザで，データベース "2MASS" に
+adminロールでログインし，テーブルを登録します．
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type "help" for help.
+
+2MASS=&gt; \i twomass_create_table.sql 
+CREATE TABLE
+CREATE TABLE
+</pre>
+
+<p>
+<strong>注意:</strong> 
+これ以降，実行に非常に時間がかかるコマンドが含まれてきます．
+Adaptec RAID 2405 + S-ATA2 HDD ×2 (RAID1)
+を使用した場合の所要時間を書いてありますが，
+環境によっては，それより数倍から10倍程度かかる事もあります．
+</p>
+
+<h3>メインテーブルへのデータ登録</h3>
+
+<p>
+続いて，メインテーブルのデータ登録とプライマリキーの作成を行ないます．
+<strong>登録完了まで，数時間(5時間以上)かかります．</strong>
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_main_copy.sql 
+SET
+psql:twomass_main_copy.sql:xxxxxxxxx: NOTICE:  ALTER TABLE / ADD PRIMARY KEY will create implicit index "twomass_pkey" for table "twomass"
+ALTER TABLE
+SET
+</pre>
+
+<p>
+下記のようなメッセージが表示される事がありますが，問題ありません:
+</p>
+
+<pre>
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter "checkpoint_segments".
+</pre>
+
+<p>
+もし，データ登録が3日ほどたっても終わらない場合，
+BIOSでのS-ATAインタフェースの設定に問題がある可能性があります．
+<a href="index.ja.html#FAQ">FAQ</a>
+をご覧ください．
+</p>
+
+<h3>位置検索専用テーブルの作成</h3>
+
+<p>
+次のようにテーブルの作成・データ登録・インデックス作成を
+行ないます．
+<strong>データ登録には約30分，インデックス作成には約80分かかります．</strong>
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_eqi_create_table.sql
+2MASS=&gt; \i twomass_eqi_copy.sql
+2MASS=&gt; \i twomass_eqi_create_index.sql
+</pre>
+
+<p>
+インデックス作成中に下記のメッセージが表示される事がありますが，問題ありません．
+</p>
+
+<pre>
+ERROR:  canceling autovacuum task
+CONTEXT:  automatic analyze of table "xxxxxxxx"
+</pre>
+
+<h3>2MASS用ストアドファンクションの登録</h3>
+
+<p>
+2MASS用ストアドファンクションを登録します．
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_create_function.sql
+</pre>
+
+<h3>guestロールにテーブルへのアクセスを許可</h3>
+
+<pre>
+2MASS=&gt; \i twomass_main_grant.sql
+2MASS=&gt; \i twomass_eqi_grant.sql
+</pre>
+
+<h3>メインテーブルのインデックス作成(任意)</h3>
+
+<p>
+座標以外を最優先の検索条件としたい場合には，
+メインテーブルにインデックスを作成してください．
+<strong>標準設定の場合，完了まで数時間かかります．</strong>
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_main_create_index.sql
+</pre>
+
+<p>
+メインテーブルのインデックスは，後から追加する事もできます．
+Makefileの<code>INDICES</code>にカラム名を追加し，makeした後，上記と同様
+「<code>twomass_main_create_index.sql</code>」を実行します．
+その場合，インデックス作成後に「<code>VACUUM ANALYZE Twomass;</code>」を
+必ず実行してください．
+</p>
+
+
+<h3>バキューム</h3>
+
+<p>
+いよいよ最後のコマンドです．
+<strong>次のコマンドの後，数時間待てば，検索ができるようになります．</strong>
+おつかれさまでした．
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_vacuum.sql
+</pre>
+
+<p>
+なお，VACUUM ANALYZE を引数無しで実行すると
+「<code>WARNING:  skipping "pg_type" --- only superuser or database owner can vacuum it</code>」
+のようなメッセージがたくさん表示されると思いますが，
+問題ありませんので無視してください．
+</p>
+
+
+<hr />
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+\copy Ucac3 FROM ucac3_main_0.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_1.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_2.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_3.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_4.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_5.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_6.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_7.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_8.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_9.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_a.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_b.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_c.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_d.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_e.db.txt WITH NULL as '~'
+\copy Ucac3 FROM ucac3_main_f.db.txt WITH NULL as '~'
+set default_tablespace = @TS_PREFIX@ucac3_main_pkey;
+ALTER TABLE Ucac3 ADD PRIMARY KEY (objid);
+set default_tablespace = '';

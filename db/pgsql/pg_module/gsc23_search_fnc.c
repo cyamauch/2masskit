@@ -1,0 +1,6 @@
+#define _TABLE_INFO_SRC__C "gsc23_table_info._c"
+#define _RADIALSEARCH_FNC_NAME _gsc23getsqlforradialsearch
+#define _BOXSEARCHSIMPLE_FNC_NAME _gsc23getsqlforboxsearchsimple
+#define _BOXSEARCHDIV_FNC_NAME _gsc23getsqlforboxsearchdiv
+#define _RECTANGULARSEARCH_FNC_NAME _gsc23getsqlforrectangularsearch
+#include "huge_search_fnc_template._c"

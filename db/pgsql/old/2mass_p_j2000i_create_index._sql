@@ -1,0 +1,368 @@
+CREATE INDEX twomass_j2000i_aaa_radeci ON Twomass_j2000i_aaa (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aab_radeci ON Twomass_j2000i_aab (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aac_radeci ON Twomass_j2000i_aac (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aad_radeci ON Twomass_j2000i_aad (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aae_radeci ON Twomass_j2000i_aae (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaf_radeci ON Twomass_j2000i_aaf (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aag_radeci ON Twomass_j2000i_aag (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aah_radeci ON Twomass_j2000i_aah (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aai_radeci ON Twomass_j2000i_aai (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaj_radeci ON Twomass_j2000i_aaj (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aak_radeci ON Twomass_j2000i_aak (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aal_radeci ON Twomass_j2000i_aal (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aam_radeci ON Twomass_j2000i_aam (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aan_radeci ON Twomass_j2000i_aan (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aao_radeci ON Twomass_j2000i_aao (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aap_radeci ON Twomass_j2000i_aap (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaq_radeci ON Twomass_j2000i_aaq (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aar_radeci ON Twomass_j2000i_aar (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aas_radeci ON Twomass_j2000i_aas (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aat_radeci ON Twomass_j2000i_aat (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aau_radeci ON Twomass_j2000i_aau (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aav_radeci ON Twomass_j2000i_aav (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaw_radeci ON Twomass_j2000i_aaw (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aax_radeci ON Twomass_j2000i_aax (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aay_radeci ON Twomass_j2000i_aay (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaz_radeci ON Twomass_j2000i_aaz (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aba_radeci ON Twomass_j2000i_aba (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abb_radeci ON Twomass_j2000i_abb (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abc_radeci ON Twomass_j2000i_abc (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abd_radeci ON Twomass_j2000i_abd (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abe_radeci ON Twomass_j2000i_abe (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abf_radeci ON Twomass_j2000i_abf (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abg_radeci ON Twomass_j2000i_abg (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abh_radeci ON Twomass_j2000i_abh (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abi_radeci ON Twomass_j2000i_abi (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abj_radeci ON Twomass_j2000i_abj (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abk_radeci ON Twomass_j2000i_abk (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abl_radeci ON Twomass_j2000i_abl (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abm_radeci ON Twomass_j2000i_abm (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abn_radeci ON Twomass_j2000i_abn (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abo_radeci ON Twomass_j2000i_abo (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abp_radeci ON Twomass_j2000i_abp (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abq_radeci ON Twomass_j2000i_abq (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abr_radeci ON Twomass_j2000i_abr (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abs_radeci ON Twomass_j2000i_abs (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abt_radeci ON Twomass_j2000i_abt (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abu_radeci ON Twomass_j2000i_abu (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abv_radeci ON Twomass_j2000i_abv (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abw_radeci ON Twomass_j2000i_abw (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abx_radeci ON Twomass_j2000i_abx (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aby_radeci ON Twomass_j2000i_aby (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abz_radeci ON Twomass_j2000i_abz (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aca_radeci ON Twomass_j2000i_aca (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_acb_radeci ON Twomass_j2000i_acb (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_acc_radeci ON Twomass_j2000i_acc (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_acd_radeci ON Twomass_j2000i_acd (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_ace_radeci ON Twomass_j2000i_ace (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baa_radeci ON Twomass_j2000i_baa (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bab_radeci ON Twomass_j2000i_bab (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bac_radeci ON Twomass_j2000i_bac (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bad_radeci ON Twomass_j2000i_bad (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bae_radeci ON Twomass_j2000i_bae (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baf_radeci ON Twomass_j2000i_baf (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bag_radeci ON Twomass_j2000i_bag (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bah_radeci ON Twomass_j2000i_bah (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bai_radeci ON Twomass_j2000i_bai (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baj_radeci ON Twomass_j2000i_baj (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bak_radeci ON Twomass_j2000i_bak (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bal_radeci ON Twomass_j2000i_bal (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bam_radeci ON Twomass_j2000i_bam (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_ban_radeci ON Twomass_j2000i_ban (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bao_radeci ON Twomass_j2000i_bao (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bap_radeci ON Twomass_j2000i_bap (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baq_radeci ON Twomass_j2000i_baq (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bar_radeci ON Twomass_j2000i_bar (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bas_radeci ON Twomass_j2000i_bas (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bat_radeci ON Twomass_j2000i_bat (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bau_radeci ON Twomass_j2000i_bau (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bav_radeci ON Twomass_j2000i_bav (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baw_radeci ON Twomass_j2000i_baw (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bax_radeci ON Twomass_j2000i_bax (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bay_radeci ON Twomass_j2000i_bay (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baz_radeci ON Twomass_j2000i_baz (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bba_radeci ON Twomass_j2000i_bba (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbb_radeci ON Twomass_j2000i_bbb (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbc_radeci ON Twomass_j2000i_bbc (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbd_radeci ON Twomass_j2000i_bbd (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbe_radeci ON Twomass_j2000i_bbe (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbf_radeci ON Twomass_j2000i_bbf (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbg_radeci ON Twomass_j2000i_bbg (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbh_radeci ON Twomass_j2000i_bbh (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbi_radeci ON Twomass_j2000i_bbi (rai,deci)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaa_decrai ON Twomass_j2000i_aaa (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aab_decrai ON Twomass_j2000i_aab (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aac_decrai ON Twomass_j2000i_aac (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aad_decrai ON Twomass_j2000i_aad (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aae_decrai ON Twomass_j2000i_aae (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaf_decrai ON Twomass_j2000i_aaf (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aag_decrai ON Twomass_j2000i_aag (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aah_decrai ON Twomass_j2000i_aah (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aai_decrai ON Twomass_j2000i_aai (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaj_decrai ON Twomass_j2000i_aaj (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aak_decrai ON Twomass_j2000i_aak (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aal_decrai ON Twomass_j2000i_aal (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aam_decrai ON Twomass_j2000i_aam (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aan_decrai ON Twomass_j2000i_aan (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aao_decrai ON Twomass_j2000i_aao (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aap_decrai ON Twomass_j2000i_aap (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaq_decrai ON Twomass_j2000i_aaq (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aar_decrai ON Twomass_j2000i_aar (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aas_decrai ON Twomass_j2000i_aas (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aat_decrai ON Twomass_j2000i_aat (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aau_decrai ON Twomass_j2000i_aau (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aav_decrai ON Twomass_j2000i_aav (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaw_decrai ON Twomass_j2000i_aaw (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aax_decrai ON Twomass_j2000i_aax (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aay_decrai ON Twomass_j2000i_aay (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aaz_decrai ON Twomass_j2000i_aaz (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aba_decrai ON Twomass_j2000i_aba (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abb_decrai ON Twomass_j2000i_abb (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abc_decrai ON Twomass_j2000i_abc (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abd_decrai ON Twomass_j2000i_abd (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abe_decrai ON Twomass_j2000i_abe (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abf_decrai ON Twomass_j2000i_abf (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abg_decrai ON Twomass_j2000i_abg (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abh_decrai ON Twomass_j2000i_abh (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abi_decrai ON Twomass_j2000i_abi (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abj_decrai ON Twomass_j2000i_abj (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abk_decrai ON Twomass_j2000i_abk (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abl_decrai ON Twomass_j2000i_abl (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abm_decrai ON Twomass_j2000i_abm (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abn_decrai ON Twomass_j2000i_abn (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abo_decrai ON Twomass_j2000i_abo (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abp_decrai ON Twomass_j2000i_abp (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abq_decrai ON Twomass_j2000i_abq (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abr_decrai ON Twomass_j2000i_abr (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abs_decrai ON Twomass_j2000i_abs (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abt_decrai ON Twomass_j2000i_abt (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abu_decrai ON Twomass_j2000i_abu (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abv_decrai ON Twomass_j2000i_abv (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abw_decrai ON Twomass_j2000i_abw (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abx_decrai ON Twomass_j2000i_abx (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aby_decrai ON Twomass_j2000i_aby (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_abz_decrai ON Twomass_j2000i_abz (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_aca_decrai ON Twomass_j2000i_aca (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_acb_decrai ON Twomass_j2000i_acb (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_acc_decrai ON Twomass_j2000i_acc (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_acd_decrai ON Twomass_j2000i_acd (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_ace_decrai ON Twomass_j2000i_ace (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baa_decrai ON Twomass_j2000i_baa (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bab_decrai ON Twomass_j2000i_bab (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bac_decrai ON Twomass_j2000i_bac (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bad_decrai ON Twomass_j2000i_bad (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bae_decrai ON Twomass_j2000i_bae (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baf_decrai ON Twomass_j2000i_baf (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bag_decrai ON Twomass_j2000i_bag (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bah_decrai ON Twomass_j2000i_bah (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bai_decrai ON Twomass_j2000i_bai (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baj_decrai ON Twomass_j2000i_baj (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bak_decrai ON Twomass_j2000i_bak (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bal_decrai ON Twomass_j2000i_bal (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bam_decrai ON Twomass_j2000i_bam (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_ban_decrai ON Twomass_j2000i_ban (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bao_decrai ON Twomass_j2000i_bao (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bap_decrai ON Twomass_j2000i_bap (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baq_decrai ON Twomass_j2000i_baq (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bar_decrai ON Twomass_j2000i_bar (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bas_decrai ON Twomass_j2000i_bas (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bat_decrai ON Twomass_j2000i_bat (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bau_decrai ON Twomass_j2000i_bau (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bav_decrai ON Twomass_j2000i_bav (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baw_decrai ON Twomass_j2000i_baw (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bax_decrai ON Twomass_j2000i_bax (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bay_decrai ON Twomass_j2000i_bay (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_baz_decrai ON Twomass_j2000i_baz (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bba_decrai ON Twomass_j2000i_bba (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbb_decrai ON Twomass_j2000i_bbb (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbc_decrai ON Twomass_j2000i_bbc (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbd_decrai ON Twomass_j2000i_bbd (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbe_decrai ON Twomass_j2000i_bbe (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbf_decrai ON Twomass_j2000i_bbf (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbg_decrai ON Twomass_j2000i_bbg (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbh_decrai ON Twomass_j2000i_bbh (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;
+CREATE INDEX twomass_j2000i_bbi_decrai ON Twomass_j2000i_bbi (deci,rai)
+ TABLESPACE @TS_PREFIX@twomass_j2000i_index;

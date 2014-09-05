@@ -1,0 +1,11 @@
+
+-- Do after "psql -U postgres"
+
+CREATE TABLESPACE @TS_PREFIX@twomass_main OWNER @TS_OWNER@ LOCATION '@TS_DIR@/twomass_main';
+CREATE TABLESPACE @TS_PREFIX@twomass_main_pkey OWNER @TS_OWNER@ LOCATION '@TS_DIR@/twomass_main_pkey';
+CREATE TABLESPACE @TS_PREFIX@twomass_main_index OWNER @TS_OWNER@ LOCATION '@TS_DIR@/twomass_main_index';
+
+CREATE TABLESPACE @TS_PREFIX@twomass_eqi OWNER @TS_OWNER@ LOCATION '@TS_DIR@/twomass_eqi';
+CREATE TABLESPACE @TS_PREFIX@twomass_eqi_index_radeci OWNER @TS_OWNER@ LOCATION '@TS_DIR@/twomass_eqi_index_radeci';
+CREATE TABLESPACE @TS_PREFIX@twomass_eqi_index_xyzi16 OWNER @TS_OWNER@ LOCATION '@TS_DIR@/twomass_eqi_index_xyzi16';
+

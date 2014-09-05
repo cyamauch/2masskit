@@ -1,0 +1,42 @@
+
+CREATE TABLE Ppmxl (
+    objid INT8			NOT NULL, -- PRIMARY KEY,
+    ppmxl_id INT8		NOT NULL,
+    ra FLOAT8			NOT NULL,
+    dec FLOAT8			NOT NULL,
+    e_ra SMALLINT		NOT NULL,
+    e_dec SMALLINT		NOT NULL,
+    ep_ra FLOAT4		NOT NULL,
+    ep_dec FLOAT4		NOT NULL,
+    pm_ra FLOAT4		NOT NULL,
+    pm_dec FLOAT4		NOT NULL,
+    e_pm_ra FLOAT4		NOT NULL,
+    e_pm_dec FLOAT4		NOT NULL,
+
+    j_mag FLOAT4,
+    e_j_mag FLOAT4,
+    h_mag FLOAT4,
+    e_h_mag FLOAT4,
+    k_mag FLOAT4,
+    e_k_mag FLOAT4,
+
+    b1_mag FLOAT4,
+    b2_mag FLOAT4,
+    r1_mag FLOAT4,
+    r2_mag FLOAT4,
+    i_mag FLOAT4,
+
+    usnob1_flags VARCHAR(5)	NOT NULL, -- fixed length
+    n_uobs SMALLINT		NOT NULL,
+    flags SMALLINT		NOT NULL,
+
+    cx	FLOAT8			NOT NULL,
+    cy	FLOAT8			NOT NULL,
+    cz	FLOAT8			NOT NULL
+) TABLESPACE @TS_PREFIX@ppmxl_main;
+
+CREATE TABLE Ppmxl_eqi (
+    _objid INT4			NOT NULL, -- PRIMARY KEY,
+    rai	  INT4			NOT NULL,
+    deci  INT4			NOT NULL
+) TABLESPACE @TS_PREFIX@ppmxl_eqi;

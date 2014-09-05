@@ -1,0 +1,368 @@
+CREATE TABLE twomass_j2000i_aaa
+ (CHECK(deci < -746000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aab
+ (CHECK(-746000000 <= deci AND deci < -705000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aac
+ (CHECK(-705000000 <= deci AND deci < -680000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aad
+ (CHECK(-680000000 <= deci AND deci < -661000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aae
+ (CHECK(-661000000 <= deci AND deci < -645000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aaf
+ (CHECK(-645000000 <= deci AND deci < -632000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aag
+ (CHECK(-632000000 <= deci AND deci < -621000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aah
+ (CHECK(-621000000 <= deci AND deci < -611000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aai
+ (CHECK(-611000000 <= deci AND deci < -600000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aaj
+ (CHECK(-600000000 <= deci AND deci < -590000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aak
+ (CHECK(-590000000 <= deci AND deci < -580000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aal
+ (CHECK(-580000000 <= deci AND deci < -569000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aam
+ (CHECK(-569000000 <= deci AND deci < -559000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aan
+ (CHECK(-559000000 <= deci AND deci < -548000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aao
+ (CHECK(-548000000 <= deci AND deci < -537000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aap
+ (CHECK(-537000000 <= deci AND deci < -526000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aaq
+ (CHECK(-526000000 <= deci AND deci < -515000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aar
+ (CHECK(-515000000 <= deci AND deci < -503000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aas
+ (CHECK(-503000000 <= deci AND deci < -491000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aat
+ (CHECK(-491000000 <= deci AND deci < -480000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aau
+ (CHECK(-480000000 <= deci AND deci < -468000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aav
+ (CHECK(-468000000 <= deci AND deci < -456000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aaw
+ (CHECK(-456000000 <= deci AND deci < -444000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aax
+ (CHECK(-444000000 <= deci AND deci < -432000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aay
+ (CHECK(-432000000 <= deci AND deci < -419000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aaz
+ (CHECK(-419000000 <= deci AND deci < -407000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aba
+ (CHECK(-407000000 <= deci AND deci < -394000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abb
+ (CHECK(-394000000 <= deci AND deci < -382000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abc
+ (CHECK(-382000000 <= deci AND deci < -370000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abd
+ (CHECK(-370000000 <= deci AND deci < -357000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abe
+ (CHECK(-357000000 <= deci AND deci < -345000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abf
+ (CHECK(-345000000 <= deci AND deci < -334000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abg
+ (CHECK(-334000000 <= deci AND deci < -322000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abh
+ (CHECK(-322000000 <= deci AND deci < -311000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abi
+ (CHECK(-311000000 <= deci AND deci < -299000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abj
+ (CHECK(-299000000 <= deci AND deci < -289000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abk
+ (CHECK(-289000000 <= deci AND deci < -277000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abl
+ (CHECK(-277000000 <= deci AND deci < -266000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abm
+ (CHECK(-266000000 <= deci AND deci < -254000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abn
+ (CHECK(-254000000 <= deci AND deci < -242000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abo
+ (CHECK(-242000000 <= deci AND deci < -230000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abp
+ (CHECK(-230000000 <= deci AND deci < -217000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abq
+ (CHECK(-217000000 <= deci AND deci < -205000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abr
+ (CHECK(-205000000 <= deci AND deci < -192000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abs
+ (CHECK(-192000000 <= deci AND deci < -179000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abt
+ (CHECK(-179000000 <= deci AND deci < -166000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abu
+ (CHECK(-166000000 <= deci AND deci < -152000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abv
+ (CHECK(-152000000 <= deci AND deci < -138000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abw
+ (CHECK(-138000000 <= deci AND deci < -124000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abx
+ (CHECK(-124000000 <= deci AND deci < -109000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aby
+ (CHECK(-109000000 <= deci AND deci < -94000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_abz
+ (CHECK(-94000000 <= deci AND deci < -79000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_aca
+ (CHECK(-79000000 <= deci AND deci < -64000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_acb
+ (CHECK(-64000000 <= deci AND deci < -49000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_acc
+ (CHECK(-49000000 <= deci AND deci < -33000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_acd
+ (CHECK(-33000000 <= deci AND deci < -16000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_ace
+ (CHECK(-16000000 <= deci AND deci < 0))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_baa
+ (CHECK(0 <= deci AND deci < 16000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bab
+ (CHECK(16000000 <= deci AND deci < 33000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bac
+ (CHECK(33000000 <= deci AND deci < 50000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bad
+ (CHECK(50000000 <= deci AND deci < 67000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bae
+ (CHECK(67000000 <= deci AND deci < 84000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_baf
+ (CHECK(84000000 <= deci AND deci < 101000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bag
+ (CHECK(101000000 <= deci AND deci < 118000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bah
+ (CHECK(118000000 <= deci AND deci < 136000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bai
+ (CHECK(136000000 <= deci AND deci < 153000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_baj
+ (CHECK(153000000 <= deci AND deci < 170000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bak
+ (CHECK(170000000 <= deci AND deci < 188000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bal
+ (CHECK(188000000 <= deci AND deci < 206000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bam
+ (CHECK(206000000 <= deci AND deci < 224000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_ban
+ (CHECK(224000000 <= deci AND deci < 242000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bao
+ (CHECK(242000000 <= deci AND deci < 261000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bap
+ (CHECK(261000000 <= deci AND deci < 280000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_baq
+ (CHECK(280000000 <= deci AND deci < 299000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bar
+ (CHECK(299000000 <= deci AND deci < 319000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bas
+ (CHECK(319000000 <= deci AND deci < 338000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bat
+ (CHECK(338000000 <= deci AND deci < 358000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bau
+ (CHECK(358000000 <= deci AND deci < 378000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bav
+ (CHECK(378000000 <= deci AND deci < 399000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_baw
+ (CHECK(399000000 <= deci AND deci < 420000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bax
+ (CHECK(420000000 <= deci AND deci < 442000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bay
+ (CHECK(442000000 <= deci AND deci < 464000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_baz
+ (CHECK(464000000 <= deci AND deci < 485000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bba
+ (CHECK(485000000 <= deci AND deci < 507000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbb
+ (CHECK(507000000 <= deci AND deci < 530000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbc
+ (CHECK(530000000 <= deci AND deci < 552000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbd
+ (CHECK(552000000 <= deci AND deci < 575000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbe
+ (CHECK(575000000 <= deci AND deci < 600000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbf
+ (CHECK(600000000 <= deci AND deci < 627000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbg
+ (CHECK(627000000 <= deci AND deci < 661000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbh
+ (CHECK(661000000 <= deci AND deci < 721000000))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;
+CREATE TABLE twomass_j2000i_bbi
+ (CHECK(721000000 <= deci))
+ INHERITS (twomass_j2000i)
+ TABLESPACE @TS_PREFIX@twomass_j2000i;

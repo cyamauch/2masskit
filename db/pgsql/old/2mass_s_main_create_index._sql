@@ -1,0 +1,2 @@
+CREATE INDEX twomass_@COL@ ON twomass (@COL@)
+ TABLESPACE @TS_PREFIX@twomass_main_index;

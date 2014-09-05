@@ -1,0 +1,2 @@
+CREATE INDEX usnob1_@COL@ ON Usnob1 (@COL@)
+ TABLESPACE @TS_PREFIX@usnob1_main_index;

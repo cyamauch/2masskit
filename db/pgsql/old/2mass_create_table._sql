@@ -1,0 +1,89 @@
+
+CREATE TABLE twomass (
+    objID int4			NOT NULL, -- PRIMARY KEY,
+    ra double precision		NOT NULL,
+    dec double precision	NOT NULL,
+    err_maj real	NOT NULL,
+    err_min real	NOT NULL,
+    err_ang smallint	NOT NULL,
+    designation CHAR(17)	NOT NULL,
+    j_m real,
+-- 9
+    j_cmsig real,
+    j_msigcom real,
+    j_snr real,
+-- 12
+    h_m real,
+    h_cmsig real,
+    h_msigcom real,
+    h_snr real,
+-- 16
+    k_m real,
+    k_cmsig real,
+    k_msigcom real,
+    k_snr real,
+-- 20
+    ph_qual character(3)	NOT NULL,
+    rd_flg character(3)		NOT NULL,
+    bl_flg character(3)		NOT NULL,
+    cc_flg character(3)		NOT NULL,
+    ndet character(6)		NOT NULL,
+    prox real			NOT NULL,
+    pxpa smallint,
+    pxcntr integer		NOT NULL,
+    gal_contam smallint		NOT NULL,
+    mp_flg smallint		NOT NULL,
+    pts_key integer		NOT NULL,
+    hemis character(1)		NOT NULL,
+    date date			NOT NULL,
+    scan smallint		NOT NULL,
+    glon real			NOT NULL,
+    glat real			NOT NULL,
+    x_scan real			NOT NULL,
+    jdate double precision	NOT NULL,
+-- 38
+    j_psfchi real,
+    h_psfchi real,
+    k_psfchi real,
+    j_m_stdap real,
+    j_msig_stdap real,
+    h_m_stdap real,
+    h_msig_stdap real,
+    k_m_stdap real,
+    k_msig_stdap real,
+-- 47
+    dist_edge_ns integer	NOT NULL,
+    dist_edge_ew integer	NOT NULL,
+    dist_edge_flg character(2)	NOT NULL,
+    dup_src smallint		NOT NULL,
+    use_src smallint		NOT NULL,
+    a character(1)		NOT NULL,
+-- 53
+    dist_opt real,
+    phi_opt smallint,
+    b_m_opt real,
+    vr_m_opt real,
+-- 57
+    nopt_mchs smallint		NOT NULL,
+    ext_key integer,
+-- 59
+    scan_key integer		NOT NULL,
+    coadd_key integer		NOT NULL,
+    coadd smallint		NOT NULL,
+    cx	FLOAT8			NOT NULL,
+    cy	FLOAT8			NOT NULL,
+    cz	FLOAT8			NOT NULL
+) TABLESPACE @TS_PREFIX@twomass_main;
+
+CREATE TABLE twomass_xyzi (
+    objID INT4			NOT NULL, -- PRIMARY KEY,
+    cxi	  INT4			NOT NULL,
+    cyi	  INT4			NOT NULL,
+    czi	  INT4			NOT NULL
+) TABLESPACE @TS_PREFIX@twomass_xyzi;
+
+CREATE TABLE twomass_j2000i (
+    objID INT4			NOT NULL, -- PRIMARY KEY,
+    rai	  INT4			NOT NULL,
+    deci  INT4			NOT NULL
+) TABLESPACE @TS_PREFIX@twomass_j2000i;

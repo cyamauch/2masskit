@@ -1,0 +1,6 @@
+#define _TABLE_INFO_SRC__C "twomass_table_info._c"
+#define _RADIALSEARCH_FNC_NAME _twomassgetsqlforradialsearch
+#define _BOXSEARCHSIMPLE_FNC_NAME _twomassgetsqlforboxsearchsimple
+#define _BOXSEARCHDIV_FNC_NAME _twomassgetsqlforboxsearchdiv
+#define _RECTANGULARSEARCH_FNC_NAME _twomassgetsqlforrectangularsearch
+#include "huge_search_fnc_template._c"

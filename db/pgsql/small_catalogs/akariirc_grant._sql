@@ -1,0 +1,2 @@
+GRANT SELECT ON AkariIrc TO @GUEST_USER@;
+

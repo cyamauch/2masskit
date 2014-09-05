@@ -1,0 +1,61 @@
+
+PG_DIR    = /db/pgsql
+PG_MPATH  = $(PG_DIR)/userlib
+PG_INC    = /opt/local/include/postgresql84/server
+PG_MODULE = pg_2mass_32.dylib
+LOPT      = 
+
+DB_ID = 2mass
+
+WTVER = 3.8.1
+
+TS_DIR = $(PG_DIR)/tablespace/$(DB_ID)
+TS_PREFIX = ts_$(DB_ID)_
+TS_OWNER = admin
+GUEST_USER = guest
+
+all::	
+	echo "#/bin/sh " | tr ' ' '\n'   > mk.sh
+	echo "TS_PREFIX=$(TS_PREFIX)"   >> mk.sh
+	echo "TS_DIR=$(TS_DIR)"         >> mk.sh
+	echo "TS_OWNER=$(TS_OWNER)"     >> mk.sh
+	echo "GUEST_USER=$(GUEST_USER)" >> mk.sh
+	cat mk.sh.src                   >> mk.sh
+	( cd pg_module ; rm -rf wcstools-$(WTVER) )
+	( cd pg_module ; gzip -dc wcstools-$(WTVER).tar.gz | tar xf - )
+	( cd pg_module ; for i in wcscon.c hget.c hput.c iget.c ; do \
+	  rm -f $$i ; ln -s wcstools-$(WTVER)/libwcs/$$i . ; done )
+	( cd pg_module ; rm -f *.dylib *.o )
+	( cd pg_module ; gcc -m32 -Wall -O -I$(PG_INC) -I./wcstools-$(WTVER)/libwcs -c *.c )
+	( cd pg_module ; gcc -m32 -Wl,-flat_namespace -undefined suppress -bundle $(LOPT) -o $(PG_MODULE) *.o -lm )
+	cat create_c_function._sql | \
+	  sed -e 's|@PG_MPATH@|'"$(PG_MPATH)"'|g' \
+	      -e 's|@PG_MODULE@|'"$(PG_MODULE)"'|g' > create_c_function.sql
+	for i in pg_module/*_search_fnc.c ; do \
+	  LCAT="`echo $$i | sed -e 's|[^/]*/||' -e 's|_.*||'`" ; \
+	  CAT="`cat $$LCAT/$${LCAT}_main_grant._sql | cut -d ' ' -f 4`" ; \
+	  cat create_c_cat_function._sql | \
+	    sed -e "s/@CAT@/$$CAT/g" -e "s/@LCAT@/$$LCAT/g" >> create_c_function.sql ; \
+	  ( cd $$LCAT ; make ) ; \
+	done
+	echo "PGDATA=$(PG_DIR)/data" > postgresql
+	echo "PGLOG=$(PG_DIR)/pgstartup.log" >> postgresql
+	chmod 755 postgresql
+
+install::
+	if [ ! -d $(PG_DIR) ]; then mkdir $(PG_DIR) ; fi
+	if [ ! -d $(PG_DIR)/data ]; then mkdir $(PG_DIR)/data ; fi
+	mkdir -p $(PG_MPATH)
+	( cd pg_module ; cat $(PG_MODULE) > $(PG_MPATH)/$(PG_MODULE) )
+	mkdir -p $(TS_DIR)
+	for i in pg_module/*_search_fnc.c ; do \
+	  LCAT="`echo $$i | sed -e 's|[^/]*/||' -e 's|_.*||'`" ; \
+	  sh $$LCAT/$${LCAT}_create_dir.sh ; \
+	done
+	chown -R postgres:postgres $(PG_DIR)
+	chmod 700 $(PG_DIR)
+	if [ -d /etc/sysconfig/pgsql ]; then cp postgresql /etc/sysconfig/pgsql/. ; fi
+
+clean::
+	( cd pg_module ; rm -rf wcscon.c hget.c hput.c iget.c *.o *.dylib wcstools-$(WTVER) )
+	rm -f mk.sh postgresql create_c_function.sql

@@ -1,0 +1,2 @@
+CREATE INDEX gsc23_@COL@ ON Gsc23 (@COL@)
+ TABLESPACE @TS_PREFIX@gsc23_main_index;

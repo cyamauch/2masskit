@@ -1,0 +1,5498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="keywords" content="2MASS,Kit" />
+  <meta name="description" content="2MASS Catalog Server Kit" />
+  <title>2MASS Catalog Server Kit: Information about table columns</title>
+<style type="text/css">
+ body {
+  background-color: #efefef;
+  color: black;
+ }
+ a:link { color: blue; }
+ a:visited { color: #551a8b; }
+ a:active { color: red; }
+ em.c2 { font-size: 80%; }
+ h1.c1 { text-align: center; }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em; }
+ li { margin-bottom: 0.4em; }
+ pre { margin-top: 0.2em; }
+ pre { margin-bottom: 0.2em; }
+ p { text-align: justify; line-height: 1.5; }
+ ul { line-height: 1.5; }
+ pre { line-height: 1.3; }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; border-color: #a0a0e0; }
+ th { text-align: center; white-space: nowrap; font-weight: normal; }
+ td { text-align: justify; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ .no_border { border-style: none; }
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<h1>2MASS Catalog Server Kit</h1>
+
+<h2>Information about table columns</h2>
+
+<hr />
+
+<p>
+Page Index:<br />
+<a href="index.html">HOME</a> /
+<a href="2mass.html">Install Huge Catalogs</a> /
+<a href="others.html">Install Small Catalogs</a> /
+<a href="tableinfo.html">Information about table columns</a> /
+<a href="copyservice.html">Hard Drive Copy Service</a>
+</p>
+
+<p>
+Index of Current Page:<br />
+<a href="#TWOMASS">2MASS PSC</a> /
+<a href="#WISE">WISE</a> /
+<a href="#USNOB1">USNO-B1.0</a> /
+<a href="#GSC23">GSC-2.3.2</a> /
+<a href="#UCAC3">UCAC3</a> /
+<a href="#PPMXL">PPMXL</a> /
+<a href="#TYCHO2">Tycho-2</a> /
+<a href="#AKARIIRC">AKARI IRC PSC</a> /
+<a href="#AKARIFIS">AKARI FIS BSC</a> /
+<a href="#IRAS">IRAS PSC</a>
+</p>
+
+
+<hr />
+
+<h3>Symbol for Database Index</h3>
+
+<table summary="database index"
+ border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <td>P</td>
+  <td>Primary Key</td>
+ </tr>
+ <tr>
+  <td>S</td>
+  <td>Single Column Index</td>
+ </tr>
+ <tr>
+  <td>C<i>n</i></td>
+  <td>Composite Index</td>
+ </tr>
+ <tr>
+  <td>U<i>n</i></td>
+  <td>Unique Constraint</td>
+ </tr>
+</table>
+
+<h3>Note</h3>
+
+<p>
+VARCHAR(<i>n</i>)* means that the column is defined as
+VARCHAR, but the length of string is always <i>n</i>.
+</p>
+
+
+<hr />
+
+
+<h2>
+<a id="TWOMASS" name="TWOMASS">
+2MASS PSC
+</a>
+<a href="ftp://ftp.ipac.caltech.edu/pub/2mass/allsky/format_psc.html"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>470,992,970</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT4</td><td></td><td>P</td>
+  <td></td>
+  <td>
+   Primary key (unique identifier) for the 2MASS Kit database.
+   Do not refer this ID in your literatures.
+  </td>
+ </tr>
+ <tr>
+  <td>2</td><td>designation</td><td>VARCHAR(17)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Sexagesimal, equatorial position-based source name
+   in the form: hhmmssss+ddmmsss[ABC...].
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   J2000 right ascension.
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   J2000 declination.
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>err_maj</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   Semi-major axis length of the one sigma position uncertainty ellipse.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>err_min</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   Semi-minor axis length of the one sigma position uncertainty ellipse.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>err_ang</td><td>INT2</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   Position angle on the sky of the semi-major axis 
+   of the position uncertainty ellipse (East of North).
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>j_m</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>mag</td>
+  <td>
+   Default J-band magnitude, or if the source is not detected in the J-band, 
+   the 95% confidence upper limit derived from a 4" radius aperture measurement 
+   taken at the position of the source on the Atlas Image.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>j_cmsig</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Corrected photometric uncertainty for the default J-band magnitude. 
+   If rd_flg[1]="2", this is the measurement error from the profile-fitting procedure,
+   corrected to be consistent with observed repeatability statistics.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>j_msigcom</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Combined, or total photometric uncertainty for the default J-band magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>j_snr</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   J-band "scan" signal-to-noise ratio..
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>h_m</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>mag</td>
+  <td>
+   Default H-band magnitude, or if the source is not detected in the H-band, 
+   the 95% confidence upper limit derived from a 4" radius aperture measurement 
+   taken at the position of the source on the Atlas Image.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>h_cmsig</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Corrected photometric uncertainty for the default H-band magnitude. 
+   If rd_flg[1]="2", this is the measurement error from the profile-fitting procedure,
+   corrected to be consistent with observed repeatability statistics.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>h_msigcom</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Combined, or total photometric uncertainty for the default H-band magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>h_snr</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   H-band "scan" signal-to-noise ratio..
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>k_m</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>mag</td>
+  <td>
+   Default Ks-band magnitude, or if the source is not detected in the Ks-band, 
+   the 95% confidence upper limit derived from a 4" radius aperture measurement 
+   taken at the position of the source on the Atlas Image.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>k_cmsig</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Corrected photometric uncertainty for the default Ks-band magnitude. 
+   If rd_flg[1]="2", this is the measurement error from the profile-fitting procedure,
+   corrected to be consistent with observed repeatability statistics.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>k_msigcom</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Combined, or total photometric uncertainty for the default Ks-band magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>k_snr</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Ks-band "scan" signal-to-noise ratio..
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>ph_qual</td><td>VARCHAR(3)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Photometric quality flag.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>rd_flg</td><td>VARCHAR(3)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Read flag.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>bl_flg</td><td>VARCHAR(3)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Blend flag.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>cc_flg</td><td>VARCHAR(3)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Contamination and confusion flag.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>ndet</td><td>VARCHAR(6)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Frame detection statistics.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>prox</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   Proximity. The distance between this source and its nearest neighbor in the PSC.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>pxpa</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   The position angle on the sky of the vector 
+   from the source to the nearest neighbor in the PSC, in degrees East of North.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>pxcntr</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   The pts_key value of the nearest source in the PSC.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>gal_contam</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Extended source "contamination" flag.
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>mp_flg</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Minor Planet Flag. 
+   Indicates if this source is associated with the predicted position 
+   of a known minor planet, comet, planet or planetary satellite.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>pts_key</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   A unique identification number for the PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>hemis</td><td>VARCHAR(1)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Hemisphere code for the 2MASS Observatory from which this source was observed.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>date</td><td>DATE</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   The observation reference date for this source expressed in ISO standard format.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>scan</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   The nightly scan number in which the source was detected.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>glon</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   Galactic longitude.
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>glat</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   Galactic latitude.
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>x_scan</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   Mean cross-scan focal plane position of the source 
+   in the Universal scan (U-scan) coordinate system.
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>jdate</td><td>FLOAT8</td><td></td>
+  <td></td>
+  <td>day</td>
+  <td>
+   The Julian Date of the source measurement accurate to +30 seconds.
+  </td>
+ </tr>
+ <tr>
+  <td>38</td><td>j_psfchi</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+   Reduced chi-squared goodness-of-fit value for the J-band profile-fit photometry
+   made on the 1.3 s "Read_2" exposures.
+  </td>
+ </tr>
+ <tr>
+  <td>39</td><td>h_psfchi</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+   Reduced chi-squared goodness-of-fit value for the H-band profile-fit photometry
+   made on the 1.3 s "Read_2" exposures.
+  </td>
+ </tr>
+ <tr>
+  <td>40</td><td>k_psfchi</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+   Reduced chi-squared goodness-of-fit value for the Ks-band profile-fit photometry 
+   made on the 1.3 s "Read_2" exposures.
+  </td>
+ </tr>
+ <tr>
+  <td>41</td><td>j_m_stdap</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   J-band "standard" aperture magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>42</td><td>j_msig_stdap</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Uncertainty in the J-band standard aperture magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>43</td><td>h_m_stdap</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   H-band "standard" aperture magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>44</td><td>h_msig_stdap</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Uncertainty in the H-band standard aperture magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>45</td><td>k_m_stdap</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Ks-band "standard" aperture magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>46</td><td>k_msig_stdap</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Uncertainty in the Ks-band standard aperture magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>47</td><td>dist_edge_ns</td><td>INT2</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   The distance from the source to the nearest North or South scan edge.
+  </td>
+ </tr>
+ <tr>
+  <td>48</td><td>dist_edge_ew</td><td>INT2</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   The distance from the source to the nearest East or West scan edge.
+  </td>
+ </tr>
+ <tr>
+  <td>49</td><td>dist_edge_flg</td><td>VARCHAR(2)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Two character flag that specifies to which scan edges a source lies closest, 
+   and to which edges the dist_edge_ns and dist_edge_ew values refer.
+  </td>
+ </tr>
+ <tr>
+  <td>50</td><td>dup_src</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Duplicate source flag.
+  </td>
+ </tr>
+ <tr>
+  <td>51</td><td>use_src</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Use source flag.
+  </td>
+ </tr>
+ <tr>
+  <td>52</td><td>a</td><td>VARCHAR(1)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Catalog identifier of an optical source 
+   from either the Tycho 2 or USNO-A2.0 catalog 
+   that falls within ~5" of the 2MASS source position.
+  </td>
+ </tr>
+ <tr>
+  <td>53</td><td>dist_opt</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   Distance separating 2MASS source position and associated optical source within 5".
+  </td>
+ </tr>
+ <tr>
+  <td>54</td><td>phi_opt</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   Position angle on the sky of the vector from the the associated optical source
+   to the 2MASS source position, in degrees East of North.
+  </td>
+ </tr>
+ <tr>
+  <td>55</td><td>b_m_opt</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Blue magnitude of associated optical source.
+  </td>
+ </tr>
+ <tr>
+  <td>56</td><td>vr_m_opt</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>mag</td>
+  <td>
+   Visual or red magnitude of the associated optical source.
+  </td>
+ </tr>
+ <tr>
+  <td>57</td><td>nopt_mchs</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   The number of USNO-A2.0 or Tycho 2 optical sources
+   found within a 5" radius of the 2MASS position.
+  </td>
+ </tr>
+ <tr>
+  <td>58</td><td>ext_key</td><td>INT4</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+   Unique identification number of the record in the XSC 
+   that corresponds to this point source.
+  </td>
+ </tr>
+ <tr>
+  <td>59</td><td>scan_key</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Unique identification number of the record in the Scan Information Table 
+   (NOT YET AVAILABLE) that corresponds to the survey scan
+   in which this source was detected.
+  </td>
+ </tr>
+ <tr>
+  <td>60</td><td>coadd_key</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Unique identification number of the record in the Atlas Image Data Table 
+   (NOT YET AVAILABLE) that corresponds to Image 
+   in which the position of this source falls.
+  </td>
+ </tr>
+ <tr>
+  <td>61</td><td>coadd</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Sequence number of the Atlas Image in which the position of this source falls.
+  </td>
+ </tr>
+ <tr>
+  <td>62</td><td>cx</td><td>FLOAT8</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>63</td><td>cy</td><td>FLOAT8</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>64</td><td>cz</td><td>FLOAT8</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="WISE" name="WISE">
+WISE All-Sky Release Catalog
+</a>
+<a href="http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec2_2a.html"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>563,921,584</strong>.
+</p>
+
+<p>
+NOTE: columns <strong>w1frtr</strong> - <strong>w4frtr</strong> 
+do not exist in this table, 
+since cells in those columns are always 0.0. 
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT4</td><td></td><td>P</td>
+  <td></td>
+  <td>
+   Primary key (unique identifier) for the 2MASS Kit database.
+   Do not refer this ID in your literatures.
+  </td>
+ </tr>
+ <tr>
+  <td>2</td><td>designation</td><td>VARCHAR(19)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unique WISE source designation.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Right ascension (J2000).
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Declination (J2000).
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>e_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Uncertainty in RA.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>e_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Uncertainty in DEC.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>e_radec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Uncertainty cross-term.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>glon</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Galactic longitude.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>glat</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Galactic latitude.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>elon</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Ecliptic longitude.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>elat</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Ecliptic latitude.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>wx</td><td>FLOAT8</td><td></td><td></td>
+  <td>pix</td>
+  <td>
+   x-pixel coordinate, all bands.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>wy</td><td>FLOAT8</td><td></td><td></td>
+  <td>pix</td>
+  <td>
+   y-pixel coordinate, all bands.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>cntr</td><td>INT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unique entry counter (key) number.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>source_id</td><td>VARCHAR(20)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unique source ID (coadd ID and source number).
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>coadd_id</td><td>VARCHAR(13)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Coadd ID.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>src</td><td>INT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   Source number in coadd.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>w1_mpro</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry magnitude, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>w1_sigmpro</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry flux uncertainty in mag units, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>w1_snr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry S/N ratio, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>w1_rchi2</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry reduced chi^2, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>w2_mpro</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry magnitude, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>w2_sigmpro</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry flux uncertainty in mag units, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>w2_snr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry S/N ratio, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>w2_rchi2</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry reduced chi^2, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>w3_mpro</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry magnitude, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>w3_sigmpro</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry flux uncertainty in mag units, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>w3_snr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry S/N ratio, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>w3_rchi2</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry reduced chi^2, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>w4_mpro</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry magnitude, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>w4_sigmpro</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental profile-fit photometry flux uncertainty in mag units, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>w4_snr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry S/N ratio, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>w4_rchi2</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry reduced chi^2, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>rchi2</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Instrumental profile-fit photometry reduced chi squared, total.
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>nb</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number of blend components used in each fit.
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>na</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Active deblend flag (=1 if actively deblended).
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>w1_sat</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Fraction of pixels affected by saturation, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>38</td><td>w2_sat</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Fraction of pixels affected by saturation, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>39</td><td>w3_sat</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Fraction of pixels affected by saturation, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>40</td><td>w4_sat</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Fraction of pixels affected by saturation, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>41</td><td>satnum</td><td>VARCHAR(4)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Minimum sample at which saturation occurs in frame stack, 1 char per band.
+  </td>
+ </tr>
+ <tr>
+  <td>42</td><td>cc_flags</td><td>VARCHAR(4)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Prioritized artifacts affecting the source in each band.
+  </td>
+ </tr>
+ <tr>
+  <td>43</td><td>ext_flg</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Probability that source morphology is not consistent with single PSF.
+  </td>
+ </tr>
+ <tr>
+  <td>44</td><td>var_flg</td><td>VARCHAR(4)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Probability that flux varied in any band greater than amount expected from unc.s.
+  </td>
+ </tr>
+ <tr>
+  <td>45</td><td>ph_qual</td><td>VARCHAR(4)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Photometric quality of each band (A=highest, U=upper limit).
+  </td>
+ </tr>
+ <tr>
+  <td>46</td><td>det_bit</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Bit-encoded integer indicating detection for each band.
+  </td>
+ </tr>
+ <tr>
+  <td>47</td><td>moon_lev</td><td>VARCHAR(4)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Level of moon contamination in coadd (ceiling(#frmmoon/#frames*10)), 1 per band.
+  </td>
+ </tr>
+ <tr>
+  <td>48</td><td>w1_nm</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source with SNR &gt;= 3, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>49</td><td>w1_m</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>50</td><td>w2_nm</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source with SNR &gt;= 3, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>51</td><td>w2_m</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>52</td><td>w3_nm</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source with SNR &gt;= 3, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>53</td><td>w3_m</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>54</td><td>w4_nm</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source with SNR &gt;= 3, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>55</td><td>w4_m</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of profile-fit flux measurements for source, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>56</td><td>w1_cov</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean coverage depth, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>57</td><td>w2_cov</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean coverage depth, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>58</td><td>w3_cov</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean coverage depth, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>59</td><td>w4_cov</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean coverage depth, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>60</td><td>w1_cc_map</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion bit array for the source in band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>61</td><td>w1_cc_map_str</td><td>VARCHAR(4)</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion character array for the source in band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>62</td><td>w2_cc_map</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion bit array for the source in band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>63</td><td>w2_cc_map_str</td><td>VARCHAR(4)</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion character array for the source in band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>64</td><td>w3_cc_map</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion bit array for the source in band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>65</td><td>w3_cc_map_str</td><td>VARCHAR(4)</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion character array for the source in band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>66</td><td>w4_cc_map</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion bit array for the source in band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>67</td><td>w4_cc_map_str</td><td>VARCHAR(4)</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Contamination and confusion character array for the source in band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>68</td><td>w1_flux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>69</td><td>w1_sigflux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux uncertainty, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>70</td><td>w1_sky</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>71</td><td>w1_sigsk</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value uncertainty, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>72</td><td>w1_conf</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky confusion based on the uncertainty images, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>73</td><td>w2_flux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>74</td><td>w2_sigflux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux uncertainty, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>75</td><td>w2_sky</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>76</td><td>w2_sigsk</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value uncertainty, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>77</td><td>w2_conf</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky confusion based on the uncertainty images, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>78</td><td>w3_flux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>79</td><td>w3_sigflux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux uncertainty, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>80</td><td>w3_sky</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>81</td><td>w3_sigsk</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value uncertainty, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>82</td><td>w3_conf</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky confusion based on the uncertainty images, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>83</td><td>w4_flux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>84</td><td>w4_sigflux</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Profile-fit photometry raw flux uncertainty, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>85</td><td>w4_sky</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>86</td><td>w4_sigsk</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky background value uncertainty, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>87</td><td>w4_conf</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>dn</td>
+  <td>
+   Sky confusion based on the uncertainty images, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>88</td><td>w1_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag w/ aperture correction applied, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>89</td><td>w1_sigm</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag uncertainty, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>90</td><td>w1_flg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental standard aperture flag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>91</td><td>w1_mcor</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental aperture correction, band 1, std ap.
+  </td>
+ </tr>
+ <tr>
+  <td>92</td><td>w2_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag w/ aperture correction applied, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>93</td><td>w2_sigm</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag uncertainty, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>94</td><td>w2_flg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental standard aperture flag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>95</td><td>w2_mcor</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental aperture correction, band 2, std ap.
+  </td>
+ </tr>
+ <tr>
+  <td>96</td><td>w3_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag w/ aperture correction applied, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>97</td><td>w3_sigm</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag uncertainty, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>98</td><td>w3_flg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental standard aperture flag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>99</td><td>w3_mcor</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental aperture correction, band 3, std ap.
+  </td>
+ </tr>
+ <tr>
+  <td>100</td><td>w4_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag w/ aperture correction applied, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>101</td><td>w4_sigm</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental standard aperture mag uncertainty, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>102</td><td>w4_flg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Instrumental standard aperture flag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>103</td><td>w4_mcor</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Instrumental aperture correction, band 4, std ap.
+  </td>
+ </tr>
+ <tr>
+  <td>104</td><td>w1_mag_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>105</td><td>w1_sigm_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag uncertainty, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>106</td><td>w1_flg_1</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Aperture 1 instrumental aperture flag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>107</td><td>w2_mag_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>108</td><td>w2_sigm_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag uncertainty, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>109</td><td>w2_flg_1</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Aperture 1 instrumental aperture flag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>110</td><td>w3_mag_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>111</td><td>w3_sigm_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag uncertainty, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>112</td><td>w3_flg_1</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Aperture 1 instrumental aperture flag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>113</td><td>w4_mag_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>114</td><td>w4_sigm_1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 1 instrumental aperture mag uncertainty, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>115</td><td>w4_flg_1</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Aperture 1 instrumental aperture flag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>116</td><td>w1_mag_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 2.
+  </td>
+ </tr>
+ <tr>
+  <td>117</td><td>w1_sigm_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>118</td><td>w1_flg_2</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>119</td><td>w2_mag_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>120</td><td>w2_sigm_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>121</td><td>w2_flg_2</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>122</td><td>w3_mag_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>123</td><td>w3_sigm_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>124</td><td>w3_flg_2</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>125</td><td>w4_mag_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>126</td><td>w4_sigm_2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>127</td><td>w4_flg_2</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>128</td><td>w1_mag_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 3.
+  </td>
+ </tr>
+ <tr>
+  <td>129</td><td>w1_sigm_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>130</td><td>w1_flg_3</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>131</td><td>w2_mag_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>132</td><td>w2_sigm_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>133</td><td>w2_flg_3</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>134</td><td>w3_mag_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>135</td><td>w3_sigm_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>136</td><td>w3_flg_3</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>137</td><td>w4_mag_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>138</td><td>w4_sigm_3</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>139</td><td>w4_flg_3</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>140</td><td>w1_mag_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 4.
+  </td>
+ </tr>
+ <tr>
+  <td>141</td><td>w1_sigm_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>142</td><td>w1_flg_4</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>143</td><td>w2_mag_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>144</td><td>w2_sigm_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>145</td><td>w2_flg_4</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>146</td><td>w3_mag_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>147</td><td>w3_sigm_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>148</td><td>w3_flg_4</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>149</td><td>w4_mag_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>150</td><td>w4_sigm_4</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>151</td><td>w4_flg_4</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>152</td><td>w1_mag_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 5.
+  </td>
+ </tr>
+ <tr>
+  <td>153</td><td>w1_sigm_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>154</td><td>w1_flg_5</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>155</td><td>w2_mag_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>156</td><td>w2_sigm_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>157</td><td>w2_flg_5</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>158</td><td>w3_mag_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>159</td><td>w3_sigm_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>160</td><td>w3_flg_5</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>161</td><td>w4_mag_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>162</td><td>w4_sigm_5</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>163</td><td>w4_flg_5</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>164</td><td>w1_mag_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 6.
+  </td>
+ </tr>
+ <tr>
+  <td>165</td><td>w1_sigm_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>166</td><td>w1_flg_6</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>167</td><td>w2_mag_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>168</td><td>w2_sigm_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>169</td><td>w2_flg_6</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>170</td><td>w3_mag_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>171</td><td>w3_sigm_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>172</td><td>w3_flg_6</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>173</td><td>w4_mag_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>174</td><td>w4_sigm_6</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>175</td><td>w4_flg_6</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>176</td><td>w1_mag_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 7.
+  </td>
+ </tr>
+ <tr>
+  <td>177</td><td>w1_sigm_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>178</td><td>w1_flg_7</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>179</td><td>w2_mag_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>180</td><td>w2_sigm_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>181</td><td>w2_flg_7</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>182</td><td>w3_mag_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>183</td><td>w3_sigm_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>184</td><td>w3_flg_7</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>185</td><td>w4_mag_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>186</td><td>w4_sigm_7</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>187</td><td>w4_flg_7</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>188</td><td>w1_mag_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Aperture 8.
+  </td>
+ </tr>
+ <tr>
+  <td>189</td><td>w1_sigm_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>190</td><td>w1_flg_8</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>191</td><td>w2_mag_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>192</td><td>w2_sigm_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>193</td><td>w2_flg_8</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>194</td><td>w3_mag_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>195</td><td>w3_sigm_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>196</td><td>w3_flg_8</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>197</td><td>w4_mag_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>198</td><td>w4_sigm_8</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>199</td><td>w4_flg_8</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   
+  </td>
+ </tr>
+ <tr>
+  <td>200</td><td>w1_magp</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Profile-fit repeatability mag -- inverse-variance weighted mean mag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>201</td><td>w1_sigp1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of population of profile-fit repeatability mag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>202</td><td>w1_sigp2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of the mean of profile-fit repeatability mag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>203</td><td>w1_dmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Difference between maximum and minimum mag, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>204</td><td>w1_ndf</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number degrees of freedom in variability chi^2, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>205</td><td>w1_mlq</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(Q), where Q = 1 - P(chi^2), band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>206</td><td>w1_mjdmin</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Minimum modified Julian Date of frame extractions, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>207</td><td>w1_mjdmax</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Maximum modified Julian Date of frame extractions, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>208</td><td>w1_mjdmean</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean modified Julian Date of frame extractions, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>209</td><td>w2_magp</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Profile-fit repeatability mag -- inverse-variance weighted mean mag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>210</td><td>w2_sigp1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of population of profile-fit repeatability mag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>211</td><td>w2_sigp2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of the mean of profile-fit repeatability mag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>212</td><td>w2_dmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Difference between maximum and minimum mag, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>213</td><td>w2_ndf</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number degrees of freedom in variability chi^2, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>214</td><td>w2_mlq</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(Q), where Q = 1 - P(chi^2), band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>215</td><td>w2_mjdmin</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Minimum modified Julian Date of frame extractions, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>216</td><td>w2_mjdmax</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Maximum modified Julian Date of frame extractions, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>217</td><td>w2_mjdmean</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean modified Julian Date of frame extractions, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>218</td><td>w3_magp</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Profile-fit repeatability mag -- inverse-variance weighted mean mag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>219</td><td>w3_sigp1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of population of profile-fit repeatability mag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>220</td><td>w3_sigp2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of the mean of profile-fit repeatability mag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>221</td><td>w3_dmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Difference between maximum and minimum mag, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>222</td><td>w3_ndf</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number degrees of freedom in variability chi^2, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>223</td><td>w3_mlq</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(Q), where Q = 1 - P(chi^2), band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>224</td><td>w3_mjdmin</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Minimum modified Julian Date of frame extractions, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>225</td><td>w3_mjdmax</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Maximum modified Julian Date of frame extractions, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>226</td><td>w3_mjdmean</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean modified Julian Date of frame extractions, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>227</td><td>w4_magp</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Profile-fit repeatability mag -- inverse-variance weighted mean mag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>228</td><td>w4_sigp1</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of population of profile-fit repeatability mag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>229</td><td>w4_sigp2</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Standard deviation of the mean of profile-fit repeatability mag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>230</td><td>w4_dmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Difference between maximum and minimum mag, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>231</td><td>w4_ndf</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number degrees of freedom in variability chi^2, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>232</td><td>w4_mlq</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(Q), where Q = 1 - P(chi^2), band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>233</td><td>w4_mjdmin</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Minimum modified Julian Date of frame extractions, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>234</td><td>w4_mjdmax</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Maximum modified Julian Date of frame extractions, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>235</td><td>w4_mjdmean</td><td>FLOAT8</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Mean modified Julian Date of frame extractions, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>236</td><td>rho12</td><td>INT2</td><td>Y</td><td></td>
+  <td>%</td>
+  <td>
+   band 1 - band 2 correlation coefficient.
+  </td>
+ </tr>
+ <tr>
+  <td>237</td><td>rho23</td><td>INT2</td><td>Y</td><td></td>
+  <td>%</td>
+  <td>
+   band 2 - band 3 correlation coefficient.
+  </td>
+ </tr>
+ <tr>
+  <td>238</td><td>rho34</td><td>INT2</td><td>Y</td><td></td>
+  <td>%</td>
+  <td>
+   band 3 - band 4 correlation coefficient.
+  </td>
+ </tr>
+ <tr>
+  <td>239</td><td>q12</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(1 - P(rho12)), given no real correlation.
+  </td>
+ </tr>
+ <tr>
+  <td>240</td><td>q23</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(1 - P(rho23)), given no real correlation.
+  </td>
+ </tr>
+ <tr>
+  <td>241</td><td>q34</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   -log10(1 - P(rho34)), given no real correlation.
+  </td>
+ </tr>
+ <tr>
+  <td>242</td><td>xscprox</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Distance between source center and XSC galaxy.
+  </td>
+ </tr>
+ <tr>
+  <td>243</td><td>w1_rsemi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Semi-major axis of galaxy from XSC, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>244</td><td>w1_ba</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Axis ratio of galaxy from XSC, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>245</td><td>w1_pa</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>deg</td>
+  <td>
+   Position angle (E of N) of galaxy from XSC, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>246</td><td>w1_gmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag of extracted galaxy, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>247</td><td>w1_gerr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag uncertainty of extracted galaxy, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>248</td><td>w1_gflg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Elliptical aperture flag of extracted galaxy, band 1.
+  </td>
+ </tr>
+ <tr>
+  <td>249</td><td>w2_rsemi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Semi-major axis of galaxy from XSC, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>250</td><td>w2_ba</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Axis ratio of galaxy from XSC, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>251</td><td>w2_pa</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>deg</td>
+  <td>
+   Position angle (E of N) of galaxy from XSC, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>252</td><td>w2_gmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag of extracted galaxy, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>253</td><td>w2_gerr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag uncertainty of extracted galaxy, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>254</td><td>w2_gflg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Elliptical aperture flag of extracted galaxy, band 2.
+  </td>
+ </tr>
+ <tr>
+  <td>255</td><td>w3_rsemi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Semi-major axis of galaxy from XSC, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>256</td><td>w3_ba</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Axis ratio of galaxy from XSC, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>257</td><td>w3_pa</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>deg</td>
+  <td>
+   Position angle (E of N) of galaxy from XSC, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>258</td><td>w3_gmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag of extracted galaxy, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>259</td><td>w3_gerr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag uncertainty of extracted galaxy, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>260</td><td>w3_gflg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Elliptical aperture flag of extracted galaxy, band 3.
+  </td>
+ </tr>
+ <tr>
+  <td>261</td><td>w4_rsemi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Semi-major axis of galaxy from XSC, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>262</td><td>w4_ba</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Axis ratio of galaxy from XSC, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>263</td><td>w4_pa</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>deg</td>
+  <td>
+   Position angle (E of N) of galaxy from XSC, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>264</td><td>w4_gmag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag of extracted galaxy, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>265</td><td>w4_gerr</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Elliptical aperture mag uncertainty of extracted galaxy, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>266</td><td>w4_gflg</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Elliptical aperture flag of extracted galaxy, band 4.
+  </td>
+ </tr>
+ <tr>
+  <td>267</td><td>tmass_key</td><td>INT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Closest associated 2MASS All-Sky Release PSC key.
+  </td>
+ </tr>
+ <tr>
+  <td>268</td><td>r_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Radial offset between WISE src and associated 2MASS src.
+  </td>
+ </tr>
+ <tr>
+  <td>269</td><td>pa_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>deg</td>
+  <td>
+   Position angle (E of N) of vector from WISE src to associated 2MASS src.
+  </td>
+ </tr>
+ <tr>
+  <td>270</td><td>n_2mass</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number of 2MASS All-Sky PSC entries found within search radius of WISE src.
+  </td>
+ </tr>
+ <tr>
+  <td>271</td><td>j_m_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   J magnitude entry of the associated 2MASS All-Sky PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>272</td><td>j_msig_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   J photometric uncertainty of the associated 2MASS All-Sky PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>273</td><td>h_m_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   H magnitude entry of the associated 2MASS All-Sky PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>274</td><td>h_msig_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   H photometric uncertainty of the associated 2MASS All-Sky PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>275</td><td>k_m_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Ks magnitude entry of the associated 2MASS All-Sky PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>276</td><td>k_msig_2mass</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Ks photometric uncertainty of the associated 2MASS All-Sky PSC source.
+  </td>
+ </tr>
+ <tr>
+  <td>277</td><td>best_use_cntr</td><td>INT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   cntr of source to use from 'best' duplicate resolution group for this source.
+  </td>
+ </tr>
+ <tr>
+  <td>278</td><td>ngrp</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number of duplicate resolution groups in which this source resides.
+  </td>
+ </tr>
+ <tr>
+  <td>279</td><td>spt_ind</td><td>INT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   Spatial (x,y,z) index key.
+  </td>
+ </tr>
+ <tr>
+  <td>280</td><td>cx</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>281</td><td>cy</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec)..
+  </td>
+ </tr>
+ <tr>
+  <td>282</td><td>cz</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec)..
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="USNOB1" name="USNOB1">
+USNO-B1.0 Catalog
+</a>
+<a href="http://cdsarc.u-strasbg.fr/viz-bin/Cat?aliases/U/USNO-B1.0"><img src="14px-external.gif" alt="CDS Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>1,045,175,762</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT8</td><td></td><td>P</td>
+  <td></td>
+  <td>
+   Primary key (unique identifier) for the 2MASS Kit database.
+   Do not refer this ID in your literatures.
+  </td>
+ </tr>
+ <tr>
+  <td>2</td><td>usnob1_id</td><td>VARCHAR(12)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Designation of the object.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>tycho2_id</td><td>VARCHAR(12)*</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Designation in the Tycho-2 Catalog.
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>ra</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Right Ascension at Eq=J2000, Ep=J2000.
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>dec</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Declination at Eq=J2000, Ep=J2000.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>e_ra</td><td>INT2</td><td>Y</td><td></td>
+  <td>mas</td>
+  <td>
+   Mean error on ra*cos(dec) at epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>e_dec</td><td>INT2</td><td>Y</td><td></td>
+  <td>mas</td>
+  <td>
+   Mean error on dec at Epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>epoch</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>yr</td>
+  <td>
+   Mean epoch of observation.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>pm_ra</td><td>INT2</td><td></td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper motion in Right Ascension (relative to YS4.0).
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>pm_dec</td><td>INT2</td><td></td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper motion in Declination (relative to YS4.0).
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>e_pm_ra</td><td>INT2</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Mean error on pm_ra.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>e_pm_dec</td><td>INT2</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Mean error on pm_dec.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>pm_prob</td><td>INT2</td><td>Y</td><td></td>
+  <td>0.1</td>
+  <td>
+   Total Proper Motion probability.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>e_fit_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+    Mean error on Right Ascension fit.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>e_fit_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+    Mean error on Declination fit.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>ndet</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number of detections.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>flags</td><td>VARCHAR(3)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Flags on object.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>b1_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   First blue magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>b1_cal</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Source of photometric calibration.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>b1_survey</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Survey number.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>b1_field</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Field number in survey.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>b1_class</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Star-galaxy separation.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>b1_xi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in X direction.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>b1_eta</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in Y direction.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>r1_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   First red magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>r1_cal</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Source of photometric calibration.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>r1_survey</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Survey number.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>r1_field</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Field number in survey.
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>r1_class</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Star-galaxy separation.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>r1_xi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in X direction.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>r1_eta</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in Y direction.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>b2_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Second blue magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>b2_cal</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Source of photometric calibration.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>b2_survey</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Survey number.
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>b2_field</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Field number in survey.
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>b2_class</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Star-galaxy separation.
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>b2_xi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in X direction.
+  </td>
+ </tr>
+ <tr>
+  <td>38</td><td>b2_eta</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in Y direction.
+  </td>
+ </tr>
+ <tr>
+  <td>39</td><td>r2_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Second red magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>40</td><td>r2_cal</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Source of photometric calibration.
+  </td>
+ </tr>
+ <tr>
+  <td>41</td><td>r2_survey</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Survey number.
+  </td>
+ </tr>
+ <tr>
+  <td>42</td><td>r2_field</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Field number in survey.
+  </td>
+ </tr>
+ <tr>
+  <td>43</td><td>r2_class</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Star-galaxy separation.
+  </td>
+ </tr>
+ <tr>
+  <td>44</td><td>r2_xi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in X direction.
+  </td>
+ </tr>
+ <tr>
+  <td>45</td><td>r2_eta</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in Y direction.
+  </td>
+ </tr>
+ <tr>
+  <td>46</td><td>i_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Infrared (N) magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>47</td><td>i_cal</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Source of photometric calibration.
+  </td>
+ </tr>
+ <tr>
+  <td>48</td><td>i_survey</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Survey number.
+  </td>
+ </tr>
+ <tr>
+  <td>49</td><td>i_field</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Field number in survey.
+  </td>
+ </tr>
+ <tr>
+  <td>50</td><td>i_class</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Star-galaxy separation.
+  </td>
+ </tr>
+ <tr>
+  <td>51</td><td>i_xi</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in X direction.
+  </td>
+ </tr>
+ <tr>
+  <td>52</td><td>i_eta</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>arcsec</td>
+  <td>
+   Residual in Y direction.
+  </td>
+ </tr>
+ <tr>
+  <td>53</td><td>cx</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>54</td><td>cy</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>55</td><td>cz</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="GSC23" name="GSC23">
+GSC-2.3.2
+</a>
+<a href="http://cdsarc.u-strasbg.fr/viz-bin/Cat?aliases/G/GSC2.3"><img src="14px-external.gif" alt="CDS Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>945,592,683</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT8</td><td></td><td>P</td>
+  <td></td>
+  <td>
+   Primary key (unique identifier) for the 2MASS Kit database.
+   Do not refer this ID in your literatures.
+  </td>
+ </tr>
+ <tr>
+  <td>2</td><td>gsc23_id</td><td>VARCHAR(10)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   GSC2 name for HST ops.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>gsc1_id</td><td>VARCHAR(10)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   GSC1 name.
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>ra</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   RA (J2000).
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>dec</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Dec (J2000).
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>e_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td>arcsec</td>
+  <td>
+   RA error.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>e_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td>arcsec</td>
+  <td>
+   Dec error.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>epoch</td><td>FLOAT4</td><td></td><td></td>
+  <td>year</td>
+  <td>
+   Epoch of position.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>fpg_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   IIIaF magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>e_fpg_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Mag error of fpg_mag.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>code_fpg_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Bandpass code.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>jpg_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   IIIaJ magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>e_jpg_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Mag error of jpg_mag.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>code_jpg_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Bandpass code.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>v_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   'V' band magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>e_v_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Mag error of v_mag.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>code_v_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Bandpass code.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>npg_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   IV-N magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>e_npg_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Mag error of npg_mag.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>code_npg_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Bandpass code.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>u_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   'U' magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>e_u_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Mag error of u_mag.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>code_u_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Bandpass code.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>b_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   'B' magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>e_b_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Mag error of b_mag.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>code_b_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Bandpass code.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>class</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Classification code.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>sz_obj</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>pixels</td>
+  <td>
+   Object size (semi-major axis).
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>ecc_obj</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Object eccentricity.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>pa_obj</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>deg</td>
+  <td>
+   Object Position Angle.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>status</td><td>INT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   Object flags.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>m_flag</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Flag for known multiple.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>htm6</td><td>VARCHAR(8)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   HTM-6 designation.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>cx</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>cy</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>cz</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="UCAC3" name="UCAC3">
+UCAC3
+</a>
+<a href="http://www.nofs.navy.mil/data/fchpix/ucac3_readme.html"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>100,766,420</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT8</td><td></td><td>P</td>
+  <td></td>
+  <td>
+   Primary key (unique identifier) for the 2MASS Kit database.
+   Do not refer this ID in your literatures.
+  </td>
+ </tr>
+ <tr>
+  <td>2</td><td>ucac3_id</td><td>VARCHAR(10)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unique identifier of UCAC3.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Right Ascension at epoch J2000.0 (ICRS).
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Declination at epoch J2000.0 (ICRS).
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>e_ra</td><td>INT2</td><td></td><td></td>
+  <td>mas</td>
+  <td>
+   s.e. at central epoch in ra (*cos dec).
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>e_dec</td><td>INT2</td><td></td><td></td>
+  <td>mas</td>
+  <td>
+   s.e. at central epoch in dec.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>ep_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td>yr</td>
+  <td>
+   Central epoch for mean ra.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>ep_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td>yr</td>
+  <td>
+   Central epoch for mean dec.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>pm_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper motion in ra*cos(dec).
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>pm_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper motion in dec.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>e_pm_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   s.e. of pm_ra * cos dec.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>e_pm_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   s.e. of pm_dec.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>fit_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   UCAC fit model magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>ap_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   UCAC aperture  magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>e_ap_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   UCAC error on magnitude (larger of sc.mod).
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>obj_type</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Object type.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>ds_flag</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Double star flag.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>n_obs</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Total # of CCD images of this star.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>n_uobs</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   # of CCD images used for this star.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>n_pos</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Total numb. catalogs (epochs) initial match.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>n_upos</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   # catalogs (epochs) used for proper motions.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>id_2mass</td><td>INT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   2MASS pts_key star identifier.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>j_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   2MASS J magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>e_j_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   2MASS error photom.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>q_j_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   2MASS cc_flg*10 + phot.qual.flag.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>h_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   2MASS H magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>e_h_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   2MASS error photom.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>q_h_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   2MASS cc_flg*10 + phot.qual.flag.
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>k_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   2MASS K_s magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>e_k_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   2MASS error photom.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>q_k_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   2MASS cc_flg*10 + phot.qual.flag.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>class_sc</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   SuperCosmos star/galaxy classif./quality flag.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>b_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   SuperCosmos Bmag.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>q_b_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   SuperCosmos quality flag Bmag.
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>r2_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   SuperCosmos R2mag.
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>q_r2_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   SuperCosmos quality flag R2mag.
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>i_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   SuperCosmos Imag.
+  </td>
+ </tr>
+ <tr>
+  <td>38</td><td>q_i_mag</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   SuperCosmos quality flag Imag.
+  </td>
+ </tr>
+ <tr>
+  <td>39</td><td>cat_flags</td><td>VARCHAR(10)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   mmf flag for 10 major catalogs matched.
+  </td>
+ </tr>
+ <tr>
+  <td>40</td><td>spm_g_flag</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Yale SPM object type (g-flag).
+  </td>
+ </tr>
+ <tr>
+  <td>41</td><td>spm_c_flag</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Yale SPM input cat. (c-flag).
+  </td>
+ </tr>
+ <tr>
+  <td>42</td><td>leda_match</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   LEDA galaxy match flag.
+  </td>
+ </tr>
+ <tr>
+  <td>43</td><td>x2m_match</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   2MASS extend.source flag.
+  </td>
+ </tr>
+ <tr>
+  <td>44</td><td>mpos_num</td><td>INT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   MPOS star number; identifies HPM stars.
+  </td>
+ </tr>
+ <tr>
+  <td>45</td><td>cx</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>46</td><td>cy</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>47</td><td>cz</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="PPMXL" name="PPMXL">
+PPMXL Catalog
+</a>
+<a href="http://cdsarc.u-strasbg.fr/viz-bin/Cat?aliases/P/PPMXL"><img src="14px-external.gif" alt="CDS Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>910,468,710</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT8</td><td></td><td>P</td>
+  <td></td>
+  <td>
+   Primary key (unique identifier) for the 2MASS Kit database.
+   Do not refer this ID in your literatures.
+  </td>
+ </tr>
+ <tr>
+  <td>2</td><td>ppmxl_id</td><td>INT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Identifier of PPMXL catalog.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Right Ascension J2000.0, epoch 2000.0.
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td><td></td>
+  <td>deg</td>
+  <td>
+   Declination J2000.0, epoch 2000.0.
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>e_ra</td><td>INT2</td><td></td><td></td>
+  <td>mas</td>
+  <td>
+   Mean error in ra*cos(dec) at mean epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>e_dec</td><td>INT2</td><td></td><td></td>
+  <td>mas</td>
+  <td>
+   Mean error in dec at mean epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>ep_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   Mean Epoch (ra).
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>ep_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   Mean Epoch (dec).
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>pm_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper Motion in ra*cos(dec).
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>pm_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper Motion in dec.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>e_pm_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Mean error in pm_ra*cos(dec).
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>e_pm_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Mean error in pm_dec.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>j_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   J magnitude from 2MASS.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>e_j_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   J total magnitude uncertainty.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>h_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   H magnitude from 2MASS.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>e_h_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   H total magnitude uncertainty.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>k_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Ks magnitude from 2MASS.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>e_k_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   Ks total magnitude uncertainty.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>b1_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   B mag from USNO-B, first epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>b2_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   B mag from USNO-B, second epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>r1_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   R mag from USNO-B, first epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>r2_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   R mag from USNO-B, second epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>i_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   I mag from USNO-B.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>usnob1_flags</td><td>VARCHAR(5)*</td><td></td><td></td>
+  <td></td>
+  <td>
+    Surveys used for USNO-B magnitudes.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>n_uobs</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Number of observations used.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>flags</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Flags.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>cx</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>cy</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>cz</td><td>FLOAT8</td><td></td><td></td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+<hr />
+
+
+<h2>
+<a id="TYCHO2" name="TYCHO2">
+Tycho-2 Catalogue
+</a>
+<a href="http://archive.eso.org/ASTROM/TYC-2/format.htm"><img src="14px-external.gif" alt="ESO Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>2,539,913</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT4</td><td></td>
+  <td>P</td>
+  <td></td>
+  <td>Primary key (unique identifier) for the 2MASS Kit database.
+      Do not refer this ID in your literatures.</td>
+ </tr>
+ <tr>
+  <td>2</td><td>tycho2_id</td><td>VARCHAR(12)*</td><td></td><td>U</td>
+  <td></td>
+  <td>
+   Identifier for Tycho-2 Catalogue.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>p_flag</td><td>VARCHAR(1)*</td><td></td><td>S</td>
+  <td></td>
+  <td>
+   Mean position flag.
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>ra_m</td><td>FLOAT8</td><td>Y</td><td>S</td>
+  <td>deg</td>
+  <td>
+   Mean Right Ascension, ICRS, epoch J2000.
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>dec_m</td><td>FLOAT8</td><td>Y</td><td>S</td>
+  <td>deg</td>
+  <td>
+   Mean Declination, ICRS, at epoch J2000.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>e_ra_m</td><td>INT2</td><td>Y</td><td></td>
+  <td>mas</td>
+  <td>
+   s.e. RA*cos(Dec),at mean epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>e_dec_m</td><td>INT2</td><td>Y</td><td></td>
+  <td>mas</td>
+  <td>
+   s.e. of Dec at mean epoch.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>ep_ra_m</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>yr</td>
+  <td>
+   Mean epoch of RA.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>ep_dec_m</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>yr</td>
+  <td>
+   Mean epoch of Dec.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>pm_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper motion in RA*cos(Dec).
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>pm_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   Proper motion in Dec.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>e_pm_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   s.e. of proper motion in RA*cos(Dec).
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>e_pm_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mas/yr</td>
+  <td>
+   s.e. of proper motion in Dec.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>n_upos</td><td>INT2</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Number of positions used.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>q_ra_m</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Goodness of fit for ra_m.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>q_dec_m</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Goodness of fit for dec_m.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>q_pm_ra</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Goodness of fit for pm_ra.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>q_pm_dec</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Goodness of fit for pm_dec.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>bt_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Tycho-2 BT magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>e_bt_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td>mag</td>
+  <td>
+   s.e. of BT.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>vt_mag</td><td>FLOAT4</td><td>Y</td><td>S</td>
+  <td>mag</td>
+  <td>
+   Tycho-2 VT magnitude.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>e_vt_mag</td><td>FLOAT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   s.e. of VT.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>prox</td><td>INT2</td><td></td><td></td>
+  <td></td>
+  <td>
+   Proximity indicator.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>tycho1_flag</td><td>VARCHAR(1)*</td><td></td><td></td>
+  <td></td>
+  <td>
+   Tycho-1 star.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>hip_id</td><td>INT4</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   Hipparcos number.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>ccdm_hip</td><td>VARCHAR(13)</td><td>Y</td><td></td>
+  <td></td>
+  <td>
+   CCDM component identifier for HIP stars.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>ra</td><td>FLOAT8</td><td></td><td>S</td>
+  <td>deg</td>
+  <td>
+   Observed Tycho-2 Right Ascension, ICRS.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>dec</td><td>FLOAT8</td><td></td><td>S</td>
+  <td>deg</td>
+  <td>
+   Observed Tycho-2 Declination, ICRS.
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>e_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td>mas</td>
+  <td>
+   s.e. RA*cos(Dec), of observed Tycho-2 RA.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>e_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td>mas</td>
+  <td>
+   s.e. of observed Tycho-2 Dec.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>ep_ra</td><td>FLOAT4</td><td></td><td></td>
+  <td>yr</td>
+  <td>
+   Epoch of ra.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>ep_dec</td><td>FLOAT4</td><td></td><td></td>
+  <td>yr</td>
+  <td>
+   Epoch of dec.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>t_flag</td><td>VARCHAR(1)*</td><td></td><td>S</td>
+  <td></td>
+  <td>
+   Type of Tycho-2 solution.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>corr</td><td>FLOAT4</td><td></td><td></td>
+  <td></td>
+  <td>
+   Correlation (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>cx_m</td><td>FLOAT8</td><td>Y</td><td>C1</td>
+  <td></td>
+  <td>
+   Unit vector for (ra_m,dec_m).
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>cy_m</td><td>FLOAT8</td><td>Y</td><td>C1</td>
+  <td></td>
+  <td>
+   Unit vector for (ra_m,dec_m).
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>cz_m</td><td>FLOAT8</td><td>Y</td><td>C1</td>
+  <td></td>
+  <td>
+   Unit vector for (ra_m,dec_m).
+  </td>
+ </tr>
+ <tr>
+  <td>38</td><td>cx</td><td>FLOAT8</td><td></td><td>C2</td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>39</td><td>cy</td><td>FLOAT8</td><td></td><td>C2</td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>40</td><td>cz</td><td>FLOAT8</td><td></td><td>C2</td>
+  <td></td>
+  <td>
+   Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="AKARIIRC" name="AKARIIRC">
+AKARI IRC PSC v1
+</a>
+<a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>870,973</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT4</td><td></td>
+  <td>P</td>
+  <td></td>
+  <td>Primary key (unique identifier) for the 2MASS Kit database.
+      Do not refer this ID in your literatures.</td>
+ </tr>
+ <tr>
+  <td>2</td><td>objName</td><td>VARCHAR(14)*</td><td></td>
+  <td>U</td>
+  <td></td>
+  <td>
+      Source name from its J2000 coordinates, 
+      following the IAU Recommendations for Nomenclature (2006).
+      The format is HHMMSSS+/-DDMMSS, e.g., 
+      0123456+765432 for a source at (01h23m45.6s, +76d54m32s). 
+      The source must be referred to in the literatures by its full name:
+      AKARI-IRC-V1 J0123456+765432, where V1 refers to the version code.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>deg</td>
+  <td>J2000 Right Ascension of the source position.</td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>deg</td>
+  <td>J2000 Declination of the source position.</td>
+ </tr>
+ <tr>
+  <td>5</td><td>posErrMj</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+      One-sigma error of the source position expressed by an ellipse 
+      with Major and Minor axes [arcsec], and Position Angle [deg; East from North].
+      If only two events are available, <em>posErrMj</em> is calculated from the distance of 
+      the two events and <em>PosErrMi</em> is set to the same as <em>PosErrMj</em>.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>posErrMi</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+      See description of posErrMj.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>posErrPA</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+      See description of posErrMj.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>flux_09</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+      Flux density of the source in S9W in Jansky.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>flux_18</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+      Flux density of the source in L18W in Jansky.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>fErr_09</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>Jy</td>
+  <td>
+      Flux error in S9W. 
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>fErr_18</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>Jy</td>
+  <td>
+      Flux error in L18W. 
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>fQual_09</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>
+      Flux density quality flag for S9W. 
+      3 when flux is valid and 0 when flux is not available.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>fQual_18</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>
+      Flux density quality flag for L18W. 
+      3 when flux is valid and 0 when flux is not available.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>flags_09</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Bit flags of data quality for S9W:<br />
+      1(LSB): not month confirmed:<br />
+      This means that the
+      period between the first detection and the last detection is 
+      shorter than a month.<br />
+      2: saturated (not used in this version)<br />
+      4: use SAA (not used in this version)<br />
+      8(MSB): use edge events:<br />
+      If the number of events is too small, we use the event data near the edge of
+      the image strip. In this case,
+      this flag warn you of underestimation of the flux.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>flags_18</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Bit flags of data quality for L18W.<br />
+      The value definition is the same as that of flags_09.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>nScanC_09</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of scans on which the source is detected.
+      Normally, <em>nScanC</em> is less or equal to <em>nScanP</em>.
+      In some exceptional case, resultant position
+      of the source drops out from the image stripe boundary
+      and <em>nScanC</em> is larger than <em>nScanP</em>.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>nScanC_18</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of scans on which the source is detected.<br />
+      The value definition is the same as that of nScanC_09.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>nScanP_09</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      The number of times the source
+      position has been scanned during the survey.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>nScanP_18</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      The number of times the source
+      position has been scanned during the survey.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>mConf_09</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      1 is month confirmed and 0 is not. Inverted value of LSB of flags_09
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>mConf_18</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      1 is month confirmed and 0 is not. Inverted value of LSB of flags_18
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>nDens_09</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      The number of sources in 45 arcsec radius.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>nDens_18</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      The number of sources in 45 arcsec radius.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>extended_09</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      The flag indicates that the source is possibly more extended than the
+      point spread function. This is "TRUE" when
+      <em>meanAB</em> &gt; 15.6 [arcsec].
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>extended_18</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      The flag indicates that the source is possibly more extended than the
+      point spread function. This is "TRUE" when
+      <em>meanAB</em> &gt; 15.6 [arcsec].
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>meanAB_09</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      The average of radius along major and minor axes of images,
+      i.e. (&lt; a &gt; + &lt; b &gt;)/2 where &lt; a &gt; and &lt; b &gt;
+
+      are the mean semi-major
+      and semi-minor axis lengths of images estimated by SExtractor.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>meanAB_18</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      The average of radius along major and minor axes of images,
+      i.e. (&lt; a &gt; + &lt; b &gt;)/2 where &lt; a &gt; and &lt; b &gt;
+      are the mean semi-major
+      and semi-minor axis lengths of images estimated by SExtractor.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>nDataPos</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+
+      Number of events used to calculate the mean coordinates.
+      If the source has more than two available S9W events,
+      the position is estimated from S9W events only,
+      else the position is estimated from L18W events,<br />
+      i.e. nDataPos = nScanC09 for nScanC09 &ge; 2<br />
+      nDataPos = nScanC18 for nScanC09 &lt; 2
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>nData_09</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of events that contribute to the flux measurements in the two bands.
+      Normally, events near the edge of
+      the image strip are excluded from the measurements.
+      Note that if only 0 or 1 event are available, the flux is computed 
+      also from edge events.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>nData_18</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of events that contribute to the flux measurements in the two bands.<br />
+      The value definition is the same as that of nData_09.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>cx</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>Unit vector for (ra,dec)</td>
+ </tr>
+ <tr>
+  <td>32</td><td>cy</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>Unit vector for (ra,dec)</td>
+ </tr>
+ <tr>
+  <td>33</td><td>cz</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>Unit vector for (ra,dec)</td>
+ </tr>
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="AKARIFIS" name="AKARIFIS">
+AKARI FIS BSC v1
+</a>
+<a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/"><img src="14px-external.gif" alt="Official Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>427,071</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT4</td><td></td>
+  <td>P</td>
+  <td></td>
+  <td>Primary key (unique identifier) for the 2MASS Kit database.
+      Do not refer this ID in your literatures.</td>
+ </tr>
+
+ <tr>
+  <td>2</td><td>objName</td><td>VARCHAR(14)*</td><td></td>
+  <td>U</td>
+  <td></td>
+  <td>
+   Source identifier from its J2000 coordinates, following the
+   IAU Recommendations for Nomenclature (2006).
+   The format is HHMMSSS+/-DDMMSS, e.g., 0123456+765432 for
+   a source at (01h23m45.6s, +76d54m32s). 
+   <strong class="enhance">The source must be
+   referred to in the literatures by its full name;
+   AKARI-FIS-V1 J0123456+765432.</strong>
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>deg</td>
+  <td>J2000 Right Ascension of the source position.</td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>deg</td>
+  <td>J2000 Declination of the source position.</td>
+ </tr>
+ <tr>
+  <td>5</td><td>posErrMj</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>One-sigma error of the source position expressed by an ellipse
+   with Major and Minor axes in arcsec, and Position Angle
+   in degees measured from North to East. In the currently version 
+   we give the same value (6.0 arcsec) for
+   all the sources both in the major and minor axis
+   (thus polar-angle is 0.0) based on the statistical analysis
+   in Section 5.5 of the 
+   <a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/RN/AKARI-FIS_BSC_V1_RN.pdf">
+   Release Note
+   </a>.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>posErrMi</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+   See description of posErrMj.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>posErrPA</td><td>FLOAT4</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+   See description of posErrMj.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>flux_65</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>Flux density of the source in the four FIS bands in Jansky.
+   In the catalogue the four FIS bands are indicated by their
+   central wavelength as 65, 90, 140 and 160.<br />
+   Values are given even for the unconfirmed sources as much as possible,
+   though such the data are not guaranteed.
+   If it is not possible to measure the source flux, `NULL' is set.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>flux_90</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+   See description of flux_65.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>flux_140</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+   See description of flux_65.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>flux_160</td><td>FLOAT4</td><td>Y</td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+   See description of flux_65.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>fErr_65</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>Jy</td>
+  <td>Flux uncertainty of the source flux in Jansky.
+      It is evaluated as the standard deviation of the fluxes
+      measured on the individual scans divided by the root square
+      of the number of measurements (presented in <em>nScanC_65</em>).
+      The error thus only includes relative uncertainty at the measurements.
+      Details of the flux uncertainty are discussed in Section 5.3
+      of the 
+      <a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/RN/AKARI-FIS_BSC_V1_RN.pdf">
+      Release Note
+      </a>.<br />
+      When it is not possible to calculate the standard deviation,
+      `NULL' is set to this column.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>fErr_90</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>Jy</td>
+  <td>Flux uncertainty of the source flux in Jansky.<br />
+      The value definition is the same as that of fErr_65.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>fErr_140</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>Jy</td>
+  <td>Flux uncertainty of the source flux in Jansky.<br />
+      The value definition is the same as that of fErr_65.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>fErr_160</td><td>FLOAT4</td><td>Y</td>
+  <td></td>
+  <td>Jy</td>
+  <td>Flux uncertainty of the source flux in Jansky.<br />
+      The value definition is the same as that of fErr_65.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>fQual_65</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>Four level flux quality indicator:<br /> 
+      3:&nbsp; High quality (the source is confirmed and flux is reliable)<br /> 
+      2:&nbsp; The source is confirmed but flux is not reliable (see <em>flags_65</em>)<br /> 
+      1:&nbsp; The source is not confirmed<br /> 
+      0:&nbsp; Not observed (no scan data available)
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>fQual_90</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>Four level flux quality indicator.<br /> 
+      The value definition is the same as that of fQual_65.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>fQual_140</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>Four level flux quality indicator.<br /> 
+      The value definition is the same as that of fQual_65.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>fQual_160</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>Four level flux quality indicator.<br /> 
+      The value definition is the same as that of fQual_65.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>flags_65</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>A 16-bit flag per band indicating various data condition.
+      In version 1 catalogue three bits are used. 
+      The first bit (bit0) is used to indicate 
+      the <em>CDS</em> sampling mode. The second bit (bit1) warns
+      the flux of the band is less than a half of the detection limit,
+      and is not reliable. The fourth bit (bit3) tells that
+      the source is possibly false detection due to `side-lobe' effects
+      (see, Section 7.7 
+      of the 
+      <a href="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/RN/AKARI-FIS_BSC_V1_RN.pdf">
+      Release Note</a>).
+      The third bit (bit2) was
+      previously indicated an anomaly which does not exist in the
+      current version, and thus is kept unused.
+      Sources with bit1 or bit3 = 1 have <em>fQual_65</em> = 2 or less.
+      Other bits are reserved for the future implementation. 
+   <br />
+   <pre style="font-size: x-small;">
+                                   USB ------------- bit ----- LSB
+                                       ... 7  6  5  4  3  2  1  0
+                                   decimal |  |  |  |  |  |  |  |
+   reserved ------------------------- 128 -+  |  |  |  |  |  |  |
+   reserved -------------------------- 64 ----+  |  |  |  |  |  |
+   reserved -------------------------- 32 -------+  |  |  |  |  |
+   reserved -------------------------- 16 ----------+  |  |  |  |
+   1: possibly `side-lobe' detection--- 8 -------------+  |  |  |
+   not used --------------------------- 4 ----------------+  |  |
+   1: Flux too low--------------------- 2 -------------------+  |
+   0: Normal mode, 1: CDS mode -------- 1 ----------------------+
+   </pre>
+   `NULL' is set in case of no measurement (<em>fQual_65</em> = 0).
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>flags_90</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>A 16-bit flag per band indicating various data condition.<br />
+      The value definition is the same as that of flags_65.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>flags_140</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>A 16-bit flag per band indicating various data condition.<br />
+      The value definition is the same as that of flags_65.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>flags_160</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>A 16-bit flag per band indicating various data condition.<br />
+      The value definition is the same as that of flags_65.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>nScanC_65</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Number of scans on which the source is properly detected with
+      <em>logEvidence</em> larger than the threshold.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>nScanC_90</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Number of scans on which the source is properly detected with
+      <em>logEvidence</em> larger than the threshold.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>nScanC_140</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Number of scans on which the source is properly detected with
+      <em>logEvidence</em> larger than the threshold.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>nScanC_160</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Number of scans on which the source is properly detected with
+      <em>logEvidence</em> larger than the threshold.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>nScanP_65</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Total number of scans that passed on the source (that possibly
+   observed the source)
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>nScanP_90</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Total number of scans that passed on the source (that possibly
+   observed the source)
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>nScanP_140</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Total number of scans that passed on the source (that possibly
+   observed the source)
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>nScanP_160</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Total number of scans that passed on the source (that possibly
+   observed the source)
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>mConf_65</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>The month confirmation flags are prepared per band.
+      The value is 1 when the source is observed in the scans separated more
+      than one months (usually an object is visible at every 6 months).
+      This information is independent to hours confirmation and can be 1
+      even if the source is not confirmed (<em>fQual_65</em> = 1).
+      Because of the visibility constraint of the AKARI Survey, some sky 
+      regions were observed by scans only within a month.<br />
+      This flag is `NULL' for <em>fQual_65</em> = 0 sources.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>mConf_90</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>The month confirmation flags are prepared per band.<br />
+      The value definition is the same as that of mConf_65.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>mConf_140</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>The month confirmation flags are prepared per band.<br />
+      The value definition is the same as that of mConf_65.
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>mConf_160</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>The month confirmation flags are prepared per band.<br />
+      The value definition is the same as that of mConf_65.
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>nDens</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>Number of sources in the catalogue within the distance
+   of 5 arcmin from the source. This value is intended to be an 
+   indicator of crowdedness of the sky region. Since the source
+   extraction program is tuned so that a unique source is found
+   within 48 arcsec radius, the 5 arcmin radius corresponds to
+   approximately 40 beams.
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>cx</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>Unit vector for (ra,dec)</td>
+ </tr>
+ <tr>
+  <td>38</td><td>cy</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>Unit vector for (ra,dec)</td>
+ </tr>
+ <tr>
+  <td>39</td><td>cz</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>Unit vector for (ra,dec)</td>
+ </tr>
+</table>
+
+
+<hr />
+
+
+<h2>
+<a id="IRAS" name="IRAS">
+IRAS PSC v2.1
+</a>
+<a href="http://irsa.ipac.caltech.edu/IRASdocs/iras.html"><img src="14px-external.gif" alt="IRSA Site" class="no_border" /></a>
+</h2>
+
+<p>
+Number of rows: <strong>245,889</strong>.
+</p>
+
+<table border="1" cellspacing="0" frame="box" rules="all" width="99%" cellpadding="3">
+ <tr>
+  <th>#</th><th>name</th><th>type</th><th>null</th><th>index</th>
+  <th>unit</th><th>description</th>
+ </tr>
+ <tr>
+  <td>1</td><td>objid</td><td>INT4</td><td></td>
+  <td>P</td>
+  <td></td>
+  <td>Primary key (unique identifier) for the 2MASS Kit database.
+      Do not refer this ID in your literatures.</td>
+ </tr>
+ <tr>
+  <td>2</td><td>pscname</td><td>VARCHAR(11)</td><td></td>
+  <td>U</td>
+  <td></td>
+  <td>
+      IRAS source name.
+  </td>
+ </tr>
+ <tr>
+  <td>3</td><td>ra</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>deg</td>
+  <td>
+      RA equinox J2000.0, epoch B1983.5.
+  </td>
+ </tr>
+ <tr>
+  <td>4</td><td>dec</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>deg</td>
+  <td>
+      Dec equinox J2000.0, epoch B1983.5.
+  </td>
+ </tr>
+ <tr>
+  <td>5</td><td>semimajor</td><td>INT2</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+      95% confidence error ellipse semimajor axis.
+  </td>
+ </tr>
+ <tr>
+  <td>6</td><td>semiminor</td><td>INT2</td><td></td>
+  <td></td>
+  <td>arcsec</td>
+  <td>
+      95% confidence error ellipse semiminor axis.
+  </td>
+ </tr>
+ <tr>
+  <td>7</td><td>posang</td><td>INT2</td><td></td>
+  <td></td>
+  <td>deg</td>
+  <td>
+      Uncertainty ellipse position angle.
+  </td>
+ </tr>
+ <tr>
+  <td>8</td><td>nhcon</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of times observed.
+  </td>
+ </tr>
+ <tr>
+  <td>9</td><td>fnu_12</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+      Average non-color corrected flux density, 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>10</td><td>fnu_25</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+      Average non-color corrected flux density, 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>11</td><td>fnu_60</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+      Average non-color corrected flux density, 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>12</td><td>fnu_100</td><td>FLOAT8</td><td></td>
+  <td>S</td>
+  <td>Jy</td>
+  <td>
+      Average non-color corrected flux density, 100u.
+  </td>
+ </tr>
+ <tr>
+  <td>13</td><td>fqual_12</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>
+      Flux density quality, 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>14</td><td>fqual_25</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>
+      Flux density quality, 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>15</td><td>fqual_60</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>
+      Flux density quality, 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>16</td><td>fqual_100</td><td>INT2</td><td></td>
+  <td>S</td>
+  <td></td>
+  <td>
+      Flux density quality, 100um.
+  </td>
+ </tr>
+ <tr>
+  <td>17</td><td>nlrs</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of significant LRS spectra.
+  </td>
+ </tr>
+ <tr>
+  <td>18</td><td>lrschar</td><td>VARCHAR(2)*</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Characterization of averaged LRS spectrum.
+  </td>
+ </tr>
+ <tr>
+  <td>19</td><td>relunc_12</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Percent relative flux den. uncertainty, 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>20</td><td>relunc_25</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Percent relative flux den. uncertainty, 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>21</td><td>relunc_60</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Percent relative flux den. uncertainty, 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>22</td><td>relunc_100</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Percent relative flux den. uncertainty, 100um.
+  </td>
+ </tr>
+ <tr>
+  <td>23</td><td>tsnr_12</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      10x minimum signal-to-noise ratio, 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>24</td><td>tsnr_25</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      10x minimum signal-to-noise ratio, 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>25</td><td>tsnr_60</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      10x minimum signal-to-noise ratio, 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>26</td><td>tsnr_100</td><td>INT4</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      10x minimum signal-to-noise ratio, 100um.
+  </td>
+ </tr>
+ <tr>
+  <td>27</td><td>cc_12</td><td>VARCHAR(2)</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Point source correlation coefficient, 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>28</td><td>cc_25</td><td>VARCHAR(2)</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Point source correlation coefficient, 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>29</td><td>cc_60</td><td>VARCHAR(2)</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Point source correlation coefficient, 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>30</td><td>cc_100</td><td>VARCHAR(2)</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Point source correlation coefficient, 100um.
+  </td>
+ </tr>
+ <tr>
+  <td>31</td><td>var</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Percent likelihood of variability.
+  </td>
+ </tr>
+ <tr>
+  <td>32</td><td>disc</td><td>VARCHAR(1)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Discrepant fluxes flag, 1 per band, hex encode.
+  </td>
+ </tr>
+ <tr>
+  <td>33</td><td>confuse</td><td>VARCHAR(1)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Confusion flags, 1 per band, hex encoded.
+  </td>
+ </tr>
+ <tr>
+  <td>34</td><td>pnearh</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of nearby hours-confirmed point sources.
+  </td>
+ </tr>
+ <tr>
+  <td>35</td><td>pnearw</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of nearby weeks-confirmed point sources.
+  </td>
+ </tr>
+ <tr>
+  <td>36</td><td>ses1_12</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby seconds-confirmed small ext. src., 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>37</td><td>ses1_25</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby seconds-confirmed small ext. src., 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>38</td><td>ses1_60</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby seconds-confirmed small ext. src., 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>39</td><td>ses1_100</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby seconds-confirmed small ext. src., 100u.
+  </td>
+ </tr>
+ <tr>
+  <td>40</td><td>ses2_12</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby weeks-confirmed small ext. src., 12um.
+  </td>
+ </tr>
+ <tr>
+  <td>41</td><td>ses2_25</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby weeks-confirmed small ext. src., 25um.
+  </td>
+ </tr>
+ <tr>
+  <td>42</td><td>ses2_60</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby weeks-confirmed small ext. src., 60um.
+  </td>
+ </tr>
+ <tr>
+  <td>43</td><td>ses2_100</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Nearby weeks-confirmed small ext. src., 100um.
+  </td>
+ </tr>
+ <tr>
+  <td>44</td><td>hsdflag</td><td>VARCHAR(1)*</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      High source density bin flag, hex encoded.
+  </td>
+ </tr>
+ <tr>
+  <td>45</td><td>cirr1</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of nearby 100 micron only WSDB sources.
+  </td>
+ </tr>
+ <tr>
+  <td>46</td><td>cirr2</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      100 micron sky brightness ratio to flux den.
+  </td>
+ </tr>
+ <tr>
+  <td>47</td><td>cirr3</td><td>INT2</td><td></td>
+  <td></td>
+  <td>MJy/sr</td>
+  <td>
+      Total 100 micron sky surface brightness.
+  </td>
+ </tr>
+ <tr>
+  <td>48</td><td>nid</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Number of positional associations.
+  </td>
+ </tr>
+ <tr>
+  <td>49</td><td>idtype</td><td>INT2</td><td></td>
+  <td></td>
+  <td></td>
+  <td>
+      Type of object.
+  </td>
+ </tr>
+ <tr>
+  <td>50</td><td>mhcon</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Possible number of HCONs.
+  </td>
+ </tr>
+ <tr>
+  <td>51</td><td>fcor_12</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Flux correction factor applied (times 1000).
+  </td>
+ </tr>
+ <tr>
+  <td>52</td><td>fcor_25</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Flux correction factor applied (times 1000).
+  </td>
+ </tr>
+ <tr>
+  <td>53</td><td>fcor_60</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Flux correction factor applied (times 1000).
+  </td>
+ </tr>
+ <tr>
+  <td>54</td><td>fcor_100</td><td>INT2</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      Flux correction factor applied (times 1000).
+  </td>
+ </tr>
+ <tr>
+  <td>55</td><td>rat_12_25</td><td>FLOAT8</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      fnu_12 / fnu_25.
+  </td>
+ </tr>
+ <tr>
+  <td>56</td><td>err_12_25</td><td>FLOAT8</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      % uncertainty in rat_12_25, -1=upperlim, -2=lowerlim.
+  </td>
+ </tr>
+ <tr>
+  <td>57</td><td>rat_25_60</td><td>FLOAT8</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      fnu_25 / fnu_60.
+  </td>
+ </tr>
+ <tr>
+  <td>58</td><td>err_25_60</td><td>FLOAT8</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      % uncertainty in rat_25_60, -1=upperlim, -2=lowerlim.
+  </td>
+ </tr>
+ <tr>
+  <td>59</td><td>rat_60_100</td><td>FLOAT8</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      fnu_60 / fnu_100.
+  </td>
+ </tr>
+ <tr>
+  <td>60</td><td>err_60_100</td><td>FLOAT8</td><td>Y</td>
+  <td></td>
+  <td></td>
+  <td>
+      % uncertainty in rat_60_100, -1=upperlim, -2=lowerlim.
+  </td>
+ </tr>
+ <tr>
+  <td>61</td><td>cx</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>
+      Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>62</td><td>cy</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>
+      Unit vector for (ra,dec).
+  </td>
+ </tr>
+ <tr>
+  <td>63</td><td>cz</td><td>FLOAT8</td><td></td>
+  <td>C1</td>
+  <td></td>
+  <td>
+      Unit vector for (ra,dec).
+  </td>
+ </tr>
+
+</table>
+
+
+<hr />
+
+
+</body>
+</html>

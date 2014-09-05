@@ -1,0 +1,85 @@
+--                     --
+-- Functions for admin --
+--                     --
+
+CREATE LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION fRegisterCFunction(psql_fnc TEXT, ret_type TEXT, c_fnc TEXT)
+  RETURNS TEXT AS $$
+    DECLARE
+        ret TEXT;
+        cmd TEXT;
+    BEGIN
+        cmd := 'CREATE OR REPLACE FUNCTION ' || psql_fnc ||
+               ' RETURNS ' || ret_type || ' AS ''' ||
+               '@PG_MPATH@/@PG_MODULE@' || ''', ''' || c_fnc || '''' ||
+               ' IMMUTABLE LANGUAGE ''c''';
+        EXECUTE cmd;
+        RETURN 'done: ' || substr(psql_fnc,1,strpos(psql_fnc,'(')-1);
+    END;
+  $$ LANGUAGE 'plpgsql' VOLATILE;
+
+
+--                             --
+-- Registration of C Functions --
+--                             --
+
+SELECT fRegisterCFunction('fB2Ra(FLOAT8,FLOAT8)', 'FLOAT8', 'b2ra');
+SELECT fRegisterCFunction('fB2Dec(FLOAT8,FLOAT8)', 'FLOAT8', 'b2dec');
+
+SELECT fRegisterCFunction('fI2Ra(FLOAT8,FLOAT8)', 'FLOAT8', 'i2ra');
+SELECT fRegisterCFunction('fI2Dec(FLOAT8,FLOAT8)', 'FLOAT8', 'i2dec');
+
+SELECT fRegisterCFunction('fE2Ra(FLOAT8,FLOAT8)', 'FLOAT8', 'e2ra');
+SELECT fRegisterCFunction('fE2Dec(FLOAT8,FLOAT8)', 'FLOAT8', 'e2dec');
+
+SELECT fRegisterCFunction('fG2Ra(FLOAT8,FLOAT8)', 'FLOAT8', 'g2ra');
+SELECT fRegisterCFunction('fG2Dec(FLOAT8,FLOAT8)', 'FLOAT8', 'g2dec');
+
+SELECT fRegisterCFunction('fCel2Ra(TEXT,FLOAT8,FLOAT8)', 'FLOAT8', 'cel2ra');
+SELECT fRegisterCFunction('fCel2Dec(TEXT,FLOAT8,FLOAT8)', 'FLOAT8', 'cel2dec');
+
+
+SELECT fRegisterCFunction('fJ2Ra1950(FLOAT8,FLOAT8)', 'FLOAT8', 'j2ra1950');
+SELECT fRegisterCFunction('fJ2Dec1950(FLOAT8,FLOAT8)', 'FLOAT8', 'j2dec1950');
+
+SELECT fRegisterCFunction('fJ2Alpha(FLOAT8,FLOAT8)', 'FLOAT8', 'j2alpha');
+SELECT fRegisterCFunction('fJ2Delta(FLOAT8,FLOAT8)', 'FLOAT8', 'j2delta');
+
+SELECT fRegisterCFunction('fJ2Lambda(FLOAT8,FLOAT8)', 'FLOAT8', 'j2lambda');
+SELECT fRegisterCFunction('fJ2Beta(FLOAT8,FLOAT8)', 'FLOAT8', 'j2beta');
+
+SELECT fRegisterCFunction('fJ2L(FLOAT8,FLOAT8)', 'FLOAT8', 'j2l');
+SELECT fRegisterCFunction('fJ2B(FLOAT8,FLOAT8)', 'FLOAT8', 'j2b');
+
+SELECT fRegisterCFunction('fJ2Lon(FLOAT8,FLOAT8,TEXT)', 'FLOAT8', 'j2lon');
+SELECT fRegisterCFunction('fJ2Lat(FLOAT8,FLOAT8,TEXT)', 'FLOAT8', 'j2lat');
+
+SELECT fRegisterCFunction('_fJI2Lon(INT4,INT4,TEXT)', 'FLOAT8', '_ji2lon');
+SELECT fRegisterCFunction('_fJI2Lat(INT4,INT4,TEXT)', 'FLOAT8', '_ji2lat');
+
+SELECT fRegisterCFunction('fEq2X(FLOAT8,FLOAT8)', 'FLOAT8', 'eq2x');
+SELECT fRegisterCFunction('fEq2Y(FLOAT8,FLOAT8)', 'FLOAT8', 'eq2y');
+SELECT fRegisterCFunction('fEq2Z(FLOAT8,FLOAT8)', 'FLOAT8', 'eq2z');
+SELECT fRegisterCFunction('fArcMin2Rad(FLOAT8)', 'FLOAT8', 'arcmin2rad');
+SELECT fRegisterCFunction('fRad2ArcMin(FLOAT8)', 'FLOAT8', 'rad2arcmin');
+SELECT fRegisterCFunction('fDistanceArcMinXYZ(FLOAT8,FLOAT8,FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'FLOAT8', 'distancearcminxyz');
+SELECT fRegisterCFunction('_fDistanceArcMinEqiXYZ(INT4,INT4,FLOAT8,FLOAT8,FLOAT8)', 'FLOAT8', '_distancearcmineqixyz');
+SELECT fRegisterCFunction('fDistanceArcMinEq(FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'FLOAT8', 'distancearcmineq');
+SELECT fRegisterCFunction('fDistanceArcMinCel(FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'FLOAT8', 'distancearcmineq');
+SELECT fRegisterCFunction('fGetMaxDistanceRadForBoxCel(FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'FLOAT8', 'getmaxdistanceradforboxcel');
+SELECT fRegisterCFunction('fEvalPositionInBoxCel(FLOAT8,FLOAT8,FLOAT8,FLOAT8,FLOAT8,FLOAT8)', 'BOOL', 'evalpositioninboxcel');
+SELECT fRegisterCFunction('_fEvalPositionInBoxCelDiv(FLOAT8,FLOAT8,INT4,INT4,FLOAT8,FLOAT8,INT4,INT4,FLOAT8,FLOAT8)', 'BOOL', '_evalpositioninboxceldiv');
+SELECT fRegisterCFunction('_fGetSqlForBoxSearchDiv(TEXT,TEXT,FLOAT8,FLOAT8,INT4,INT4,FLOAT8,FLOAT8,INT4,INT4)', 'TEXT', '_getsqlforboxsearchdiv');
+
+SELECT fRegisterCFunction('_fEqI2XI16(INT4,INT4)', 'INT2', '_eqi2xi16');
+SELECT fRegisterCFunction('_fEqI2YI16(INT4,INT4)', 'INT2', '_eqi2yi16');
+SELECT fRegisterCFunction('_fEqI2ZI16(INT4,INT4)', 'INT2', '_eqi2zi16');
+
+SELECT fRegisterCFunction('_fLonI2Lon(INT4)', 'FLOAT8', '_loni2lon');
+SELECT fRegisterCFunction('_fLatI2Lat(INT4)', 'FLOAT8', '_lati2lat');
+
+SELECT fRegisterCFunction('_fTextEq4TblSel(TEXT,TEXT)', 'BOOL', '_texteq4tblsel');
+
+-- 
+

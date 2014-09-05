@@ -1,0 +1,1726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="keywords" content="2MASS,Kit" />
+  <meta name="description" content="2MASS Catalog Server Kit" />
+  <title>2MASS Catalog Server Kit: Home</title>
+<style type="text/css">
+ body {
+  background-color: #efefef;
+  color: #000000;
+ }
+ a:link { color: blue; }
+ a:visited { color: #551a8b; }
+ a:active { color: red; }
+ em.c2 { font-size: 80%; }
+ h1.c1 { text-align: center; }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em; }
+ li { margin-bottom: 0.4em; }
+ pre { margin-top: 0.2em; }
+ pre { margin-bottom: 0.2em; }
+ p { text-align: justify; line-height: 1.5; }
+ ul { line-height: 1.5; }
+ pre { line-height: 1.3; }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; }
+ th { text-align: center; white-space: nowrap; font-weight: normal; }
+ td { text-align: center; white-space: nowrap; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ img.float_right {
+  float: right;
+  border: 0;
+  margin: 0 0 1em 1em;
+ }
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<a href="index.ja.html"><img class="float_right" alt="Nipponese version" src="nipponese_version.png" /></a>
+
+<h1 style="margin-bottom: 0;">2MASS Catalog Server Kit</h1>
+<p style="margin-top: 0;">
+<strong>Supports 2MASS, USNO-B1.0, UCAC3, PPMXL, GSC-2.3, etc.</strong>
+</p>
+
+<h2>Nov. 2011 Version 2.0</h2>
+
+<pre>
+[HISTORY]
+Nov.2011  V. 2.0  A lot of improvements including design changes.
+                  Supports USNO-B1.0, UCAC3, GSC-2.3.2, and PPMXL.
+Sep.2011  V. 1.2  Supports fast box search.
+Aug.2011  V. 1.1  Supports Tycho2, AKARI IRC, AKARI FIS and IRAS PSC.
+                  Added a client tool: clients/sql2mass.php.
+Nov.2010  V. 1.0  Supports 2MASS PSC only.
+</pre>
+
+<h3>Yamauchi @ NAOJ/ISAS</h3>
+
+<img class="float_right" src="postgresql.gif" alt="PostgreSQL Powered" />
+
+<p>
+Special Thanks to: Dr. Satoshi Takita, Dr. Shinki Ooyabu (Linux tests),
+Dr. Norio Ikeda (Mac OS X port), and Dr. Yoshifusa Ita (document review). 
+This document was translated by KOYOSHOUJI  CO.,LTD.
+</p>
+
+<hr />
+
+<p>
+Page Index:<br />
+<a href="index.html">HOME</a> /
+<a href="2mass.html">Install Huge Catalogs</a> /
+<a href="others.html">Install Small Catalogs</a> /
+<a href="tableinfo.html">Information about table columns</a>
+</p>
+
+<p>
+Index of Current Page:<br />
+<a href="#INTRO">Introduction</a> /
+<a href="#CATALOGS">Supported Catalogs</a> /
+<a href="#REQUIREMENT">Requirements</a> /
+<a href="#DOWNLOAD">Download</a> /
+<a href="#INSTALL">Installation</a> /
+<a href="#CONFIG">Settings for PostgreSQL</a> /
+<a href="#TUNE">Tuning</a> / <a href="#USE">Usage</a> /
+<a href="#FUNCTION">Stored Functions</a> /
+<a href="#CLIENTS">Client Tools</a> /
+<a href="#FAQ">FAQ</a>
+</p>
+
+<hr />
+
+<h2>
+<a id="INTRO" name="INTRO">
+Introduction
+</a>
+</h2>
+
+<p>
+2MASS Kit is software for use 
+in easily constructing a high performance search server for 
+important astronomical catalogs.
+You can use our kit with installing only necessary catalogs.
+</p>
+<p>
+It is tuned for optimal coordinate search performance 
+(Radial Search, Box Search, Rectangular Search, and Cross-ID) 
+of huge catalogs, thus increasing the speed by more than 
+an order of magnitude when compared to simple indexing on a single table,
+and is of course much faster than scat of WCSTools.
+In particular, matches with other catalogs (Cross-IDs) have been 
+thoroughly tuned, thus under optimal conditions 
+enabling more than 3,000 searches per second for 2MASS PSC.
+</p>
+<p>
+The kit is best characterized by its flexible tuning.
+Each table index is registered in one of six table spaces 
+(each resides in a separate directory), 
+thus allowing only the essential parts to be easily moved onto fast devices.
+Given the terrific evolution that has taken place with recent SSDs 
+in performance, a very cost-effective way of constructing high-performance
+servers is moving part of or all table indices to a fast SSD.
+</p>
+<p>
+Potential users would mainly be observatories, but it is also very deployable on personal use PCs, PCs in use at observatories, and data center servers.
+</p>
+<p>
+The kit utilizes open source RDBMS,
+<a href="http://www.postgresql.org/">PostgreSQL</a>-8.4,
+and  therefore requires no software licensing fees.
+</p>
+
+<h3>
+<a id="CATALOGS" name="CATALOGS">
+Supported Catalogs
+</a>
+</h3>
+
+<ul>
+ <li>2MASS PSC:   470,992,970 rows</li>
+ <li>USNO-B1.0: 1,045,175,762 rows</li>
+ <li>GSC-2.3.2:   945,592,683 rows</li>
+ <li>UCAC3:       100,766,420 rows</li>
+ <li>PPMXL:       910,468,710 rows</li>
+ <li>Tycho-2:       2,539,913 rows</li>
+ <li>AKARI IRC PSC:   870,973 rows</li>
+ <li>AKARI FIS PSC:   427,071 rows</li>
+ <li>IRAS PSC:        245,889 rows</li> 
+</ul>
+
+<h3>Performance of Coordinate Searches</h3>
+
+<p>
+Examples search speeds of a Radial Search, Box Search and Rectangular Search of 2MASS PSC 
+under the best conditions are provided below.
+The elapsed time was measured under the same conditions three times, 
+and then averaged.
+</p>
+<p>
+<strong>Hardware</strong><br />
+CPU: Intel Core2 Quad Q9650 (3.0 GHz)<br />
+Mainboard: <a href="http://www.gigabyte.com/">GIGABYTE</a>
+<a href="http://www.gigabyte.com/products/product-page.aspx?pid=2754">GA-EX38-DS4</a><br />
+Memory: DDR2-800 8 GB
+</p>
+<p>
+<strong>Software</strong><br />
+OS: <a href="http://www.centos.org/">CentOS</a> 5.5 64-bit<br />
+RDBMS: PostgreSQL-8.4.5<br />
+</p>
+
+<table>
+ <tr>
+  <th>Search Criteria</th><th>Number of Bodies</th><th>Elapsed Time</th>
+  <th>SQL Statements Used</th>
+ </tr>
+ <tr>
+  <td>Radial (1' of radius)</td><td>2</td><td>0.001 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 1);</td>
+ </tr>
+ <tr>
+  <td>Radial (60' of radius)</td><td>5198</td><td>0.022 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 60);</td>
+ </tr>
+ <tr>
+  <td>Radial (180' of radius)</td><td>47632</td><td>0.149 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 180);</td>
+ </tr>
+ <tr>
+  <td>Radial (360' of radius)</td><td>189784</td><td>0.484 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjEq(0, 0, 360);</td>
+ </tr>
+ <tr>
+  <td>Box (120'x120')</td><td>6644</td><td>0.036 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjFromBoxCel('j2000', 0,0, 60,60);</td>
+ </tr>
+ <tr>
+  <td>Box (120'x2400')</td><td>136579</td><td>0.623 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetNearbyObjFromBoxCel('j2000', 0,0, 60,1200);</td>
+ </tr>
+ <tr>
+  <td>Rectangular (2x2deg)</td><td>6644</td><td>0.025 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetObjFromRectEq(-1,1, -1,1);</td>
+ </tr>
+ <tr>
+  <td>Rectangular (10x10deg)</td><td>167266</td><td>0.386 sec</td>
+  <td>SELECT count(*) FROM fTwomassGetObjFromRectEq(-5,5, -5,5);</td>
+ </tr>
+</table>
+
+<p>
+Note:
+All the values result from the ideal condition where the tables and indices have been cached in the memory.
+Immediately after the machine has been turned on, in particular, much slower results will occur unless you use a fast SSD as nothing is cached in the memory and frequent disk I/Os will therefore take place.
+A RDBMS dedicated machine being used and operated for sufficiently long without being shut down will enable the search results to be a lot closer to the values shown above.
+</p>
+
+<h3>Performance of Cross-ID</h3>
+
+<p>
+The following table shows the results of Cross-ID beteen 2MASS PSC and
+<a href="http://www.astro.ku.dk/~erik/Tycho-2/">Tycho-2 catalog</a>
+(which includes 2,539,913 objects) using a
+&quot;<a href="http://www.crucial.com/">Crucial</a>
+<a href="http://www.crucial.com/store/listmodule/SSD/~2.5-inch%20Solid%20State%20Drive~/list.html">SSD C300</a>&quot; and a S-ATA2 (ICH9R) or S-ATA3
+(<a href="http://www.asus.com/product.aspx?P_ID=lGYmelQ8mJvPtYTv">ASUS U3S6</a>).<br />
+In this test the U3S6 and C300 were connected to the same hardware as in the above coordinate search and with the tables and indices for the Radial Search (around 30 GB) on the C300 (using the ext4 filesystem).
+In addition,
+<code>shared_buffers</code>
+in postgresql.conf was set to
+<code>128 MB</code>,
+and the machine rebooted before each measurement.
+</p>
+
+<table>
+ <tr>
+  <th>Search Radius</th><th>Number of Objects</th><th>Elapsed Time (S-ATA2)</th><th>Elapsed Time (S-ATA3)</th>
+  <th>SQL Statements Used</th>
+ </tr>
+ <tr>
+  <td>1 arcsec</td><td>2,494,894</td><td>16.8 minutes</td><td>14.8 minutes</td>
+  <td>SELECT count(fTwomassGetNearestObjIDEq(o.ra, o.dec, fSec2Min(1.0))) FROM ( SELECT * FROM tycho2 ORDER BY dec ) o;</td>
+ </tr>
+ <tr>
+  <td>0.1 arcmin</td><td>2,538,452</td><td>17.1 minutes</td><td>15.1 minutes</td>
+  <td>SELECT count(fTwomassGetNearestObjIDEq(o.ra, o.dec, 0.1)) FROM ( SELECT * FROM tycho2 ORDER BY dec ) o;</td>
+ </tr>
+ <tr>
+  <td>0.25 arcmin</td><td>2,539,393</td><td>17.8 minutes</td><td>15.8 minutes</td>
+  <td>SELECT count(fTwomassGetNearestObjIDEq(o.ra, o.dec, 0.25)) FROM ( SELECT * FROM tycho2 ORDER BY dec ) o;</td>
+ </tr>
+</table>
+
+<p>
+As can be seen 2,400 searches per second were performed of the 2MASS catalog with the S-ATA2 connection and 2,800 searches per second with the S-ATA3.
+Note that this level of search speed can be achieved using a modest performance PC with S-ATA2 or S-ATA3 ports and the low-end Crucial C300, 64GB version model
+(<a href="http://www.amazon.com/Crucial-RealSSD-C300-internal-SATA-600/dp/B003SV6CIC">check price of a C300 at www.amazon.com</a>).
+</p>
+
+<p>
+An Adaptec RAID 2405 + 7200 rpm S-ATA2 HDD (RAID 1) was also tested, but the result was about half the search speed achieved with the above S-ATA3 + C300. HDD with on-board S-ATA interfaces may result in no comparable speed being achieved.
+</p>
+
+<p>
+A certain size catalog is necessary in attaining satisfactory performance, however, as the memory cache is most effectively utilized with large catalogs (matches with orders made by Dec. are required).
+</p>
+
+<hr />
+
+<h2>
+<a id="REQUIREMENT" name="REQUIREMENT">
+Requirements
+</a>
+</h2>
+
+<ul>
+ <li>OS: Linux (64-bit version RHEL-5 or CentOS-5 recommended), Mac OS X, or Solaris (requires suitable knowledge)<br />
+  It should be installable on Fedora and the beta-version of Redhat without problem but I personally I have not tried that.<br />
+  Power users are encouraged to install it on operating systems other than mentioned above.
+  I look forward to any reports on that type of installation.
+ </li>
+ <li>Memory: 3 GB or more</li>
+ <li>Free HDD space: 
+      <ul>
+       <li>2MASS PSC: DB:xxxGB Work:190GB</li>
+       <li>USNO-B1.0: DB:xxxGB Work:272GB</li>
+       <li>GSC-2.3.2: DB:xxxGB Work:297GB</li>
+       <li>UCAC3: DB:xxxGB Work:32GB</li>
+       <li>PPMXL: DB:xxxGB Work:212GB</li>
+      </ul>
+ </li>
+ <li>CPU: I recommend processors suitable for fast single thread processing, such as x86 architecture.</li>
+ <li>The hard-disk interface should be optimized (be aware of any BIOS settings for the operational modes of S-ATA)</li>
+</ul>
+
+<p>
+We show some examples of additional hardwares 
+for ultra fast search of huge catalogs:
+</p>
+
+<ul>
+ <li>If you require Cross-ID (1,000 searches per second or more):<br />
+  a low-cost, high-performance SSD (connected through S-ATA 2/3)<br />
+  Examples:
+  <a href="http://www.crucial.com/store/listmodule/SSD/~2.5-inch%20Solid%20State%20Drive~/list.html">Crucial C300</a> or Intel X25-M, etc.<br />
+  In tests using a S-ATA2 connection (MCP55 Pro, ICH9R) the C300 was at least 10% faster than the X25-M.
+ </li>
+ <li>If you require the best performance in all aspects of searches:<br />
+  Large main memory and large high-performance SSD
+ </li>
+ <li>If you require optimal performance from a Crucial C300 but your motherboard does not have a S-ATA3 port, I would recommend buying an S-ATA3 interface card,
+  LSI 9211-4i or <a href="http://www.asus.com/product.aspx?P_ID=lGYmelQ8mJvPtYTv">ASUS U3S6</a>.
+  If there is no PCIe x4 capable free slot you should consider using a
+  <a href="http://www.elsa-jp.co.jp/products/graphicsboard/quadro_nvs290pciex1/">display adapter like this</a> in a PCIe x1 slot.<br />
+  <font size="-1">Note that a U3S6 cannot be used as a low-profile card.</font>
+ </li>
+ <li>A data center could also utilize:
+  <a href="http://www.fusionio.com/products/">these products</a>.
+ </li>
+</ul>
+
+<hr />
+
+<h2>
+<a id="DOWNLOAD" name="DOWNLOAD">
+Download
+</a>
+</h2>
+
+<p>
+Download following package:
+</p>
+
+<ul>
+ <li>
+  <a href="2masskit-2.0.tar.gz">2masskit-2.0.tar.gz</a>
+ </li>
+</ul>
+
+<hr />
+
+<h2>
+<a id="INSTALL" name="INSTALL">
+Installation
+</a>
+</h2>
+
+<p>
+Here I will walk through the installation procedure for Red Hat Enterprise Linux 5 (CentOS 5) and Mac OS X.
+With any other OS you will need to be slightly creative where appropriate. 
+</p>
+
+<h3>Disable SELinux</h3>
+<p>
+If you are using Linux, disable SELinux using a setup command or other means.
+</p>
+
+<h3>Shared Memory Settings</h3>
+<p>
+Set the maximum shared-memory segment to a sufficiently large value in
+<code>/etc/sysctl.conf</code>.
+It&#39;s completely valid to set the value larger than the amount of physical memory.
+</p>
+
+<h4>64-bit Linux</h4>
+
+<pre>
+# Controls the maximum shared segment size, in bytes
+kernel.shmmax = 68719476736
+</pre>
+
+<h4>32-bit Linux</h4>
+
+<pre>
+# Controls the maximum shared segment size, in bytes
+kernel.shmmax = 3221225472
+</pre>
+
+<h4>Mac OS X 10.5 or later</h4>
+
+<p>
+Create
+<code>/etc/sysctl.conf</code> if it doesn&#39;t exist:
+</p>
+
+<pre>
+kern.sysv.shmmax=68719476736
+</pre>
+
+<p>
+If you are using Mac OS X 10.4 or earlier, edit
+<code>/etc/rc</code>.
+However, be aware that updating the OS will overwrite that setting.
+</p>
+
+<p>
+After the parameter setting has been added or modified reboot the OS.
+</p>
+
+<h3>Installing PostgreSQL-8.4</h3>
+
+<p>
+On Linux install postgresql84, postgresql84-libs, postgresql84-devel, and postgresql84-server:
+</p>
+
+<pre>
+$ su
+# yum install postgresql84
+# yum install postgresql84-devel
+# yum install postgresql84-server
+</pre>
+
+<p>
+On Mac OS X use macports like <br />
+(each binary will be placed in
+<code>/opt/local/lib/postgresql84/bin/</code>):
+</p>
+
+<pre>
+# port install postgresql84
+# port install postgresql84-server
+</pre>
+
+<p>
+If PostgreSQL server is running stop it.
+</p>
+
+<p><strong>Linux</strong></p>
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql stop
+</pre>
+
+<p><strong>Mac OS X</strong></p>
+<pre>
+$ su
+# pg_ctl stop
+</pre>
+
+<h3>Preparing a DB directory</h3>
+
+<p>
+Create a directory for PostgreSQL to save its data in. In this kit the directory is assumed to be
+<code>/db</code>
+(you can override this by modifying Makefile).
+Allocate required disk space.
+</p>
+
+<p>
+In normal circumstances you will have a large HDD partition for your home directories.
+If your home partition is large enough you can use the --bind mount option to separate 
+<code>/db</code>
+from
+<code>/home</code>.
+Here is the case where
+<code>/dev/sda4</code>
+is the home partition:
+</p>
+
+<pre>
+$ su
+# mkdir -p /mnt/sda4
+# mount /dev/sda4 /mnt/sda4
+# mkdir -p /mnt/sda4/home
+# mkdir -p /home
+# mount --bind /mnt/sda4/home /home
+# mkdir -p /mnt/sda4/db
+# mkdir -p /db
+# mount --bind /mnt/sda4/db /db
+</pre>
+
+<p>
+If you can allocate the entire HDD partition for
+<code>/db</code>,
+you can make a small performance optimization using the
+&quot;<code>-o noatime</code>&quot;
+mount option.
+</p>
+
+<p>
+Here is your
+<code>/etc/fstab</code>:
+</p>
+
+<pre>
+/dev/sda4               /mnt/sda4               ext3    defaults        1 2
+/mnt/sda4/home          /home                   none    bind            0 0
+/mnt/sda4/db            /db                     none    bind            0 0
+</pre>
+
+<p>
+Feel free to use any own way other 
+than outlined above as long as 
+you can use required disk space for your home directory and 
+<code>/db</code>.
+</p>
+
+<p>
+The SSD is not in use at this point.
+The SSD is used after the DB has been built in accordance with what you wish to optimize.
+</p>
+
+<h3>Building 2MASS Kit and Initializing DB</h3>
+<p>
+Extract software package:
+</p>
+
+<pre>
+$ tar zxvf 2masskit-2.0.tar.gz
+$ cd 2masskit-2.0
+</pre>
+
+<p>
+Choose an appropriate Makefile and create a symbolic link.
+There are several kinds of Makefiles available: Makefile.linux64 (for 64-bit Linux),  Makefile.linux32 (for 32-bit Linux), Makefile.MacOSX64 (for 64-bit Mac OS X), Makefile.MacOSX32 (for 32-bit Mac OS X), and Makefile.solaris64 (for 64-bit Solaris Sparc).
+Next, edit the Makefile:
+</p>
+
+<pre>
+$ ln -s Makefile.linux64 Makefile
+$ vi Makefile
+</pre>
+
+<p>
+If you save PostgreSQL data in
+<code>/db</code>
+and the OS is either RHEL 5 or CentOS 5 you don&#39;t need to modify any directory entries in Makefile.
+Otherwise, modify as appropriate for your environment.
+</p>
+
+<p>
+Run make:
+</p>
+
+<pre>
+$ make
+</pre>
+
+<p>
+Install the necessary files and initialize the DB.
+</p>
+
+<p><strong>Linux:</strong></p>
+<pre>
+$ su
+# make install
+# /sbin/service postgresql initdb
+</pre>
+
+<p><strong>Mac OS X:</strong></p>
+<pre>
+$ su
+# make install
+# initdb -D /db/pgsql/data
+</pre>
+
+<p>
+If any file exists in
+<code>/db/pgsql/data</code>
+initdb will fail.
+In this case empty
+<code>/db</code>,
+and start over again from
+<code>make install</code>.<br />
+If you still need help refer to &quot;initdb fails!&quot; in the
+<a href="#FAQ">FAQ</a> section.
+</p>
+
+<h3>Setting Resources for PostgreSQL</h3>
+
+<p>
+Open
+<code>/db/pgsql/data/postgresql.conf</code>
+(created by initdb) in your favorite editor and modify the following parameters:
+</p>
+
+<pre>
+shared_buffers = 128MB
+work_mem = 512MB
+maintenance_work_mem = 128MB
+checkpoint_segments = 10
+effective_cache_size = 256MB
+</pre>
+
+<p>
+These parameters should be tuned for your purpose or environment.
+See also <a href="#TUNE">Tuning section</a>.
+Note that setting <code>work_mem</code> is 
+<strong>very important when
+retrieving large records</strong> for each query.
+</p>
+
+<h3>Starting PostgreSQL Server</h3>
+
+<p>
+Become superuser and start PostgreSQL server.
+</p>
+
+<p><strong>Linux:</strong></p>
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql start
+</pre>
+
+<p><strong>Mac OS X:</strong></p>
+
+<pre>
+$ su
+# pg_ctl start -D /db/pgsql/data
+</pre>
+
+<h3>Creating accounts and the database in PostgreSQL</h3>
+
+<p>
+Log in as user &#39;postgres&#39; in UNIX and run psql:
+</p>
+
+<pre>
+$ su
+# su postgres
+% psql
+</pre>
+
+<p>
+Here accounts in PostgreSQL (called &quot;roles&quot; in PostgreSQL) can be set up and a database created.<br />
+&#39;postgres&#39; denotes a superuser in PostgreSQL, &#39;admin&#39; can be used to register tables and storing functions, and &#39;guest&#39; is for using the DB.
+Each
+<code>&#39;xxxxxx&#39;</code>
+should be replaced by a respective password:
+</p>
+
+<pre>
+postgres=# ALTER ROLE postgres PASSWORD &#39;xxxxxx&#39;;
+postgres=# CREATE ROLE admin LOGIN PASSWORD &#39;xxxxxx&#39;;
+postgres=# CREATE ROLE guest LOGIN PASSWORD &#39;xxxxxx&#39;;
+postgres=# CREATE DATABASE &quot;2MASS&quot;;
+postgres=# \q
+</pre>
+
+<p>
+In this document the database for this kit is called &quot;2MASS&quot;, but you can use any other name through
+&quot;<code>CREATE DATABASE</code>&quot; above.
+</p>
+
+<h3>Modifying pg_hba.conf</h3>
+
+<p>
+Open
+<code>/db/pgsql/data/pg_hba.conf</code>
+in your favorite editor, and modify authentication method for local to md5.
+</p>
+
+<pre>
+local   all         all                               md5
+</pre>
+
+<h3>Create start Configuration for PostgreSQL and Restart</h3>
+
+<p>
+Become superuser and create the start configuration for PostgreSQL server, and then restart PostgreSQL server.
+</p>
+
+<p><strong>Linux:</strong></p>
+<pre>
+$ su
+# /sbin/chkconfig --level 2345 postgresql on
+# /etc/rc.d/init.d/postgresql restart
+</pre>
+
+<p><strong>Mac OS X:</strong></p>
+<p>At the top of
+<code>/opt/local/etc/LaunchDaemons/org.macports.postgresql84-server/postgresql84-server.wrapper</code>
+add the location of the data storage for the DB, as in:
+</p>
+
+<pre>
+POSTGRESQL84DATA=/db/pgsql/data
+</pre>
+
+<p>
+Then:
+</p>
+
+<pre>
+$ su
+# launchctl load -w /Library/LaunchDaemons/org.macports.postgresql84-server.plist
+# pg_ctl restart -D /db/pgsql/data
+</pre>
+
+<h3>Registering C stored functions</h3>
+
+<p>
+As a normal user in UNIX log in to the database &quot;2MASS&quot; as &#39;postgres&#39; (superuser in PostgreSQL) to register the C stored functions and table spaces:
+</p>
+
+<pre>
+$ psql -U postgres 2MASS
+Password for user postgres: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=# \i create_c_function.sql
+(Registered stored functions are listed)
+2MASS=# \q
+</pre>
+
+<h3>Registering Stored Functions for Astronomy</h3>
+
+<p>
+As a normal user in UNIX log in to the database &quot;2MASS&quot; as &#39;admin&#39; to register stored functions for astronomy:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i create_function.sql
+</pre>
+
+<h3>Installing Catalogs</h3>
+
+<p>
+If you want to install huge catalogs 
+(2MASS PSC, USNO-B1.0, UCAC3, GSC-2.3.2, and PPMXL),
+jump to "<a href="2mass.html">Install Huge Catalogs</a>".
+</p>
+
+<p>
+If you want to install small catalogs 
+(Tycho-2, AKARI IRC, AKARI FIS, and IRAS PSC),
+jump to "<a href="others.html">Install Small Catalogs</a>".
+</p>
+
+
+<hr />
+
+<h2>
+<a id="CONFIG" name="CONFIG">
+Settings for PostgreSQL
+</a>
+</h2>
+
+<h3>Allow Connections from PostgreSQL Clients on Other Machines</h3>
+
+<p>
+In order to allow connections from PostgreSQL clients (psql or Web applications) on other machines you will need to configure postgresql.conf and firewall as shown below.
+</p>
+
+<p>
+Open
+<code>/db/pgsql/data/postgresql.conf</code>
+with your editor and set
+<code>listen_addresses</code>
+as in:
+</p>
+
+<pre>
+listen_addresses = &#39;*&#39;
+</pre>
+
+<p>
+Configure your firewall using the setup command (if your firewall is configured as Disabled you can skip this step):
+</p>
+
+<pre>
+$ su
+# setup
+</pre>
+
+<p>
+In the Firewall configuration -&gt; Customize by including
+&quot;<code>postgres:tcp</code>&quot;
+in the &quot;Other ports&quot; settings.<br />
+This then results in
+<code>/etc/sysconfig/iptables</code>
+being supplemented by:
+</p>
+
+<pre>
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 5432 -j ACCEPT</pre>
+
+<p>
+Restart iptables (if your firewall is configured as Disabled you can skip this step):
+</p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/iptables restart
+</pre>
+
+<p>
+On Mac OS X you can do the same from System Preferences -&gt; Sharing.
+</p>
+
+<p>
+Next open
+<code>/db/pgsql/data/pg_hba.conf</code>
+with your editor, and specify the IP address of the client, denoted here by
+<code>xxx.xxx.xxx.xxx</code>,
+as in:
+</p>
+
+<pre>
+host  all     guest   xxx.xxx.xxx.xxx    255.255.255.255 md5
+</pre>
+
+<p>
+In the above example only guest role will be permitted.
+If you wish to allow all users use
+&quot;<code>all</code>.&quot;
+</p>
+
+<p>
+Restart PostgreSQL server:
+</p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql restart
+</pre>
+
+<p>
+A client can now access the database on the server by typing
+&quot;<code>psql -h hostname ...</code>.&quot;
+</p>
+
+<h3>Using psql without Passwords</h3>
+
+<p>
+Password prompts can sometimes be rather cumbersome, especially when used from your scripts.<br />
+In this case, you can specify the role name and the password in the file named 
+<code>.pgpass</code> as in the follwing,
+which will result in no password being required when using psql.
+</p>
+
+<pre>
+*:*:*:guest:password
+</pre>
+
+<p>
+&quot;<code>*</code>&quot;
+means &quot;everything is OK.&quot;
+You can specify any hostname:port:database:username:password, in that order, as needed.
+</p>
+
+<p>
+Don&#39;t forget to set permissions to 600:
+</p>
+
+<pre>
+$ chmod 600 .pgpass
+</pre>
+
+<hr />
+
+<h2>
+<a id="TUNE" name="TUNE">
+Tuning
+</a>
+</h2>
+
+<h3>BIOS Settings</h3>
+
+<p>
+In the case of Intel chipset motherboards disable the
+<code>C1E</code>
+(Enhanced HALT) power-saving feature as it will improve performance by 10% to 20% when compared to being enabled.<br />
+This setting has an impact on the performance of operations with frequent disk I/Os, as is the case with Cross-ID.
+</p>
+
+<h3>cpuspeed Settings</h3>
+
+<p>
+Disable dynamic CPU clocking for optimum performance:
+</p>
+
+<pre>
+/etc/rc.d/init.d/cpuspeed stop
+</pre>
+
+<h3>hdparm Settings</h3>
+
+<p>
+You may ensure better performance by increasing the amount for disk read-ahead using the
+<code>hdparm</code>
+command.
+To do this add the line below to
+<code>/etc/rc.d/rc.local</code>:
+</p>
+
+<pre>
+/sbin/hdparm -a1024 /dev/sda
+</pre>
+
+<h3>Tweaking Resources for PostgreSQL</h3>
+
+<p>
+Tweak these parameters in
+<code>/db/pgsql/data/postgresql.conf</code>
+as needed.
+</p>
+
+<ul>
+ <li><code>shared_buffers</code><br />
+  If your computer is used only for PostgreSQL, 
+  you do not have to increase this parameter.
+  However, when 2MASS Kit runs with other heavy processes
+  (i.e., softwares using large memory or accessing disk frequently),
+  setting larger values will improve performance.
+ </li>
+ <li><code>work_mem</code><br />
+  This is the maximum amount of memory for the work area when executing stored functions, and sort and join operations with Radial Search, Box Search and Rectangular Search.
+  If you are going to be traversing a wide area with Radial Search, Box Search or Rectangular Search try increasing this value.
+ </li>
+</ul>
+
+<p>
+Generally, <code>shared_buffers</code> is important for
+OLTP (OnLine Transaction Processing), and
+OLAP (OnLine Analytical Processing) requires large value of
+<code>work_mem</code>.
+</p>
+
+
+<h3>Filesystem</h3>
+
+<p>
+You won&#39;t need to worry too much about this, modulo SSD.
+In our Cross-ID tests, used in conjunction with an SSD, ext4 performed slightly better (by 1 percent or so) than ext3 and xfs.
+</p>
+
+<h3>Using a High-performance SSD</h3>
+
+<p>
+ With the 2MASS Kit all the table indices get stored in several distinct directories called table spaces.
+</p>
+
+<p>
+For each huge catalog, there are six table spaces, as can be seen below:
+</p>
+
+<pre>
+# ls /db/pgsql/tablespace/twomass_*
+twomass_eqi               twomass_eqi_index_xyzi16  twomass_main_index
+twomass_eqi_index_radeci  twomass_main              twomass_main_pkey
+</pre>
+
+<p>
+Part or all the directories being copied onto an SSD, which in turn is mounted using the directories shown above, will result in greatly improved search performance.
+In this case use of the bind option is convenient, which mounts directories rather than devices.<br />
+These table spaces have different significances in contributing to optimized performance, and are listed from the most significant to the least:
+</p>
+<ul>
+ <li>twomass_eqi_index_xyzi16 (about 10 GB)<br />
+  Indices for Radial Search get stored here.
+  You can speed up Radial Search, Box Search and Cross-ID by moving this, 
+  along with the directory twomass_eqi, onto a faster disk.
+ </li>
+ <li>twomass_eqi (about 20 GB)<br />
+  Dedicated Positional Search Tables get stored here.
+  You can speed up positional search by moving this, 
+  along with the directory twomass_eqi_index_xyzi16 and
+  twomass_eqi_index_radeci onto a faster disk.
+ </li>
+ <li>twomass_eqi_index_radeci (about 20 GB)<br />
+  Indices for Rectangular Search get stored here.
+  You can speed up Rectangular Search by moving this, 
+  along with the directory twomass_eqi, onto a faster disk.
+ </li>
+ <li>twomass_main_pkey (about 10 GB)<br />
+  Primary keys for Main Tables get stored here.
+  You can speed up join operations by moving this onto a faster disk.
+ </li>
+ <li>twomass_main_index (about 58 GB with standard settings)<br />
+  Indices for Main Tables get stored here.
+  You can speed up search Main Tables by moving this onto a faster disk.
+ </li>
+ <li>twomass_main (about 140GB)<br />
+  Main Tables get stored here.
+  This should be the last directory that you would want to move onto a faster disk.
+ </li>
+</ul>
+
+<p>
+If you seek optimized performance at a relatively low cost 
+I would suggest buying a 128 GB Crucial SSD C300, 
+and then copying the first four directories 
+(from twomass_eqi_index_xyzi16 up to twomass_main_pkey) onto it.
+</p>
+
+<p>
+Another method of speeding the process up
+<strong>Cross-ID</strong>
+would be copying twomass_eqi_index_xyzi16 onto a ramdisk, 
+such as tmpfs (/dev/shm), and twomass_eqi onto SSD.
+</p>
+
+<p>
+The following is a walk-through for speeding up Radial Search, Box Search and Cross-ID by copying some of the above onto a fast SSD (/dev/sdb).
+</p>
+
+<pre>
+$ su
+# /etc/rc.d/init.d/postgresql stop
+# mkdir -p /mnt/ssd_a
+# mount -o noatime /dev/sdb1 /mnt/ssd_a
+# mkdir -p /mnt/ssd_a/pgsql_tablespace
+# chown -R postgres:postgres /mnt/ssd_a/pgsql_tablespace
+# rsync -a --delete /db/pgsql/tablespace/twomass_eqi /mnt/ssd_a/pgsql_tablespace/.
+# rsync -a --delete /db/pgsql/tablespace/twomass_eqi_index_xyzi16 /mnt/ssd_a/pgsql_tablespace/.
+# mount --bind /mnt/ssd_a/pgsql_tablespace/twomass_eqi /db/pgsql/tablespace/twomass_eqi
+# mount --bind /mnt/ssd_a/pgsql_tablespace/twomass_eqi_index_xyzi16 /db/pgsql/tablespace/twomass_eqi_index_xyzi16
+# /etc/rc.d/init.d/postgresql start
+</pre>
+
+<hr />
+
+<h2>
+<a id="USE" name="USE">
+Usage
+</a>
+</h2>
+
+<p>
+Here we show examples for searching 2MASS PSC.
+Replace `<code>Twomass</code>' when searching other catalogs.
+</p>
+
+<p>
+You should log on as guest with normal use priviledges to avoid any accidents with the tables:
+</p>
+
+<pre>
+$ psql -U guest 2MASS
+</pre>
+
+<p>
+For psql usage refer to
+<a href="http://www.postgresql.org/docs/8.4/static/app-psql.html">the official page in English</a>.
+</p>
+
+<h3>Radial Search</h3>
+
+<p>
+Use the stored function fTwomassGetNearbyObjEq() or fTwomassGetNearbyObjCel().
+If you want the best search performance, use fTwomassGetNearbyObjEq(). 
+fTwomassGetNearbyObjCel() is used to search objects 
+with the positional conversion from J2000 to other coordinate systems.
+</p>
+
+<p>
+fTwomassGetNearbyObjEq() takes R.A.(deg), Dec.(deg), and search radius (arcmin) as the arguments:
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetNearbyObjEq(0, 0, 3);
+</pre>
+
+<p>
+fTwomassGetNearbyObjCel() takes
+coordinate system (<code>'j2000'</code>, <code>'b1950'</code>, <code>'ecliptic'</code> or <code>'galactic'</code>), 
+longitude(deg), latitude(deg), and search radius (arcmin) as the arguments:
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetNearbyObjCel('j2000', 0, 0, 3);
+</pre>
+
+<p>
+In the case of fTwomassGetNearbyObjEq(),
+a table that consists of objid, lon, lat, and distance will result (the unit for distance is arcmin):
+</p>
+
+<pre>
+   objid   |    lon     |    lat    |     distance      
+-----------+------------+-----------+-------------------
+ 793571660 | 359.982569 |  0.044046 |  2.84218284794452
+ 793571662 | 359.989615 |  0.012327 | 0.967104621472398
+ 793571661 |  359.98931 |  0.027802 |  1.78718165359994
+ 792913920 |   0.009564 | -0.000827 | 0.575981326971027
+ 792913922 |    0.01738 | -0.032945 |  2.23489923964895
+ 792913925 |   0.021541 | -0.023737 |  1.92324084931489
+ 792913927 |   0.030595 | -0.006287 |  1.87405693715596
+ 792913929 |   0.034844 | -0.028304 |  2.69347254510121
+ 793236078 |   0.038972 |  0.001536 |  2.34013544202409
+ 792913932 |   0.047375 | -0.006703 |  2.87081085523336
+</pre>
+
+<p>
+If you want corresponding records in the Main Table you can join the return value from the stored function to the Main Table using objid as a primary key.
+This example results in the coordinates, flux, flux error, and distance being retrieved:
+</p>
+
+<pre>
+SELECT o.ra,o.dec,o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom,n.distance
+FROM fTwomassGetNearbyObjEq(0,0,3) n, twomass o
+WHERE n.objid = o.objid;
+</pre>
+
+<p>
+The result will be somewhat like this:
+</p>
+
+<pre>
+     ra     |    dec    |  j_m   |  h_m   |  k_m   | j_msigcom | h_msigcom | k_msigcom |     distance      
+------------+-----------+--------+--------+--------+-----------+-----------+-----------+-------------------
+ 359.982569 |  0.044046 | 12.842 | 12.374 | 12.335 |     0.022 |     0.021 |     0.029 |  2.84218284794452
+ 359.989615 |  0.012327 |  13.75 | 13.194 |  13.14 |     0.026 |      0.03 |     0.037 | 0.967104621472398
+  359.98931 |  0.027802 | 15.773 | 15.347 | 14.972 |     0.079 |      0.11 |      0.14 |  1.78718165359994
+   0.009564 | -0.000827 | 16.422 | 16.112 |  15.21 |      0.11 |     0.227 |           | 0.575981326971027
+    0.01738 | -0.032945 | 15.591 | 15.023 | 15.069 |     0.059 |     0.073 |     0.154 |  2.23489923964895
+   0.021541 | -0.023737 | 17.025 | 15.841 | 17.233 |      0.22 |     0.159 |           |  1.92324084931489
+   0.030595 | -0.006287 |  14.43 | 14.085 | 13.923 |     0.038 |     0.039 |     0.056 |  1.87405693715596
+   0.034844 | -0.028304 | 15.644 | 15.355 | 15.129 |     0.069 |     0.096 |     0.143 |  2.69347254510121
+   0.038972 |  0.001536 | 12.682 | 12.096 | 11.844 |     0.022 |     0.025 |     0.022 |  2.34013544202409
+   0.047375 | -0.006703 | 13.514 | 13.189 | 13.167 |     0.029 |     0.031 |     0.033 |  2.87081085523336
+</pre>
+
+<p>
+The stored function fTwomassGetNearbyObjEq() does not perform sort by distance.
+If you do need it you can add
+&quot;<code>ORDER BY</code>&quot;,
+as in:
+</p>
+
+<pre>
+SELECT o.ra,o.dec,o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom,n.distance
+FROM fTwomassGetNearbyObjEq(0,0,3) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+
+<h3>Box Search</h3>
+
+<p>
+Use the stored function fTwomassGetNearbyObjFromBoxCel().
+This function takes
+coordinate system (<code>'j2000'</code>, <code>'b1950'</code>, <code>'ecliptic'</code> or <code>'galactic'</code>), 
+longitude(deg), latitude(deg), 
+search box half width (arcmin; 5400 maximum), 
+search box half height (arcmin; 5400 maximum) as the arguments.
+</p>
+
+<p>
+This example searches the region of width=6' and height=2' whose center is
+(l,b)=(12.0,34.0).
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetNearbyObjFromBoxCel('galactic', 12,34, 3,1);
+</pre>
+
+<p>
+A table that contains objid, lon, and lat will be returned.
+lon and lat are longitude and latitude in the coordinate system
+specified in the first argument.
+</p>
+
+<pre>
+   objid   |       lon        |       lat        
+-----------+------------------+------------------
+ 791409307 | 11.9461680949935 | 34.0096860074137
+ 791409308 | 11.9583757299871 |  34.015082591074
+ 791409311 | 11.9783906896371 | 34.0105966402837
+ 791409315 | 11.9505030961589 |  33.986455172412
+ 791409320 |  11.972281681199 | 33.9903131870409
+ 791409314 | 11.9812358007798 | 34.0060314550454
+ 791731741 | 12.0181080800759 | 34.0075228040278
+ 791409325 | 11.9916294535507 | 33.9913928836596
+ 791409328 | 11.9875644762627 | 33.9867387367315
+ 791731743 |  12.019301859339 | 34.0023027320602
+ 791731745 | 12.0481339981243 | 34.0058079804499
+ 791731746 |  12.046615046783 | 34.0033867068321
+ 791731752 | 12.0313248764534 | 33.9836666790509
+</pre>
+
+<p>
+If you want corresponding records in the Main Table you can join the return value from the stored function to the Main Table using objid as a primary key. This example results in the coordinates, flux, and flux error being retrieved: 
+</p>
+
+<pre>
+SELECT o.ra,o.dec,n.lon as l, n.lat as b,
+       o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom
+FROM fTwomassGetNearbyObjFromBoxCel('galactic', 12,34, 3,1) n, twomass o
+WHERE n.objid = o.objid;
+</pre>
+
+<p>
+The result will be somewhat like this:
+</p>
+
+<pre>
+     ra     |    dec    |        l         |        b         |  j_m   |  h_m   |  k_m   | j_msigcom | h_msigcom | k_msigcom 
+------------+-----------+------------------+------------------+--------+--------+--------+-----------+-----------+-----------
+ 243.573157 | -0.525274 | 11.9461680949935 | 34.0096860074137 | 16.137 | 15.373 |  15.25 |     0.104 |     0.138 |     0.216
+ 243.574301 | -0.513863 | 11.9583757299871 |  34.015082591074 | 15.281 | 14.835 | 14.586 |     0.056 |      0.07 |     0.117
+ 243.587256 | -0.502569 | 11.9783906896371 | 34.0105966402837 | 15.316 | 14.679 | 14.613 |     0.058 |     0.064 |     0.121
+ 243.594462 |  -0.53521 | 11.9505030961589 |  33.986455172412 | 15.913 | 15.168 | 14.912 |     0.092 |     0.094 |      0.15
+ 243.601299 | -0.518057 |  11.972281681199 | 33.9903131870409 | 16.041 | 15.671 | 15.173 |     0.113 |     0.149 |          
+ 243.592362 | -0.503147 | 11.9812358007798 | 34.0060314550454 | 15.935 | 15.398 | 15.408 |     0.093 |     0.125 |          
+ 243.608113 | -0.476909 | 12.0181080800759 | 34.0075228040278 | 16.299 | 15.204 | 14.744 |     0.137 |     0.098 |     0.153
+ 243.609321 | -0.504123 | 11.9916294535507 | 33.9913928836596 | 12.818 | 12.396 | 12.308 |     0.025 |     0.026 |     0.033
+ 243.611316 | -0.509512 | 11.9875644762627 | 33.9867387367315 |  16.43 | 15.689 | 16.224 |     0.147 |     0.133 |          
+ 243.613003 | -0.478987 |  12.019301859339 | 34.0023027320602 | 16.084 | 15.673 | 15.245 |     0.101 |     0.144 |     0.205
+ 243.623368 | -0.457166 | 12.0481339981243 | 34.0058079804499 | 15.955 | 15.405 | 15.527 |     0.096 |     0.102 |     0.242
+ 243.624682 | -0.459558 |  12.046615046783 | 34.0033867068321 | 16.816 |  15.84 | 15.839 |     0.201 |     0.159 |          
+ 243.634037 | -0.481054 | 12.0313248764534 | 33.9836666790509 | 15.595 |  15.18 | 15.008 |     0.071 |     0.098 |     0.157
+</pre>
+
+
+<h3>Rectangular Search</h3>
+
+<p>
+Use the stored function fTwomassGetObjFromRectEq().
+This function takes R.A.1(deg), R.A.2(deg), Dec.1(deg), and Dec.2(deg) as the arguments, in that order:
+</p>
+
+<pre>
+2MASS=&gt; SELECT * FROM fTwomassGetObjFromRectEq(0,0.1, 1,1.1);
+</pre>
+
+<p>
+A table that contains objid, lon, and lat will be returned.
+lon and lat are R.A. and Dec. of J2000.
+</p>
+
+<pre>
+   objid   |   lon    |   lat    
+-----------+----------+----------
+ 796325619 | 0.000857 | 1.024927
+ 796325620 | 0.000901 | 1.088982
+ 796325621 | 0.010481 | 1.091584
+ 796325622 | 0.012691 | 1.059668
+ 796325623 | 0.021387 |  1.06185
+ 796325624 | 0.022389 | 1.044861
+ 796325625 | 0.022943 | 1.076892
+ 796325626 | 0.026073 | 1.097096
+ 796325627 | 0.029074 | 1.012373
+ 796325628 | 0.044551 |  1.09418
+ 796325629 | 0.047209 | 1.004132
+ 796325630 |  0.04838 | 1.030788
+ 796325631 | 0.058135 |  1.01824
+ 796325632 | 0.063318 | 1.057747
+ 796325633 | 0.070774 | 1.089212
+ 796325634 | 0.071413 | 1.019535
+ 796325635 | 0.081828 | 1.000061
+ 796325636 | 0.084937 | 1.084082
+ 796325637 | 0.090331 | 1.089642
+ 796325638 | 0.091378 | 1.039778
+</pre>
+
+<p>
+If you want corresponding records in the Main Table you can join the return value from the stored function to the Main Table using objid as a primary key.
+This example results in the coordinates, flux, and flux error being retrieved:
+</p>
+
+<pre>
+SELECT o.ra,o.dec,o.j_m,o.h_m,o.k_m,o.j_msigcom,o.h_msigcom,o.k_msigcom
+FROM fTwomassGetObjFromRectEq(0,0.1, 1,1.1) n, twomass o
+WHERE n.objid = o.objid;
+</pre>
+
+<p>
+The result will be somewhat like this:
+</p>
+
+<pre>
+    ra    |   dec    |  j_m   |  h_m   |  k_m   | j_msigcom | h_msigcom | k_msigcom 
+----------+----------+--------+--------+--------+-----------+-----------+-----------
+ 0.000857 | 1.024927 | 16.617 | 15.804 | 15.515 |     0.113 |     0.135 |      0.16
+ 0.000901 | 1.088982 |  8.219 |  8.063 |   7.95 |     0.027 |     0.046 |     0.023
+ 0.010481 | 1.091584 | 14.662 | 14.041 |  14.01 |      0.03 |     0.036 |     0.049
+ 0.012691 | 1.059668 | 14.633 |  14.23 | 14.207 |     0.035 |     0.041 |      0.05
+ 0.021387 |  1.06185 | 16.225 | 15.745 | 15.592 |     0.078 |     0.106 |     0.174
+ 0.022389 | 1.044861 | 14.637 | 14.105 | 13.822 |     0.036 |     0.033 |     0.045
+ 0.022943 | 1.076892 | 16.962 | 16.611 | 15.644 |     0.146 |     0.234 |     0.188
+ 0.026073 | 1.097096 | 16.645 | 15.905 | 15.457 |     0.134 |     0.162 |      0.19
+ 0.029074 | 1.012373 | 16.243 | 15.586 | 15.026 |     0.093 |     0.125 |     0.121
+ 0.044551 |  1.09418 | 15.534 | 14.906 | 14.484 |     0.051 |     0.067 |      0.08
+ 0.047209 | 1.004132 | 16.932 | 16.155 | 15.264 |     0.182 |     0.238 |     0.166
+  0.04838 | 1.030788 | 16.468 | 15.803 | 14.991 |     0.129 |     0.206 |      0.13
+ 0.058135 |  1.01824 | 16.556 | 15.736 | 15.363 |     0.113 |     0.136 |     0.169
+ 0.063318 | 1.057747 | 16.131 | 15.499 | 15.535 |     0.096 |     0.122 |     0.192
+ 0.070774 | 1.089212 | 16.183 | 15.689 | 15.346 |           |     0.162 |          
+ 0.071413 | 1.019535 | 14.407 | 14.002 | 13.819 |     0.033 |     0.031 |     0.054
+ 0.081828 | 1.000061 |  14.45 | 13.841 | 13.682 |     0.032 |     0.033 |     0.049
+ 0.084937 | 1.084082 | 16.145 | 15.555 | 15.246 |      0.08 |     0.133 |     0.153
+ 0.090331 | 1.089642 | 16.741 | 16.307 | 15.551 |     0.157 |     0.246 |     0.194
+ 0.091378 | 1.039778 | 15.616 | 15.183 |  15.39 |     0.056 |     0.109 |     0.177
+</pre>
+
+<h3>Table Columns</h3>
+
+<p>
+You can use
+&quot;<code>\d</code>&quot;
+to retrieve information about table columns.<br />
+</p>
+
+<pre>
+2MASS=&gt; \d twomass
+ objid         | integer          | not null
+ designation   | character(17)    | not null
+ ra            | double precision | not null
+ dec           | double precision | not null
+ err_maj       | real             | not null
+ err_min       | real             | not null
+ err_ang       | smallint         | not null
+ j_m           | real             | 
+ j_cmsig       | real             | 
+ j_msigcom     | real             | 
+ j_snr         | real             | 
+ h_m           | real             | 
+ h_cmsig       | real             | 
+ h_msigcom     | real             | 
+ h_snr         | real             | 
+ k_m           | real             | 
+ k_cmsig       | real             | 
+ k_msigcom     | real             | 
+ k_snr         | real             | 
+(Ommitted)
+</pre>
+
+<h3>Cross-ID (Matches with Another Catalog)</h3>
+
+<p>
+You will first need to register the catalog as a table, which will then be matched with the database.
+Create the table through consulting the official documents of PostgreSQL, etc.
+If you are planning to use the table for a long time you may wish to create it using admin priviledges.
+Note that the table created should include R.A.(deg) and Dec.(deg) of J2000 in its columns.
+</p>
+
+<p>
+The following example results in the catalog in my_catalog and the 2MASS catalog being matched using the radius of 0.25 arcmin, and returning the count:
+</p>
+
+<pre>
+SELECT count(fTwomassGetNearestObjIDEq(o.ra, o.dec, 0.25))
+FROM ( SELECT * FROM my_catalog ORDER BY dec ) o;
+</pre>
+
+<p>
+In the following example all the records in my_catalog will be retrieved with the coordinates (R.A. and Dec.) and distance of 2MASS appended to the right of my_catalog:
+</p>
+
+<pre>
+SELECT p.*,
+       q1.objid, q1.ra, q1.dec,
+       (CASE (q1.objid IS NULL) WHEN true THEN null ELSE
+       fDistanceArcminEq(p.ra,p.dec,q1.ra,q1.dec) END) as distance
+FROM
+(
+  SELECT o.*
+  FROM my_table o
+  ORDER BY dec
+) p
+LEFT JOIN
+  Twomass q1
+ON 
+  fTwomassGetNearestObjIDEq(p.ra, p.dec, 0.25) = q1.objid
+</pre>
+
+<p>
+If you wish to retrieve successfully matched lines only you could write a little more simply:
+</p>
+
+<pre>
+SELECT p.*,
+       q1.objid, q1.ra, q1.dec,
+       fDistanceArcminEq(p.ra,p.dec,q1.ra,q1.dec) as distance
+FROM
+(
+  SELECT o.*
+  FROM my_table o
+  ORDER BY dec
+) p
+JOIN
+  Twomass q1
+ON 
+  fTwomassGetNearestObjIDEq(p.ra, p.dec, 0.25) = q1.objid
+</pre>
+
+<hr />
+
+<h2>
+<a id="FUNCTION" name="FUNCTION">
+Useful Stored Functions Specific to 2MASS Kit </a>
+</h2>
+
+<p>
+Some stored functions, created for AKARI-CAS, are included.<br />
+For the functions provided by PostgreSQL visit
+<a href="http://darts.jaxa.jp/ir/akari/cas/help/sql_general_reference.html">this page of AKARI-CAS</a>.
+</p>
+
+<h3>Angle Calculation</h3>
+
+<p>
+You can use
+<code>fDistanceArcminEq(ra1, dec1, ra2, dec2)</code>
+or
+<code>fDistanceArcMinXYZ(cx1, cy1, cz1, cx2, cy2, cz2)</code>
+to calculate the angle between two objects.
+Assigning
+<code>NULL</code>
+to any of the arguments will have undefined results.
+</p>
+
+<h3>Conversion from deg to sexagesimal(xx:xx:xx.x)</h3>
+
+<p>
+You can use fDeg2LonStr() and fDeg2LatStr() to convert the value in deg to sexagesimal(xx:xx:xx.x), as in:
+</p>
+
+<pre>
+SELECT fDeg2LonStr(o.ra) as ra, fDeg2LatStr(o.dec) as dec,
+       o.j_m,o.h_m,o.k_m, n.distance
+FROM fTwomassGetNearbyObjEq(0,0,3) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+<p>
+The result will be:
+</p>
+
+<pre>
+     ra      |     dec     |  j_m   |  h_m   |  k_m   |     distance      
+-------------+-------------+--------+--------+--------+-------------------
+ 00:00:02.30 | -00:00:03.0 | 16.422 | 16.112 |  15.21 | 0.575981326971027
+ 23:59:57.51 | +00:00:44.4 |  13.75 | 13.194 |  13.14 | 0.967104621472398
+ 23:59:57.43 | +00:01:40.1 | 15.773 | 15.347 | 14.972 |  1.78718165359994
+ 00:00:07.34 | -00:00:22.6 |  14.43 | 14.085 | 13.923 |  1.87405693715596
+ 00:00:05.17 | -00:01:25.5 | 17.025 | 15.841 | 17.233 |  1.92324084931489
+ 00:00:04.17 | -00:01:58.6 | 15.591 | 15.023 | 15.069 |  2.23489923964895
+ 00:00:09.35 | +00:00:05.5 | 12.682 | 12.096 | 11.844 |  2.34013544202409
+ 00:00:08.36 | -00:01:41.9 | 15.644 | 15.355 | 15.129 |  2.69347254510121
+ 23:59:55.82 | +00:02:38.6 | 12.842 | 12.374 | 12.335 |  2.84218284794452
+ 00:00:11.37 | -00:00:24.1 | 13.514 | 13.189 | 13.167 |  2.87081085523336
+</pre>
+
+<h3>Conversion from sexagesimal(xx:xx:xx.x) to deg</h3>
+
+<p>
+You can use the format sexagesimal(xx:xx:xx.x) to specify the coordinates of the search:
+</p>
+
+<pre>
+SELECT fDeg2LonStr(o.ra) as ra, fDeg2LatStr(o.dec) as dec,
+       o.j_m,o.h_m,o.k_m, n.distance
+FROM fTwomassGetNearbyObjEq(fLonStr2Deg(&#39;11:22:33.3&#39;),fLatStr2Deg(&#39;22:33:44.4&#39;),3) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+<p>
+The result will be:
+</p>
+
+<pre>
+     ra      |     dec     |  j_m   |  h_m   |  k_m   |     distance      
+-------------+-------------+--------+--------+--------+-------------------
+ 11:22:31.39 | +22:33:04.7 | 16.137 | 15.803 | 15.808 | 0.794373037809949
+ 11:22:36.24 | +22:34:12.4 | 16.728 | 15.787 | 15.138 | 0.823298100602107
+ 11:22:34.17 | +22:34:33.9 | 16.658 | 15.962 | 15.287 |  0.84883116250746
+ 11:22:37.70 | +22:33:42.5 | 16.746 | 15.973 |  15.79 |  1.01713844965725
+ 11:22:34.57 | +22:32:44.2 | 16.729 | 15.875 |     17 |  1.04481387810461
+ 11:22:29.11 | +22:34:25.0 | 16.971 | 16.102 | 15.431 |  1.17931773570099
+ 11:22:27.70 | +22:33:04.7 | 16.197 | 15.689 | 15.014 |  1.45335381456842
+ 11:22:36.10 | +22:35:29.7 | 16.009 | 15.623 | 14.811 |  1.86948967595817
+ 11:22:22.99 | +22:33:16.5 | 16.656 | 16.009 | 15.635 |  2.42576801128236
+ 11:22:33.53 | +22:36:25.4 | 16.165 | 15.278 | 14.937 |  2.68444346193211
+ 11:22:21.60 | +22:34:34.4 |   16.5 | 15.154 | 15.144 |  2.82628524515026
+ 11:22:45.61 | +22:34:13.3 | 13.216 | 12.736 | 12.668 |  2.88203892253219
+ 11:22:31.09 | +22:36:37.8 | 16.659 | 16.118 | 15.246 |  2.93504711436251
+ 11:22:31.65 | +22:30:48.1 |  16.29 |  15.87 | 15.435 |  2.96366827957033
+</pre>
+
+<h3>Coordinate Conversion (J2000 from/to B1950, Ecliptic, or Galactic)</h3>
+
+<p>
+I have prepared a number of stored functions, reusing part of the source code of
+<a href="http://tdc-www.harvard.edu/wcstools/">WCSTools</a>,
+for use in SQL statements to convert major coordinate systems into J2000, and vice versa.
+</p>
+
+<p>
+The following are stored the functions used to convert B1950, Ecliptic, and Galactic into J2000:
+</p>
+
+<table>
+ <tr>
+  <th>Stored Functions</th><th>Arguments</th><th>Return Value</th>
+ </tr>
+ <tr>
+  <td><code>fB2Ra(ra,dec)</code></td><td>B1950 coordinates</td><td>J2000 R.A.</td>
+ </tr>
+ <tr>
+ <td><code>fB2Dec(ra,dec)</code></td><td>B1950 coordinates</td><td>J2000 Dec.</td>
+ </tr>
+ <tr>
+  <td><code>fE2Ra(lon,lat)</code></td><td>Ecliptic coordinates</td><td>J2000 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fE2Dec(lon,lat)</code></td><td>Ecliptic coordinates</td><td>J2000 Dec.</td>
+ </tr>
+ <tr>
+  <td><code>fG2Ra(lon,lat)</code></td><td>Galactic coordinates</td><td>J2000 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fG2Dec(lon,lat)</code></td><td>Galactic coordinates</td><td>J2000 Dec.</td>
+ </tr>
+</table>
+
+<p>
+The following are the stored functions used to convert J2000 into B1950, Ecliptic, and Galactic:
+</p>
+
+<table>
+ <tr>
+  <th>Stored Functions</th><th>Arguments</th><th>Return Value</th>
+ </tr>
+ <tr>
+  <td><code>fJ2Ra1950(ra,dec)</code></td><td>J2000 coordinates</td><td>B1950 R.A.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2Dec1950(ra,dec)</code></td><td>J2000 coordinates</td><td>B1950 Dec.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2Lambda(ra,dec)</code></td><td>J2000 coordinates</td><td>Ecliptic Lon.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2Beta(ra,dec)</code></td><td>J2000 coordinates</td><td>Ecliptic Lat.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2L(ra,dec)</code></td><td>J2000 coordinates</td><td>Galactic Lon.</td>
+ </tr>
+ <tr>
+  <td><code>fJ2B(ra,dec)</code></td><td>J2000 coordinates</td><td>Galactic Lat.</td>
+ </tr>
+</table>
+
+<p>
+The following is an example of performing a Radial Search with Galactic coordinate (0,0):
+</p>
+
+<pre>
+SELECT fJ2L(o.ra,o.dec) as l, fJ2B(o.ra,o.dec) as b,
+       o.j_m,o.h_m,o.k_m, n.distance
+FROM fTwomassGetNearbyObjEq(fG2Ra(0,0),fG2Dec(0,0),0.2) n, twomass o
+WHERE n.objid = o.objid
+ORDER BY n.distance;
+</pre>
+
+<p>
+The result will be:
+</p>
+
+<pre>
+          l           |           b           |  j_m   |  h_m   |  k_m   |      distance      
+----------------------+-----------------------+--------+--------+--------+--------------------
+ 0.000238199212139686 |  0.000245096272298005 | 17.133 |  13.88 | 11.912 | 0.0205064415510798
+     359.999429961829 |  -0.00149404269361704 | 17.089 | 13.623 | 12.001 | 0.0959458926395396
+  0.00199983911961157 | -4.01722558191383e-05 | 16.407 | 12.665 | 10.888 |  0.120014534784677
+     359.998106567874 |  0.000932992925588326 | 17.443 | 13.571 | 11.703 |  0.126649154498087
+  0.00287219868966155 |  0.000670744958130914 | 16.467 | 12.758 | 10.874 |  0.176968660924733
+  0.00261470909270918 |  -0.00204362165890217 | 16.831 | 13.607 | 12.482 |  0.199115956417241
+</pre>
+
+<hr />
+
+<h2>
+<a id="CLIENTS" name="CLIENTS">
+Client Tools for 2MASS Kit server</a>
+</h2>
+
+<h3>sql2mass.php</h3>
+
+<p>
+<code>client/sql2mass.php</code> 
+is an example program of 2MASS Kit client.
+</p>
+
+<p>
+Before using this script, you have to install php and some libraries:
+</p>
+
+<pre>
+# yum install php
+# yum install php-pear
+# pear install MDB2
+# pear install pear/MDB2#pgsql
+</pre>
+
+<p>
+and, 
+you should replace <code>PASSWORD</code> with actual one of <code>$Dsn</code>
+in <code>sql2mass.php</code>:
+</p>
+
+<pre>
+$Dsn = "pgsql://guest:PASSWORD@localhost:5432/2MASS";
+</pre>
+
+<p>
+Run <code>sql2mass.php</code> with setting an SQL statement on 1st argument:
+</p>
+
+<pre>
+$ php sql2mass.php "SELECT * FROM twomass LIMIT 10"
+</pre>
+
+<p>
+<strong>Warning:</strong> 
+This script is not secure at all for Web applications that accept
+direct SQL input.
+</p>
+
+<hr />
+
+<h2>
+<a id="FAQ" name="FAQ">
+FAQ
+</a>
+</h2>
+
+<h3>Q: Is it available for casual use?</h3>
+
+<p>
+Yes. You can try searching the 2MASS catalog at
+<a href="http://darts.jaxa.jp/ir/akari/cas/tools/search/sql.html">SQL Search</a>
+of
+<a href="http://darts.jaxa.jp/ir/akari/cas.html">AKARI-CAS</a>.
+<br />
+(2MASS Kit reuses part of the source code of AKARI-CAS).
+</p>
+
+<h3>Q: initdb fails!</h3>
+
+<p>
+A: Check the owner and mode of the directories; for example, if you are creating a database in the directory
+<code>/aaa/bbb/db/pgsql</code>
+all of the directories
+<code>/aaa</code>,
+<code>/aaa/bbb</code>, and
+<code>/aaa/bbb/db</code>
+should be owned by root:root (your mileage may vary, depending on your OS) with the mode set to 755.
+</p>
+
+<h3>Q: Three days have already passed but the data still hasn't finished being registered in the Main Table!</h3>
+
+<p>
+A: Try a simple measurement of your HDD performance, as in:
+</p>
+
+<pre>
+$ su
+# /sbin/hdparm -t /dev/sda
+</pre>
+
+<p>
+If the result of this test is below 100 MB/sec you may have problems with your S-ATA interface.<br />
+Some chipsets have several operational modes for the S-ATA interface, in which case you can usually tweak them using the BIOS settings.
+In addition, some manufacturers ship their PCs with BIOS settings not optimally suitable for Linux.
+DELL&#39;s PCs are particularly notorious for such problems, with many people traditionally having faced this problem.<br />
+If you only have Linux installed you can re-create initrd with a setting like
+&quot;<code>alias scsi_hostadapter ata_piix</code> (in the case of Intel chipsets)&quot; 
+in the file
+<code>/etc/modprobe.conf</code>
+and set the BIOS S-ATA operational mode to &quot;native&quot;, etc. for your S-ATA interface to have better performance.<br />
+If you are dual booting with Windows or you do not understand initrd you
+may very well be better off without an on-board S-ATA interface and
+instead buy an S-ATA interface card (e.g. LSI 9211-4i,
+<a href="http://www.asus.com/product.aspx?P_ID=lGYmelQ8mJvPtYTv">ASUS U3S6</a>,
+but you will need a free PCIe x4 or better slot) to connect HDDs to and then build a DB on them.
+</p>
+
+<h3>Q: What is objid?</h3>
+
+<p>
+A: objid does not exist in the original catalogs and was appended for the purpose of speeding up searches in this kit.
+objid is a four-byte or eight-byte integer defined as &quot;offset + the line number&quot;, and is used as the primary key.
+You should not put these IDs on your paper, etc.
+</p>
+
+<h3>Q: Searches are very slow immediately after booting up my machine!!</h3>
+
+<p>
+A: Unless your disk is super-fast the search speed immediately after booting will be slowed down by the overall speed of the disk.
+In order to solve this problem you will need to move all the tables and indices to a fast SSD. 
+The 2MASS Kit creates all the tables and indices in the table spaces in an attempt to meet that demand.
+You can copy
+<code>/db/pgsql/tablespace</code>
+and all the data in it onto a fast SSD, which in turn is mounted as table spaces (using the bind option) to enable fast searches from just after the machine is booted.
+</p>
+
+<h3>Q: What are the licensing terms for this kit?</h3>
+
+<p>
+A: The kit is licensed under GPL V2. 
+The dataset is under each original licensing.
+</p>
+
+<hr />
+
+</body>
+</html>

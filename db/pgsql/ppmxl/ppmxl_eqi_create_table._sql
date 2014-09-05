@@ -1,0 +1,5760 @@
+CREATE TABLE ppmxl_eqi_000
+ (CHECK(deci < -864586860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_001
+ (CHECK(-864586860 <= deci AND deci < -851359890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_002
+ (CHECK(-851359890 <= deci AND deci < -839879190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_003
+ (CHECK(-839879190 <= deci AND deci < -829788690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_004
+ (CHECK(-829788690 <= deci AND deci < -822418760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_005
+ (CHECK(-822418760 <= deci AND deci < -815775840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_006
+ (CHECK(-815775840 <= deci AND deci < -808742460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_007
+ (CHECK(-808742460 <= deci AND deci < -801958760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_008
+ (CHECK(-801958760 <= deci AND deci < -795791840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_009
+ (CHECK(-795791840 <= deci AND deci < -789939880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00a
+ (CHECK(-789939880 <= deci AND deci < -784460810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00b
+ (CHECK(-784460810 <= deci AND deci < -779614890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00c
+ (CHECK(-779614890 <= deci AND deci < -775515110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00d
+ (CHECK(-775515110 <= deci AND deci < -771717120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00e
+ (CHECK(-771717120 <= deci AND deci < -767991910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00f
+ (CHECK(-767991910 <= deci AND deci < -764148460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00g
+ (CHECK(-764148460 <= deci AND deci < -760327770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00h
+ (CHECK(-760327770 <= deci AND deci < -756748630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00i
+ (CHECK(-756748630 <= deci AND deci < -753428760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00j
+ (CHECK(-753428760 <= deci AND deci < -750296140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00k
+ (CHECK(-750296140 <= deci AND deci < -747314460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00l
+ (CHECK(-747314460 <= deci AND deci < -744475670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00m
+ (CHECK(-744475670 <= deci AND deci < -741753320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00n
+ (CHECK(-741753320 <= deci AND deci < -739142120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00o
+ (CHECK(-739142120 <= deci AND deci < -736667380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00p
+ (CHECK(-736667380 <= deci AND deci < -734334070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00q
+ (CHECK(-734334070 <= deci AND deci < -732134700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00r
+ (CHECK(-732134700 <= deci AND deci < -730123600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00s
+ (CHECK(-730123600 <= deci AND deci < -728497110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00t
+ (CHECK(-728497110 <= deci AND deci < -727022620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00u
+ (CHECK(-727022620 <= deci AND deci < -725599210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00v
+ (CHECK(-725599210 <= deci AND deci < -724178060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00w
+ (CHECK(-724178060 <= deci AND deci < -722789360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00x
+ (CHECK(-722789360 <= deci AND deci < -721435850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00y
+ (CHECK(-721435850 <= deci AND deci < -720084090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_00z
+ (CHECK(-720084090 <= deci AND deci < -718714240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_010
+ (CHECK(-718714240 <= deci AND deci < -717243950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_011
+ (CHECK(-717243950 <= deci AND deci < -715657730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_012
+ (CHECK(-715657730 <= deci AND deci < -714023130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_013
+ (CHECK(-714023130 <= deci AND deci < -712396010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_014
+ (CHECK(-712396010 <= deci AND deci < -710785690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_015
+ (CHECK(-710785690 <= deci AND deci < -709188990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_016
+ (CHECK(-709188990 <= deci AND deci < -707641470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_017
+ (CHECK(-707641470 <= deci AND deci < -706139550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_018
+ (CHECK(-706139550 <= deci AND deci < -704669340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_019
+ (CHECK(-704669340 <= deci AND deci < -703214550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01a
+ (CHECK(-703214550 <= deci AND deci < -701746930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01b
+ (CHECK(-701746930 <= deci AND deci < -700299490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01c
+ (CHECK(-700299490 <= deci AND deci < -698857180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01d
+ (CHECK(-698857180 <= deci AND deci < -697384600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01e
+ (CHECK(-697384600 <= deci AND deci < -695939950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01f
+ (CHECK(-695939950 <= deci AND deci < -694506190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01g
+ (CHECK(-694506190 <= deci AND deci < -693098850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01h
+ (CHECK(-693098850 <= deci AND deci < -691697340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01i
+ (CHECK(-691697340 <= deci AND deci < -690292340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01j
+ (CHECK(-690292340 <= deci AND deci < -688953140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01k
+ (CHECK(-688953140 <= deci AND deci < -687647260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01l
+ (CHECK(-687647260 <= deci AND deci < -686368020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01m
+ (CHECK(-686368020 <= deci AND deci < -685107360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01n
+ (CHECK(-685107360 <= deci AND deci < -683836340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01o
+ (CHECK(-683836340 <= deci AND deci < -682717170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01p
+ (CHECK(-682717170 <= deci AND deci < -681672870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01q
+ (CHECK(-681672870 <= deci AND deci < -680713070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01r
+ (CHECK(-680713070 <= deci AND deci < -679786650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01s
+ (CHECK(-679786650 <= deci AND deci < -678918250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01t
+ (CHECK(-678918250 <= deci AND deci < -678075120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01u
+ (CHECK(-678075120 <= deci AND deci < -677246300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01v
+ (CHECK(-677246300 <= deci AND deci < -676437180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01w
+ (CHECK(-676437180 <= deci AND deci < -675621590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01x
+ (CHECK(-675621590 <= deci AND deci < -674807830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01y
+ (CHECK(-674807830 <= deci AND deci < -674009440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_01z
+ (CHECK(-674009440 <= deci AND deci < -673211240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_020
+ (CHECK(-673211240 <= deci AND deci < -672416300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_021
+ (CHECK(-672416300 <= deci AND deci < -671631120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_022
+ (CHECK(-671631120 <= deci AND deci < -670836070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_023
+ (CHECK(-670836070 <= deci AND deci < -670012110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_024
+ (CHECK(-670012110 <= deci AND deci < -669111120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_025
+ (CHECK(-669111120 <= deci AND deci < -668173500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_026
+ (CHECK(-668173500 <= deci AND deci < -667210110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_027
+ (CHECK(-667210110 <= deci AND deci < -666220880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_028
+ (CHECK(-666220880 <= deci AND deci < -665233630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_029
+ (CHECK(-665233630 <= deci AND deci < -664234540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02a
+ (CHECK(-664234540 <= deci AND deci < -663242980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02b
+ (CHECK(-663242980 <= deci AND deci < -662266280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02c
+ (CHECK(-662266280 <= deci AND deci < -661293940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02d
+ (CHECK(-661293940 <= deci AND deci < -660340930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02e
+ (CHECK(-660340930 <= deci AND deci < -659387870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02f
+ (CHECK(-659387870 <= deci AND deci < -658453740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02g
+ (CHECK(-658453740 <= deci AND deci < -657515020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02h
+ (CHECK(-657515020 <= deci AND deci < -656588190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02i
+ (CHECK(-656588190 <= deci AND deci < -655661530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02j
+ (CHECK(-655661530 <= deci AND deci < -654737780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02k
+ (CHECK(-654737780 <= deci AND deci < -653825050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02l
+ (CHECK(-653825050 <= deci AND deci < -652905840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02m
+ (CHECK(-652905840 <= deci AND deci < -651985830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02n
+ (CHECK(-651985830 <= deci AND deci < -651047800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02o
+ (CHECK(-651047800 <= deci AND deci < -650119410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02p
+ (CHECK(-650119410 <= deci AND deci < -649208440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02q
+ (CHECK(-649208440 <= deci AND deci < -648293980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02r
+ (CHECK(-648293980 <= deci AND deci < -647396610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02s
+ (CHECK(-647396610 <= deci AND deci < -646484370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02t
+ (CHECK(-646484370 <= deci AND deci < -645567380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02u
+ (CHECK(-645567380 <= deci AND deci < -644634710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02v
+ (CHECK(-644634710 <= deci AND deci < -643686790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02w
+ (CHECK(-643686790 <= deci AND deci < -642748730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02x
+ (CHECK(-642748730 <= deci AND deci < -641796070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02y
+ (CHECK(-641796070 <= deci AND deci < -640857570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_02z
+ (CHECK(-640857570 <= deci AND deci < -639904430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_030
+ (CHECK(-639904430 <= deci AND deci < -638953280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_031
+ (CHECK(-638953280 <= deci AND deci < -638019400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_032
+ (CHECK(-638019400 <= deci AND deci < -637076270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_033
+ (CHECK(-637076270 <= deci AND deci < -636124900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_034
+ (CHECK(-636124900 <= deci AND deci < -635143570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_035
+ (CHECK(-635143570 <= deci AND deci < -634139550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_036
+ (CHECK(-634139550 <= deci AND deci < -633171800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_037
+ (CHECK(-633171800 <= deci AND deci < -632278390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_038
+ (CHECK(-632278390 <= deci AND deci < -631445610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_039
+ (CHECK(-631445610 <= deci AND deci < -630640420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03a
+ (CHECK(-630640420 <= deci AND deci < -629843610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03b
+ (CHECK(-629843610 <= deci AND deci < -629065350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03c
+ (CHECK(-629065350 <= deci AND deci < -628295890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03d
+ (CHECK(-628295890 <= deci AND deci < -627542870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03e
+ (CHECK(-627542870 <= deci AND deci < -626804420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03f
+ (CHECK(-626804420 <= deci AND deci < -626074030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03g
+ (CHECK(-626074030 <= deci AND deci < -625354340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03h
+ (CHECK(-625354340 <= deci AND deci < -624651200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03i
+ (CHECK(-624651200 <= deci AND deci < -623952550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03j
+ (CHECK(-623952550 <= deci AND deci < -623251270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03k
+ (CHECK(-623251270 <= deci AND deci < -622558540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03l
+ (CHECK(-622558540 <= deci AND deci < -621853240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03m
+ (CHECK(-621853240 <= deci AND deci < -621146480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03n
+ (CHECK(-621146480 <= deci AND deci < -620412110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03o
+ (CHECK(-620412110 <= deci AND deci < -619623220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03p
+ (CHECK(-619623220 <= deci AND deci < -618809990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03q
+ (CHECK(-618809990 <= deci AND deci < -617967170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03r
+ (CHECK(-617967170 <= deci AND deci < -617116430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03s
+ (CHECK(-617116430 <= deci AND deci < -616250320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03t
+ (CHECK(-616250320 <= deci AND deci < -615385320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03u
+ (CHECK(-615385320 <= deci AND deci < -614522880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03v
+ (CHECK(-614522880 <= deci AND deci < -613638000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03w
+ (CHECK(-613638000 <= deci AND deci < -612757420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03x
+ (CHECK(-612757420 <= deci AND deci < -611869440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03y
+ (CHECK(-611869440 <= deci AND deci < -610996900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_03z
+ (CHECK(-610996900 <= deci AND deci < -610151890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_040
+ (CHECK(-610151890 <= deci AND deci < -609295560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_041
+ (CHECK(-609295560 <= deci AND deci < -608455750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_042
+ (CHECK(-608455750 <= deci AND deci < -607622880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_043
+ (CHECK(-607622880 <= deci AND deci < -606792120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_044
+ (CHECK(-606792120 <= deci AND deci < -605981070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_045
+ (CHECK(-605981070 <= deci AND deci < -605165490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_046
+ (CHECK(-605165490 <= deci AND deci < -604343520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_047
+ (CHECK(-604343520 <= deci AND deci < -603508950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_048
+ (CHECK(-603508950 <= deci AND deci < -602642440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_049
+ (CHECK(-602642440 <= deci AND deci < -601788430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04a
+ (CHECK(-601788430 <= deci AND deci < -600929870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04b
+ (CHECK(-600929870 <= deci AND deci < -600069880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04c
+ (CHECK(-600069880 <= deci AND deci < -599200700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04d
+ (CHECK(-599200700 <= deci AND deci < -598304920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04e
+ (CHECK(-598304920 <= deci AND deci < -597416610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04f
+ (CHECK(-597416610 <= deci AND deci < -596532860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04g
+ (CHECK(-596532860 <= deci AND deci < -595653700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04h
+ (CHECK(-595653700 <= deci AND deci < -594784420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04i
+ (CHECK(-594784420 <= deci AND deci < -593910850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04j
+ (CHECK(-593910850 <= deci AND deci < -593054840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04k
+ (CHECK(-593054840 <= deci AND deci < -592193190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04l
+ (CHECK(-592193190 <= deci AND deci < -591313970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04m
+ (CHECK(-591313970 <= deci AND deci < -590423680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04n
+ (CHECK(-590423680 <= deci AND deci < -589506670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04o
+ (CHECK(-589506670 <= deci AND deci < -588597240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04p
+ (CHECK(-588597240 <= deci AND deci < -587676410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04q
+ (CHECK(-587676410 <= deci AND deci < -586759220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04r
+ (CHECK(-586759220 <= deci AND deci < -585854350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04s
+ (CHECK(-585854350 <= deci AND deci < -584946280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04t
+ (CHECK(-584946280 <= deci AND deci < -584055200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04u
+ (CHECK(-584055200 <= deci AND deci < -583222680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04v
+ (CHECK(-583222680 <= deci AND deci < -582478840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04w
+ (CHECK(-582478840 <= deci AND deci < -581791620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04x
+ (CHECK(-581791620 <= deci AND deci < -581142290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04y
+ (CHECK(-581142290 <= deci AND deci < -580501780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_04z
+ (CHECK(-580501780 <= deci AND deci < -579872590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_050
+ (CHECK(-579872590 <= deci AND deci < -579248980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_051
+ (CHECK(-579248980 <= deci AND deci < -578633890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_052
+ (CHECK(-578633890 <= deci AND deci < -578022270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_053
+ (CHECK(-578022270 <= deci AND deci < -577421080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_054
+ (CHECK(-577421080 <= deci AND deci < -576826700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_055
+ (CHECK(-576826700 <= deci AND deci < -576222740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_056
+ (CHECK(-576222740 <= deci AND deci < -575614550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_057
+ (CHECK(-575614550 <= deci AND deci < -575003340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_058
+ (CHECK(-575003340 <= deci AND deci < -574388790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_059
+ (CHECK(-574388790 <= deci AND deci < -573761870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05a
+ (CHECK(-573761870 <= deci AND deci < -573133320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05b
+ (CHECK(-573133320 <= deci AND deci < -572504190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05c
+ (CHECK(-572504190 <= deci AND deci < -571873290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05d
+ (CHECK(-571873290 <= deci AND deci < -571236080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05e
+ (CHECK(-571236080 <= deci AND deci < -570582150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05f
+ (CHECK(-570582150 <= deci AND deci < -569905210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05g
+ (CHECK(-569905210 <= deci AND deci < -569185570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05h
+ (CHECK(-569185570 <= deci AND deci < -568424370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05i
+ (CHECK(-568424370 <= deci AND deci < -567656930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05j
+ (CHECK(-567656930 <= deci AND deci < -566860290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05k
+ (CHECK(-566860290 <= deci AND deci < -566050390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05l
+ (CHECK(-566050390 <= deci AND deci < -565231480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05m
+ (CHECK(-565231480 <= deci AND deci < -564392670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05n
+ (CHECK(-564392670 <= deci AND deci < -563551550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05o
+ (CHECK(-563551550 <= deci AND deci < -562715120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05p
+ (CHECK(-562715120 <= deci AND deci < -561873590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05q
+ (CHECK(-561873590 <= deci AND deci < -561031260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05r
+ (CHECK(-561031260 <= deci AND deci < -560182920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05s
+ (CHECK(-560182920 <= deci AND deci < -559332210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05t
+ (CHECK(-559332210 <= deci AND deci < -558481880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05u
+ (CHECK(-558481880 <= deci AND deci < -557626800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05v
+ (CHECK(-557626800 <= deci AND deci < -556770390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05w
+ (CHECK(-556770390 <= deci AND deci < -555917830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05x
+ (CHECK(-555917830 <= deci AND deci < -555061780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05y
+ (CHECK(-555061780 <= deci AND deci < -554223400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_05z
+ (CHECK(-554223400 <= deci AND deci < -553389860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_060
+ (CHECK(-553389860 <= deci AND deci < -552560270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_061
+ (CHECK(-552560270 <= deci AND deci < -551736160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_062
+ (CHECK(-551736160 <= deci AND deci < -550902600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_063
+ (CHECK(-550902600 <= deci AND deci < -550069380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_064
+ (CHECK(-550069380 <= deci AND deci < -549252870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_065
+ (CHECK(-549252870 <= deci AND deci < -548429510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_066
+ (CHECK(-548429510 <= deci AND deci < -547616640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_067
+ (CHECK(-547616640 <= deci AND deci < -546796420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_068
+ (CHECK(-546796420 <= deci AND deci < -545970770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_069
+ (CHECK(-545970770 <= deci AND deci < -545151460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06a
+ (CHECK(-545151460 <= deci AND deci < -544324370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06b
+ (CHECK(-544324370 <= deci AND deci < -543495580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06c
+ (CHECK(-543495580 <= deci AND deci < -542665330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06d
+ (CHECK(-542665330 <= deci AND deci < -541831830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06e
+ (CHECK(-541831830 <= deci AND deci < -541014530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06f
+ (CHECK(-541014530 <= deci AND deci < -540193220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06g
+ (CHECK(-540193220 <= deci AND deci < -539366050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06h
+ (CHECK(-539366050 <= deci AND deci < -538546300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06i
+ (CHECK(-538546300 <= deci AND deci < -537715410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06j
+ (CHECK(-537715410 <= deci AND deci < -536889990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06k
+ (CHECK(-536889990 <= deci AND deci < -536070210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06l
+ (CHECK(-536070210 <= deci AND deci < -535239320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06m
+ (CHECK(-535239320 <= deci AND deci < -534411390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06n
+ (CHECK(-534411390 <= deci AND deci < -533589810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06o
+ (CHECK(-533589810 <= deci AND deci < -532807950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06p
+ (CHECK(-532807950 <= deci AND deci < -532094800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06q
+ (CHECK(-532094800 <= deci AND deci < -531405840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06r
+ (CHECK(-531405840 <= deci AND deci < -530733490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06s
+ (CHECK(-530733490 <= deci AND deci < -530078500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06t
+ (CHECK(-530078500 <= deci AND deci < -529426520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06u
+ (CHECK(-529426520 <= deci AND deci < -528777720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06v
+ (CHECK(-528777720 <= deci AND deci < -528139050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06w
+ (CHECK(-528139050 <= deci AND deci < -527514050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06x
+ (CHECK(-527514050 <= deci AND deci < -526885400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06y
+ (CHECK(-526885400 <= deci AND deci < -526258700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_06z
+ (CHECK(-526258700 <= deci AND deci < -525633160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_070
+ (CHECK(-525633160 <= deci AND deci < -524998860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_071
+ (CHECK(-524998860 <= deci AND deci < -524356410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_072
+ (CHECK(-524356410 <= deci AND deci < -523715440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_073
+ (CHECK(-523715440 <= deci AND deci < -523089280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_074
+ (CHECK(-523089280 <= deci AND deci < -522458960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_075
+ (CHECK(-522458960 <= deci AND deci < -521827770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_076
+ (CHECK(-521827770 <= deci AND deci < -521195030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_077
+ (CHECK(-521195030 <= deci AND deci < -520554190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_078
+ (CHECK(-520554190 <= deci AND deci < -519890060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_079
+ (CHECK(-519890060 <= deci AND deci < -519197500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07a
+ (CHECK(-519197500 <= deci AND deci < -518469750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07b
+ (CHECK(-518469750 <= deci AND deci < -517704590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07c
+ (CHECK(-517704590 <= deci AND deci < -516918020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07d
+ (CHECK(-516918020 <= deci AND deci < -516117240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07e
+ (CHECK(-516117240 <= deci AND deci < -515303170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07f
+ (CHECK(-515303170 <= deci AND deci < -514478860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07g
+ (CHECK(-514478860 <= deci AND deci < -513647200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07h
+ (CHECK(-513647200 <= deci AND deci < -512807710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07i
+ (CHECK(-512807710 <= deci AND deci < -511963850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07j
+ (CHECK(-511963850 <= deci AND deci < -511108660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07k
+ (CHECK(-511108660 <= deci AND deci < -510259430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07l
+ (CHECK(-510259430 <= deci AND deci < -509398410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07m
+ (CHECK(-509398410 <= deci AND deci < -508532600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07n
+ (CHECK(-508532600 <= deci AND deci < -507657520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07o
+ (CHECK(-507657520 <= deci AND deci < -506778930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07p
+ (CHECK(-506778930 <= deci AND deci < -505909880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07q
+ (CHECK(-505909880 <= deci AND deci < -505028960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07r
+ (CHECK(-505028960 <= deci AND deci < -504149120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07s
+ (CHECK(-504149120 <= deci AND deci < -503260440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07t
+ (CHECK(-503260440 <= deci AND deci < -502366540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07u
+ (CHECK(-502366540 <= deci AND deci < -501477080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07v
+ (CHECK(-501477080 <= deci AND deci < -500582620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07w
+ (CHECK(-500582620 <= deci AND deci < -499697330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07x
+ (CHECK(-499697330 <= deci AND deci < -498814840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07y
+ (CHECK(-498814840 <= deci AND deci < -497931760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_07z
+ (CHECK(-497931760 <= deci AND deci < -497058420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_080
+ (CHECK(-497058420 <= deci AND deci < -496177400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_081
+ (CHECK(-496177400 <= deci AND deci < -495293850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_082
+ (CHECK(-495293850 <= deci AND deci < -494410200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_083
+ (CHECK(-494410200 <= deci AND deci < -493515660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_084
+ (CHECK(-493515660 <= deci AND deci < -492629110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_085
+ (CHECK(-492629110 <= deci AND deci < -491730700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_086
+ (CHECK(-491730700 <= deci AND deci < -490830830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_087
+ (CHECK(-490830830 <= deci AND deci < -489924920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_088
+ (CHECK(-489924920 <= deci AND deci < -489018410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_089
+ (CHECK(-489018410 <= deci AND deci < -488123410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08a
+ (CHECK(-488123410 <= deci AND deci < -487222640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08b
+ (CHECK(-487222640 <= deci AND deci < -486330130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08c
+ (CHECK(-486330130 <= deci AND deci < -485432810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08d
+ (CHECK(-485432810 <= deci AND deci < -484526650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08e
+ (CHECK(-484526650 <= deci AND deci < -483619600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08f
+ (CHECK(-483619600 <= deci AND deci < -482747780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08g
+ (CHECK(-482747780 <= deci AND deci < -481911210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08h
+ (CHECK(-481911210 <= deci AND deci < -481115510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08i
+ (CHECK(-481115510 <= deci AND deci < -480337580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08j
+ (CHECK(-480337580 <= deci AND deci < -479576120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08k
+ (CHECK(-479576120 <= deci AND deci < -478829370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08l
+ (CHECK(-478829370 <= deci AND deci < -478087110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08m
+ (CHECK(-478087110 <= deci AND deci < -477367020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08n
+ (CHECK(-477367020 <= deci AND deci < -476660640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08o
+ (CHECK(-476660640 <= deci AND deci < -475953820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08p
+ (CHECK(-475953820 <= deci AND deci < -475247150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08q
+ (CHECK(-475247150 <= deci AND deci < -474546930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08r
+ (CHECK(-474546930 <= deci AND deci < -473848160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08s
+ (CHECK(-473848160 <= deci AND deci < -473142380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08t
+ (CHECK(-473142380 <= deci AND deci < -472436000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08u
+ (CHECK(-472436000 <= deci AND deci < -471723480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08v
+ (CHECK(-471723480 <= deci AND deci < -470998560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08w
+ (CHECK(-470998560 <= deci AND deci < -470264710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08x
+ (CHECK(-470264710 <= deci AND deci < -469505860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08y
+ (CHECK(-469505860 <= deci AND deci < -468720200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_08z
+ (CHECK(-468720200 <= deci AND deci < -467915900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_090
+ (CHECK(-467915900 <= deci AND deci < -467091400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_091
+ (CHECK(-467091400 <= deci AND deci < -466241750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_092
+ (CHECK(-466241750 <= deci AND deci < -465378480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_093
+ (CHECK(-465378480 <= deci AND deci < -464488550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_094
+ (CHECK(-464488550 <= deci AND deci < -463591780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_095
+ (CHECK(-463591780 <= deci AND deci < -462697950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_096
+ (CHECK(-462697950 <= deci AND deci < -461801470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_097
+ (CHECK(-461801470 <= deci AND deci < -460917450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_098
+ (CHECK(-460917450 <= deci AND deci < -460030410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_099
+ (CHECK(-460030410 <= deci AND deci < -459138040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09a
+ (CHECK(-459138040 <= deci AND deci < -458261450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09b
+ (CHECK(-458261450 <= deci AND deci < -457380780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09c
+ (CHECK(-457380780 <= deci AND deci < -456503220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09d
+ (CHECK(-456503220 <= deci AND deci < -455619110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09e
+ (CHECK(-455619110 <= deci AND deci < -454735460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09f
+ (CHECK(-454735460 <= deci AND deci < -453870070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09g
+ (CHECK(-453870070 <= deci AND deci < -453005940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09h
+ (CHECK(-453005940 <= deci AND deci < -452148120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09i
+ (CHECK(-452148120 <= deci AND deci < -451284730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09j
+ (CHECK(-451284730 <= deci AND deci < -450414430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09k
+ (CHECK(-450414430 <= deci AND deci < -449548010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09l
+ (CHECK(-449548010 <= deci AND deci < -448675820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09m
+ (CHECK(-448675820 <= deci AND deci < -447810590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09n
+ (CHECK(-447810590 <= deci AND deci < -446945480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09o
+ (CHECK(-446945480 <= deci AND deci < -446070470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09p
+ (CHECK(-446070470 <= deci AND deci < -445204600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09q
+ (CHECK(-445204600 <= deci AND deci < -444328030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09r
+ (CHECK(-444328030 <= deci AND deci < -443445080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09s
+ (CHECK(-443445080 <= deci AND deci < -442561520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09t
+ (CHECK(-442561520 <= deci AND deci < -441673380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09u
+ (CHECK(-441673380 <= deci AND deci < -440775840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09v
+ (CHECK(-440775840 <= deci AND deci < -439868500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09w
+ (CHECK(-439868500 <= deci AND deci < -438947510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09x
+ (CHECK(-438947510 <= deci AND deci < -438026120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09y
+ (CHECK(-438026120 <= deci AND deci < -437090600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_09z
+ (CHECK(-437090600 <= deci AND deci < -436156460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a0
+ (CHECK(-436156460 <= deci AND deci < -435226880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a1
+ (CHECK(-435226880 <= deci AND deci < -434289320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a2
+ (CHECK(-434289320 <= deci AND deci < -433376550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a3
+ (CHECK(-433376550 <= deci AND deci < -432499990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a4
+ (CHECK(-432499990 <= deci AND deci < -431679200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a5
+ (CHECK(-431679200 <= deci AND deci < -430897650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a6
+ (CHECK(-430897650 <= deci AND deci < -430135270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a7
+ (CHECK(-430135270 <= deci AND deci < -429386480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a8
+ (CHECK(-429386480 <= deci AND deci < -428640480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0a9
+ (CHECK(-428640480 <= deci AND deci < -427902530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0aa
+ (CHECK(-427902530 <= deci AND deci < -427177140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ab
+ (CHECK(-427177140 <= deci AND deci < -426454370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ac
+ (CHECK(-426454370 <= deci AND deci < -425725500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ad
+ (CHECK(-425725500 <= deci AND deci < -424999190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ae
+ (CHECK(-424999190 <= deci AND deci < -424278600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0af
+ (CHECK(-424278600 <= deci AND deci < -423553130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ag
+ (CHECK(-423553130 <= deci AND deci < -422833090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ah
+ (CHECK(-422833090 <= deci AND deci < -422112770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ai
+ (CHECK(-422112770 <= deci AND deci < -421391840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0aj
+ (CHECK(-421391840 <= deci AND deci < -420664020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ak
+ (CHECK(-420664020 <= deci AND deci < -419927340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0al
+ (CHECK(-419927340 <= deci AND deci < -419176110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0am
+ (CHECK(-419176110 <= deci AND deci < -418399300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0an
+ (CHECK(-418399300 <= deci AND deci < -417582580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ao
+ (CHECK(-417582580 <= deci AND deci < -416741950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ap
+ (CHECK(-416741950 <= deci AND deci < -415875030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0aq
+ (CHECK(-415875030 <= deci AND deci < -415008520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ar
+ (CHECK(-415008520 <= deci AND deci < -414121650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0as
+ (CHECK(-414121650 <= deci AND deci < -413234080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0at
+ (CHECK(-413234080 <= deci AND deci < -412355700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0au
+ (CHECK(-412355700 <= deci AND deci < -411466160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0av
+ (CHECK(-411466160 <= deci AND deci < -410591560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0aw
+ (CHECK(-410591560 <= deci AND deci < -409719070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ax
+ (CHECK(-409719070 <= deci AND deci < -408851080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ay
+ (CHECK(-408851080 <= deci AND deci < -407985990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0az
+ (CHECK(-407985990 <= deci AND deci < -407106090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b0
+ (CHECK(-407106090 <= deci AND deci < -406236430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b1
+ (CHECK(-406236430 <= deci AND deci < -405371690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b2
+ (CHECK(-405371690 <= deci AND deci < -404507030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b3
+ (CHECK(-404507030 <= deci AND deci < -403647970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b4
+ (CHECK(-403647970 <= deci AND deci < -402776140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b5
+ (CHECK(-402776140 <= deci AND deci < -401912220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b6
+ (CHECK(-401912220 <= deci AND deci < -401050110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b7
+ (CHECK(-401050110 <= deci AND deci < -400187380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b8
+ (CHECK(-400187380 <= deci AND deci < -399344120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0b9
+ (CHECK(-399344120 <= deci AND deci < -398496280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ba
+ (CHECK(-398496280 <= deci AND deci < -397648410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bb
+ (CHECK(-397648410 <= deci AND deci < -396805070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bc
+ (CHECK(-396805070 <= deci AND deci < -395946710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bd
+ (CHECK(-395946710 <= deci AND deci < -395100680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0be
+ (CHECK(-395100680 <= deci AND deci < -394247650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bf
+ (CHECK(-394247650 <= deci AND deci < -393384410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bg
+ (CHECK(-393384410 <= deci AND deci < -392529380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bh
+ (CHECK(-392529380 <= deci AND deci < -391661210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bi
+ (CHECK(-391661210 <= deci AND deci < -390788670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bj
+ (CHECK(-390788670 <= deci AND deci < -389917750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bk
+ (CHECK(-389917750 <= deci AND deci < -389038170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bl
+ (CHECK(-389038170 <= deci AND deci < -388174150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bm
+ (CHECK(-388174150 <= deci AND deci < -387296500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bn
+ (CHECK(-387296500 <= deci AND deci < -386422110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bo
+ (CHECK(-386422110 <= deci AND deci < -385560150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bp
+ (CHECK(-385560150 <= deci AND deci < -384684530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bq
+ (CHECK(-384684530 <= deci AND deci < -383820600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0br
+ (CHECK(-383820600 <= deci AND deci < -382966130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bs
+ (CHECK(-382966130 <= deci AND deci < -382143060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bt
+ (CHECK(-382143060 <= deci AND deci < -381355850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bu
+ (CHECK(-381355850 <= deci AND deci < -380621750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bv
+ (CHECK(-380621750 <= deci AND deci < -379906360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bw
+ (CHECK(-379906360 <= deci AND deci < -379215560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bx
+ (CHECK(-379215560 <= deci AND deci < -378541290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0by
+ (CHECK(-378541290 <= deci AND deci < -377864140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0bz
+ (CHECK(-377864140 <= deci AND deci < -377192450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c0
+ (CHECK(-377192450 <= deci AND deci < -376530650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c1
+ (CHECK(-376530650 <= deci AND deci < -375862840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c2
+ (CHECK(-375862840 <= deci AND deci < -375195280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c3
+ (CHECK(-375195280 <= deci AND deci < -374531240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c4
+ (CHECK(-374531240 <= deci AND deci < -373868090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c5
+ (CHECK(-373868090 <= deci AND deci < -373193820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c6
+ (CHECK(-373193820 <= deci AND deci < -372519520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c7
+ (CHECK(-372519520 <= deci AND deci < -371847400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c8
+ (CHECK(-371847400 <= deci AND deci < -371162190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0c9
+ (CHECK(-371162190 <= deci AND deci < -370464390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ca
+ (CHECK(-370464390 <= deci AND deci < -369760800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cb
+ (CHECK(-369760800 <= deci AND deci < -369039540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cc
+ (CHECK(-369039540 <= deci AND deci < -368294520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cd
+ (CHECK(-368294520 <= deci AND deci < -367524370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ce
+ (CHECK(-367524370 <= deci AND deci < -366728600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cf
+ (CHECK(-366728600 <= deci AND deci < -365915880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cg
+ (CHECK(-365915880 <= deci AND deci < -365094140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ch
+ (CHECK(-365094140 <= deci AND deci < -364252640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ci
+ (CHECK(-364252640 <= deci AND deci < -363396170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cj
+ (CHECK(-363396170 <= deci AND deci < -362550030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ck
+ (CHECK(-362550030 <= deci AND deci < -361685960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cl
+ (CHECK(-361685960 <= deci AND deci < -360824750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cm
+ (CHECK(-360824750 <= deci AND deci < -359974960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cn
+ (CHECK(-359974960 <= deci AND deci < -359124080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0co
+ (CHECK(-359124080 <= deci AND deci < -358300560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cp
+ (CHECK(-358300560 <= deci AND deci < -357470020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cq
+ (CHECK(-357470020 <= deci AND deci < -356637670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cr
+ (CHECK(-356637670 <= deci AND deci < -355818580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cs
+ (CHECK(-355818580 <= deci AND deci < -354982600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ct
+ (CHECK(-354982600 <= deci AND deci < -354144530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cu
+ (CHECK(-354144530 <= deci AND deci < -353314250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cv
+ (CHECK(-353314250 <= deci AND deci < -352471090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cw
+ (CHECK(-352471090 <= deci AND deci < -351648470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cx
+ (CHECK(-351648470 <= deci AND deci < -350823950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cy
+ (CHECK(-350823950 <= deci AND deci < -350001070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0cz
+ (CHECK(-350001070 <= deci AND deci < -349198310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d0
+ (CHECK(-349198310 <= deci AND deci < -348383360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d1
+ (CHECK(-348383360 <= deci AND deci < -347576230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d2
+ (CHECK(-347576230 <= deci AND deci < -346781230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d3
+ (CHECK(-346781230 <= deci AND deci < -345973960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d4
+ (CHECK(-345973960 <= deci AND deci < -345181790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d5
+ (CHECK(-345181790 <= deci AND deci < -344396560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d6
+ (CHECK(-344396560 <= deci AND deci < -343597150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d7
+ (CHECK(-343597150 <= deci AND deci < -342809670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d8
+ (CHECK(-342809670 <= deci AND deci < -342021400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0d9
+ (CHECK(-342021400 <= deci AND deci < -341227490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0da
+ (CHECK(-341227490 <= deci AND deci < -340447740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0db
+ (CHECK(-340447740 <= deci AND deci < -339663030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dc
+ (CHECK(-339663030 <= deci AND deci < -338869350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dd
+ (CHECK(-338869350 <= deci AND deci < -338085560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0de
+ (CHECK(-338085560 <= deci AND deci < -337303680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0df
+ (CHECK(-337303680 <= deci AND deci < -336529830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dg
+ (CHECK(-336529830 <= deci AND deci < -335777860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dh
+ (CHECK(-335777860 <= deci AND deci < -335019940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0di
+ (CHECK(-335019940 <= deci AND deci < -334270160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dj
+ (CHECK(-334270160 <= deci AND deci < -333540870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dk
+ (CHECK(-333540870 <= deci AND deci < -332832970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dl
+ (CHECK(-332832970 <= deci AND deci < -332146540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dm
+ (CHECK(-332146540 <= deci AND deci < -331504360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dn
+ (CHECK(-331504360 <= deci AND deci < -330896360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0do
+ (CHECK(-330896360 <= deci AND deci < -330311250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dp
+ (CHECK(-330311250 <= deci AND deci < -329730790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dq
+ (CHECK(-329730790 <= deci AND deci < -329169770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dr
+ (CHECK(-329169770 <= deci AND deci < -328616170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ds
+ (CHECK(-328616170 <= deci AND deci < -328068970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dt
+ (CHECK(-328068970 <= deci AND deci < -327519100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0du
+ (CHECK(-327519100 <= deci AND deci < -326976510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dv
+ (CHECK(-326976510 <= deci AND deci < -326435010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dw
+ (CHECK(-326435010 <= deci AND deci < -325895430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dx
+ (CHECK(-325895430 <= deci AND deci < -325348430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dy
+ (CHECK(-325348430 <= deci AND deci < -324810790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0dz
+ (CHECK(-324810790 <= deci AND deci < -324273450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e0
+ (CHECK(-324273450 <= deci AND deci < -323734580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e1
+ (CHECK(-323734580 <= deci AND deci < -323185970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e2
+ (CHECK(-323185970 <= deci AND deci < -322643320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e3
+ (CHECK(-322643320 <= deci AND deci < -322098670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e4
+ (CHECK(-322098670 <= deci AND deci < -321535470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e5
+ (CHECK(-321535470 <= deci AND deci < -320956650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e6
+ (CHECK(-320956650 <= deci AND deci < -320378400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e7
+ (CHECK(-320378400 <= deci AND deci < -319787960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e8
+ (CHECK(-319787960 <= deci AND deci < -319187790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0e9
+ (CHECK(-319187790 <= deci AND deci < -318564760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ea
+ (CHECK(-318564760 <= deci AND deci < -317922260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0eb
+ (CHECK(-317922260 <= deci AND deci < -317251640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ec
+ (CHECK(-317251640 <= deci AND deci < -316567040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ed
+ (CHECK(-316567040 <= deci AND deci < -315868710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ee
+ (CHECK(-315868710 <= deci AND deci < -315164980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ef
+ (CHECK(-315164980 <= deci AND deci < -314452270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0eg
+ (CHECK(-314452270 <= deci AND deci < -313727480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0eh
+ (CHECK(-313727480 <= deci AND deci < -313011970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ei
+ (CHECK(-313011970 <= deci AND deci < -312305580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ej
+ (CHECK(-312305580 <= deci AND deci < -311588970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ek
+ (CHECK(-311588970 <= deci AND deci < -310880240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0el
+ (CHECK(-310880240 <= deci AND deci < -310176110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0em
+ (CHECK(-310176110 <= deci AND deci < -309457610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0en
+ (CHECK(-309457610 <= deci AND deci < -308747560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0eo
+ (CHECK(-308747560 <= deci AND deci < -308048090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ep
+ (CHECK(-308048090 <= deci AND deci < -307343250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0eq
+ (CHECK(-307343250 <= deci AND deci < -306654270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0er
+ (CHECK(-306654270 <= deci AND deci < -305965980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0es
+ (CHECK(-305965980 <= deci AND deci < -305266230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0et
+ (CHECK(-305266230 <= deci AND deci < -304575470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0eu
+ (CHECK(-304575470 <= deci AND deci < -303892810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ev
+ (CHECK(-303892810 <= deci AND deci < -303211490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ew
+ (CHECK(-303211490 <= deci AND deci < -302527320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ex
+ (CHECK(-302527320 <= deci AND deci < -301852260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ey
+ (CHECK(-301852260 <= deci AND deci < -301179750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ez
+ (CHECK(-301179750 <= deci AND deci < -300493710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f0
+ (CHECK(-300493710 <= deci AND deci < -299820730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f1
+ (CHECK(-299820730 <= deci AND deci < -299152720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f2
+ (CHECK(-299152720 <= deci AND deci < -298474810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f3
+ (CHECK(-298474810 <= deci AND deci < -297804740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f4
+ (CHECK(-297804740 <= deci AND deci < -297137430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f5
+ (CHECK(-297137430 <= deci AND deci < -296468820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f6
+ (CHECK(-296468820 <= deci AND deci < -295797190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f7
+ (CHECK(-295797190 <= deci AND deci < -295132500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f8
+ (CHECK(-295132500 <= deci AND deci < -294468030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0f9
+ (CHECK(-294468030 <= deci AND deci < -293788680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fa
+ (CHECK(-293788680 <= deci AND deci < -293117980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fb
+ (CHECK(-293117980 <= deci AND deci < -292447950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fc
+ (CHECK(-292447950 <= deci AND deci < -291767920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fd
+ (CHECK(-291767920 <= deci AND deci < -291093100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fe
+ (CHECK(-291093100 <= deci AND deci < -290421700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ff
+ (CHECK(-290421700 <= deci AND deci < -289746550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fg
+ (CHECK(-289746550 <= deci AND deci < -289064610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fh
+ (CHECK(-289064610 <= deci AND deci < -288388130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fi
+ (CHECK(-288388130 <= deci AND deci < -287713510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fj
+ (CHECK(-287713510 <= deci AND deci < -287026620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fk
+ (CHECK(-287026620 <= deci AND deci < -286346600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fl
+ (CHECK(-286346600 <= deci AND deci < -285668540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fm
+ (CHECK(-285668540 <= deci AND deci < -284976000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fn
+ (CHECK(-284976000 <= deci AND deci < -284292230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fo
+ (CHECK(-284292230 <= deci AND deci < -283614180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fp
+ (CHECK(-283614180 <= deci AND deci < -282940650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fq
+ (CHECK(-282940650 <= deci AND deci < -282276420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fr
+ (CHECK(-282276420 <= deci AND deci < -281641300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fs
+ (CHECK(-281641300 <= deci AND deci < -281033280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ft
+ (CHECK(-281033280 <= deci AND deci < -280442590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fu
+ (CHECK(-280442590 <= deci AND deci < -279873420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fv
+ (CHECK(-279873420 <= deci AND deci < -279310550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fw
+ (CHECK(-279310550 <= deci AND deci < -278759250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fx
+ (CHECK(-278759250 <= deci AND deci < -278206050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fy
+ (CHECK(-278206050 <= deci AND deci < -277662010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0fz
+ (CHECK(-277662010 <= deci AND deci < -277119200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g0
+ (CHECK(-277119200 <= deci AND deci < -276581390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g1
+ (CHECK(-276581390 <= deci AND deci < -276034010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g2
+ (CHECK(-276034010 <= deci AND deci < -275489930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g3
+ (CHECK(-275489930 <= deci AND deci < -274945090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g4
+ (CHECK(-274945090 <= deci AND deci < -274402130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g5
+ (CHECK(-274402130 <= deci AND deci < -273849910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g6
+ (CHECK(-273849910 <= deci AND deci < -273301450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g7
+ (CHECK(-273301450 <= deci AND deci < -272753020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g8
+ (CHECK(-272753020 <= deci AND deci < -272206490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0g9
+ (CHECK(-272206490 <= deci AND deci < -271651990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ga
+ (CHECK(-271651990 <= deci AND deci < -271100560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gb
+ (CHECK(-271100560 <= deci AND deci < -270546170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gc
+ (CHECK(-270546170 <= deci AND deci < -269988880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gd
+ (CHECK(-269988880 <= deci AND deci < -269426350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ge
+ (CHECK(-269426350 <= deci AND deci < -268857120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gf
+ (CHECK(-268857120 <= deci AND deci < -268270410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gg
+ (CHECK(-268270410 <= deci AND deci < -267670770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gh
+ (CHECK(-267670770 <= deci AND deci < -267050320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gi
+ (CHECK(-267050320 <= deci AND deci < -266416500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gj
+ (CHECK(-266416500 <= deci AND deci < -265776290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gk
+ (CHECK(-265776290 <= deci AND deci < -265132490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gl
+ (CHECK(-265132490 <= deci AND deci < -264475150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gm
+ (CHECK(-264475150 <= deci AND deci < -263809270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gn
+ (CHECK(-263809270 <= deci AND deci < -263151120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0go
+ (CHECK(-263151120 <= deci AND deci < -262490640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gp
+ (CHECK(-262490640 <= deci AND deci < -261818010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gq
+ (CHECK(-261818010 <= deci AND deci < -261140480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gr
+ (CHECK(-261140480 <= deci AND deci < -260457520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gs
+ (CHECK(-260457520 <= deci AND deci < -259766870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gt
+ (CHECK(-259766870 <= deci AND deci < -259073920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gu
+ (CHECK(-259073920 <= deci AND deci < -258383590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gv
+ (CHECK(-258383590 <= deci AND deci < -257690380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gw
+ (CHECK(-257690380 <= deci AND deci < -256990980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gx
+ (CHECK(-256990980 <= deci AND deci < -256294920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gy
+ (CHECK(-256294920 <= deci AND deci < -255596120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0gz
+ (CHECK(-255596120 <= deci AND deci < -254888410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h0
+ (CHECK(-254888410 <= deci AND deci < -254185810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h1
+ (CHECK(-254185810 <= deci AND deci < -253481860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h2
+ (CHECK(-253481860 <= deci AND deci < -252770170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h3
+ (CHECK(-252770170 <= deci AND deci < -252060150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h4
+ (CHECK(-252060150 <= deci AND deci < -251353140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h5
+ (CHECK(-251353140 <= deci AND deci < -250637410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h6
+ (CHECK(-250637410 <= deci AND deci < -249919450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h7
+ (CHECK(-249919450 <= deci AND deci < -249214100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h8
+ (CHECK(-249214100 <= deci AND deci < -248499120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0h9
+ (CHECK(-248499120 <= deci AND deci < -247780110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ha
+ (CHECK(-247780110 <= deci AND deci < -247061030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hb
+ (CHECK(-247061030 <= deci AND deci < -246332480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hc
+ (CHECK(-246332480 <= deci AND deci < -245598100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hd
+ (CHECK(-245598100 <= deci AND deci < -244872340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0he
+ (CHECK(-244872340 <= deci AND deci < -244137760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hf
+ (CHECK(-244137760 <= deci AND deci < -243390870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hg
+ (CHECK(-243390870 <= deci AND deci < -242655680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hh
+ (CHECK(-242655680 <= deci AND deci < -241918830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hi
+ (CHECK(-241918830 <= deci AND deci < -241173850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hj
+ (CHECK(-241173850 <= deci AND deci < -240446530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hk
+ (CHECK(-240446530 <= deci AND deci < -239721470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hl
+ (CHECK(-239721470 <= deci AND deci < -238987100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hm
+ (CHECK(-238987100 <= deci AND deci < -238271280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hn
+ (CHECK(-238271280 <= deci AND deci < -237558460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ho
+ (CHECK(-237558460 <= deci AND deci < -236838970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hp
+ (CHECK(-236838970 <= deci AND deci < -236137900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hq
+ (CHECK(-236137900 <= deci AND deci < -235443260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hr
+ (CHECK(-235443260 <= deci AND deci < -234738920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hs
+ (CHECK(-234738920 <= deci AND deci < -234044690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ht
+ (CHECK(-234044690 <= deci AND deci < -233365480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hu
+ (CHECK(-233365480 <= deci AND deci < -232685860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hv
+ (CHECK(-232685860 <= deci AND deci < -232022080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hw
+ (CHECK(-232022080 <= deci AND deci < -231380520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hx
+ (CHECK(-231380520 <= deci AND deci < -230756500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hy
+ (CHECK(-230756500 <= deci AND deci < -230136770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0hz
+ (CHECK(-230136770 <= deci AND deci < -229525380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i0
+ (CHECK(-229525380 <= deci AND deci < -228920850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i1
+ (CHECK(-228920850 <= deci AND deci < -228308350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i2
+ (CHECK(-228308350 <= deci AND deci < -227699700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i3
+ (CHECK(-227699700 <= deci AND deci < -227095740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i4
+ (CHECK(-227095740 <= deci AND deci < -226499970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i5
+ (CHECK(-226499970 <= deci AND deci < -225895850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i6
+ (CHECK(-225895850 <= deci AND deci < -225285670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i7
+ (CHECK(-225285670 <= deci AND deci < -224681210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i8
+ (CHECK(-224681210 <= deci AND deci < -224086190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0i9
+ (CHECK(-224086190 <= deci AND deci < -223481130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ia
+ (CHECK(-223481130 <= deci AND deci < -222879270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ib
+ (CHECK(-222879270 <= deci AND deci < -222286280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ic
+ (CHECK(-222286280 <= deci AND deci < -221691100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0id
+ (CHECK(-221691100 <= deci AND deci < -221090930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ie
+ (CHECK(-221090930 <= deci AND deci < -220483200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0if
+ (CHECK(-220483200 <= deci AND deci < -219873720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ig
+ (CHECK(-219873720 <= deci AND deci < -219244520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ih
+ (CHECK(-219244520 <= deci AND deci < -218608260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ii
+ (CHECK(-218608260 <= deci AND deci < -217956160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ij
+ (CHECK(-217956160 <= deci AND deci < -217287540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ik
+ (CHECK(-217287540 <= deci AND deci < -216602580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0il
+ (CHECK(-216602580 <= deci AND deci < -215905600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0im
+ (CHECK(-215905600 <= deci AND deci < -215207610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0in
+ (CHECK(-215207610 <= deci AND deci < -214485330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0io
+ (CHECK(-214485330 <= deci AND deci < -213756320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ip
+ (CHECK(-213756320 <= deci AND deci < -213037340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0iq
+ (CHECK(-213037340 <= deci AND deci < -212309410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ir
+ (CHECK(-212309410 <= deci AND deci < -211582400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0is
+ (CHECK(-211582400 <= deci AND deci < -210876070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0it
+ (CHECK(-210876070 <= deci AND deci < -210173070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0iu
+ (CHECK(-210173070 <= deci AND deci < -209466330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0iv
+ (CHECK(-209466330 <= deci AND deci < -208756850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0iw
+ (CHECK(-208756850 <= deci AND deci < -208044650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ix
+ (CHECK(-208044650 <= deci AND deci < -207321560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0iy
+ (CHECK(-207321560 <= deci AND deci < -206600200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0iz
+ (CHECK(-206600200 <= deci AND deci < -205869610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j0
+ (CHECK(-205869610 <= deci AND deci < -205122470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j1
+ (CHECK(-205122470 <= deci AND deci < -204379290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j2
+ (CHECK(-204379290 <= deci AND deci < -203635510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j3
+ (CHECK(-203635510 <= deci AND deci < -202884260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j4
+ (CHECK(-202884260 <= deci AND deci < -202140550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j5
+ (CHECK(-202140550 <= deci AND deci < -201394810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j6
+ (CHECK(-201394810 <= deci AND deci < -200634250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j7
+ (CHECK(-200634250 <= deci AND deci < -199874800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j8
+ (CHECK(-199874800 <= deci AND deci < -199115150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0j9
+ (CHECK(-199115150 <= deci AND deci < -198344270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ja
+ (CHECK(-198344270 <= deci AND deci < -197577300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jb
+ (CHECK(-197577300 <= deci AND deci < -196807470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jc
+ (CHECK(-196807470 <= deci AND deci < -196030500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jd
+ (CHECK(-196030500 <= deci AND deci < -195267760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0je
+ (CHECK(-195267760 <= deci AND deci < -194498530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jf
+ (CHECK(-194498530 <= deci AND deci < -193715840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jg
+ (CHECK(-193715840 <= deci AND deci < -192947540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jh
+ (CHECK(-192947540 <= deci AND deci < -192180960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ji
+ (CHECK(-192180960 <= deci AND deci < -191409360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jj
+ (CHECK(-191409360 <= deci AND deci < -190652930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jk
+ (CHECK(-190652930 <= deci AND deci < -189901990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jl
+ (CHECK(-189901990 <= deci AND deci < -189139360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jm
+ (CHECK(-189139360 <= deci AND deci < -188389750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jn
+ (CHECK(-188389750 <= deci AND deci < -187632870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jo
+ (CHECK(-187632870 <= deci AND deci < -186867480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jp
+ (CHECK(-186867480 <= deci AND deci < -186116880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jq
+ (CHECK(-186116880 <= deci AND deci < -185364940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jr
+ (CHECK(-185364940 <= deci AND deci < -184608930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0js
+ (CHECK(-184608930 <= deci AND deci < -183872010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jt
+ (CHECK(-183872010 <= deci AND deci < -183146930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ju
+ (CHECK(-183146930 <= deci AND deci < -182426310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jv
+ (CHECK(-182426310 <= deci AND deci < -181735570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jw
+ (CHECK(-181735570 <= deci AND deci < -181048570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jx
+ (CHECK(-181048570 <= deci AND deci < -180356060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jy
+ (CHECK(-180356060 <= deci AND deci < -179685300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0jz
+ (CHECK(-179685300 <= deci AND deci < -179017810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k0
+ (CHECK(-179017810 <= deci AND deci < -178350480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k1
+ (CHECK(-178350480 <= deci AND deci < -177694100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k2
+ (CHECK(-177694100 <= deci AND deci < -177041740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k3
+ (CHECK(-177041740 <= deci AND deci < -176374280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k4
+ (CHECK(-176374280 <= deci AND deci < -175698950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k5
+ (CHECK(-175698950 <= deci AND deci < -175029670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k6
+ (CHECK(-175029670 <= deci AND deci < -174354070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k7
+ (CHECK(-174354070 <= deci AND deci < -173666570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k8
+ (CHECK(-173666570 <= deci AND deci < -172991270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0k9
+ (CHECK(-172991270 <= deci AND deci < -172317270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ka
+ (CHECK(-172317270 <= deci AND deci < -171631130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kb
+ (CHECK(-171631130 <= deci AND deci < -170948670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kc
+ (CHECK(-170948670 <= deci AND deci < -170252110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kd
+ (CHECK(-170252110 <= deci AND deci < -169523100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ke
+ (CHECK(-169523100 <= deci AND deci < -168773240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kf
+ (CHECK(-168773240 <= deci AND deci < -167989760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kg
+ (CHECK(-167989760 <= deci AND deci < -167167380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kh
+ (CHECK(-167167380 <= deci AND deci < -166315020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ki
+ (CHECK(-166315020 <= deci AND deci < -165436360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kj
+ (CHECK(-165436360 <= deci AND deci < -164519840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kk
+ (CHECK(-164519840 <= deci AND deci < -163597660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kl
+ (CHECK(-163597660 <= deci AND deci < -162660820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0km
+ (CHECK(-162660820 <= deci AND deci < -161730660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kn
+ (CHECK(-161730660 <= deci AND deci < -160803720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ko
+ (CHECK(-160803720 <= deci AND deci < -159871850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kp
+ (CHECK(-159871850 <= deci AND deci < -158945640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kq
+ (CHECK(-158945640 <= deci AND deci < -158015230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kr
+ (CHECK(-158015230 <= deci AND deci < -157097990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ks
+ (CHECK(-157097990 <= deci AND deci < -156185530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kt
+ (CHECK(-156185530 <= deci AND deci < -155271500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ku
+ (CHECK(-155271500 <= deci AND deci < -154357360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kv
+ (CHECK(-154357360 <= deci AND deci < -153423160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kw
+ (CHECK(-153423160 <= deci AND deci < -152486100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kx
+ (CHECK(-152486100 <= deci AND deci < -151563040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ky
+ (CHECK(-151563040 <= deci AND deci < -150637950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0kz
+ (CHECK(-150637950 <= deci AND deci < -149726770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l0
+ (CHECK(-149726770 <= deci AND deci < -148793190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l1
+ (CHECK(-148793190 <= deci AND deci < -147844280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l2
+ (CHECK(-147844280 <= deci AND deci < -146878140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l3
+ (CHECK(-146878140 <= deci AND deci < -145894500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l4
+ (CHECK(-145894500 <= deci AND deci < -144893890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l5
+ (CHECK(-144893890 <= deci AND deci < -143877830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l6
+ (CHECK(-143877830 <= deci AND deci < -142857630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l7
+ (CHECK(-142857630 <= deci AND deci < -141832650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l8
+ (CHECK(-141832650 <= deci AND deci < -140814470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0l9
+ (CHECK(-140814470 <= deci AND deci < -139791850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0la
+ (CHECK(-139791850 <= deci AND deci < -138744400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lb
+ (CHECK(-138744400 <= deci AND deci < -137694150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lc
+ (CHECK(-137694150 <= deci AND deci < -136627350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ld
+ (CHECK(-136627350 <= deci AND deci < -135560240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0le
+ (CHECK(-135560240 <= deci AND deci < -134481870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lf
+ (CHECK(-134481870 <= deci AND deci < -133405960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lg
+ (CHECK(-133405960 <= deci AND deci < -132355980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lh
+ (CHECK(-132355980 <= deci AND deci < -131331130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0li
+ (CHECK(-131331130 <= deci AND deci < -130338630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lj
+ (CHECK(-130338630 <= deci AND deci < -129365580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lk
+ (CHECK(-129365580 <= deci AND deci < -128393550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ll
+ (CHECK(-128393550 <= deci AND deci < -127437450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lm
+ (CHECK(-127437450 <= deci AND deci < -126483180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ln
+ (CHECK(-126483180 <= deci AND deci < -125528560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lo
+ (CHECK(-125528560 <= deci AND deci < -124565930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lp
+ (CHECK(-124565930 <= deci AND deci < -123611630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lq
+ (CHECK(-123611630 <= deci AND deci < -122646510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lr
+ (CHECK(-122646510 <= deci AND deci < -121683520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ls
+ (CHECK(-121683520 <= deci AND deci < -120706950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lt
+ (CHECK(-120706950 <= deci AND deci < -119704130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lu
+ (CHECK(-119704130 <= deci AND deci < -118686460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lv
+ (CHECK(-118686460 <= deci AND deci < -117644200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lw
+ (CHECK(-117644200 <= deci AND deci < -116564770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lx
+ (CHECK(-116564770 <= deci AND deci < -115449430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ly
+ (CHECK(-115449430 <= deci AND deci < -114308690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0lz
+ (CHECK(-114308690 <= deci AND deci < -113154040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m0
+ (CHECK(-113154040 <= deci AND deci < -112004650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m1
+ (CHECK(-112004650 <= deci AND deci < -110845620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m2
+ (CHECK(-110845620 <= deci AND deci < -109695650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m3
+ (CHECK(-109695650 <= deci AND deci < -108549680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m4
+ (CHECK(-108549680 <= deci AND deci < -107409840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m5
+ (CHECK(-107409840 <= deci AND deci < -106273490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m6
+ (CHECK(-106273490 <= deci AND deci < -105137150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m7
+ (CHECK(-105137150 <= deci AND deci < -103998060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m8
+ (CHECK(-103998060 <= deci AND deci < -102858430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0m9
+ (CHECK(-102858430 <= deci AND deci < -101717740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ma
+ (CHECK(-101717740 <= deci AND deci < -100580200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mb
+ (CHECK(-100580200 <= deci AND deci < -99435210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mc
+ (CHECK(-99435210 <= deci AND deci < -98308790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0md
+ (CHECK(-98308790 <= deci AND deci < -97202370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0me
+ (CHECK(-97202370 <= deci AND deci < -96096750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mf
+ (CHECK(-96096750 <= deci AND deci < -94987480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mg
+ (CHECK(-94987480 <= deci AND deci < -93879580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mh
+ (CHECK(-93879580 <= deci AND deci < -92749820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mi
+ (CHECK(-92749820 <= deci AND deci < -91635970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mj
+ (CHECK(-91635970 <= deci AND deci < -90525550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mk
+ (CHECK(-90525550 <= deci AND deci < -89441220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ml
+ (CHECK(-89441220 <= deci AND deci < -88360370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mm
+ (CHECK(-88360370 <= deci AND deci < -87305820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mn
+ (CHECK(-87305820 <= deci AND deci < -86232080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mo
+ (CHECK(-86232080 <= deci AND deci < -85152680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mp
+ (CHECK(-85152680 <= deci AND deci < -84055280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mq
+ (CHECK(-84055280 <= deci AND deci < -82977020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mr
+ (CHECK(-82977020 <= deci AND deci < -81907200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ms
+ (CHECK(-81907200 <= deci AND deci < -80858760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mt
+ (CHECK(-80858760 <= deci AND deci < -79831180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mu
+ (CHECK(-79831180 <= deci AND deci < -78815830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mv
+ (CHECK(-78815830 <= deci AND deci < -77824180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mw
+ (CHECK(-77824180 <= deci AND deci < -76825340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mx
+ (CHECK(-76825340 <= deci AND deci < -75842050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0my
+ (CHECK(-75842050 <= deci AND deci < -74840180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0mz
+ (CHECK(-74840180 <= deci AND deci < -73857750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n0
+ (CHECK(-73857750 <= deci AND deci < -72863560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n1
+ (CHECK(-72863560 <= deci AND deci < -71876590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n2
+ (CHECK(-71876590 <= deci AND deci < -70893360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n3
+ (CHECK(-70893360 <= deci AND deci < -69892930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n4
+ (CHECK(-69892930 <= deci AND deci < -68882550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n5
+ (CHECK(-68882550 <= deci AND deci < -67849350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n6
+ (CHECK(-67849350 <= deci AND deci < -66797710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n7
+ (CHECK(-66797710 <= deci AND deci < -65697790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n8
+ (CHECK(-65697790 <= deci AND deci < -64584680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0n9
+ (CHECK(-64584680 <= deci AND deci < -63447580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0na
+ (CHECK(-63447580 <= deci AND deci < -62325900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nb
+ (CHECK(-62325900 <= deci AND deci < -61185700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nc
+ (CHECK(-61185700 <= deci AND deci < -60061540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nd
+ (CHECK(-60061540 <= deci AND deci < -58911200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ne
+ (CHECK(-58911200 <= deci AND deci < -57773690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nf
+ (CHECK(-57773690 <= deci AND deci < -56615480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ng
+ (CHECK(-56615480 <= deci AND deci < -55472040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nh
+ (CHECK(-55472040 <= deci AND deci < -54298890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ni
+ (CHECK(-54298890 <= deci AND deci < -53131430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nj
+ (CHECK(-53131430 <= deci AND deci < -51933210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nk
+ (CHECK(-51933210 <= deci AND deci < -50745410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nl
+ (CHECK(-50745410 <= deci AND deci < -49539030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nm
+ (CHECK(-49539030 <= deci AND deci < -48319310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nn
+ (CHECK(-48319310 <= deci AND deci < -47081430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0no
+ (CHECK(-47081430 <= deci AND deci < -45832040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0np
+ (CHECK(-45832040 <= deci AND deci < -44574890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nq
+ (CHECK(-44574890 <= deci AND deci < -43288370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nr
+ (CHECK(-43288370 <= deci AND deci < -42009400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ns
+ (CHECK(-42009400 <= deci AND deci < -40718620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nt
+ (CHECK(-40718620 <= deci AND deci < -39420460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nu
+ (CHECK(-39420460 <= deci AND deci < -38127210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nv
+ (CHECK(-38127210 <= deci AND deci < -36829200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nw
+ (CHECK(-36829200 <= deci AND deci < -35558450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nx
+ (CHECK(-35558450 <= deci AND deci < -34254160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ny
+ (CHECK(-34254160 <= deci AND deci < -32982310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0nz
+ (CHECK(-32982310 <= deci AND deci < -31779760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o0
+ (CHECK(-31779760 <= deci AND deci < -30645110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o1
+ (CHECK(-30645110 <= deci AND deci < -29578680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o2
+ (CHECK(-29578680 <= deci AND deci < -28555220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o3
+ (CHECK(-28555220 <= deci AND deci < -27563010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o4
+ (CHECK(-27563010 <= deci AND deci < -26600470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o5
+ (CHECK(-26600470 <= deci AND deci < -25620780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o6
+ (CHECK(-25620780 <= deci AND deci < -24649570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o7
+ (CHECK(-24649570 <= deci AND deci < -23683050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o8
+ (CHECK(-23683050 <= deci AND deci < -22746410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0o9
+ (CHECK(-22746410 <= deci AND deci < -21824010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oa
+ (CHECK(-21824010 <= deci AND deci < -20899090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ob
+ (CHECK(-20899090 <= deci AND deci < -19942140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oc
+ (CHECK(-19942140 <= deci AND deci < -18939260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0od
+ (CHECK(-18939260 <= deci AND deci < -17921880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oe
+ (CHECK(-17921880 <= deci AND deci < -16870110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0of
+ (CHECK(-16870110 <= deci AND deci < -15779300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0og
+ (CHECK(-15779300 <= deci AND deci < -14645120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oh
+ (CHECK(-14645120 <= deci AND deci < -13523300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oi
+ (CHECK(-13523300 <= deci AND deci < -12400890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oj
+ (CHECK(-12400890 <= deci AND deci < -11284130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ok
+ (CHECK(-11284130 <= deci AND deci < -10172250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ol
+ (CHECK(-10172250 <= deci AND deci < -9072080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0om
+ (CHECK(-9072080 <= deci AND deci < -7982150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0on
+ (CHECK(-7982150 <= deci AND deci < -6889890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oo
+ (CHECK(-6889890 <= deci AND deci < -5783840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0op
+ (CHECK(-5783840 <= deci AND deci < -4678010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oq
+ (CHECK(-4678010 <= deci AND deci < -3570440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0or
+ (CHECK(-3570440 <= deci AND deci < -2467390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0os
+ (CHECK(-2467390 <= deci AND deci < -1365310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ot
+ (CHECK(-1365310 <= deci AND deci < -266810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ou
+ (CHECK(-266810 <= deci AND deci < 854560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ov
+ (CHECK(854560 <= deci AND deci < 1987400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ow
+ (CHECK(1987400 <= deci AND deci < 3139550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ox
+ (CHECK(3139550 <= deci AND deci < 4310620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oy
+ (CHECK(4310620 <= deci AND deci < 5508030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0oz
+ (CHECK(5508030 <= deci AND deci < 6710790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p0
+ (CHECK(6710790 <= deci AND deci < 7924150))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p1
+ (CHECK(7924150 <= deci AND deci < 9146940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p2
+ (CHECK(9146940 <= deci AND deci < 10369350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p3
+ (CHECK(10369350 <= deci AND deci < 11596030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p4
+ (CHECK(11596030 <= deci AND deci < 12811730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p5
+ (CHECK(12811730 <= deci AND deci < 14024300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p6
+ (CHECK(14024300 <= deci AND deci < 15227200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p7
+ (CHECK(15227200 <= deci AND deci < 16438400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p8
+ (CHECK(16438400 <= deci AND deci < 17599260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0p9
+ (CHECK(17599260 <= deci AND deci < 18731920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pa
+ (CHECK(18731920 <= deci AND deci < 19837860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pb
+ (CHECK(19837860 <= deci AND deci < 20912700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pc
+ (CHECK(20912700 <= deci AND deci < 21940600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pd
+ (CHECK(21940600 <= deci AND deci < 22946560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pe
+ (CHECK(22946560 <= deci AND deci < 23924970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pf
+ (CHECK(23924970 <= deci AND deci < 24905320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pg
+ (CHECK(24905320 <= deci AND deci < 25891130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ph
+ (CHECK(25891130 <= deci AND deci < 26875430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pi
+ (CHECK(26875430 <= deci AND deci < 27862000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pj
+ (CHECK(27862000 <= deci AND deci < 28813570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pk
+ (CHECK(28813570 <= deci AND deci < 29779170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pl
+ (CHECK(29779170 <= deci AND deci < 30761520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pm
+ (CHECK(30761520 <= deci AND deci < 31775680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pn
+ (CHECK(31775680 <= deci AND deci < 32798220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0po
+ (CHECK(32798220 <= deci AND deci < 33843590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pp
+ (CHECK(33843590 <= deci AND deci < 34913180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pq
+ (CHECK(34913180 <= deci AND deci < 36025140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pr
+ (CHECK(36025140 <= deci AND deci < 37140530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ps
+ (CHECK(37140530 <= deci AND deci < 38277560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pt
+ (CHECK(38277560 <= deci AND deci < 39421250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pu
+ (CHECK(39421250 <= deci AND deci < 40596500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pv
+ (CHECK(40596500 <= deci AND deci < 41777450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pw
+ (CHECK(41777450 <= deci AND deci < 42985940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0px
+ (CHECK(42985940 <= deci AND deci < 44196760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0py
+ (CHECK(44196760 <= deci AND deci < 45405340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0pz
+ (CHECK(45405340 <= deci AND deci < 46604420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q0
+ (CHECK(46604420 <= deci AND deci < 47815550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q1
+ (CHECK(47815550 <= deci AND deci < 49012000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q2
+ (CHECK(49012000 <= deci AND deci < 50206750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q3
+ (CHECK(50206750 <= deci AND deci < 51394260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q4
+ (CHECK(51394260 <= deci AND deci < 52588220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q5
+ (CHECK(52588220 <= deci AND deci < 53791230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q6
+ (CHECK(53791230 <= deci AND deci < 54998350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q7
+ (CHECK(54998350 <= deci AND deci < 56213790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q8
+ (CHECK(56213790 <= deci AND deci < 57422080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0q9
+ (CHECK(57422080 <= deci AND deci < 58626090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qa
+ (CHECK(58626090 <= deci AND deci < 59825990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qb
+ (CHECK(59825990 <= deci AND deci < 61023370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qc
+ (CHECK(61023370 <= deci AND deci < 62208050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qd
+ (CHECK(62208050 <= deci AND deci < 63401600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qe
+ (CHECK(63401600 <= deci AND deci < 64588240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qf
+ (CHECK(64588240 <= deci AND deci < 65775100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qg
+ (CHECK(65775100 <= deci AND deci < 66940550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qh
+ (CHECK(66940550 <= deci AND deci < 68088180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qi
+ (CHECK(68088180 <= deci AND deci < 69200520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qj
+ (CHECK(69200520 <= deci AND deci < 70306020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qk
+ (CHECK(70306020 <= deci AND deci < 71379540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ql
+ (CHECK(71379540 <= deci AND deci < 72444790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qm
+ (CHECK(72444790 <= deci AND deci < 73488100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qn
+ (CHECK(73488100 <= deci AND deci < 74531920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qo
+ (CHECK(74531920 <= deci AND deci < 75562160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qp
+ (CHECK(75562160 <= deci AND deci < 76601440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qq
+ (CHECK(76601440 <= deci AND deci < 77612900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qr
+ (CHECK(77612900 <= deci AND deci < 78635000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qs
+ (CHECK(78635000 <= deci AND deci < 79652250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qt
+ (CHECK(79652250 <= deci AND deci < 80696760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qu
+ (CHECK(80696760 <= deci AND deci < 81740210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qv
+ (CHECK(81740210 <= deci AND deci < 82776570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qw
+ (CHECK(82776570 <= deci AND deci < 83830610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qx
+ (CHECK(83830610 <= deci AND deci < 84914610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qy
+ (CHECK(84914610 <= deci AND deci < 86034700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0qz
+ (CHECK(86034700 <= deci AND deci < 87158940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r0
+ (CHECK(87158940 <= deci AND deci < 88290590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r1
+ (CHECK(88290590 <= deci AND deci < 89430540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r2
+ (CHECK(89430540 <= deci AND deci < 90574140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r3
+ (CHECK(90574140 <= deci AND deci < 91714590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r4
+ (CHECK(91714590 <= deci AND deci < 92853560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r5
+ (CHECK(92853560 <= deci AND deci < 94004540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r6
+ (CHECK(94004540 <= deci AND deci < 95146660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r7
+ (CHECK(95146660 <= deci AND deci < 96296050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r8
+ (CHECK(96296050 <= deci AND deci < 97454610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0r9
+ (CHECK(97454610 <= deci AND deci < 98620320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ra
+ (CHECK(98620320 <= deci AND deci < 99794990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rb
+ (CHECK(99794990 <= deci AND deci < 100989470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rc
+ (CHECK(100989470 <= deci AND deci < 102166980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rd
+ (CHECK(102166980 <= deci AND deci < 103341230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0re
+ (CHECK(103341230 <= deci AND deci < 104502630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rf
+ (CHECK(104502630 <= deci AND deci < 105661410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rg
+ (CHECK(105661410 <= deci AND deci < 106813870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rh
+ (CHECK(106813870 <= deci AND deci < 107971020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ri
+ (CHECK(107971020 <= deci AND deci < 109129300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rj
+ (CHECK(109129300 <= deci AND deci < 110276750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rk
+ (CHECK(110276750 <= deci AND deci < 111426770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rl
+ (CHECK(111426770 <= deci AND deci < 112569430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rm
+ (CHECK(112569430 <= deci AND deci < 113704800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rn
+ (CHECK(113704800 <= deci AND deci < 114828570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ro
+ (CHECK(114828570 <= deci AND deci < 115956910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rp
+ (CHECK(115956910 <= deci AND deci < 117067430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rq
+ (CHECK(117067430 <= deci AND deci < 118148310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rr
+ (CHECK(118148310 <= deci AND deci < 119210030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rs
+ (CHECK(119210030 <= deci AND deci < 120278740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rt
+ (CHECK(120278740 <= deci AND deci < 121331730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ru
+ (CHECK(121331730 <= deci AND deci < 122385850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rv
+ (CHECK(122385850 <= deci AND deci < 123429830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rw
+ (CHECK(123429830 <= deci AND deci < 124476260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rx
+ (CHECK(124476260 <= deci AND deci < 125526050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ry
+ (CHECK(125526050 <= deci AND deci < 126577770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0rz
+ (CHECK(126577770 <= deci AND deci < 127617120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s0
+ (CHECK(127617120 <= deci AND deci < 128633350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s1
+ (CHECK(128633350 <= deci AND deci < 129667520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s2
+ (CHECK(129667520 <= deci AND deci < 130729690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s3
+ (CHECK(130729690 <= deci AND deci < 131823970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s4
+ (CHECK(131823970 <= deci AND deci < 132920590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s5
+ (CHECK(132920590 <= deci AND deci < 134050440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s6
+ (CHECK(134050440 <= deci AND deci < 135202570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s7
+ (CHECK(135202570 <= deci AND deci < 136373750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s8
+ (CHECK(136373750 <= deci AND deci < 137541590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0s9
+ (CHECK(137541590 <= deci AND deci < 138724340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sa
+ (CHECK(138724340 <= deci AND deci < 139901610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sb
+ (CHECK(139901610 <= deci AND deci < 141075990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sc
+ (CHECK(141075990 <= deci AND deci < 142228180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sd
+ (CHECK(142228180 <= deci AND deci < 143378990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0se
+ (CHECK(143378990 <= deci AND deci < 144503230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sf
+ (CHECK(144503230 <= deci AND deci < 145654980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sg
+ (CHECK(145654980 <= deci AND deci < 146816720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sh
+ (CHECK(146816720 <= deci AND deci < 147973300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0si
+ (CHECK(147973300 <= deci AND deci < 149139890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sj
+ (CHECK(149139890 <= deci AND deci < 150302340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sk
+ (CHECK(150302340 <= deci AND deci < 151451690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sl
+ (CHECK(151451690 <= deci AND deci < 152563920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sm
+ (CHECK(152563920 <= deci AND deci < 153656900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sn
+ (CHECK(153656900 <= deci AND deci < 154766530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0so
+ (CHECK(154766530 <= deci AND deci < 155887270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sp
+ (CHECK(155887270 <= deci AND deci < 156995650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sq
+ (CHECK(156995650 <= deci AND deci < 158098950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sr
+ (CHECK(158098950 <= deci AND deci < 159226190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ss
+ (CHECK(159226190 <= deci AND deci < 160377240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0st
+ (CHECK(160377240 <= deci AND deci < 161541010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0su
+ (CHECK(161541010 <= deci AND deci < 162708670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sv
+ (CHECK(162708670 <= deci AND deci < 163863020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sw
+ (CHECK(163863020 <= deci AND deci < 165028830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sx
+ (CHECK(165028830 <= deci AND deci < 166184280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sy
+ (CHECK(166184280 <= deci AND deci < 167325520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0sz
+ (CHECK(167325520 <= deci AND deci < 168430720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t0
+ (CHECK(168430720 <= deci AND deci < 169539440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t1
+ (CHECK(169539440 <= deci AND deci < 170631030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t2
+ (CHECK(170631030 <= deci AND deci < 171713870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t3
+ (CHECK(171713870 <= deci AND deci < 172774610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t4
+ (CHECK(172774610 <= deci AND deci < 173845450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t5
+ (CHECK(173845450 <= deci AND deci < 174912480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t6
+ (CHECK(174912480 <= deci AND deci < 175974180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t7
+ (CHECK(175974180 <= deci AND deci < 177017850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t8
+ (CHECK(177017850 <= deci AND deci < 178040950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0t9
+ (CHECK(178040950 <= deci AND deci < 179073350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ta
+ (CHECK(179073350 <= deci AND deci < 180122140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tb
+ (CHECK(180122140 <= deci AND deci < 181206220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tc
+ (CHECK(181206220 <= deci AND deci < 182274360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0td
+ (CHECK(182274360 <= deci AND deci < 183358850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0te
+ (CHECK(183358850 <= deci AND deci < 184470510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tf
+ (CHECK(184470510 <= deci AND deci < 185627850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tg
+ (CHECK(185627850 <= deci AND deci < 186778330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0th
+ (CHECK(186778330 <= deci AND deci < 187939040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ti
+ (CHECK(187939040 <= deci AND deci < 189100540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tj
+ (CHECK(189100540 <= deci AND deci < 190277060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tk
+ (CHECK(190277060 <= deci AND deci < 191457670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tl
+ (CHECK(191457670 <= deci AND deci < 192649650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tm
+ (CHECK(192649650 <= deci AND deci < 193846080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tn
+ (CHECK(193846080 <= deci AND deci < 195046470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0to
+ (CHECK(195046470 <= deci AND deci < 196239380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tp
+ (CHECK(196239380 <= deci AND deci < 197414300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tq
+ (CHECK(197414300 <= deci AND deci < 198600500))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tr
+ (CHECK(198600500 <= deci AND deci < 199788430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ts
+ (CHECK(199788430 <= deci AND deci < 200987580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tt
+ (CHECK(200987580 <= deci AND deci < 202167280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tu
+ (CHECK(202167280 <= deci AND deci < 203340120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tv
+ (CHECK(203340120 <= deci AND deci < 204508250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tw
+ (CHECK(204508250 <= deci AND deci < 205698050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tx
+ (CHECK(205698050 <= deci AND deci < 206892290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ty
+ (CHECK(206892290 <= deci AND deci < 208086330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0tz
+ (CHECK(208086330 <= deci AND deci < 209265750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u0
+ (CHECK(209265750 <= deci AND deci < 210453010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u1
+ (CHECK(210453010 <= deci AND deci < 211632180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u2
+ (CHECK(211632180 <= deci AND deci < 212808250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u3
+ (CHECK(212808250 <= deci AND deci < 213983220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u4
+ (CHECK(213983220 <= deci AND deci < 215174650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u5
+ (CHECK(215174650 <= deci AND deci < 216362770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u6
+ (CHECK(216362770 <= deci AND deci < 217543370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u7
+ (CHECK(217543370 <= deci AND deci < 218726790))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u8
+ (CHECK(218726790 <= deci AND deci < 219931630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0u9
+ (CHECK(219931630 <= deci AND deci < 221149300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ua
+ (CHECK(221149300 <= deci AND deci < 222347480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ub
+ (CHECK(222347480 <= deci AND deci < 223534380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uc
+ (CHECK(223534380 <= deci AND deci < 224727580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ud
+ (CHECK(224727580 <= deci AND deci < 225926540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ue
+ (CHECK(225926540 <= deci AND deci < 227118710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uf
+ (CHECK(227118710 <= deci AND deci < 228283940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ug
+ (CHECK(228283940 <= deci AND deci < 229451270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uh
+ (CHECK(229451270 <= deci AND deci < 230649360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ui
+ (CHECK(230649360 <= deci AND deci < 231872630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uj
+ (CHECK(231872630 <= deci AND deci < 233103120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uk
+ (CHECK(233103120 <= deci AND deci < 234359230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ul
+ (CHECK(234359230 <= deci AND deci < 235634300))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0um
+ (CHECK(235634300 <= deci AND deci < 236905420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0un
+ (CHECK(236905420 <= deci AND deci < 238175060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uo
+ (CHECK(238175060 <= deci AND deci < 239449990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0up
+ (CHECK(239449990 <= deci AND deci < 240748140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uq
+ (CHECK(240748140 <= deci AND deci < 242036700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ur
+ (CHECK(242036700 <= deci AND deci < 243331620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0us
+ (CHECK(243331620 <= deci AND deci < 244619250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ut
+ (CHECK(244619250 <= deci AND deci < 245887460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uu
+ (CHECK(245887460 <= deci AND deci < 247147280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uv
+ (CHECK(247147280 <= deci AND deci < 248391980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uw
+ (CHECK(248391980 <= deci AND deci < 249637730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ux
+ (CHECK(249637730 <= deci AND deci < 250889900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uy
+ (CHECK(250889900 <= deci AND deci < 252157180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0uz
+ (CHECK(252157180 <= deci AND deci < 253407980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v0
+ (CHECK(253407980 <= deci AND deci < 254661470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v1
+ (CHECK(254661470 <= deci AND deci < 255946770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v2
+ (CHECK(255946770 <= deci AND deci < 257240460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v3
+ (CHECK(257240460 <= deci AND deci < 258540520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v4
+ (CHECK(258540520 <= deci AND deci < 259826060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v5
+ (CHECK(259826060 <= deci AND deci < 261094170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v6
+ (CHECK(261094170 <= deci AND deci < 262334100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v7
+ (CHECK(262334100 <= deci AND deci < 263570450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v8
+ (CHECK(263570450 <= deci AND deci < 264805680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0v9
+ (CHECK(264805680 <= deci AND deci < 266030970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0va
+ (CHECK(266030970 <= deci AND deci < 267241250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vb
+ (CHECK(267241250 <= deci AND deci < 268429440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vc
+ (CHECK(268429440 <= deci AND deci < 269603060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vd
+ (CHECK(269603060 <= deci AND deci < 270738660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ve
+ (CHECK(270738660 <= deci AND deci < 271860690))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vf
+ (CHECK(271860690 <= deci AND deci < 272917170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vg
+ (CHECK(272917170 <= deci AND deci < 273974640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vh
+ (CHECK(273974640 <= deci AND deci < 275019130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vi
+ (CHECK(275019130 <= deci AND deci < 276094000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vj
+ (CHECK(276094000 <= deci AND deci < 277129820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vk
+ (CHECK(277129820 <= deci AND deci < 278153220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vl
+ (CHECK(278153220 <= deci AND deci < 279177340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vm
+ (CHECK(279177340 <= deci AND deci < 280249750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vn
+ (CHECK(280249750 <= deci AND deci < 281347470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vo
+ (CHECK(281347470 <= deci AND deci < 282473060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vp
+ (CHECK(282473060 <= deci AND deci < 283598210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vq
+ (CHECK(283598210 <= deci AND deci < 284752710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vr
+ (CHECK(284752710 <= deci AND deci < 285922430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vs
+ (CHECK(285922430 <= deci AND deci < 287101980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vt
+ (CHECK(287101980 <= deci AND deci < 288271530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vu
+ (CHECK(288271530 <= deci AND deci < 289449520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vv
+ (CHECK(289449520 <= deci AND deci < 290630810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vw
+ (CHECK(290630810 <= deci AND deci < 291828480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vx
+ (CHECK(291828480 <= deci AND deci < 293020640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vy
+ (CHECK(293020640 <= deci AND deci < 294226930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0vz
+ (CHECK(294226930 <= deci AND deci < 295425920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w0
+ (CHECK(295425920 <= deci AND deci < 296632930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w1
+ (CHECK(296632930 <= deci AND deci < 297825890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w2
+ (CHECK(297825890 <= deci AND deci < 299002000))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w3
+ (CHECK(299002000 <= deci AND deci < 300175850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w4
+ (CHECK(300175850 <= deci AND deci < 301355930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w5
+ (CHECK(301355930 <= deci AND deci < 302546750))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w6
+ (CHECK(302546750 <= deci AND deci < 303732890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w7
+ (CHECK(303732890 <= deci AND deci < 304911850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w8
+ (CHECK(304911850 <= deci AND deci < 306094370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0w9
+ (CHECK(306094370 <= deci AND deci < 307285380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wa
+ (CHECK(307285380 <= deci AND deci < 308485890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wb
+ (CHECK(308485890 <= deci AND deci < 309700220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wc
+ (CHECK(309700220 <= deci AND deci < 310917620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wd
+ (CHECK(310917620 <= deci AND deci < 312149830))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0we
+ (CHECK(312149830 <= deci AND deci < 313371160))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wf
+ (CHECK(313371160 <= deci AND deci < 314583250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wg
+ (CHECK(314583250 <= deci AND deci < 315796240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wh
+ (CHECK(315796240 <= deci AND deci < 317002120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wi
+ (CHECK(317002120 <= deci AND deci < 318194370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wj
+ (CHECK(318194370 <= deci AND deci < 319381510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wk
+ (CHECK(319381510 <= deci AND deci < 320563440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wl
+ (CHECK(320563440 <= deci AND deci < 321718170))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wm
+ (CHECK(321718170 <= deci AND deci < 322842850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wn
+ (CHECK(322842850 <= deci AND deci < 323942660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wo
+ (CHECK(323942660 <= deci AND deci < 325040280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wp
+ (CHECK(325040280 <= deci AND deci < 326144100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wq
+ (CHECK(326144100 <= deci AND deci < 327251770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wr
+ (CHECK(327251770 <= deci AND deci < 328342370))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ws
+ (CHECK(328342370 <= deci AND deci < 329433390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wt
+ (CHECK(329433390 <= deci AND deci < 330554110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wu
+ (CHECK(330554110 <= deci AND deci < 331684230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wv
+ (CHECK(331684230 <= deci AND deci < 332806130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ww
+ (CHECK(332806130 <= deci AND deci < 333938680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wx
+ (CHECK(333938680 <= deci AND deci < 335093630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wy
+ (CHECK(335093630 <= deci AND deci < 336308640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0wz
+ (CHECK(336308640 <= deci AND deci < 337564780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x0
+ (CHECK(337564780 <= deci AND deci < 338845700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x1
+ (CHECK(338845700 <= deci AND deci < 340165270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x2
+ (CHECK(340165270 <= deci AND deci < 341499200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x3
+ (CHECK(341499200 <= deci AND deci < 342843920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x4
+ (CHECK(342843920 <= deci AND deci < 344209590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x5
+ (CHECK(344209590 <= deci AND deci < 345581090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x6
+ (CHECK(345581090 <= deci AND deci < 346948730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x7
+ (CHECK(346948730 <= deci AND deci < 348314590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x8
+ (CHECK(348314590 <= deci AND deci < 349677030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0x9
+ (CHECK(349677030 <= deci AND deci < 351057770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xa
+ (CHECK(351057770 <= deci AND deci < 352440400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xb
+ (CHECK(352440400 <= deci AND deci < 353816730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xc
+ (CHECK(353816730 <= deci AND deci < 355174840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xd
+ (CHECK(355174840 <= deci AND deci < 356532490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xe
+ (CHECK(356532490 <= deci AND deci < 357878520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xf
+ (CHECK(357878520 <= deci AND deci < 359201600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xg
+ (CHECK(359201600 <= deci AND deci < 360530890))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xh
+ (CHECK(360530890 <= deci AND deci < 361851600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xi
+ (CHECK(361851600 <= deci AND deci < 363162550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xj
+ (CHECK(363162550 <= deci AND deci < 364468570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xk
+ (CHECK(364468570 <= deci AND deci < 365778310))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xl
+ (CHECK(365778310 <= deci AND deci < 367086630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xm
+ (CHECK(367086630 <= deci AND deci < 368358020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xn
+ (CHECK(368358020 <= deci AND deci < 369620670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xo
+ (CHECK(369620670 <= deci AND deci < 370858590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xp
+ (CHECK(370858590 <= deci AND deci < 372064430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xq
+ (CHECK(372064430 <= deci AND deci < 373267130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xr
+ (CHECK(373267130 <= deci AND deci < 374466560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xs
+ (CHECK(374466560 <= deci AND deci < 375683530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xt
+ (CHECK(375683530 <= deci AND deci < 376907510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xu
+ (CHECK(376907510 <= deci AND deci < 378129250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xv
+ (CHECK(378129250 <= deci AND deci < 379336480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xw
+ (CHECK(379336480 <= deci AND deci < 380572210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xx
+ (CHECK(380572210 <= deci AND deci < 381838390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xy
+ (CHECK(381838390 <= deci AND deci < 383106270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0xz
+ (CHECK(383106270 <= deci AND deci < 384410570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y0
+ (CHECK(384410570 <= deci AND deci < 385763060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y1
+ (CHECK(385763060 <= deci AND deci < 387124510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y2
+ (CHECK(387124510 <= deci AND deci < 388475630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y3
+ (CHECK(388475630 <= deci AND deci < 389816630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y4
+ (CHECK(389816630 <= deci AND deci < 391179710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y5
+ (CHECK(391179710 <= deci AND deci < 392519460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y6
+ (CHECK(392519460 <= deci AND deci < 393833490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y7
+ (CHECK(393833490 <= deci AND deci < 395156980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y8
+ (CHECK(395156980 <= deci AND deci < 396467030))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0y9
+ (CHECK(396467030 <= deci AND deci < 397787100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ya
+ (CHECK(397787100 <= deci AND deci < 399136070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yb
+ (CHECK(399136070 <= deci AND deci < 400537350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yc
+ (CHECK(400537350 <= deci AND deci < 401955070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yd
+ (CHECK(401955070 <= deci AND deci < 403375260))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ye
+ (CHECK(403375260 <= deci AND deci < 404791880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yf
+ (CHECK(404791880 <= deci AND deci < 406198840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yg
+ (CHECK(406198840 <= deci AND deci < 407609570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yh
+ (CHECK(407609570 <= deci AND deci < 409026090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yi
+ (CHECK(409026090 <= deci AND deci < 410459850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yj
+ (CHECK(410459850 <= deci AND deci < 411894360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yk
+ (CHECK(411894360 <= deci AND deci < 413330670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yl
+ (CHECK(413330670 <= deci AND deci < 414762760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ym
+ (CHECK(414762760 <= deci AND deci < 416183390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yn
+ (CHECK(416183390 <= deci AND deci < 417573440))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yo
+ (CHECK(417573440 <= deci AND deci < 418933230))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yp
+ (CHECK(418933230 <= deci AND deci < 420278810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yq
+ (CHECK(420278810 <= deci AND deci < 421597700))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yr
+ (CHECK(421597700 <= deci AND deci < 422906130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ys
+ (CHECK(422906130 <= deci AND deci < 424200330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yt
+ (CHECK(424200330 <= deci AND deci < 425489450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yu
+ (CHECK(425489450 <= deci AND deci < 426771450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yv
+ (CHECK(426771450 <= deci AND deci < 428024280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yw
+ (CHECK(428024280 <= deci AND deci < 429273780))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yx
+ (CHECK(429273780 <= deci AND deci < 430550280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yy
+ (CHECK(430550280 <= deci AND deci < 431853870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0yz
+ (CHECK(431853870 <= deci AND deci < 433183490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z0
+ (CHECK(433183490 <= deci AND deci < 434572460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z1
+ (CHECK(434572460 <= deci AND deci < 435999620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z2
+ (CHECK(435999620 <= deci AND deci < 437421050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z3
+ (CHECK(437421050 <= deci AND deci < 438853920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z4
+ (CHECK(438853920 <= deci AND deci < 440271490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z5
+ (CHECK(440271490 <= deci AND deci < 441664490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z6
+ (CHECK(441664490 <= deci AND deci < 443039840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z7
+ (CHECK(443039840 <= deci AND deci < 444404940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z8
+ (CHECK(444404940 <= deci AND deci < 445798390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0z9
+ (CHECK(445798390 <= deci AND deci < 447189770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0za
+ (CHECK(447189770 <= deci AND deci < 448563010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zb
+ (CHECK(448563010 <= deci AND deci < 449933390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zc
+ (CHECK(449933390 <= deci AND deci < 451294950))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zd
+ (CHECK(451294950 <= deci AND deci < 452642420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0ze
+ (CHECK(452642420 <= deci AND deci < 453969510))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zf
+ (CHECK(453969510 <= deci AND deci < 455283870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zg
+ (CHECK(455283870 <= deci AND deci < 456597910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zh
+ (CHECK(456597910 <= deci AND deci < 457902720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zi
+ (CHECK(457902720 <= deci AND deci < 459250630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zj
+ (CHECK(459250630 <= deci AND deci < 460644410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zk
+ (CHECK(460644410 <= deci AND deci < 462051460))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zl
+ (CHECK(462051460 <= deci AND deci < 463452870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zm
+ (CHECK(463452870 <= deci AND deci < 464841900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zn
+ (CHECK(464841900 <= deci AND deci < 466239600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zo
+ (CHECK(466239600 <= deci AND deci < 467616970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zp
+ (CHECK(467616970 <= deci AND deci < 468977200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zq
+ (CHECK(468977200 <= deci AND deci < 470318740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zr
+ (CHECK(470318740 <= deci AND deci < 471629490))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zs
+ (CHECK(471629490 <= deci AND deci < 472925050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zt
+ (CHECK(472925050 <= deci AND deci < 474216730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zu
+ (CHECK(474216730 <= deci AND deci < 475515660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zv
+ (CHECK(475515660 <= deci AND deci < 476813400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zw
+ (CHECK(476813400 <= deci AND deci < 478087910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zx
+ (CHECK(478087910 <= deci AND deci < 479365380))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zy
+ (CHECK(479365380 <= deci AND deci < 480662800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_0zz
+ (CHECK(480662800 <= deci AND deci < 481983070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_100
+ (CHECK(481983070 <= deci AND deci < 483324670))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_101
+ (CHECK(483324670 <= deci AND deci < 484708590))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_102
+ (CHECK(484708590 <= deci AND deci < 486124250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_103
+ (CHECK(486124250 <= deci AND deci < 487546530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_104
+ (CHECK(487546530 <= deci AND deci < 488973970))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_105
+ (CHECK(488973970 <= deci AND deci < 490394220))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_106
+ (CHECK(490394220 <= deci AND deci < 491804710))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_107
+ (CHECK(491804710 <= deci AND deci < 493222140))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_108
+ (CHECK(493222140 <= deci AND deci < 494639470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_109
+ (CHECK(494639470 <= deci AND deci < 496051630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10a
+ (CHECK(496051630 <= deci AND deci < 497469620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10b
+ (CHECK(497469620 <= deci AND deci < 498890760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10c
+ (CHECK(498890760 <= deci AND deci < 500314180))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10d
+ (CHECK(500314180 <= deci AND deci < 501723960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10e
+ (CHECK(501723960 <= deci AND deci < 503114520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10f
+ (CHECK(503114520 <= deci AND deci < 504510480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10g
+ (CHECK(504510480 <= deci AND deci < 505933280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10h
+ (CHECK(505933280 <= deci AND deci < 507363470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10i
+ (CHECK(507363470 <= deci AND deci < 508782420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10j
+ (CHECK(508782420 <= deci AND deci < 510211550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10k
+ (CHECK(510211550 <= deci AND deci < 511648990))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10l
+ (CHECK(511648990 <= deci AND deci < 513064520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10m
+ (CHECK(513064520 <= deci AND deci < 514453720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10n
+ (CHECK(514453720 <= deci AND deci < 515849520))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10o
+ (CHECK(515849520 <= deci AND deci < 517203070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10p
+ (CHECK(517203070 <= deci AND deci < 518553350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10q
+ (CHECK(518553350 <= deci AND deci < 519954320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10r
+ (CHECK(519954320 <= deci AND deci < 521394640))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10s
+ (CHECK(521394640 <= deci AND deci < 522830090))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10t
+ (CHECK(522830090 <= deci AND deci < 524264240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10u
+ (CHECK(524264240 <= deci AND deci < 525703020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10v
+ (CHECK(525703020 <= deci AND deci < 527135430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10w
+ (CHECK(527135430 <= deci AND deci < 528555340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10x
+ (CHECK(528555340 <= deci AND deci < 529976210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10y
+ (CHECK(529976210 <= deci AND deci < 531432430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_10z
+ (CHECK(531432430 <= deci AND deci < 532906860))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_110
+ (CHECK(532906860 <= deci AND deci < 534419100))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_111
+ (CHECK(534419100 <= deci AND deci < 535970200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_112
+ (CHECK(535970200 <= deci AND deci < 537523530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_113
+ (CHECK(537523530 <= deci AND deci < 539070060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_114
+ (CHECK(539070060 <= deci AND deci < 540625240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_115
+ (CHECK(540625240 <= deci AND deci < 542178200))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_116
+ (CHECK(542178200 <= deci AND deci < 543716070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_117
+ (CHECK(543716070 <= deci AND deci < 545258330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_118
+ (CHECK(545258330 <= deci AND deci < 546801550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_119
+ (CHECK(546801550 <= deci AND deci < 548355910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11a
+ (CHECK(548355910 <= deci AND deci < 549920280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11b
+ (CHECK(549920280 <= deci AND deci < 551487760))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11c
+ (CHECK(551487760 <= deci AND deci < 553061740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11d
+ (CHECK(553061740 <= deci AND deci < 554629940))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11e
+ (CHECK(554629940 <= deci AND deci < 556202570))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11f
+ (CHECK(556202570 <= deci AND deci < 557778850))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11g
+ (CHECK(557778850 <= deci AND deci < 559352530))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11h
+ (CHECK(559352530 <= deci AND deci < 560927680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11i
+ (CHECK(560927680 <= deci AND deci < 562478800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11j
+ (CHECK(562478800 <= deci AND deci < 564022470))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11k
+ (CHECK(564022470 <= deci AND deci < 565576480))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11l
+ (CHECK(565576480 <= deci AND deci < 567127290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11m
+ (CHECK(567127290 <= deci AND deci < 568639840))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11n
+ (CHECK(568639840 <= deci AND deci < 570133920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11o
+ (CHECK(570133920 <= deci AND deci < 571628130))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11p
+ (CHECK(571628130 <= deci AND deci < 573093820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11q
+ (CHECK(573093820 <= deci AND deci < 574545800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11r
+ (CHECK(574545800 <= deci AND deci < 575986720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11s
+ (CHECK(575986720 <= deci AND deci < 577390020))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11t
+ (CHECK(577390020 <= deci AND deci < 578827980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11u
+ (CHECK(578827980 <= deci AND deci < 580405040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11v
+ (CHECK(580405040 <= deci AND deci < 582060240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11w
+ (CHECK(582060240 <= deci AND deci < 583770560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11x
+ (CHECK(583770560 <= deci AND deci < 585560560))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11y
+ (CHECK(585560560 <= deci AND deci < 587396040))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_11z
+ (CHECK(587396040 <= deci AND deci < 589228400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_120
+ (CHECK(589228400 <= deci AND deci < 591074810))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_121
+ (CHECK(591074810 <= deci AND deci < 592932390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_122
+ (CHECK(592932390 <= deci AND deci < 594798770))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_123
+ (CHECK(594798770 <= deci AND deci < 596670720))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_124
+ (CHECK(596670720 <= deci AND deci < 598552250))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_125
+ (CHECK(598552250 <= deci AND deci < 600441540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_126
+ (CHECK(600441540 <= deci AND deci < 602355270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_127
+ (CHECK(602355270 <= deci AND deci < 604262550))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_128
+ (CHECK(604262550 <= deci AND deci < 606180050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_129
+ (CHECK(606180050 <= deci AND deci < 608121080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12a
+ (CHECK(608121080 <= deci AND deci < 610054050))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12b
+ (CHECK(610054050 <= deci AND deci < 612009980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12c
+ (CHECK(612009980 <= deci AND deci < 613967680))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12d
+ (CHECK(613967680 <= deci AND deci < 615948290))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12e
+ (CHECK(615948290 <= deci AND deci < 617902410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12f
+ (CHECK(617902410 <= deci AND deci < 619851110))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12g
+ (CHECK(619851110 <= deci AND deci < 621732320))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12h
+ (CHECK(621732320 <= deci AND deci < 623534870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12i
+ (CHECK(623534870 <= deci AND deci < 625375270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12j
+ (CHECK(625375270 <= deci AND deci < 627205870))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12k
+ (CHECK(627205870 <= deci AND deci < 629024210))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12l
+ (CHECK(629024210 <= deci AND deci < 630897730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12m
+ (CHECK(630897730 <= deci AND deci < 632812800))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12n
+ (CHECK(632812800 <= deci AND deci < 634814730))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12o
+ (CHECK(634814730 <= deci AND deci < 636850630))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12p
+ (CHECK(636850630 <= deci AND deci < 638928240))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12q
+ (CHECK(638928240 <= deci AND deci < 641203420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12r
+ (CHECK(641203420 <= deci AND deci < 643547430))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12s
+ (CHECK(643547430 <= deci AND deci < 645953620))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12t
+ (CHECK(645953620 <= deci AND deci < 648418920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12u
+ (CHECK(648418920 <= deci AND deci < 650969280))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12v
+ (CHECK(650969280 <= deci AND deci < 653590270))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12w
+ (CHECK(653590270 <= deci AND deci < 656325410))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12x
+ (CHECK(656325410 <= deci AND deci < 659178120))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12y
+ (CHECK(659178120 <= deci AND deci < 662103580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_12z
+ (CHECK(662103580 <= deci AND deci < 665105400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_130
+ (CHECK(665105400 <= deci AND deci < 668059910))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_131
+ (CHECK(668059910 <= deci AND deci < 670948190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_132
+ (CHECK(670948190 <= deci AND deci < 673759350))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_133
+ (CHECK(673759350 <= deci AND deci < 676592980))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_134
+ (CHECK(676592980 <= deci AND deci < 679363820))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_135
+ (CHECK(679363820 <= deci AND deci < 682236330))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_136
+ (CHECK(682236330 <= deci AND deci < 685275600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_137
+ (CHECK(685275600 <= deci AND deci < 688533900))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_138
+ (CHECK(688533900 <= deci AND deci < 691912070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_139
+ (CHECK(691912070 <= deci AND deci < 695319340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13a
+ (CHECK(695319340 <= deci AND deci < 698695060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13b
+ (CHECK(698695060 <= deci AND deci < 702510010))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13c
+ (CHECK(702510010 <= deci AND deci < 706470540))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13d
+ (CHECK(706470540 <= deci AND deci < 710481190))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13e
+ (CHECK(710481190 <= deci AND deci < 714601340))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13f
+ (CHECK(714601340 <= deci AND deci < 718726660))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13g
+ (CHECK(718726660 <= deci AND deci < 722755070))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13h
+ (CHECK(722755070 <= deci AND deci < 726815880))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13i
+ (CHECK(726815880 <= deci AND deci < 731003420))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13j
+ (CHECK(731003420 <= deci AND deci < 735819740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13k
+ (CHECK(735819740 <= deci AND deci < 740935740))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13l
+ (CHECK(740935740 <= deci AND deci < 746102060))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13m
+ (CHECK(746102060 <= deci AND deci < 751661650))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13n
+ (CHECK(751661650 <= deci AND deci < 757400360))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13o
+ (CHECK(757400360 <= deci AND deci < 763903920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13p
+ (CHECK(763903920 <= deci AND deci < 770692610))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13q
+ (CHECK(770692610 <= deci AND deci < 777370400))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13r
+ (CHECK(777370400 <= deci AND deci < 784593960))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13s
+ (CHECK(784593960 <= deci AND deci < 792734450))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13t
+ (CHECK(792734450 <= deci AND deci < 801169580))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13u
+ (CHECK(801169580 <= deci AND deci < 810069390))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13v
+ (CHECK(810069390 <= deci AND deci < 820068080))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13w
+ (CHECK(820068080 <= deci AND deci < 831359920))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13x
+ (CHECK(831359920 <= deci AND deci < 846534930))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13y
+ (CHECK(846534930 <= deci AND deci < 862558600))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;
+CREATE TABLE ppmxl_eqi_13z
+ (CHECK(862558600 <= deci))
+ INHERITS (Ppmxl_eqi)
+ TABLESPACE @TS_PREFIX@ppmxl_eqi;

@@ -1,0 +1,2944 @@
+CREATE TABLE twomass_eqi_00
+ (CHECK(deci < -840091930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_01
+ (CHECK(-840091930 <= deci AND deci < -816604390))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_02
+ (CHECK(-816604390 <= deci AND deci < -798818820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_03
+ (CHECK(-798818820 <= deci AND deci < -784433670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_04
+ (CHECK(-784433670 <= deci AND deci < -772527390))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_05
+ (CHECK(-772527390 <= deci AND deci < -762350540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_06
+ (CHECK(-762350540 <= deci AND deci < -753513790))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_07
+ (CHECK(-753513790 <= deci AND deci < -745775150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_08
+ (CHECK(-745775150 <= deci AND deci < -738914950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_09
+ (CHECK(-738914950 <= deci AND deci < -732897570))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0a
+ (CHECK(-732897570 <= deci AND deci < -727447590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0b
+ (CHECK(-727447590 <= deci AND deci < -722279050))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0c
+ (CHECK(-722279050 <= deci AND deci < -717580640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0d
+ (CHECK(-717580640 <= deci AND deci < -713061600))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0e
+ (CHECK(-713061600 <= deci AND deci < -708843840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0f
+ (CHECK(-708843840 <= deci AND deci < -704928050))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0g
+ (CHECK(-704928050 <= deci AND deci < -701312710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0h
+ (CHECK(-701312710 <= deci AND deci < -697911300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0i
+ (CHECK(-697911300 <= deci AND deci < -694673540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0j
+ (CHECK(-694673540 <= deci AND deci < -691552580))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0k
+ (CHECK(-691552580 <= deci AND deci < -688500820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0l
+ (CHECK(-688500820 <= deci AND deci < -685520320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0m
+ (CHECK(-685520320 <= deci AND deci < -682621310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0n
+ (CHECK(-682621310 <= deci AND deci < -679781110))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0o
+ (CHECK(-679781110 <= deci AND deci < -677041850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0p
+ (CHECK(-677041850 <= deci AND deci < -674406360))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0q
+ (CHECK(-674406360 <= deci AND deci < -671855090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0r
+ (CHECK(-671855090 <= deci AND deci < -669408190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0s
+ (CHECK(-669408190 <= deci AND deci < -667046360))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0t
+ (CHECK(-667046360 <= deci AND deci < -664760590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0u
+ (CHECK(-664760590 <= deci AND deci < -662541350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0v
+ (CHECK(-662541350 <= deci AND deci < -660391240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0w
+ (CHECK(-660391240 <= deci AND deci < -658404770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0x
+ (CHECK(-658404770 <= deci AND deci < -656377870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0y
+ (CHECK(-656377870 <= deci AND deci < -654404600))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_0z
+ (CHECK(-654404600 <= deci AND deci < -652481000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_10
+ (CHECK(-652481000 <= deci AND deci < -650592040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_11
+ (CHECK(-650592040 <= deci AND deci < -648754200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_12
+ (CHECK(-648754200 <= deci AND deci < -646946260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_13
+ (CHECK(-646946260 <= deci AND deci < -645164720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_14
+ (CHECK(-645164720 <= deci AND deci < -643427280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_15
+ (CHECK(-643427280 <= deci AND deci < -641735380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_16
+ (CHECK(-641735380 <= deci AND deci < -640073090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_17
+ (CHECK(-640073090 <= deci AND deci < -638448940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_18
+ (CHECK(-638448940 <= deci AND deci < -636855090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_19
+ (CHECK(-636855090 <= deci AND deci < -635305750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1a
+ (CHECK(-635305750 <= deci AND deci < -633783190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1b
+ (CHECK(-633783190 <= deci AND deci < -632281680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1c
+ (CHECK(-632281680 <= deci AND deci < -630794260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1d
+ (CHECK(-630794260 <= deci AND deci < -629332700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1e
+ (CHECK(-629332700 <= deci AND deci < -627883830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1f
+ (CHECK(-627883830 <= deci AND deci < -626460530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1g
+ (CHECK(-626460530 <= deci AND deci < -625060230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1h
+ (CHECK(-625060230 <= deci AND deci < -623682250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1i
+ (CHECK(-623682250 <= deci AND deci < -622318340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1j
+ (CHECK(-622318340 <= deci AND deci < -620959660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1k
+ (CHECK(-620959660 <= deci AND deci < -619628720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1l
+ (CHECK(-619628720 <= deci AND deci < -618302270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1m
+ (CHECK(-618302270 <= deci AND deci < -616978260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1n
+ (CHECK(-616978260 <= deci AND deci < -615663340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1o
+ (CHECK(-615663340 <= deci AND deci < -614353940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1p
+ (CHECK(-614353940 <= deci AND deci < -613045200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1q
+ (CHECK(-613045200 <= deci AND deci < -611751210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1r
+ (CHECK(-611751210 <= deci AND deci < -610462650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1s
+ (CHECK(-610462650 <= deci AND deci < -609187770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1t
+ (CHECK(-609187770 <= deci AND deci < -607913510))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1u
+ (CHECK(-607913510 <= deci AND deci < -606652760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1v
+ (CHECK(-606652760 <= deci AND deci < -605396190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1w
+ (CHECK(-605396190 <= deci AND deci < -604134560))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1x
+ (CHECK(-604134560 <= deci AND deci < -602868770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1y
+ (CHECK(-602868770 <= deci AND deci < -601602630))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_1z
+ (CHECK(-601602630 <= deci AND deci < -600339810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_20
+ (CHECK(-600339810 <= deci AND deci < -599135630))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_21
+ (CHECK(-599135630 <= deci AND deci < -597910310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_22
+ (CHECK(-597910310 <= deci AND deci < -596644020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_23
+ (CHECK(-596644020 <= deci AND deci < -595378840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_24
+ (CHECK(-595378840 <= deci AND deci < -594112660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_25
+ (CHECK(-594112660 <= deci AND deci < -592851370))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_26
+ (CHECK(-592851370 <= deci AND deci < -591594280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_27
+ (CHECK(-591594280 <= deci AND deci < -590330010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_28
+ (CHECK(-590330010 <= deci AND deci < -589059030))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_29
+ (CHECK(-589059030 <= deci AND deci < -587782330))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2a
+ (CHECK(-587782330 <= deci AND deci < -586507840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2b
+ (CHECK(-586507840 <= deci AND deci < -585231740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2c
+ (CHECK(-585231740 <= deci AND deci < -583951870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2d
+ (CHECK(-583951870 <= deci AND deci < -582675170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2e
+ (CHECK(-582675170 <= deci AND deci < -581394160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2f
+ (CHECK(-581394160 <= deci AND deci < -580113720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2g
+ (CHECK(-580113720 <= deci AND deci < -578818550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2h
+ (CHECK(-578818550 <= deci AND deci < -577516140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2i
+ (CHECK(-577516140 <= deci AND deci < -576210100))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2j
+ (CHECK(-576210100 <= deci AND deci < -574900440))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2k
+ (CHECK(-574900440 <= deci AND deci < -573584480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2l
+ (CHECK(-573584480 <= deci AND deci < -572263180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2m
+ (CHECK(-572263180 <= deci AND deci < -570941310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2n
+ (CHECK(-570941310 <= deci AND deci < -569613650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2o
+ (CHECK(-569613650 <= deci AND deci < -568281970))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2p
+ (CHECK(-568281970 <= deci AND deci < -566944470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2q
+ (CHECK(-566944470 <= deci AND deci < -565607300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2r
+ (CHECK(-565607300 <= deci AND deci < -564265250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2s
+ (CHECK(-564265250 <= deci AND deci < -562923550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2t
+ (CHECK(-562923550 <= deci AND deci < -561580730))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2u
+ (CHECK(-561580730 <= deci AND deci < -560227430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2v
+ (CHECK(-560227430 <= deci AND deci < -558869930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2w
+ (CHECK(-558869930 <= deci AND deci < -557517050))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2x
+ (CHECK(-557517050 <= deci AND deci < -556166880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2y
+ (CHECK(-556166880 <= deci AND deci < -554818150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_2z
+ (CHECK(-554818150 <= deci AND deci < -553469810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_30
+ (CHECK(-553469810 <= deci AND deci < -552119140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_31
+ (CHECK(-552119140 <= deci AND deci < -550765230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_32
+ (CHECK(-550765230 <= deci AND deci < -549414830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_33
+ (CHECK(-549414830 <= deci AND deci < -548064730))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_34
+ (CHECK(-548064730 <= deci AND deci < -546723100))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_35
+ (CHECK(-546723100 <= deci AND deci < -545375290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_36
+ (CHECK(-545375290 <= deci AND deci < -544023250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_37
+ (CHECK(-544023250 <= deci AND deci < -542658420))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_38
+ (CHECK(-542658420 <= deci AND deci < -541288800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_39
+ (CHECK(-541288800 <= deci AND deci < -539921720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3a
+ (CHECK(-539921720 <= deci AND deci < -538639370))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3b
+ (CHECK(-538639370 <= deci AND deci < -537294810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3c
+ (CHECK(-537294810 <= deci AND deci < -535947950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3d
+ (CHECK(-535947950 <= deci AND deci < -534591980))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3e
+ (CHECK(-534591980 <= deci AND deci < -533233180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3f
+ (CHECK(-533233180 <= deci AND deci < -531869580))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3g
+ (CHECK(-531869580 <= deci AND deci < -530506290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3h
+ (CHECK(-530506290 <= deci AND deci < -529144210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3i
+ (CHECK(-529144210 <= deci AND deci < -527773550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3j
+ (CHECK(-527773550 <= deci AND deci < -526390990))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3k
+ (CHECK(-526390990 <= deci AND deci < -525003010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3l
+ (CHECK(-525003010 <= deci AND deci < -523608890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3m
+ (CHECK(-523608890 <= deci AND deci < -522216640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3n
+ (CHECK(-522216640 <= deci AND deci < -520817990))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3o
+ (CHECK(-520817990 <= deci AND deci < -519412610))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3p
+ (CHECK(-519412610 <= deci AND deci < -518000260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3q
+ (CHECK(-518000260 <= deci AND deci < -516580580))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3r
+ (CHECK(-516580580 <= deci AND deci < -515160750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3s
+ (CHECK(-515160750 <= deci AND deci < -513738400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3t
+ (CHECK(-513738400 <= deci AND deci < -512317850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3u
+ (CHECK(-512317850 <= deci AND deci < -510891610))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3v
+ (CHECK(-510891610 <= deci AND deci < -509462780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3w
+ (CHECK(-509462780 <= deci AND deci < -508029060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3x
+ (CHECK(-508029060 <= deci AND deci < -506602750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3y
+ (CHECK(-506602750 <= deci AND deci < -505170020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_3z
+ (CHECK(-505170020 <= deci AND deci < -503730430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_40
+ (CHECK(-503730430 <= deci AND deci < -502284050))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_41
+ (CHECK(-502284050 <= deci AND deci < -500832060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_42
+ (CHECK(-500832060 <= deci AND deci < -499383130))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_43
+ (CHECK(-499383130 <= deci AND deci < -497932320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_44
+ (CHECK(-497932320 <= deci AND deci < -496483230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_45
+ (CHECK(-496483230 <= deci AND deci < -495020870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_46
+ (CHECK(-495020870 <= deci AND deci < -493554690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_47
+ (CHECK(-493554690 <= deci AND deci < -492078290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_48
+ (CHECK(-492078290 <= deci AND deci < -490596430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_49
+ (CHECK(-490596430 <= deci AND deci < -489122540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4a
+ (CHECK(-489122540 <= deci AND deci < -487644000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4b
+ (CHECK(-487644000 <= deci AND deci < -486169890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4c
+ (CHECK(-486169890 <= deci AND deci < -484688840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4d
+ (CHECK(-484688840 <= deci AND deci < -483207210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4e
+ (CHECK(-483207210 <= deci AND deci < -481725040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4f
+ (CHECK(-481725040 <= deci AND deci < -480242960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4g
+ (CHECK(-480242960 <= deci AND deci < -478847120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4h
+ (CHECK(-478847120 <= deci AND deci < -477408560))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4i
+ (CHECK(-477408560 <= deci AND deci < -475949970))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4j
+ (CHECK(-475949970 <= deci AND deci < -474499440))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4k
+ (CHECK(-474499440 <= deci AND deci < -473046990))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4l
+ (CHECK(-473046990 <= deci AND deci < -471585270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4m
+ (CHECK(-471585270 <= deci AND deci < -470118220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4n
+ (CHECK(-470118220 <= deci AND deci < -468651120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4o
+ (CHECK(-468651120 <= deci AND deci < -467178340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4p
+ (CHECK(-467178340 <= deci AND deci < -465701900))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4q
+ (CHECK(-465701900 <= deci AND deci < -464223020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4r
+ (CHECK(-464223020 <= deci AND deci < -462742160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4s
+ (CHECK(-462742160 <= deci AND deci < -461260640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4t
+ (CHECK(-461260640 <= deci AND deci < -459773410))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4u
+ (CHECK(-459773410 <= deci AND deci < -458284570))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4v
+ (CHECK(-458284570 <= deci AND deci < -456790700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4w
+ (CHECK(-456790700 <= deci AND deci < -455304150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4x
+ (CHECK(-455304150 <= deci AND deci < -453822900))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4y
+ (CHECK(-453822900 <= deci AND deci < -452341380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_4z
+ (CHECK(-452341380 <= deci AND deci < -450852170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_50
+ (CHECK(-450852170 <= deci AND deci < -449362680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_51
+ (CHECK(-449362680 <= deci AND deci < -447867810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_52
+ (CHECK(-447867810 <= deci AND deci < -446372380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_53
+ (CHECK(-446372380 <= deci AND deci < -444866980))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_54
+ (CHECK(-444866980 <= deci AND deci < -443362350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_55
+ (CHECK(-443362350 <= deci AND deci < -441851620))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_56
+ (CHECK(-441851620 <= deci AND deci < -440331540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_57
+ (CHECK(-440331540 <= deci AND deci < -438810690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_58
+ (CHECK(-438810690 <= deci AND deci < -437284770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_59
+ (CHECK(-437284770 <= deci AND deci < -435753780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5a
+ (CHECK(-435753780 <= deci AND deci < -434222180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5b
+ (CHECK(-434222180 <= deci AND deci < -432682150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5c
+ (CHECK(-432682150 <= deci AND deci < -431147770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5d
+ (CHECK(-431147770 <= deci AND deci < -429610820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5e
+ (CHECK(-429610820 <= deci AND deci < -428071670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5f
+ (CHECK(-428071670 <= deci AND deci < -426523860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5g
+ (CHECK(-426523860 <= deci AND deci < -424964640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5h
+ (CHECK(-424964640 <= deci AND deci < -423407170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5i
+ (CHECK(-423407170 <= deci AND deci < -421848030))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5j
+ (CHECK(-421848030 <= deci AND deci < -420289310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5k
+ (CHECK(-420289310 <= deci AND deci < -418807640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5l
+ (CHECK(-418807640 <= deci AND deci < -417268680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5m
+ (CHECK(-417268680 <= deci AND deci < -415716020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5n
+ (CHECK(-415716020 <= deci AND deci < -414163890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5o
+ (CHECK(-414163890 <= deci AND deci < -412616880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5p
+ (CHECK(-412616880 <= deci AND deci < -411060260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5q
+ (CHECK(-411060260 <= deci AND deci < -409517520))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5r
+ (CHECK(-409517520 <= deci AND deci < -407960660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5s
+ (CHECK(-407960660 <= deci AND deci < -406392520))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5t
+ (CHECK(-406392520 <= deci AND deci < -404821820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5u
+ (CHECK(-404821820 <= deci AND deci < -403252790))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5v
+ (CHECK(-403252790 <= deci AND deci < -401681900))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5w
+ (CHECK(-401681900 <= deci AND deci < -400107880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5x
+ (CHECK(-400107880 <= deci AND deci < -398542060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5y
+ (CHECK(-398542060 <= deci AND deci < -396966740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_5z
+ (CHECK(-396966740 <= deci AND deci < -395401730))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_60
+ (CHECK(-395401730 <= deci AND deci < -393844450))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_61
+ (CHECK(-393844450 <= deci AND deci < -392290730))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_62
+ (CHECK(-392290730 <= deci AND deci < -390738720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_63
+ (CHECK(-390738720 <= deci AND deci < -389191400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_64
+ (CHECK(-389191400 <= deci AND deci < -387644040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_65
+ (CHECK(-387644040 <= deci AND deci < -386107860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_66
+ (CHECK(-386107860 <= deci AND deci < -384573250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_67
+ (CHECK(-384573250 <= deci AND deci < -383036460))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_68
+ (CHECK(-383036460 <= deci AND deci < -381496050))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_69
+ (CHECK(-381496050 <= deci AND deci < -379954450))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6a
+ (CHECK(-379954450 <= deci AND deci < -378418690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6b
+ (CHECK(-378418690 <= deci AND deci < -376889650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6c
+ (CHECK(-376889650 <= deci AND deci < -375361670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6d
+ (CHECK(-375361670 <= deci AND deci < -373818280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6e
+ (CHECK(-373818280 <= deci AND deci < -372280920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6f
+ (CHECK(-372280920 <= deci AND deci < -370748600))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6g
+ (CHECK(-370748600 <= deci AND deci < -369210780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6h
+ (CHECK(-369210780 <= deci AND deci < -367673190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6i
+ (CHECK(-367673190 <= deci AND deci < -366137010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6j
+ (CHECK(-366137010 <= deci AND deci < -364603960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6k
+ (CHECK(-364603960 <= deci AND deci < -363067890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6l
+ (CHECK(-363067890 <= deci AND deci < -361525230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6m
+ (CHECK(-361525230 <= deci AND deci < -359988290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6n
+ (CHECK(-359988290 <= deci AND deci < -358559680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6o
+ (CHECK(-358559680 <= deci AND deci < -357065160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6p
+ (CHECK(-357065160 <= deci AND deci < -355566370))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6q
+ (CHECK(-355566370 <= deci AND deci < -354068300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6r
+ (CHECK(-354068300 <= deci AND deci < -352583050))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6s
+ (CHECK(-352583050 <= deci AND deci < -351099700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6t
+ (CHECK(-351099700 <= deci AND deci < -349621120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6u
+ (CHECK(-349621120 <= deci AND deci < -348137740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6v
+ (CHECK(-348137740 <= deci AND deci < -346656570))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6w
+ (CHECK(-346656570 <= deci AND deci < -345174410))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6x
+ (CHECK(-345174410 <= deci AND deci < -343713570))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6y
+ (CHECK(-343713570 <= deci AND deci < -342255590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_6z
+ (CHECK(-342255590 <= deci AND deci < -340788230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_70
+ (CHECK(-340788230 <= deci AND deci < -339331320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_71
+ (CHECK(-339331320 <= deci AND deci < -337860150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_72
+ (CHECK(-337860150 <= deci AND deci < -336401600))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_73
+ (CHECK(-336401600 <= deci AND deci < -334946440))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_74
+ (CHECK(-334946440 <= deci AND deci < -333494570))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_75
+ (CHECK(-333494570 <= deci AND deci < -332041590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_76
+ (CHECK(-332041590 <= deci AND deci < -330592380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_77
+ (CHECK(-330592380 <= deci AND deci < -329142650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_78
+ (CHECK(-329142650 <= deci AND deci < -327694020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_79
+ (CHECK(-327694020 <= deci AND deci < -326248210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7a
+ (CHECK(-326248210 <= deci AND deci < -324816470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7b
+ (CHECK(-324816470 <= deci AND deci < -323381230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7c
+ (CHECK(-323381230 <= deci AND deci < -321946950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7d
+ (CHECK(-321946950 <= deci AND deci < -320512850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7e
+ (CHECK(-320512850 <= deci AND deci < -319075950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7f
+ (CHECK(-319075950 <= deci AND deci < -317647380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7g
+ (CHECK(-317647380 <= deci AND deci < -316216470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7h
+ (CHECK(-316216470 <= deci AND deci < -314797760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7i
+ (CHECK(-314797760 <= deci AND deci < -313375740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7j
+ (CHECK(-313375740 <= deci AND deci < -311962620))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7k
+ (CHECK(-311962620 <= deci AND deci < -310547240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7l
+ (CHECK(-310547240 <= deci AND deci < -309145360))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7m
+ (CHECK(-309145360 <= deci AND deci < -307741990))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7n
+ (CHECK(-307741990 <= deci AND deci < -306346910))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7o
+ (CHECK(-306346910 <= deci AND deci < -304945930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7p
+ (CHECK(-304945930 <= deci AND deci < -303557320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7q
+ (CHECK(-303557320 <= deci AND deci < -302164500))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7r
+ (CHECK(-302164500 <= deci AND deci < -300794980))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7s
+ (CHECK(-300794980 <= deci AND deci < -299455510))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7t
+ (CHECK(-299455510 <= deci AND deci < -298147280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7u
+ (CHECK(-298147280 <= deci AND deci < -296786210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7v
+ (CHECK(-296786210 <= deci AND deci < -295427320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7w
+ (CHECK(-295427320 <= deci AND deci < -294065280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7x
+ (CHECK(-294065280 <= deci AND deci < -292700020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7y
+ (CHECK(-292700020 <= deci AND deci < -291339380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_7z
+ (CHECK(-291339380 <= deci AND deci < -289982760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_80
+ (CHECK(-289982760 <= deci AND deci < -288615340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_81
+ (CHECK(-288615340 <= deci AND deci < -287247260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_82
+ (CHECK(-287247260 <= deci AND deci < -285878470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_83
+ (CHECK(-285878470 <= deci AND deci < -284511150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_84
+ (CHECK(-284511150 <= deci AND deci < -283147200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_85
+ (CHECK(-283147200 <= deci AND deci < -281774850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_86
+ (CHECK(-281774850 <= deci AND deci < -280384450))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_87
+ (CHECK(-280384450 <= deci AND deci < -278973480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_88
+ (CHECK(-278973480 <= deci AND deci < -277560290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_89
+ (CHECK(-277560290 <= deci AND deci < -276139760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8a
+ (CHECK(-276139760 <= deci AND deci < -274714070))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8b
+ (CHECK(-274714070 <= deci AND deci < -273272860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8c
+ (CHECK(-273272860 <= deci AND deci < -271829280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8d
+ (CHECK(-271829280 <= deci AND deci < -270379220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8e
+ (CHECK(-270379220 <= deci AND deci < -268920800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8f
+ (CHECK(-268920800 <= deci AND deci < -267462010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8g
+ (CHECK(-267462010 <= deci AND deci < -266005840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8h
+ (CHECK(-266005840 <= deci AND deci < -264557230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8i
+ (CHECK(-264557230 <= deci AND deci < -263100400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8j
+ (CHECK(-263100400 <= deci AND deci < -261632000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8k
+ (CHECK(-261632000 <= deci AND deci < -260149690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8l
+ (CHECK(-260149690 <= deci AND deci < -258669660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8m
+ (CHECK(-258669660 <= deci AND deci < -257179870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8n
+ (CHECK(-257179870 <= deci AND deci < -255694180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8o
+ (CHECK(-255694180 <= deci AND deci < -254195980))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8p
+ (CHECK(-254195980 <= deci AND deci < -252698780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8q
+ (CHECK(-252698780 <= deci AND deci < -251199470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8r
+ (CHECK(-251199470 <= deci AND deci < -249689310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8s
+ (CHECK(-249689310 <= deci AND deci < -248178220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8t
+ (CHECK(-248178220 <= deci AND deci < -246661930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8u
+ (CHECK(-246661930 <= deci AND deci < -245139850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8v
+ (CHECK(-245139850 <= deci AND deci < -243608720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8w
+ (CHECK(-243608720 <= deci AND deci < -242074830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8x
+ (CHECK(-242074830 <= deci AND deci < -240526920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8y
+ (CHECK(-240526920 <= deci AND deci < -239049870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_8z
+ (CHECK(-239049870 <= deci AND deci < -237575360))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_90
+ (CHECK(-237575360 <= deci AND deci < -236069150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_91
+ (CHECK(-236069150 <= deci AND deci < -234563810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_92
+ (CHECK(-234563810 <= deci AND deci < -233061140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_93
+ (CHECK(-233061140 <= deci AND deci < -231560920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_94
+ (CHECK(-231560920 <= deci AND deci < -230048180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_95
+ (CHECK(-230048180 <= deci AND deci < -228535080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_96
+ (CHECK(-228535080 <= deci AND deci < -227007940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_97
+ (CHECK(-227007940 <= deci AND deci < -225485210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_98
+ (CHECK(-225485210 <= deci AND deci < -223955670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_99
+ (CHECK(-223955670 <= deci AND deci < -222428530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9a
+ (CHECK(-222428530 <= deci AND deci < -220904540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9b
+ (CHECK(-220904540 <= deci AND deci < -219372620))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9c
+ (CHECK(-219372620 <= deci AND deci < -217826520))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9d
+ (CHECK(-217826520 <= deci AND deci < -216286870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9e
+ (CHECK(-216286870 <= deci AND deci < -214741330))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9f
+ (CHECK(-214741330 <= deci AND deci < -213206200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9g
+ (CHECK(-213206200 <= deci AND deci < -211669850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9h
+ (CHECK(-211669850 <= deci AND deci < -210118830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9i
+ (CHECK(-210118830 <= deci AND deci < -208568920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9j
+ (CHECK(-208568920 <= deci AND deci < -207020840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9k
+ (CHECK(-207020840 <= deci AND deci < -205472350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9l
+ (CHECK(-205472350 <= deci AND deci < -203923510))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9m
+ (CHECK(-203923510 <= deci AND deci < -202363470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9n
+ (CHECK(-202363470 <= deci AND deci < -200803620))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9o
+ (CHECK(-200803620 <= deci AND deci < -199228530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9p
+ (CHECK(-199228530 <= deci AND deci < -197654970))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9q
+ (CHECK(-197654970 <= deci AND deci < -196076890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9r
+ (CHECK(-196076890 <= deci AND deci < -194499490))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9s
+ (CHECK(-194499490 <= deci AND deci < -192909360))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9t
+ (CHECK(-192909360 <= deci AND deci < -191316200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9u
+ (CHECK(-191316200 <= deci AND deci < -189722140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9v
+ (CHECK(-189722140 <= deci AND deci < -188126960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9w
+ (CHECK(-188126960 <= deci AND deci < -186537170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9x
+ (CHECK(-186537170 <= deci AND deci < -184944880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9y
+ (CHECK(-184944880 <= deci AND deci < -183349250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_9z
+ (CHECK(-183349250 <= deci AND deci < -181743660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a0
+ (CHECK(-181743660 <= deci AND deci < -180138300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a1
+ (CHECK(-180138300 <= deci AND deci < -178593460))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a2
+ (CHECK(-178593460 <= deci AND deci < -176938170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a3
+ (CHECK(-176938170 <= deci AND deci < -175260790))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a4
+ (CHECK(-175260790 <= deci AND deci < -173583760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a5
+ (CHECK(-173583760 <= deci AND deci < -171902830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a6
+ (CHECK(-171902830 <= deci AND deci < -170225120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a7
+ (CHECK(-170225120 <= deci AND deci < -168545000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a8
+ (CHECK(-168545000 <= deci AND deci < -166849420))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_a9
+ (CHECK(-166849420 <= deci AND deci < -165152610))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_aa
+ (CHECK(-165152610 <= deci AND deci < -163456210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ab
+ (CHECK(-163456210 <= deci AND deci < -161760690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ac
+ (CHECK(-161760690 <= deci AND deci < -160056860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ad
+ (CHECK(-160056860 <= deci AND deci < -158356650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ae
+ (CHECK(-158356650 <= deci AND deci < -156645080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_af
+ (CHECK(-156645080 <= deci AND deci < -154941220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ag
+ (CHECK(-154941220 <= deci AND deci < -153226170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ah
+ (CHECK(-153226170 <= deci AND deci < -151506800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ai
+ (CHECK(-151506800 <= deci AND deci < -149786600))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_aj
+ (CHECK(-149786600 <= deci AND deci < -148048650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ak
+ (CHECK(-148048650 <= deci AND deci < -146316680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_al
+ (CHECK(-146316680 <= deci AND deci < -144573590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_am
+ (CHECK(-144573590 <= deci AND deci < -142824740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_an
+ (CHECK(-142824740 <= deci AND deci < -141069180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ao
+ (CHECK(-141069180 <= deci AND deci < -139301550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ap
+ (CHECK(-139301550 <= deci AND deci < -137535890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_aq
+ (CHECK(-137535890 <= deci AND deci < -135757890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ar
+ (CHECK(-135757890 <= deci AND deci < -133982150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_as
+ (CHECK(-133982150 <= deci AND deci < -132201010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_at
+ (CHECK(-132201010 <= deci AND deci < -130417430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_au
+ (CHECK(-130417430 <= deci AND deci < -128624940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_av
+ (CHECK(-128624940 <= deci AND deci < -126826130))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_aw
+ (CHECK(-126826130 <= deci AND deci < -125018800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ax
+ (CHECK(-125018800 <= deci AND deci < -123198190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ay
+ (CHECK(-123198190 <= deci AND deci < -121360650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_az
+ (CHECK(-121360650 <= deci AND deci < -119555380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b0
+ (CHECK(-119555380 <= deci AND deci < -117796540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b1
+ (CHECK(-117796540 <= deci AND deci < -115965400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b2
+ (CHECK(-115965400 <= deci AND deci < -114139770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b3
+ (CHECK(-114139770 <= deci AND deci < -112312910))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b4
+ (CHECK(-112312910 <= deci AND deci < -110480770))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b5
+ (CHECK(-110480770 <= deci AND deci < -108642810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b6
+ (CHECK(-108642810 <= deci AND deci < -106801880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b7
+ (CHECK(-106801880 <= deci AND deci < -104953060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b8
+ (CHECK(-104953060 <= deci AND deci < -103108220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_b9
+ (CHECK(-103108220 <= deci AND deci < -101258750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ba
+ (CHECK(-101258750 <= deci AND deci < -99408700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bb
+ (CHECK(-99408700 <= deci AND deci < -97553090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bc
+ (CHECK(-97553090 <= deci AND deci < -95698090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bd
+ (CHECK(-95698090 <= deci AND deci < -93844730))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_be
+ (CHECK(-93844730 <= deci AND deci < -91980690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bf
+ (CHECK(-91980690 <= deci AND deci < -90107500))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bg
+ (CHECK(-90107500 <= deci AND deci < -88227090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bh
+ (CHECK(-88227090 <= deci AND deci < -86355670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bi
+ (CHECK(-86355670 <= deci AND deci < -84473270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bj
+ (CHECK(-84473270 <= deci AND deci < -82593530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bk
+ (CHECK(-82593530 <= deci AND deci < -80702910))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bl
+ (CHECK(-80702910 <= deci AND deci < -78815780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bm
+ (CHECK(-78815780 <= deci AND deci < -76912350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bn
+ (CHECK(-76912350 <= deci AND deci < -75014250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bo
+ (CHECK(-75014250 <= deci AND deci < -73108060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bp
+ (CHECK(-73108060 <= deci AND deci < -71191120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bq
+ (CHECK(-71191120 <= deci AND deci < -69279920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_br
+ (CHECK(-69279920 <= deci AND deci < -67370890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bs
+ (CHECK(-67370890 <= deci AND deci < -65452420))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bt
+ (CHECK(-65452420 <= deci AND deci < -63533340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bu
+ (CHECK(-63533340 <= deci AND deci < -61605670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bv
+ (CHECK(-61605670 <= deci AND deci < -59701130))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bw
+ (CHECK(-59701130 <= deci AND deci < -57871800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bx
+ (CHECK(-57871800 <= deci AND deci < -55969760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_by
+ (CHECK(-55969760 <= deci AND deci < -54058180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_bz
+ (CHECK(-54058180 <= deci AND deci < -52144350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c0
+ (CHECK(-52144350 <= deci AND deci < -50218710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c1
+ (CHECK(-50218710 <= deci AND deci < -48276810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c2
+ (CHECK(-48276810 <= deci AND deci < -46305070))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c3
+ (CHECK(-46305070 <= deci AND deci < -44320840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c4
+ (CHECK(-44320840 <= deci AND deci < -42343040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c5
+ (CHECK(-42343040 <= deci AND deci < -40376530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c6
+ (CHECK(-40376530 <= deci AND deci < -38377280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c7
+ (CHECK(-38377280 <= deci AND deci < -36375140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c8
+ (CHECK(-36375140 <= deci AND deci < -34376080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_c9
+ (CHECK(-34376080 <= deci AND deci < -32371880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ca
+ (CHECK(-32371880 <= deci AND deci < -30359010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cb
+ (CHECK(-30359010 <= deci AND deci < -28337250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cc
+ (CHECK(-28337250 <= deci AND deci < -26325960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cd
+ (CHECK(-26325960 <= deci AND deci < -24320400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ce
+ (CHECK(-24320400 <= deci AND deci < -22317920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cf
+ (CHECK(-22317920 <= deci AND deci < -20303140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cg
+ (CHECK(-20303140 <= deci AND deci < -18297910))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ch
+ (CHECK(-18297910 <= deci AND deci < -16306750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ci
+ (CHECK(-16306750 <= deci AND deci < -14320940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cj
+ (CHECK(-14320940 <= deci AND deci < -12334860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ck
+ (CHECK(-12334860 <= deci AND deci < -10349640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cl
+ (CHECK(-10349640 <= deci AND deci < -8382310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cm
+ (CHECK(-8382310 <= deci AND deci < -6414890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cn
+ (CHECK(-6414890 <= deci AND deci < -4432250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_co
+ (CHECK(-4432250 <= deci AND deci < -2440550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cp
+ (CHECK(-2440550 <= deci AND deci < -449690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cq
+ (CHECK(-449690 <= deci AND deci < 1475370))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cr
+ (CHECK(1475370 <= deci AND deci < 3556160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cs
+ (CHECK(3556160 <= deci AND deci < 5650340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ct
+ (CHECK(5650340 <= deci AND deci < 7755320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cu
+ (CHECK(7755320 <= deci AND deci < 9883280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cv
+ (CHECK(9883280 <= deci AND deci < 12014380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cw
+ (CHECK(12014380 <= deci AND deci < 14148480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cx
+ (CHECK(14148480 <= deci AND deci < 16262690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cy
+ (CHECK(16262690 <= deci AND deci < 18372100))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_cz
+ (CHECK(18372100 <= deci AND deci < 20477870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d0
+ (CHECK(20477870 <= deci AND deci < 22574860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d1
+ (CHECK(22574860 <= deci AND deci < 24672270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d2
+ (CHECK(24672270 <= deci AND deci < 26761750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d3
+ (CHECK(26761750 <= deci AND deci < 28848960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d4
+ (CHECK(28848960 <= deci AND deci < 30942030))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d5
+ (CHECK(30942030 <= deci AND deci < 33042080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d6
+ (CHECK(33042080 <= deci AND deci < 35146500))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d7
+ (CHECK(35146500 <= deci AND deci < 37251380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d8
+ (CHECK(37251380 <= deci AND deci < 39373350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_d9
+ (CHECK(39373350 <= deci AND deci < 41512580))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_da
+ (CHECK(41512580 <= deci AND deci < 43658710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_db
+ (CHECK(43658710 <= deci AND deci < 45795740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dc
+ (CHECK(45795740 <= deci AND deci < 47940280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dd
+ (CHECK(47940280 <= deci AND deci < 50087840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_de
+ (CHECK(50087840 <= deci AND deci < 52235800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_df
+ (CHECK(52235800 <= deci AND deci < 54387910))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dg
+ (CHECK(54387910 <= deci AND deci < 56535460))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dh
+ (CHECK(56535460 <= deci AND deci < 58696980))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_di
+ (CHECK(58696980 <= deci AND deci < 60786300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dj
+ (CHECK(60786300 <= deci AND deci < 62882550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dk
+ (CHECK(62882550 <= deci AND deci < 65018440))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dl
+ (CHECK(65018440 <= deci AND deci < 67148880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dm
+ (CHECK(67148880 <= deci AND deci < 69289090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dn
+ (CHECK(69289090 <= deci AND deci < 71449780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_do
+ (CHECK(71449780 <= deci AND deci < 73610040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dp
+ (CHECK(73610040 <= deci AND deci < 75750200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dq
+ (CHECK(75750200 <= deci AND deci < 77899270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dr
+ (CHECK(77899270 <= deci AND deci < 80053350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ds
+ (CHECK(80053350 <= deci AND deci < 82192840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dt
+ (CHECK(82192840 <= deci AND deci < 84331430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_du
+ (CHECK(84331430 <= deci AND deci < 86474390))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dv
+ (CHECK(86474390 <= deci AND deci < 88623460))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dw
+ (CHECK(88623460 <= deci AND deci < 90788400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dx
+ (CHECK(90788400 <= deci AND deci < 92951810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dy
+ (CHECK(92951810 <= deci AND deci < 95087090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_dz
+ (CHECK(95087090 <= deci AND deci < 97229710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e0
+ (CHECK(97229710 <= deci AND deci < 99388280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e1
+ (CHECK(99388280 <= deci AND deci < 101553200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e2
+ (CHECK(101553200 <= deci AND deci < 103714230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e3
+ (CHECK(103714230 <= deci AND deci < 105878230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e4
+ (CHECK(105878230 <= deci AND deci < 108049450))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e5
+ (CHECK(108049450 <= deci AND deci < 110231810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e6
+ (CHECK(110231810 <= deci AND deci < 112409270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e7
+ (CHECK(112409270 <= deci AND deci < 114580520))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e8
+ (CHECK(114580520 <= deci AND deci < 116759170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_e9
+ (CHECK(116759170 <= deci AND deci < 118908170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ea
+ (CHECK(118908170 <= deci AND deci < 120938320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_eb
+ (CHECK(120938320 <= deci AND deci < 123068110))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ec
+ (CHECK(123068110 <= deci AND deci < 125237480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ed
+ (CHECK(125237480 <= deci AND deci < 127396780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ee
+ (CHECK(127396780 <= deci AND deci < 129563940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ef
+ (CHECK(129563940 <= deci AND deci < 131732350))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_eg
+ (CHECK(131732350 <= deci AND deci < 133905820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_eh
+ (CHECK(133905820 <= deci AND deci < 136071560))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ei
+ (CHECK(136071560 <= deci AND deci < 138238920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ej
+ (CHECK(138238920 <= deci AND deci < 140414920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ek
+ (CHECK(140414920 <= deci AND deci < 142592670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_el
+ (CHECK(142592670 <= deci AND deci < 144760830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_em
+ (CHECK(144760830 <= deci AND deci < 146943300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_en
+ (CHECK(146943300 <= deci AND deci < 149130250))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_eo
+ (CHECK(149130250 <= deci AND deci < 151319840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ep
+ (CHECK(151319840 <= deci AND deci < 153507060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_eq
+ (CHECK(153507060 <= deci AND deci < 155695510))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_er
+ (CHECK(155695510 <= deci AND deci < 157891120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_es
+ (CHECK(157891120 <= deci AND deci < 160087260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_et
+ (CHECK(160087260 <= deci AND deci < 162282220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_eu
+ (CHECK(162282220 <= deci AND deci < 164479810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ev
+ (CHECK(164479810 <= deci AND deci < 166681000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ew
+ (CHECK(166681000 <= deci AND deci < 168885080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ex
+ (CHECK(168885080 <= deci AND deci < 171097470))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ey
+ (CHECK(171097470 <= deci AND deci < 173311000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ez
+ (CHECK(173311000 <= deci AND deci < 175541900))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f0
+ (CHECK(175541900 <= deci AND deci < 177782400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f1
+ (CHECK(177782400 <= deci AND deci < 179928950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f2
+ (CHECK(179928950 <= deci AND deci < 182148340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f3
+ (CHECK(182148340 <= deci AND deci < 184362240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f4
+ (CHECK(184362240 <= deci AND deci < 186571540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f5
+ (CHECK(186571540 <= deci AND deci < 188772980))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f6
+ (CHECK(188772980 <= deci AND deci < 190981010))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f7
+ (CHECK(190981010 <= deci AND deci < 193205950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f8
+ (CHECK(193205950 <= deci AND deci < 195431610))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_f9
+ (CHECK(195431610 <= deci AND deci < 197646450))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fa
+ (CHECK(197646450 <= deci AND deci < 199875260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fb
+ (CHECK(199875260 <= deci AND deci < 202113040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fc
+ (CHECK(202113040 <= deci AND deci < 204356060))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fd
+ (CHECK(204356060 <= deci AND deci < 206607440))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fe
+ (CHECK(206607440 <= deci AND deci < 208858950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ff
+ (CHECK(208858950 <= deci AND deci < 211114230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fg
+ (CHECK(211114230 <= deci AND deci < 213362160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fh
+ (CHECK(213362160 <= deci AND deci < 215611760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fi
+ (CHECK(215611760 <= deci AND deci < 217893160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fj
+ (CHECK(217893160 <= deci AND deci < 220172880))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fk
+ (CHECK(220172880 <= deci AND deci < 222461450))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fl
+ (CHECK(222461450 <= deci AND deci < 224743820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fm
+ (CHECK(224743820 <= deci AND deci < 227055170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fn
+ (CHECK(227055170 <= deci AND deci < 229368820))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fo
+ (CHECK(229368820 <= deci AND deci < 231676390))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fp
+ (CHECK(231676390 <= deci AND deci < 233991030))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fq
+ (CHECK(233991030 <= deci AND deci < 236316810))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fr
+ (CHECK(236316810 <= deci AND deci < 238639830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fs
+ (CHECK(238639830 <= deci AND deci < 240896490))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ft
+ (CHECK(240896490 <= deci AND deci < 243260860))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fu
+ (CHECK(243260860 <= deci AND deci < 245627540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fv
+ (CHECK(245627540 <= deci AND deci < 247981610))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fw
+ (CHECK(247981610 <= deci AND deci < 250341700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fx
+ (CHECK(250341700 <= deci AND deci < 252705020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fy
+ (CHECK(252705020 <= deci AND deci < 255065780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_fz
+ (CHECK(255065780 <= deci AND deci < 257444650))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g0
+ (CHECK(257444650 <= deci AND deci < 259843500))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g1
+ (CHECK(259843500 <= deci AND deci < 262242430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g2
+ (CHECK(262242430 <= deci AND deci < 264643710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g3
+ (CHECK(264643710 <= deci AND deci < 267038100))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g4
+ (CHECK(267038100 <= deci AND deci < 269443970))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g5
+ (CHECK(269443970 <= deci AND deci < 271844540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g6
+ (CHECK(271844540 <= deci AND deci < 274249130))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g7
+ (CHECK(274249130 <= deci AND deci < 276654030))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g8
+ (CHECK(276654030 <= deci AND deci < 279054830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_g9
+ (CHECK(279054830 <= deci AND deci < 281448170))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ga
+ (CHECK(281448170 <= deci AND deci < 283834150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gb
+ (CHECK(283834150 <= deci AND deci < 286229340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gc
+ (CHECK(286229340 <= deci AND deci < 288636740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gd
+ (CHECK(288636740 <= deci AND deci < 291026740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ge
+ (CHECK(291026740 <= deci AND deci < 293426490))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gf
+ (CHECK(293426490 <= deci AND deci < 295842530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gg
+ (CHECK(295842530 <= deci AND deci < 298249340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gh
+ (CHECK(298249340 <= deci AND deci < 300540500))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gi
+ (CHECK(300540500 <= deci AND deci < 302931210))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gj
+ (CHECK(302931210 <= deci AND deci < 305323930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gk
+ (CHECK(305323930 <= deci AND deci < 307705610))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gl
+ (CHECK(307705610 <= deci AND deci < 310114330))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gm
+ (CHECK(310114330 <= deci AND deci < 312540190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gn
+ (CHECK(312540190 <= deci AND deci < 314961590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_go
+ (CHECK(314961590 <= deci AND deci < 317393070))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gp
+ (CHECK(317393070 <= deci AND deci < 319839940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gq
+ (CHECK(319839940 <= deci AND deci < 322294080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gr
+ (CHECK(322294080 <= deci AND deci < 324722480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gs
+ (CHECK(324722480 <= deci AND deci < 327147370))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gt
+ (CHECK(327147370 <= deci AND deci < 329588550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gu
+ (CHECK(329588550 <= deci AND deci < 332011830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gv
+ (CHECK(332011830 <= deci AND deci < 334421310))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gw
+ (CHECK(334421310 <= deci AND deci < 336832660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gx
+ (CHECK(336832660 <= deci AND deci < 339271200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gy
+ (CHECK(339271200 <= deci AND deci < 341706200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_gz
+ (CHECK(341706200 <= deci AND deci < 344143030))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h0
+ (CHECK(344143030 <= deci AND deci < 346610830))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h1
+ (CHECK(346610830 <= deci AND deci < 349101330))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h2
+ (CHECK(349101330 <= deci AND deci < 351577640))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h3
+ (CHECK(351577640 <= deci AND deci < 354053000))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h4
+ (CHECK(354053000 <= deci AND deci < 356538960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h5
+ (CHECK(356538960 <= deci AND deci < 358986630))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h6
+ (CHECK(358986630 <= deci AND deci < 361420630))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h7
+ (CHECK(361420630 <= deci AND deci < 363939930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h8
+ (CHECK(363939930 <= deci AND deci < 366451680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_h9
+ (CHECK(366451680 <= deci AND deci < 368979950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ha
+ (CHECK(368979950 <= deci AND deci < 371524200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hb
+ (CHECK(371524200 <= deci AND deci < 374077110))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hc
+ (CHECK(374077110 <= deci AND deci < 376647110))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hd
+ (CHECK(376647110 <= deci AND deci < 379237290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_he
+ (CHECK(379237290 <= deci AND deci < 381838680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hf
+ (CHECK(381838680 <= deci AND deci < 384444920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hg
+ (CHECK(384444920 <= deci AND deci < 387069850))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hh
+ (CHECK(387069850 <= deci AND deci < 389705240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hi
+ (CHECK(389705240 <= deci AND deci < 392345890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hj
+ (CHECK(392345890 <= deci AND deci < 395000720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hk
+ (CHECK(395000720 <= deci AND deci < 397674710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hl
+ (CHECK(397674710 <= deci AND deci < 400378040))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hm
+ (CHECK(400378040 <= deci AND deci < 403063240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hn
+ (CHECK(403063240 <= deci AND deci < 405730780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ho
+ (CHECK(405730780 <= deci AND deci < 408404690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hp
+ (CHECK(408404690 <= deci AND deci < 411133690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hq
+ (CHECK(411133690 <= deci AND deci < 413862950))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hr
+ (CHECK(413862950 <= deci AND deci < 416611480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hs
+ (CHECK(416611480 <= deci AND deci < 419324460))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ht
+ (CHECK(419324460 <= deci AND deci < 422077290))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hu
+ (CHECK(422077290 <= deci AND deci < 424878230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hv
+ (CHECK(424878230 <= deci AND deci < 427636680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hw
+ (CHECK(427636680 <= deci AND deci < 430376660))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hx
+ (CHECK(430376660 <= deci AND deci < 433119240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hy
+ (CHECK(433119240 <= deci AND deci < 435887910))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_hz
+ (CHECK(435887910 <= deci AND deci < 438666840))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i0
+ (CHECK(438666840 <= deci AND deci < 441434900))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i1
+ (CHECK(441434900 <= deci AND deci < 444189410))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i2
+ (CHECK(444189410 <= deci AND deci < 446916540))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i3
+ (CHECK(446916540 <= deci AND deci < 449614140))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i4
+ (CHECK(449614140 <= deci AND deci < 452286870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i5
+ (CHECK(452286870 <= deci AND deci < 454925580))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i6
+ (CHECK(454925580 <= deci AND deci < 457562330))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i7
+ (CHECK(457562330 <= deci AND deci < 460200080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i8
+ (CHECK(460200080 <= deci AND deci < 462822190))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_i9
+ (CHECK(462822190 <= deci AND deci < 465435220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ia
+ (CHECK(465435220 <= deci AND deci < 468067400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ib
+ (CHECK(468067400 <= deci AND deci < 470702550))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ic
+ (CHECK(470702550 <= deci AND deci < 473337590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_id
+ (CHECK(473337590 <= deci AND deci < 476002270))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ie
+ (CHECK(476002270 <= deci AND deci < 478668790))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_if
+ (CHECK(478668790 <= deci AND deci < 481312410))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ig
+ (CHECK(481312410 <= deci AND deci < 484069630))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ih
+ (CHECK(484069630 <= deci AND deci < 486821020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ii
+ (CHECK(486821020 <= deci AND deci < 489576380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ij
+ (CHECK(489576380 <= deci AND deci < 492342720))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ik
+ (CHECK(492342720 <= deci AND deci < 495116230))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_il
+ (CHECK(495116230 <= deci AND deci < 497888870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_im
+ (CHECK(497888870 <= deci AND deci < 500682110))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_in
+ (CHECK(500682110 <= deci AND deci < 503496320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_io
+ (CHECK(503496320 <= deci AND deci < 506311800))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ip
+ (CHECK(506311800 <= deci AND deci < 509148670))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_iq
+ (CHECK(509148670 <= deci AND deci < 512004090))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ir
+ (CHECK(512004090 <= deci AND deci < 514843560))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_is
+ (CHECK(514843560 <= deci AND deci < 517690430))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_it
+ (CHECK(517690430 <= deci AND deci < 520541690))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_iu
+ (CHECK(520541690 <= deci AND deci < 523393940))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_iv
+ (CHECK(523393940 <= deci AND deci < 526270220))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_iw
+ (CHECK(526270220 <= deci AND deci < 529134480))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ix
+ (CHECK(529134480 <= deci AND deci < 531992150))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_iy
+ (CHECK(531992150 <= deci AND deci < 534847070))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_iz
+ (CHECK(534847070 <= deci AND deci < 537712020))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j0
+ (CHECK(537712020 <= deci AND deci < 540470700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j1
+ (CHECK(540470700 <= deci AND deci < 543308680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j2
+ (CHECK(543308680 <= deci AND deci < 546129420))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j3
+ (CHECK(546129420 <= deci AND deci < 548962440))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j4
+ (CHECK(548962440 <= deci AND deci < 551817740))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j5
+ (CHECK(551817740 <= deci AND deci < 554674530))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j6
+ (CHECK(554674530 <= deci AND deci < 557534870))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j7
+ (CHECK(557534870 <= deci AND deci < 560422100))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j8
+ (CHECK(560422100 <= deci AND deci < 563324320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_j9
+ (CHECK(563324320 <= deci AND deci < 566202390))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ja
+ (CHECK(566202390 <= deci AND deci < 569087180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jb
+ (CHECK(569087180 <= deci AND deci < 571997260))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jc
+ (CHECK(571997260 <= deci AND deci < 574914890))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jd
+ (CHECK(574914890 <= deci AND deci < 577890780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_je
+ (CHECK(577890780 <= deci AND deci < 580906180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jf
+ (CHECK(580906180 <= deci AND deci < 583934780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jg
+ (CHECK(583934780 <= deci AND deci < 587029990))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jh
+ (CHECK(587029990 <= deci AND deci < 590144960))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ji
+ (CHECK(590144960 <= deci AND deci < 593256990))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jj
+ (CHECK(593256990 <= deci AND deci < 596414180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jk
+ (CHECK(596414180 <= deci AND deci < 599537730))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jl
+ (CHECK(599537730 <= deci AND deci < 602751240))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jm
+ (CHECK(602751240 <= deci AND deci < 605993500))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jn
+ (CHECK(605993500 <= deci AND deci < 609268680))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jo
+ (CHECK(609268680 <= deci AND deci < 612611120))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jp
+ (CHECK(612611120 <= deci AND deci < 616006320))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jq
+ (CHECK(616006320 <= deci AND deci < 619482380))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jr
+ (CHECK(619482380 <= deci AND deci < 623053400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_js
+ (CHECK(623053400 <= deci AND deci < 626658710))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jt
+ (CHECK(626658710 <= deci AND deci < 630301700))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ju
+ (CHECK(630301700 <= deci AND deci < 634010930))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jv
+ (CHECK(634010930 <= deci AND deci < 637888370))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jw
+ (CHECK(637888370 <= deci AND deci < 641902080))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jx
+ (CHECK(641902080 <= deci AND deci < 646054760))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jy
+ (CHECK(646054760 <= deci AND deci < 650463180))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_jz
+ (CHECK(650463180 <= deci AND deci < 655161590))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k0
+ (CHECK(655161590 <= deci AND deci < 660204160))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k1
+ (CHECK(660204160 <= deci AND deci < 665938340))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k2
+ (CHECK(665938340 <= deci AND deci < 672034300))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k3
+ (CHECK(672034300 <= deci AND deci < 678486400))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k4
+ (CHECK(678486400 <= deci AND deci < 685320280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k5
+ (CHECK(685320280 <= deci AND deci < 692766490))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k6
+ (CHECK(692766490 <= deci AND deci < 700871200))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k7
+ (CHECK(700871200 <= deci AND deci < 709649280))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k8
+ (CHECK(709649280 <= deci AND deci < 719262620))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_k9
+ (CHECK(719262620 <= deci AND deci < 730099110))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ka
+ (CHECK(730099110 <= deci AND deci < 742442780))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_kb
+ (CHECK(742442780 <= deci AND deci < 756727750))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_kc
+ (CHECK(756727750 <= deci AND deci < 773814620))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_kd
+ (CHECK(773814620 <= deci AND deci < 795214920))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_ke
+ (CHECK(795214920 <= deci AND deci < 824621580))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;
+CREATE TABLE twomass_eqi_kf
+ (CHECK(824621580 <= deci))
+ INHERITS (Twomass_eqi)
+ TABLESPACE @TS_PREFIX@twomass_eqi;

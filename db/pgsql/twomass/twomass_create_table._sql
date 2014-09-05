@@ -1,0 +1,82 @@
+
+CREATE TABLE Twomass (
+    objid INT4			NOT NULL, -- PRIMARY KEY,
+    designation VARCHAR(17)	NOT NULL, -- fixed length
+    ra DOUBLE PRECISION		NOT NULL,
+    dec DOUBLE PRECISION	NOT NULL,
+    err_maj REAL	NOT NULL,
+    err_min REAL	NOT NULL,
+    err_ang SMALLINT	NOT NULL,
+    j_m REAL,
+-- 9
+    j_cmsig REAL,
+    j_msigcom REAL,
+    j_snr REAL,
+-- 12
+    h_m REAL,
+    h_cmsig REAL,
+    h_msigcom REAL,
+    h_snr REAL,
+-- 16
+    k_m REAL,
+    k_cmsig REAL,
+    k_msigcom REAL,
+    k_snr REAL,
+-- 20
+    ph_qual VARCHAR(3)		NOT NULL, -- fixed length
+    rd_flg VARCHAR(3)		NOT NULL, -- fixed length
+    bl_flg VARCHAR(3)		NOT NULL, -- fixed length
+    cc_flg VARCHAR(3)		NOT NULL, -- fixed length
+    ndet VARCHAR(6)		NOT NULL, -- fixed length
+    prox REAL			NOT NULL,
+    pxpa SMALLINT,
+    pxcntr INTEGER		NOT NULL,
+    gal_contam SMALLINT		NOT NULL,
+    mp_flg SMALLINT		NOT NULL,
+    pts_key INTEGER		NOT NULL,
+    hemis VARCHAR(1)		NOT NULL, -- fixed length
+    date DATE			NOT NULL,
+    scan SMALLINT		NOT NULL,
+    glon REAL			NOT NULL,
+    glat REAL			NOT NULL,
+    x_scan REAL			NOT NULL,
+    jdate DOUBLE PRECISION	NOT NULL,
+-- 38
+    j_psfchi REAL,
+    h_psfchi REAL,
+    k_psfchi REAL,
+    j_m_stdap REAL,
+    j_msig_stdap REAL,
+    h_m_stdap REAL,
+    h_msig_stdap REAL,
+    k_m_stdap REAL,
+    k_msig_stdap REAL,
+-- 47
+    dist_edge_ns SMALLINT	NOT NULL,
+    dist_edge_ew SMALLINT	NOT NULL,
+    dist_edge_flg VARCHAR(2)	NOT NULL, -- fixed length
+    dup_src SMALLINT		NOT NULL,
+    use_src SMALLINT		NOT NULL,
+    a VARCHAR(1)		NOT NULL, -- fixed length
+-- 53
+    dist_opt REAL,
+    phi_opt SMALLINT,
+    b_m_opt REAL,
+    vr_m_opt REAL,
+-- 57
+    nopt_mchs SMALLINT		NOT NULL,
+    ext_key INTEGER,
+-- 59
+    scan_key INTEGER		NOT NULL,
+    coadd_key INTEGER		NOT NULL,
+    coadd SMALLINT		NOT NULL,
+    cx	FLOAT8			NOT NULL,
+    cy	FLOAT8			NOT NULL,
+    cz	FLOAT8			NOT NULL
+) TABLESPACE @TS_PREFIX@twomass_main;
+
+CREATE TABLE Twomass_eqi (
+    _objid INT4			NOT NULL, -- PRIMARY KEY,
+    rai	  INT4			NOT NULL,
+    deci  INT4			NOT NULL
+) TABLESPACE @TS_PREFIX@twomass_eqi;

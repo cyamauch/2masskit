@@ -1,0 +1,35 @@
+
+CMD=$1
+
+INDICES=$2
+
+for i in `ls | grep '.*[.]_sh$'` `ls | grep '.*[.]_sql$'` ; do
+  DST=`echo $i | sed -e 's/\([.]\)\(_\)\([^.][^.]*\)$/\1\3/g'`
+  if [ "$CMD" = "update" ]; then
+    DO_IDX=`cat $i | grep '@COL@'`
+    echo Creating ... $DST
+    if [ "$INDICES" != "" -a "$DO_IDX" != "" ]; then
+      rm -f $DST
+      for j in `echo $INDICES | tr ',' ' '` ; do
+        S0=`echo $j | tr -d ':'`
+        S1=`echo $j | tr ':' ','`
+        cat $i | sed -e 's|@COL@|'"$S0"'|' | \
+          sed -e 's|@COL@|'"$S1"'|g' | \
+          sed -e 's|@TS_PREFIX@|'"$TS_PREFIX"'|g' \
+              -e 's|@TS_DIR@|'"$TS_DIR"'|g' \
+              -e 's|@TS_OWNER@|'"$TS_OWNER"'|g' \
+              -e 's|@GUEST_USER@|'"$GUEST_USER"'|g' >> $DST
+      done
+    else
+      cat $i | \
+        sed -e 's|@TS_PREFIX@|'"$TS_PREFIX"'|g' \
+            -e 's|@TS_DIR@|'"$TS_DIR"'|g' \
+            -e 's|@TS_OWNER@|'"$TS_OWNER"'|g' \
+            -e 's|@GUEST_USER@|'"$GUEST_USER"'|g' > $DST
+    fi
+  elif [ "$CMD" = "clean" ]; then
+    echo Removing ... $DST
+    rm -f $DST
+  fi
+done
+

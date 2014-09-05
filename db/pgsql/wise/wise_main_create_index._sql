@@ -1,0 +1,2 @@
+CREATE INDEX wise_@COL@ ON Wise (@COL@)
+ TABLESPACE @TS_PREFIX@wise_main_index;

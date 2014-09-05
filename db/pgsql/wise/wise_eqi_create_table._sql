@@ -1,0 +1,3680 @@
+CREATE TABLE wise_eqi_00
+ (CHECK(deci < -863212931))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_01
+ (CHECK(-863212931 <= deci AND deci < -847826190))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_02
+ (CHECK(-847826190 <= deci AND deci < -836235279))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_03
+ (CHECK(-836235279 <= deci AND deci < -826539171))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_04
+ (CHECK(-826539171 <= deci AND deci < -817945857))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_05
+ (CHECK(-817945857 <= deci AND deci < -810221416))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_06
+ (CHECK(-810221416 <= deci AND deci < -803085497))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_07
+ (CHECK(-803085497 <= deci AND deci < -796407428))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_08
+ (CHECK(-796407428 <= deci AND deci < -790159725))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_09
+ (CHECK(-790159725 <= deci AND deci < -784250733))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0a
+ (CHECK(-784250733 <= deci AND deci < -778702354))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0b
+ (CHECK(-778702354 <= deci AND deci < -773373805))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0c
+ (CHECK(-773373805 <= deci AND deci < -768256309))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0d
+ (CHECK(-768256309 <= deci AND deci < -763361894))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0e
+ (CHECK(-763361894 <= deci AND deci < -758659967))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0f
+ (CHECK(-758659967 <= deci AND deci < -754149664))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0g
+ (CHECK(-754149664 <= deci AND deci < -749837453))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0h
+ (CHECK(-749837453 <= deci AND deci < -745720934))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0i
+ (CHECK(-745720934 <= deci AND deci < -741797961))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0j
+ (CHECK(-741797961 <= deci AND deci < -738006719))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0k
+ (CHECK(-738006719 <= deci AND deci < -734377279))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0l
+ (CHECK(-734377279 <= deci AND deci < -730844814))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0m
+ (CHECK(-730844814 <= deci AND deci < -727399814))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0n
+ (CHECK(-727399814 <= deci AND deci < -724011582))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0o
+ (CHECK(-724011582 <= deci AND deci < -720709125))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0p
+ (CHECK(-720709125 <= deci AND deci < -717482545))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0q
+ (CHECK(-717482545 <= deci AND deci < -714285462))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0r
+ (CHECK(-714285462 <= deci AND deci < -711124144))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0s
+ (CHECK(-711124144 <= deci AND deci < -707999983))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0t
+ (CHECK(-707999983 <= deci AND deci < -704926453))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0u
+ (CHECK(-704926453 <= deci AND deci < -701875930))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0v
+ (CHECK(-701875930 <= deci AND deci < -698828034))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0w
+ (CHECK(-698828034 <= deci AND deci < -695847491))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0x
+ (CHECK(-695847491 <= deci AND deci < -692905461))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0y
+ (CHECK(-692905461 <= deci AND deci < -690040406))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_0z
+ (CHECK(-690040406 <= deci AND deci < -687240351))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_10
+ (CHECK(-687240351 <= deci AND deci < -684466442))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_11
+ (CHECK(-684466442 <= deci AND deci < -681729005))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_12
+ (CHECK(-681729005 <= deci AND deci < -679026701))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_13
+ (CHECK(-679026701 <= deci AND deci < -676347786))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_14
+ (CHECK(-676347786 <= deci AND deci < -673721665))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_15
+ (CHECK(-673721665 <= deci AND deci < -671115570))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_16
+ (CHECK(-671115570 <= deci AND deci < -668543341))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_17
+ (CHECK(-668543341 <= deci AND deci < -665997122))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_18
+ (CHECK(-665997122 <= deci AND deci < -663480695))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_19
+ (CHECK(-663480695 <= deci AND deci < -660980650))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1a
+ (CHECK(-660980650 <= deci AND deci < -658524669))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1b
+ (CHECK(-658524669 <= deci AND deci < -656080489))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1c
+ (CHECK(-656080489 <= deci AND deci < -653675330))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1d
+ (CHECK(-653675330 <= deci AND deci < -651283871))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1e
+ (CHECK(-651283871 <= deci AND deci < -648908890))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1f
+ (CHECK(-648908890 <= deci AND deci < -646551165))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1g
+ (CHECK(-646551165 <= deci AND deci < -644221438))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1h
+ (CHECK(-644221438 <= deci AND deci < -641927098))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1i
+ (CHECK(-641927098 <= deci AND deci < -639639755))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1j
+ (CHECK(-639639755 <= deci AND deci < -637369498))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1k
+ (CHECK(-637369498 <= deci AND deci < -635112068))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1l
+ (CHECK(-635112068 <= deci AND deci < -632857449))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1m
+ (CHECK(-632857449 <= deci AND deci < -630614088))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1n
+ (CHECK(-630614088 <= deci AND deci < -628385636))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1o
+ (CHECK(-628385636 <= deci AND deci < -626164651))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1p
+ (CHECK(-626164651 <= deci AND deci < -623953371))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1q
+ (CHECK(-623953371 <= deci AND deci < -621764975))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1r
+ (CHECK(-621764975 <= deci AND deci < -619614742))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1s
+ (CHECK(-619614742 <= deci AND deci < -617455465))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1t
+ (CHECK(-617455465 <= deci AND deci < -615312220))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1u
+ (CHECK(-615312220 <= deci AND deci < -613201247))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1v
+ (CHECK(-613201247 <= deci AND deci < -611081032))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1w
+ (CHECK(-611081032 <= deci AND deci < -608984104))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1x
+ (CHECK(-608984104 <= deci AND deci < -606908109))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1y
+ (CHECK(-606908109 <= deci AND deci < -604831623))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_1z
+ (CHECK(-604831623 <= deci AND deci < -602759892))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_20
+ (CHECK(-602759892 <= deci AND deci < -600717050))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_21
+ (CHECK(-600717050 <= deci AND deci < -598686342))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_22
+ (CHECK(-598686342 <= deci AND deci < -596684946))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_23
+ (CHECK(-596684946 <= deci AND deci < -594666985))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_24
+ (CHECK(-594666985 <= deci AND deci < -592670414))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_25
+ (CHECK(-592670414 <= deci AND deci < -590693884))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_26
+ (CHECK(-590693884 <= deci AND deci < -588718963))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_27
+ (CHECK(-588718963 <= deci AND deci < -586766900))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_28
+ (CHECK(-586766900 <= deci AND deci < -584833546))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_29
+ (CHECK(-584833546 <= deci AND deci < -582924413))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2a
+ (CHECK(-582924413 <= deci AND deci < -581002685))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2b
+ (CHECK(-581002685 <= deci AND deci < -579089183))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2c
+ (CHECK(-579089183 <= deci AND deci < -577178051))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2d
+ (CHECK(-577178051 <= deci AND deci < -575283568))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2e
+ (CHECK(-575283568 <= deci AND deci < -573405616))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2f
+ (CHECK(-573405616 <= deci AND deci < -571524599))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2g
+ (CHECK(-571524599 <= deci AND deci < -569668303))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2h
+ (CHECK(-569668303 <= deci AND deci < -567832258))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2i
+ (CHECK(-567832258 <= deci AND deci < -566004948))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2j
+ (CHECK(-566004948 <= deci AND deci < -564176207))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2k
+ (CHECK(-564176207 <= deci AND deci < -562353296))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2l
+ (CHECK(-562353296 <= deci AND deci < -560551861))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2m
+ (CHECK(-560551861 <= deci AND deci < -558754151))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2n
+ (CHECK(-558754151 <= deci AND deci < -556973129))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2o
+ (CHECK(-556973129 <= deci AND deci < -555193247))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2p
+ (CHECK(-555193247 <= deci AND deci < -553422142))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2q
+ (CHECK(-553422142 <= deci AND deci < -551675097))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2r
+ (CHECK(-551675097 <= deci AND deci < -549912053))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2s
+ (CHECK(-549912053 <= deci AND deci < -548161781))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2t
+ (CHECK(-548161781 <= deci AND deci < -546419795))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2u
+ (CHECK(-546419795 <= deci AND deci < -544679993))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2v
+ (CHECK(-544679993 <= deci AND deci < -542949332))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2w
+ (CHECK(-542949332 <= deci AND deci < -541223457))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2x
+ (CHECK(-541223457 <= deci AND deci < -539511296))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2y
+ (CHECK(-539511296 <= deci AND deci < -537795397))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_2z
+ (CHECK(-537795397 <= deci AND deci < -536107057))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_30
+ (CHECK(-536107057 <= deci AND deci < -534411631))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_31
+ (CHECK(-534411631 <= deci AND deci < -532718134))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_32
+ (CHECK(-532718134 <= deci AND deci < -531033584))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_33
+ (CHECK(-531033584 <= deci AND deci < -529357670))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_34
+ (CHECK(-529357670 <= deci AND deci < -527683328))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_35
+ (CHECK(-527683328 <= deci AND deci < -526014167))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_36
+ (CHECK(-526014167 <= deci AND deci < -524350552))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_37
+ (CHECK(-524350552 <= deci AND deci < -522695207))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_38
+ (CHECK(-522695207 <= deci AND deci < -521064589))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_39
+ (CHECK(-521064589 <= deci AND deci < -519413248))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3a
+ (CHECK(-519413248 <= deci AND deci < -517769041))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3b
+ (CHECK(-517769041 <= deci AND deci < -516136693))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3c
+ (CHECK(-516136693 <= deci AND deci < -514494953))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3d
+ (CHECK(-514494953 <= deci AND deci < -512856769))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3e
+ (CHECK(-512856769 <= deci AND deci < -511214466))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3f
+ (CHECK(-511214466 <= deci AND deci < -509575686))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3g
+ (CHECK(-509575686 <= deci AND deci < -507931736))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3h
+ (CHECK(-507931736 <= deci AND deci < -506308781))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3i
+ (CHECK(-506308781 <= deci AND deci < -504673919))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3j
+ (CHECK(-504673919 <= deci AND deci < -503043083))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3k
+ (CHECK(-503043083 <= deci AND deci < -501409425))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3l
+ (CHECK(-501409425 <= deci AND deci < -499778317))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3m
+ (CHECK(-499778317 <= deci AND deci < -498146376))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3n
+ (CHECK(-498146376 <= deci AND deci < -496525002))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3o
+ (CHECK(-496525002 <= deci AND deci < -494917027))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3p
+ (CHECK(-494917027 <= deci AND deci < -493307316))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3q
+ (CHECK(-493307316 <= deci AND deci < -491714139))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3r
+ (CHECK(-491714139 <= deci AND deci < -490106853))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3s
+ (CHECK(-490106853 <= deci AND deci < -488513463))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3t
+ (CHECK(-488513463 <= deci AND deci < -486915975))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3u
+ (CHECK(-486915975 <= deci AND deci < -485320007))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3v
+ (CHECK(-485320007 <= deci AND deci < -483730925))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3w
+ (CHECK(-483730925 <= deci AND deci < -482139280))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3x
+ (CHECK(-482139280 <= deci AND deci < -480555344))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3y
+ (CHECK(-480555344 <= deci AND deci < -478973814))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_3z
+ (CHECK(-478973814 <= deci AND deci < -477391324))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_40
+ (CHECK(-477391324 <= deci AND deci < -475827412))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_41
+ (CHECK(-475827412 <= deci AND deci < -474257021))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_42
+ (CHECK(-474257021 <= deci AND deci < -472685147))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_43
+ (CHECK(-472685147 <= deci AND deci < -471119635))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_44
+ (CHECK(-471119635 <= deci AND deci < -469554906))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_45
+ (CHECK(-469554906 <= deci AND deci < -467995148))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_46
+ (CHECK(-467995148 <= deci AND deci < -466428500))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_47
+ (CHECK(-466428500 <= deci AND deci < -464861611))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_48
+ (CHECK(-464861611 <= deci AND deci < -463303399))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_49
+ (CHECK(-463303399 <= deci AND deci < -461768457))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4a
+ (CHECK(-461768457 <= deci AND deci < -460224719))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4b
+ (CHECK(-460224719 <= deci AND deci < -458682498))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4c
+ (CHECK(-458682498 <= deci AND deci < -457141589))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4d
+ (CHECK(-457141589 <= deci AND deci < -455606093))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4e
+ (CHECK(-455606093 <= deci AND deci < -454067499))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4f
+ (CHECK(-454067499 <= deci AND deci < -452536806))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4g
+ (CHECK(-452536806 <= deci AND deci < -451001495))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4h
+ (CHECK(-451001495 <= deci AND deci < -449479573))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4i
+ (CHECK(-449479573 <= deci AND deci < -447958692))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4j
+ (CHECK(-447958692 <= deci AND deci < -446440262))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4k
+ (CHECK(-446440262 <= deci AND deci < -444908938))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4l
+ (CHECK(-444908938 <= deci AND deci < -443381912))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4m
+ (CHECK(-443381912 <= deci AND deci < -441871368))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4n
+ (CHECK(-441871368 <= deci AND deci < -440346977))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4o
+ (CHECK(-440346977 <= deci AND deci < -438822815))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4p
+ (CHECK(-438822815 <= deci AND deci < -437303982))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4q
+ (CHECK(-437303982 <= deci AND deci < -435782616))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4r
+ (CHECK(-435782616 <= deci AND deci < -434256288))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4s
+ (CHECK(-434256288 <= deci AND deci < -432736643))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4t
+ (CHECK(-432736643 <= deci AND deci < -431236650))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4u
+ (CHECK(-431236650 <= deci AND deci < -429726165))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4v
+ (CHECK(-429726165 <= deci AND deci < -428223557))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4w
+ (CHECK(-428223557 <= deci AND deci < -426718194))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4x
+ (CHECK(-426718194 <= deci AND deci < -425214265))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4y
+ (CHECK(-425214265 <= deci AND deci < -423709844))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_4z
+ (CHECK(-423709844 <= deci AND deci < -422196881))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_50
+ (CHECK(-422196881 <= deci AND deci < -420696435))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_51
+ (CHECK(-420696435 <= deci AND deci < -419202839))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_52
+ (CHECK(-419202839 <= deci AND deci < -417702008))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_53
+ (CHECK(-417702008 <= deci AND deci < -416216252))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_54
+ (CHECK(-416216252 <= deci AND deci < -414712836))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_55
+ (CHECK(-414712836 <= deci AND deci < -413213487))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_56
+ (CHECK(-413213487 <= deci AND deci < -411720348))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_57
+ (CHECK(-411720348 <= deci AND deci < -410228712))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_58
+ (CHECK(-410228712 <= deci AND deci < -408741690))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_59
+ (CHECK(-408741690 <= deci AND deci < -407251451))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5a
+ (CHECK(-407251451 <= deci AND deci < -405765000))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5b
+ (CHECK(-405765000 <= deci AND deci < -404283034))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5c
+ (CHECK(-404283034 <= deci AND deci < -402797422))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5d
+ (CHECK(-402797422 <= deci AND deci < -401324487))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5e
+ (CHECK(-401324487 <= deci AND deci < -399855344))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5f
+ (CHECK(-399855344 <= deci AND deci < -398373494))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5g
+ (CHECK(-398373494 <= deci AND deci < -396898663))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5h
+ (CHECK(-396898663 <= deci AND deci < -395436431))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5i
+ (CHECK(-395436431 <= deci AND deci < -393974216))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5j
+ (CHECK(-393974216 <= deci AND deci < -392515446))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5k
+ (CHECK(-392515446 <= deci AND deci < -391060899))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5l
+ (CHECK(-391060899 <= deci AND deci < -389600969))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5m
+ (CHECK(-389600969 <= deci AND deci < -388143888))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5n
+ (CHECK(-388143888 <= deci AND deci < -386689367))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5o
+ (CHECK(-386689367 <= deci AND deci < -385256046))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5p
+ (CHECK(-385256046 <= deci AND deci < -383824320))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5q
+ (CHECK(-383824320 <= deci AND deci < -382385327))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5r
+ (CHECK(-382385327 <= deci AND deci < -380943685))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5s
+ (CHECK(-380943685 <= deci AND deci < -379496775))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5t
+ (CHECK(-379496775 <= deci AND deci < -378046929))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5u
+ (CHECK(-378046929 <= deci AND deci < -376602778))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5v
+ (CHECK(-376602778 <= deci AND deci < -375160715))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5w
+ (CHECK(-375160715 <= deci AND deci < -373718428))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5x
+ (CHECK(-373718428 <= deci AND deci < -372266198))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5y
+ (CHECK(-372266198 <= deci AND deci < -370834051))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_5z
+ (CHECK(-370834051 <= deci AND deci < -369396375))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_60
+ (CHECK(-369396375 <= deci AND deci < -367956827))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_61
+ (CHECK(-367956827 <= deci AND deci < -366517875))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_62
+ (CHECK(-366517875 <= deci AND deci < -365078637))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_63
+ (CHECK(-365078637 <= deci AND deci < -363634872))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_64
+ (CHECK(-363634872 <= deci AND deci < -362186929))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_65
+ (CHECK(-362186929 <= deci AND deci < -360750283))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_66
+ (CHECK(-360750283 <= deci AND deci < -359316650))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_67
+ (CHECK(-359316650 <= deci AND deci < -357874455))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_68
+ (CHECK(-357874455 <= deci AND deci < -356438639))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_69
+ (CHECK(-356438639 <= deci AND deci < -355024436))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6a
+ (CHECK(-355024436 <= deci AND deci < -353600979))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6b
+ (CHECK(-353600979 <= deci AND deci < -352178853))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6c
+ (CHECK(-352178853 <= deci AND deci < -350748541))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6d
+ (CHECK(-350748541 <= deci AND deci < -349317027))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6e
+ (CHECK(-349317027 <= deci AND deci < -347892317))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6f
+ (CHECK(-347892317 <= deci AND deci < -346465057))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6g
+ (CHECK(-346465057 <= deci AND deci < -345031881))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6h
+ (CHECK(-345031881 <= deci AND deci < -343601350))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6i
+ (CHECK(-343601350 <= deci AND deci < -342175487))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6j
+ (CHECK(-342175487 <= deci AND deci < -340763401))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6k
+ (CHECK(-340763401 <= deci AND deci < -339358375))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6l
+ (CHECK(-339358375 <= deci AND deci < -337941455))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6m
+ (CHECK(-337941455 <= deci AND deci < -336525243))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6n
+ (CHECK(-336525243 <= deci AND deci < -335109692))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6o
+ (CHECK(-335109692 <= deci AND deci < -333691022))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6p
+ (CHECK(-333691022 <= deci AND deci < -332273980))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6q
+ (CHECK(-332273980 <= deci AND deci < -330862768))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6r
+ (CHECK(-330862768 <= deci AND deci < -329449648))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6s
+ (CHECK(-329449648 <= deci AND deci < -328039781))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6t
+ (CHECK(-328039781 <= deci AND deci < -326627768))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6u
+ (CHECK(-326627768 <= deci AND deci < -325225831))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6v
+ (CHECK(-325225831 <= deci AND deci < -323816966))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6w
+ (CHECK(-323816966 <= deci AND deci < -322405894))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6x
+ (CHECK(-322405894 <= deci AND deci < -321009015))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6y
+ (CHECK(-321009015 <= deci AND deci < -319604760))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_6z
+ (CHECK(-319604760 <= deci AND deci < -318201805))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_70
+ (CHECK(-318201805 <= deci AND deci < -316806211))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_71
+ (CHECK(-316806211 <= deci AND deci < -315410008))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_72
+ (CHECK(-315410008 <= deci AND deci < -314008716))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_73
+ (CHECK(-314008716 <= deci AND deci < -312615030))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_74
+ (CHECK(-312615030 <= deci AND deci < -311222203))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_75
+ (CHECK(-311222203 <= deci AND deci < -309841753))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_76
+ (CHECK(-309841753 <= deci AND deci < -308443756))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_77
+ (CHECK(-308443756 <= deci AND deci < -307050964))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_78
+ (CHECK(-307050964 <= deci AND deci < -305655514))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_79
+ (CHECK(-305655514 <= deci AND deci < -304259429))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7a
+ (CHECK(-304259429 <= deci AND deci < -302866059))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7b
+ (CHECK(-302866059 <= deci AND deci < -301471554))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7c
+ (CHECK(-301471554 <= deci AND deci < -300079171))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7d
+ (CHECK(-300079171 <= deci AND deci < -298689197))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7e
+ (CHECK(-298689197 <= deci AND deci < -297307607))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7f
+ (CHECK(-297307607 <= deci AND deci < -295921883))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7g
+ (CHECK(-295921883 <= deci AND deci < -294549975))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7h
+ (CHECK(-294549975 <= deci AND deci < -293162055))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7i
+ (CHECK(-293162055 <= deci AND deci < -291774375))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7j
+ (CHECK(-291774375 <= deci AND deci < -290388415))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7k
+ (CHECK(-290388415 <= deci AND deci < -289008752))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7l
+ (CHECK(-289008752 <= deci AND deci < -287617211))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7m
+ (CHECK(-287617211 <= deci AND deci < -286226452))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7n
+ (CHECK(-286226452 <= deci AND deci < -284836834))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7o
+ (CHECK(-284836834 <= deci AND deci < -283444154))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7p
+ (CHECK(-283444154 <= deci AND deci < -282050440))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7q
+ (CHECK(-282050440 <= deci AND deci < -280655358))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7r
+ (CHECK(-280655358 <= deci AND deci < -279273151))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7s
+ (CHECK(-279273151 <= deci AND deci < -277881999))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7t
+ (CHECK(-277881999 <= deci AND deci < -276491958))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7u
+ (CHECK(-276491958 <= deci AND deci < -275100508))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7v
+ (CHECK(-275100508 <= deci AND deci < -273709095))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7w
+ (CHECK(-273709095 <= deci AND deci < -272317046))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7x
+ (CHECK(-272317046 <= deci AND deci < -270928979))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7y
+ (CHECK(-270928979 <= deci AND deci < -269530112))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_7z
+ (CHECK(-269530112 <= deci AND deci < -268133836))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_80
+ (CHECK(-268133836 <= deci AND deci < -266740182))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_81
+ (CHECK(-266740182 <= deci AND deci < -265345809))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_82
+ (CHECK(-265345809 <= deci AND deci < -263962237))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_83
+ (CHECK(-263962237 <= deci AND deci < -262557882))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_84
+ (CHECK(-262557882 <= deci AND deci < -261164854))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_85
+ (CHECK(-261164854 <= deci AND deci < -259770890))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_86
+ (CHECK(-259770890 <= deci AND deci < -258373744))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_87
+ (CHECK(-258373744 <= deci AND deci < -256974186))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_88
+ (CHECK(-256974186 <= deci AND deci < -255579891))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_89
+ (CHECK(-255579891 <= deci AND deci < -254194050))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8a
+ (CHECK(-254194050 <= deci AND deci < -252815991))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8b
+ (CHECK(-252815991 <= deci AND deci < -251437110))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8c
+ (CHECK(-251437110 <= deci AND deci < -250052689))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8d
+ (CHECK(-250052689 <= deci AND deci < -248672690))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8e
+ (CHECK(-248672690 <= deci AND deci < -247279683))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8f
+ (CHECK(-247279683 <= deci AND deci < -245888399))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8g
+ (CHECK(-245888399 <= deci AND deci < -244490275))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8h
+ (CHECK(-244490275 <= deci AND deci < -243093483))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8i
+ (CHECK(-243093483 <= deci AND deci < -241690882))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8j
+ (CHECK(-241690882 <= deci AND deci < -240297920))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8k
+ (CHECK(-240297920 <= deci AND deci < -238904198))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8l
+ (CHECK(-238904198 <= deci AND deci < -237515447))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8m
+ (CHECK(-237515447 <= deci AND deci < -236126674))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8n
+ (CHECK(-236126674 <= deci AND deci < -234742370))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8o
+ (CHECK(-234742370 <= deci AND deci < -233360362))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8p
+ (CHECK(-233360362 <= deci AND deci < -231968405))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8q
+ (CHECK(-231968405 <= deci AND deci < -230580427))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8r
+ (CHECK(-230580427 <= deci AND deci < -229182913))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8s
+ (CHECK(-229182913 <= deci AND deci < -227788680))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8t
+ (CHECK(-227788680 <= deci AND deci < -226405754))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8u
+ (CHECK(-226405754 <= deci AND deci < -225023814))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8v
+ (CHECK(-225023814 <= deci AND deci < -223638988))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8w
+ (CHECK(-223638988 <= deci AND deci < -222246994))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8x
+ (CHECK(-222246994 <= deci AND deci < -220866883))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8y
+ (CHECK(-220866883 <= deci AND deci < -219501522))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_8z
+ (CHECK(-219501522 <= deci AND deci < -218125577))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_90
+ (CHECK(-218125577 <= deci AND deci < -216745221))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_91
+ (CHECK(-216745221 <= deci AND deci < -215362618))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_92
+ (CHECK(-215362618 <= deci AND deci < -213979762))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_93
+ (CHECK(-213979762 <= deci AND deci < -212603197))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_94
+ (CHECK(-212603197 <= deci AND deci < -211222816))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_95
+ (CHECK(-211222816 <= deci AND deci < -209842766))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_96
+ (CHECK(-209842766 <= deci AND deci < -208463854))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_97
+ (CHECK(-208463854 <= deci AND deci < -207087492))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_98
+ (CHECK(-207087492 <= deci AND deci < -205714620))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_99
+ (CHECK(-205714620 <= deci AND deci < -204341213))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9a
+ (CHECK(-204341213 <= deci AND deci < -202957170))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9b
+ (CHECK(-202957170 <= deci AND deci < -201576211))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9c
+ (CHECK(-201576211 <= deci AND deci < -200198800))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9d
+ (CHECK(-200198800 <= deci AND deci < -198822968))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9e
+ (CHECK(-198822968 <= deci AND deci < -197432271))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9f
+ (CHECK(-197432271 <= deci AND deci < -196043883))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9g
+ (CHECK(-196043883 <= deci AND deci < -194651068))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9h
+ (CHECK(-194651068 <= deci AND deci < -193258858))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9i
+ (CHECK(-193258858 <= deci AND deci < -191863243))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9j
+ (CHECK(-191863243 <= deci AND deci < -190465331))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9k
+ (CHECK(-190465331 <= deci AND deci < -189090959))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9l
+ (CHECK(-189090959 <= deci AND deci < -187710497))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9m
+ (CHECK(-187710497 <= deci AND deci < -186333192))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9n
+ (CHECK(-186333192 <= deci AND deci < -184957219))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9o
+ (CHECK(-184957219 <= deci AND deci < -183573258))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9p
+ (CHECK(-183573258 <= deci AND deci < -182187420))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9q
+ (CHECK(-182187420 <= deci AND deci < -180798524))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9r
+ (CHECK(-180798524 <= deci AND deci < -179413610))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9s
+ (CHECK(-179413610 <= deci AND deci < -178031987))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9t
+ (CHECK(-178031987 <= deci AND deci < -176656841))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9u
+ (CHECK(-176656841 <= deci AND deci < -175285389))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9v
+ (CHECK(-175285389 <= deci AND deci < -173919077))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9w
+ (CHECK(-173919077 <= deci AND deci < -172545083))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9x
+ (CHECK(-172545083 <= deci AND deci < -171166129))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9y
+ (CHECK(-171166129 <= deci AND deci < -169779711))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_9z
+ (CHECK(-169779711 <= deci AND deci < -168397646))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a0
+ (CHECK(-168397646 <= deci AND deci < -167013991))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a1
+ (CHECK(-167013991 <= deci AND deci < -165626811))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a2
+ (CHECK(-165626811 <= deci AND deci < -164242618))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a3
+ (CHECK(-164242618 <= deci AND deci < -162857903))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a4
+ (CHECK(-162857903 <= deci AND deci < -161467492))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a5
+ (CHECK(-161467492 <= deci AND deci < -160075181))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a6
+ (CHECK(-160075181 <= deci AND deci < -158700427))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a7
+ (CHECK(-158700427 <= deci AND deci < -157318975))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a8
+ (CHECK(-157318975 <= deci AND deci < -155939205))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_a9
+ (CHECK(-155939205 <= deci AND deci < -154559531))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_aa
+ (CHECK(-154559531 <= deci AND deci < -153178778))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ab
+ (CHECK(-153178778 <= deci AND deci < -151801820))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ac
+ (CHECK(-151801820 <= deci AND deci < -150421414))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ad
+ (CHECK(-150421414 <= deci AND deci < -149041107))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ae
+ (CHECK(-149041107 <= deci AND deci < -147661954))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_af
+ (CHECK(-147661954 <= deci AND deci < -146281151))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ag
+ (CHECK(-146281151 <= deci AND deci < -144893196))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ah
+ (CHECK(-144893196 <= deci AND deci < -143515832))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ai
+ (CHECK(-143515832 <= deci AND deci < -142130715))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_aj
+ (CHECK(-142130715 <= deci AND deci < -140749331))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ak
+ (CHECK(-140749331 <= deci AND deci < -139374886))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_al
+ (CHECK(-139374886 <= deci AND deci < -137995445))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_am
+ (CHECK(-137995445 <= deci AND deci < -136608885))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_an
+ (CHECK(-136608885 <= deci AND deci < -135222806))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ao
+ (CHECK(-135222806 <= deci AND deci < -133837899))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ap
+ (CHECK(-133837899 <= deci AND deci < -132455689))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_aq
+ (CHECK(-132455689 <= deci AND deci < -131073998))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ar
+ (CHECK(-131073998 <= deci AND deci < -129693898))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_as
+ (CHECK(-129693898 <= deci AND deci < -128323278))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_at
+ (CHECK(-128323278 <= deci AND deci < -126939390))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_au
+ (CHECK(-126939390 <= deci AND deci < -125555520))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_av
+ (CHECK(-125555520 <= deci AND deci < -124172402))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_aw
+ (CHECK(-124172402 <= deci AND deci < -122783317))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ax
+ (CHECK(-122783317 <= deci AND deci < -121387894))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ay
+ (CHECK(-121387894 <= deci AND deci < -119996520))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_az
+ (CHECK(-119996520 <= deci AND deci < -118606908))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b0
+ (CHECK(-118606908 <= deci AND deci < -117211973))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b1
+ (CHECK(-117211973 <= deci AND deci < -115822488))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b2
+ (CHECK(-115822488 <= deci AND deci < -114434868))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b3
+ (CHECK(-114434868 <= deci AND deci < -113065143))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b4
+ (CHECK(-113065143 <= deci AND deci < -111683049))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b5
+ (CHECK(-111683049 <= deci AND deci < -110295218))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b6
+ (CHECK(-110295218 <= deci AND deci < -108904157))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b7
+ (CHECK(-108904157 <= deci AND deci < -107518340))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b8
+ (CHECK(-107518340 <= deci AND deci < -106131028))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_b9
+ (CHECK(-106131028 <= deci AND deci < -104741856))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ba
+ (CHECK(-104741856 <= deci AND deci < -103353363))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bb
+ (CHECK(-103353363 <= deci AND deci < -101965238))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bc
+ (CHECK(-101965238 <= deci AND deci < -100582024))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bd
+ (CHECK(-100582024 <= deci AND deci < -99196495))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_be
+ (CHECK(-99196495 <= deci AND deci < -97825060))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bf
+ (CHECK(-97825060 <= deci AND deci < -96442886))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bg
+ (CHECK(-96442886 <= deci AND deci < -95062278))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bh
+ (CHECK(-95062278 <= deci AND deci < -93685093))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bi
+ (CHECK(-93685093 <= deci AND deci < -92310692))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bj
+ (CHECK(-92310692 <= deci AND deci < -90926956))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bk
+ (CHECK(-90926956 <= deci AND deci < -89536619))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bl
+ (CHECK(-89536619 <= deci AND deci < -88140921))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bm
+ (CHECK(-88140921 <= deci AND deci < -86743837))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bn
+ (CHECK(-86743837 <= deci AND deci < -85348006))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bo
+ (CHECK(-85348006 <= deci AND deci < -83960802))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bp
+ (CHECK(-83960802 <= deci AND deci < -82578824))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bq
+ (CHECK(-82578824 <= deci AND deci < -81192242))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_br
+ (CHECK(-81192242 <= deci AND deci < -79810547))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bs
+ (CHECK(-79810547 <= deci AND deci < -78423587))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bt
+ (CHECK(-78423587 <= deci AND deci < -77034664))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bu
+ (CHECK(-77034664 <= deci AND deci < -75649278))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bv
+ (CHECK(-75649278 <= deci AND deci < -74255693))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bw
+ (CHECK(-74255693 <= deci AND deci < -72863428))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bx
+ (CHECK(-72863428 <= deci AND deci < -71475022))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_by
+ (CHECK(-71475022 <= deci AND deci < -70083682))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_bz
+ (CHECK(-70083682 <= deci AND deci < -68691215))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c0
+ (CHECK(-68691215 <= deci AND deci < -67310661))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c1
+ (CHECK(-67310661 <= deci AND deci < -65917034))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c2
+ (CHECK(-65917034 <= deci AND deci < -64524070))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c3
+ (CHECK(-64524070 <= deci AND deci < -63136269))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c4
+ (CHECK(-63136269 <= deci AND deci < -61744621))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c5
+ (CHECK(-61744621 <= deci AND deci < -60349012))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c6
+ (CHECK(-60349012 <= deci AND deci < -58950772))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c7
+ (CHECK(-58950772 <= deci AND deci < -57545165))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c8
+ (CHECK(-57545165 <= deci AND deci < -56144675))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_c9
+ (CHECK(-56144675 <= deci AND deci < -54744184))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ca
+ (CHECK(-54744184 <= deci AND deci < -53343130))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cb
+ (CHECK(-53343130 <= deci AND deci < -51946785))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cc
+ (CHECK(-51946785 <= deci AND deci < -50549334))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cd
+ (CHECK(-50549334 <= deci AND deci < -49145759))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ce
+ (CHECK(-49145759 <= deci AND deci < -47738853))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cf
+ (CHECK(-47738853 <= deci AND deci < -46326929))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cg
+ (CHECK(-46326929 <= deci AND deci < -44907413))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ch
+ (CHECK(-44907413 <= deci AND deci < -43493448))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ci
+ (CHECK(-43493448 <= deci AND deci < -42089308))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cj
+ (CHECK(-42089308 <= deci AND deci < -40688692))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ck
+ (CHECK(-40688692 <= deci AND deci < -39283894))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cl
+ (CHECK(-39283894 <= deci AND deci < -37875161))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cm
+ (CHECK(-37875161 <= deci AND deci < -36469752))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cn
+ (CHECK(-36469752 <= deci AND deci < -35064039))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_co
+ (CHECK(-35064039 <= deci AND deci < -33663593))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cp
+ (CHECK(-33663593 <= deci AND deci < -32261664))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cq
+ (CHECK(-32261664 <= deci AND deci < -30855525))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cr
+ (CHECK(-30855525 <= deci AND deci < -29450449))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cs
+ (CHECK(-29450449 <= deci AND deci < -28045642))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ct
+ (CHECK(-28045642 <= deci AND deci < -26637623))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cu
+ (CHECK(-26637623 <= deci AND deci < -25239469))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cv
+ (CHECK(-25239469 <= deci AND deci < -23835932))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cw
+ (CHECK(-23835932 <= deci AND deci < -22441299))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cx
+ (CHECK(-22441299 <= deci AND deci < -21029316))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cy
+ (CHECK(-21029316 <= deci AND deci < -19619767))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_cz
+ (CHECK(-19619767 <= deci AND deci < -18217622))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d0
+ (CHECK(-18217622 <= deci AND deci < -16806212))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d1
+ (CHECK(-16806212 <= deci AND deci < -15401205))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d2
+ (CHECK(-15401205 <= deci AND deci < -13998410))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d3
+ (CHECK(-13998410 <= deci AND deci < -12598470))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d4
+ (CHECK(-12598470 <= deci AND deci < -11191556))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d5
+ (CHECK(-11191556 <= deci AND deci < -9794510))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d6
+ (CHECK(-9794510 <= deci AND deci < -8398246))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d7
+ (CHECK(-8398246 <= deci AND deci < -7011055))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d8
+ (CHECK(-7011055 <= deci AND deci < -5605935))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_d9
+ (CHECK(-5605935 <= deci AND deci < -4200542))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_da
+ (CHECK(-4200542 <= deci AND deci < -2793004))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_db
+ (CHECK(-2793004 <= deci AND deci < -1386615))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dc
+ (CHECK(-1386615 <= deci AND deci < 22297))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dd
+ (CHECK(22297 <= deci AND deci < 1430227))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_de
+ (CHECK(1430227 <= deci AND deci < 2832133))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_df
+ (CHECK(2832133 <= deci AND deci < 4233391))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dg
+ (CHECK(4233391 <= deci AND deci < 5637498))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dh
+ (CHECK(5637498 <= deci AND deci < 7046859))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_di
+ (CHECK(7046859 <= deci AND deci < 8443302))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dj
+ (CHECK(8443302 <= deci AND deci < 9847078))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dk
+ (CHECK(9847078 <= deci AND deci < 11258266))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dl
+ (CHECK(11258266 <= deci AND deci < 12669178))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dm
+ (CHECK(12669178 <= deci AND deci < 14079588))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dn
+ (CHECK(14079588 <= deci AND deci < 15491464))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_do
+ (CHECK(15491464 <= deci AND deci < 16899555))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dp
+ (CHECK(16899555 <= deci AND deci < 18306010))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dq
+ (CHECK(18306010 <= deci AND deci < 19716097))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dr
+ (CHECK(19716097 <= deci AND deci < 21125266))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ds
+ (CHECK(21125266 <= deci AND deci < 22531423))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dt
+ (CHECK(22531423 <= deci AND deci < 23933794))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_du
+ (CHECK(23933794 <= deci AND deci < 25351983))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dv
+ (CHECK(25351983 <= deci AND deci < 26767474))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dw
+ (CHECK(26767474 <= deci AND deci < 28187644))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dx
+ (CHECK(28187644 <= deci AND deci < 29604465))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dy
+ (CHECK(29604465 <= deci AND deci < 31027617))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_dz
+ (CHECK(31027617 <= deci AND deci < 32451680))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e0
+ (CHECK(32451680 <= deci AND deci < 33876477))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e1
+ (CHECK(33876477 <= deci AND deci < 35305243))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e2
+ (CHECK(35305243 <= deci AND deci < 36728094))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e3
+ (CHECK(36728094 <= deci AND deci < 38141936))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e4
+ (CHECK(38141936 <= deci AND deci < 39558841))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e5
+ (CHECK(39558841 <= deci AND deci < 40980754))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e6
+ (CHECK(40980754 <= deci AND deci < 42398191))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e7
+ (CHECK(42398191 <= deci AND deci < 43824150))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e8
+ (CHECK(43824150 <= deci AND deci < 45251943))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_e9
+ (CHECK(45251943 <= deci AND deci < 46678355))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ea
+ (CHECK(46678355 <= deci AND deci < 48097875))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_eb
+ (CHECK(48097875 <= deci AND deci < 49524926))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ec
+ (CHECK(49524926 <= deci AND deci < 50956130))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ed
+ (CHECK(50956130 <= deci AND deci < 52388323))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ee
+ (CHECK(52388323 <= deci AND deci < 53804911))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ef
+ (CHECK(53804911 <= deci AND deci < 55226615))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_eg
+ (CHECK(55226615 <= deci AND deci < 56651727))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_eh
+ (CHECK(56651727 <= deci AND deci < 58080798))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ei
+ (CHECK(58080798 <= deci AND deci < 59507243))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ej
+ (CHECK(59507243 <= deci AND deci < 60928222))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ek
+ (CHECK(60928222 <= deci AND deci < 62354593))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_el
+ (CHECK(62354593 <= deci AND deci < 63785339))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_em
+ (CHECK(63785339 <= deci AND deci < 65208103))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_en
+ (CHECK(65208103 <= deci AND deci < 66621308))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_eo
+ (CHECK(66621308 <= deci AND deci < 68045295))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ep
+ (CHECK(68045295 <= deci AND deci < 69458852))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_eq
+ (CHECK(69458852 <= deci AND deci < 70886073))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_er
+ (CHECK(70886073 <= deci AND deci < 72309004))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_es
+ (CHECK(72309004 <= deci AND deci < 73730874))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_et
+ (CHECK(73730874 <= deci AND deci < 75145293))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_eu
+ (CHECK(75145293 <= deci AND deci < 76569674))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ev
+ (CHECK(76569674 <= deci AND deci < 77989848))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ew
+ (CHECK(77989848 <= deci AND deci < 79416272))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ex
+ (CHECK(79416272 <= deci AND deci < 80841585))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ey
+ (CHECK(80841585 <= deci AND deci < 82265574))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ez
+ (CHECK(82265574 <= deci AND deci < 83683089))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f0
+ (CHECK(83683089 <= deci AND deci < 85114362))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f1
+ (CHECK(85114362 <= deci AND deci < 86546187))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f2
+ (CHECK(86546187 <= deci AND deci < 87985873))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f3
+ (CHECK(87985873 <= deci AND deci < 89421738))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f4
+ (CHECK(89421738 <= deci AND deci < 90850284))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f5
+ (CHECK(90850284 <= deci AND deci < 92281142))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f6
+ (CHECK(92281142 <= deci AND deci < 93711142))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f7
+ (CHECK(93711142 <= deci AND deci < 95151559))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f8
+ (CHECK(95151559 <= deci AND deci < 96592622))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_f9
+ (CHECK(96592622 <= deci AND deci < 98036041))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fa
+ (CHECK(98036041 <= deci AND deci < 99455856))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fb
+ (CHECK(99455856 <= deci AND deci < 100898398))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fc
+ (CHECK(100898398 <= deci AND deci < 102338612))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fd
+ (CHECK(102338612 <= deci AND deci < 103779973))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fe
+ (CHECK(103779973 <= deci AND deci < 105211184))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ff
+ (CHECK(105211184 <= deci AND deci < 106652204))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fg
+ (CHECK(106652204 <= deci AND deci < 108092923))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fh
+ (CHECK(108092923 <= deci AND deci < 109528469))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fi
+ (CHECK(109528469 <= deci AND deci < 110964080))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fj
+ (CHECK(110964080 <= deci AND deci < 112389105))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fk
+ (CHECK(112389105 <= deci AND deci < 113809775))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fl
+ (CHECK(113809775 <= deci AND deci < 115248805))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fm
+ (CHECK(115248805 <= deci AND deci < 116684256))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fn
+ (CHECK(116684256 <= deci AND deci < 118120494))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fo
+ (CHECK(118120494 <= deci AND deci < 119560718))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fp
+ (CHECK(119560718 <= deci AND deci < 121001879))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fq
+ (CHECK(121001879 <= deci AND deci < 122441185))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fr
+ (CHECK(122441185 <= deci AND deci < 123877912))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fs
+ (CHECK(123877912 <= deci AND deci < 125305430))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ft
+ (CHECK(125305430 <= deci AND deci < 126744273))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fu
+ (CHECK(126744273 <= deci AND deci < 128188917))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fv
+ (CHECK(128188917 <= deci AND deci < 129623525))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fw
+ (CHECK(129623525 <= deci AND deci < 131068305))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fx
+ (CHECK(131068305 <= deci AND deci < 132508664))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fy
+ (CHECK(132508664 <= deci AND deci < 133964823))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_fz
+ (CHECK(133964823 <= deci AND deci < 135426199))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g0
+ (CHECK(135426199 <= deci AND deci < 136876656))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g1
+ (CHECK(136876656 <= deci AND deci < 138328660))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g2
+ (CHECK(138328660 <= deci AND deci < 139780662))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g3
+ (CHECK(139780662 <= deci AND deci < 141226907))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g4
+ (CHECK(141226907 <= deci AND deci < 142676444))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g5
+ (CHECK(142676444 <= deci AND deci < 144121083))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g6
+ (CHECK(144121083 <= deci AND deci < 145577871))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g7
+ (CHECK(145577871 <= deci AND deci < 147043296))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g8
+ (CHECK(147043296 <= deci AND deci < 148506195))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_g9
+ (CHECK(148506195 <= deci AND deci < 149975256))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ga
+ (CHECK(149975256 <= deci AND deci < 151442155))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gb
+ (CHECK(151442155 <= deci AND deci < 152904648))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gc
+ (CHECK(152904648 <= deci AND deci < 154367473))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gd
+ (CHECK(154367473 <= deci AND deci < 155835460))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ge
+ (CHECK(155835460 <= deci AND deci < 157298480))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gf
+ (CHECK(157298480 <= deci AND deci < 158752759))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gg
+ (CHECK(158752759 <= deci AND deci < 160211236))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gh
+ (CHECK(160211236 <= deci AND deci < 161681151))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gi
+ (CHECK(161681151 <= deci AND deci < 163153867))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gj
+ (CHECK(163153867 <= deci AND deci < 164621879))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gk
+ (CHECK(164621879 <= deci AND deci < 166092221))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gl
+ (CHECK(166092221 <= deci AND deci < 167559202))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gm
+ (CHECK(167559202 <= deci AND deci < 169026560))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gn
+ (CHECK(169026560 <= deci AND deci < 170498919))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_go
+ (CHECK(170498919 <= deci AND deci < 171970452))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gp
+ (CHECK(171970452 <= deci AND deci < 173441612))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gq
+ (CHECK(173441612 <= deci AND deci < 174901555))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gr
+ (CHECK(174901555 <= deci AND deci < 176370868))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gs
+ (CHECK(176370868 <= deci AND deci < 177835012))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gt
+ (CHECK(177835012 <= deci AND deci < 179308111))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gu
+ (CHECK(179308111 <= deci AND deci < 180781394))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gv
+ (CHECK(180781394 <= deci AND deci < 182246773))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gw
+ (CHECK(182246773 <= deci AND deci < 183721158))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gx
+ (CHECK(183721158 <= deci AND deci < 185196722))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gy
+ (CHECK(185196722 <= deci AND deci < 186678959))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_gz
+ (CHECK(186678959 <= deci AND deci < 188166784))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h0
+ (CHECK(188166784 <= deci AND deci < 189640920))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h1
+ (CHECK(189640920 <= deci AND deci < 191116841))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h2
+ (CHECK(191116841 <= deci AND deci < 192602075))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h3
+ (CHECK(192602075 <= deci AND deci < 194079510))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h4
+ (CHECK(194079510 <= deci AND deci < 195561451))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h5
+ (CHECK(195561451 <= deci AND deci < 197042207))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h6
+ (CHECK(197042207 <= deci AND deci < 198530169))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h7
+ (CHECK(198530169 <= deci AND deci < 200021573))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h8
+ (CHECK(200021573 <= deci AND deci < 201509094))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_h9
+ (CHECK(201509094 <= deci AND deci < 202995061))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ha
+ (CHECK(202995061 <= deci AND deci < 204473429))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hb
+ (CHECK(204473429 <= deci AND deci < 205960320))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hc
+ (CHECK(205960320 <= deci AND deci < 207456171))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hd
+ (CHECK(207456171 <= deci AND deci < 208945558))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_he
+ (CHECK(208945558 <= deci AND deci < 210430257))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hf
+ (CHECK(210430257 <= deci AND deci < 211926642))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hg
+ (CHECK(211926642 <= deci AND deci < 213420771))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hh
+ (CHECK(213420771 <= deci AND deci < 214912585))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hi
+ (CHECK(214912585 <= deci AND deci < 216398749))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hj
+ (CHECK(216398749 <= deci AND deci < 217883971))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hk
+ (CHECK(217883971 <= deci AND deci < 219378879))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hl
+ (CHECK(219378879 <= deci AND deci < 220862728))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hm
+ (CHECK(220862728 <= deci AND deci < 222363983))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hn
+ (CHECK(222363983 <= deci AND deci < 223861019))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ho
+ (CHECK(223861019 <= deci AND deci < 225368832))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hp
+ (CHECK(225368832 <= deci AND deci < 226875879))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hq
+ (CHECK(226875879 <= deci AND deci < 228387277))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hr
+ (CHECK(228387277 <= deci AND deci < 229895834))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hs
+ (CHECK(229895834 <= deci AND deci < 231404378))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ht
+ (CHECK(231404378 <= deci AND deci < 232911456))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hu
+ (CHECK(232911456 <= deci AND deci < 234418450))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hv
+ (CHECK(234418450 <= deci AND deci < 235920049))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hw
+ (CHECK(235920049 <= deci AND deci < 237426247))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hx
+ (CHECK(237426247 <= deci AND deci < 238933559))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hy
+ (CHECK(238933559 <= deci AND deci < 240453442))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_hz
+ (CHECK(240453442 <= deci AND deci < 241972784))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i0
+ (CHECK(241972784 <= deci AND deci < 243498548))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i1
+ (CHECK(243498548 <= deci AND deci < 245020001))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i2
+ (CHECK(245020001 <= deci AND deci < 246537381))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i3
+ (CHECK(246537381 <= deci AND deci < 248054049))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i4
+ (CHECK(248054049 <= deci AND deci < 249562760))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i5
+ (CHECK(249562760 <= deci AND deci < 251069996))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i6
+ (CHECK(251069996 <= deci AND deci < 252581674))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i7
+ (CHECK(252581674 <= deci AND deci < 254097089))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i8
+ (CHECK(254097089 <= deci AND deci < 255613144))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_i9
+ (CHECK(255613144 <= deci AND deci < 257146099))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ia
+ (CHECK(257146099 <= deci AND deci < 258659780))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ib
+ (CHECK(258659780 <= deci AND deci < 260185218))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ic
+ (CHECK(260185218 <= deci AND deci < 261706446))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_id
+ (CHECK(261706446 <= deci AND deci < 263234851))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ie
+ (CHECK(263234851 <= deci AND deci < 264768494))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_if
+ (CHECK(264768494 <= deci AND deci < 266286360))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ig
+ (CHECK(266286360 <= deci AND deci < 267821705))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ih
+ (CHECK(267821705 <= deci AND deci < 269361462))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ii
+ (CHECK(269361462 <= deci AND deci < 270891589))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ij
+ (CHECK(270891589 <= deci AND deci < 272422111))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ik
+ (CHECK(272422111 <= deci AND deci < 273956550))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_il
+ (CHECK(273956550 <= deci AND deci < 275489216))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_im
+ (CHECK(275489216 <= deci AND deci < 277021706))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_in
+ (CHECK(277021706 <= deci AND deci < 278557997))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_io
+ (CHECK(278557997 <= deci AND deci < 280092427))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ip
+ (CHECK(280092427 <= deci AND deci < 281628611))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_iq
+ (CHECK(281628611 <= deci AND deci < 283171823))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ir
+ (CHECK(283171823 <= deci AND deci < 284714163))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_is
+ (CHECK(284714163 <= deci AND deci < 286254486))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_it
+ (CHECK(286254486 <= deci AND deci < 287800954))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_iu
+ (CHECK(287800954 <= deci AND deci < 289345699))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_iv
+ (CHECK(289345699 <= deci AND deci < 290901566))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_iw
+ (CHECK(290901566 <= deci AND deci < 292455869))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ix
+ (CHECK(292455869 <= deci AND deci < 294002071))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_iy
+ (CHECK(294002071 <= deci AND deci < 295540389))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_iz
+ (CHECK(295540389 <= deci AND deci < 297086524))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j0
+ (CHECK(297086524 <= deci AND deci < 298645809))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j1
+ (CHECK(298645809 <= deci AND deci < 300206012))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j2
+ (CHECK(300206012 <= deci AND deci < 301768470))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j3
+ (CHECK(301768470 <= deci AND deci < 303327657))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j4
+ (CHECK(303327657 <= deci AND deci < 304884844))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j5
+ (CHECK(304884844 <= deci AND deci < 306438812))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j6
+ (CHECK(306438812 <= deci AND deci < 307998573))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j7
+ (CHECK(307998573 <= deci AND deci < 309556470))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j8
+ (CHECK(309556470 <= deci AND deci < 311105470))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_j9
+ (CHECK(311105470 <= deci AND deci < 312671724))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ja
+ (CHECK(312671724 <= deci AND deci < 314228314))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jb
+ (CHECK(314228314 <= deci AND deci < 315798450))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jc
+ (CHECK(315798450 <= deci AND deci < 317372313))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jd
+ (CHECK(317372313 <= deci AND deci < 318951943))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_je
+ (CHECK(318951943 <= deci AND deci < 320543935))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jf
+ (CHECK(320543935 <= deci AND deci < 322132962))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jg
+ (CHECK(322132962 <= deci AND deci < 323723612))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jh
+ (CHECK(323723612 <= deci AND deci < 325304817))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ji
+ (CHECK(325304817 <= deci AND deci < 326877273))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jj
+ (CHECK(326877273 <= deci AND deci < 328456106))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jk
+ (CHECK(328456106 <= deci AND deci < 330031091))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jl
+ (CHECK(330031091 <= deci AND deci < 331610771))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jm
+ (CHECK(331610771 <= deci AND deci < 333189383))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jn
+ (CHECK(333189383 <= deci AND deci < 334766025))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jo
+ (CHECK(334766025 <= deci AND deci < 336344980))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jp
+ (CHECK(336344980 <= deci AND deci < 337936907))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jq
+ (CHECK(337936907 <= deci AND deci < 339534295))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jr
+ (CHECK(339534295 <= deci AND deci < 341123478))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_js
+ (CHECK(341123478 <= deci AND deci < 342719759))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jt
+ (CHECK(342719759 <= deci AND deci < 344308781))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ju
+ (CHECK(344308781 <= deci AND deci < 345903756))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jv
+ (CHECK(345903756 <= deci AND deci < 347497079))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jw
+ (CHECK(347497079 <= deci AND deci < 349096660))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jx
+ (CHECK(349096660 <= deci AND deci < 350704311))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jy
+ (CHECK(350704311 <= deci AND deci < 352315402))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_jz
+ (CHECK(352315402 <= deci AND deci < 353923196))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k0
+ (CHECK(353923196 <= deci AND deci < 355529244))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k1
+ (CHECK(355529244 <= deci AND deci < 357130731))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k2
+ (CHECK(357130731 <= deci AND deci < 358746260))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k3
+ (CHECK(358746260 <= deci AND deci < 360368041))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k4
+ (CHECK(360368041 <= deci AND deci < 361981189))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k5
+ (CHECK(361981189 <= deci AND deci < 363594620))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k6
+ (CHECK(363594620 <= deci AND deci < 365203833))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k7
+ (CHECK(365203833 <= deci AND deci < 366821864))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k8
+ (CHECK(366821864 <= deci AND deci < 368444205))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_k9
+ (CHECK(368444205 <= deci AND deci < 370074324))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ka
+ (CHECK(370074324 <= deci AND deci < 371703227))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kb
+ (CHECK(371703227 <= deci AND deci < 373338537))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kc
+ (CHECK(373338537 <= deci AND deci < 374966146))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kd
+ (CHECK(374966146 <= deci AND deci < 376598490))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ke
+ (CHECK(376598490 <= deci AND deci < 378230705))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kf
+ (CHECK(378230705 <= deci AND deci < 379864442))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kg
+ (CHECK(379864442 <= deci AND deci < 381507545))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kh
+ (CHECK(381507545 <= deci AND deci < 383146040))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ki
+ (CHECK(383146040 <= deci AND deci < 384788269))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kj
+ (CHECK(384788269 <= deci AND deci < 386429895))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kk
+ (CHECK(386429895 <= deci AND deci < 388081273))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kl
+ (CHECK(388081273 <= deci AND deci < 389737032))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_km
+ (CHECK(389737032 <= deci AND deci < 391404165))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kn
+ (CHECK(391404165 <= deci AND deci < 393073037))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ko
+ (CHECK(393073037 <= deci AND deci < 394739663))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kp
+ (CHECK(394739663 <= deci AND deci < 396402975))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kq
+ (CHECK(396402975 <= deci AND deci < 398068276))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kr
+ (CHECK(398068276 <= deci AND deci < 399737777))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ks
+ (CHECK(399737777 <= deci AND deci < 401398574))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kt
+ (CHECK(401398574 <= deci AND deci < 403073307))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ku
+ (CHECK(403073307 <= deci AND deci < 404749601))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kv
+ (CHECK(404749601 <= deci AND deci < 406423124))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kw
+ (CHECK(406423124 <= deci AND deci < 408096231))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kx
+ (CHECK(408096231 <= deci AND deci < 409774313))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ky
+ (CHECK(409774313 <= deci AND deci < 411463778))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_kz
+ (CHECK(411463778 <= deci AND deci < 413150835))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l0
+ (CHECK(413150835 <= deci AND deci < 414840946))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l1
+ (CHECK(414840946 <= deci AND deci < 416531758))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l2
+ (CHECK(416531758 <= deci AND deci < 418229408))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l3
+ (CHECK(418229408 <= deci AND deci < 419936866))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l4
+ (CHECK(419936866 <= deci AND deci < 421641195))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l5
+ (CHECK(421641195 <= deci AND deci < 423348987))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l6
+ (CHECK(423348987 <= deci AND deci < 425060273))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l7
+ (CHECK(425060273 <= deci AND deci < 426763427))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l8
+ (CHECK(426763427 <= deci AND deci < 428469627))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_l9
+ (CHECK(428469627 <= deci AND deci < 430174139))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_la
+ (CHECK(430174139 <= deci AND deci < 431866884))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lb
+ (CHECK(431866884 <= deci AND deci < 433583594))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lc
+ (CHECK(433583594 <= deci AND deci < 435305846))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ld
+ (CHECK(435305846 <= deci AND deci < 437023349))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_le
+ (CHECK(437023349 <= deci AND deci < 438756509))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lf
+ (CHECK(438756509 <= deci AND deci < 440483870))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lg
+ (CHECK(440483870 <= deci AND deci < 442205941))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lh
+ (CHECK(442205941 <= deci AND deci < 443926081))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_li
+ (CHECK(443926081 <= deci AND deci < 445640869))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lj
+ (CHECK(445640869 <= deci AND deci < 447355933))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lk
+ (CHECK(447355933 <= deci AND deci < 449087811))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ll
+ (CHECK(449087811 <= deci AND deci < 450826645))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lm
+ (CHECK(450826645 <= deci AND deci < 452566799))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ln
+ (CHECK(452566799 <= deci AND deci < 454304723))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lo
+ (CHECK(454304723 <= deci AND deci < 456043854))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lp
+ (CHECK(456043854 <= deci AND deci < 457779065))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lq
+ (CHECK(457779065 <= deci AND deci < 459525413))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lr
+ (CHECK(459525413 <= deci AND deci < 461265854))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ls
+ (CHECK(461265854 <= deci AND deci < 462990893))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lt
+ (CHECK(462990893 <= deci AND deci < 464730215))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lu
+ (CHECK(464730215 <= deci AND deci < 466482660))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lv
+ (CHECK(466482660 <= deci AND deci < 468236190))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lw
+ (CHECK(468236190 <= deci AND deci < 469993443))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lx
+ (CHECK(469993443 <= deci AND deci < 471750798))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ly
+ (CHECK(471750798 <= deci AND deci < 473501660))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_lz
+ (CHECK(473501660 <= deci AND deci < 475258175))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m0
+ (CHECK(475258175 <= deci AND deci < 477020310))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m1
+ (CHECK(477020310 <= deci AND deci < 478780942))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m2
+ (CHECK(478780942 <= deci AND deci < 480546001))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m3
+ (CHECK(480546001 <= deci AND deci < 482324769))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m4
+ (CHECK(482324769 <= deci AND deci < 484106361))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m5
+ (CHECK(484106361 <= deci AND deci < 485883697))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m6
+ (CHECK(485883697 <= deci AND deci < 487671197))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m7
+ (CHECK(487671197 <= deci AND deci < 489458725))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m8
+ (CHECK(489458725 <= deci AND deci < 491244873))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_m9
+ (CHECK(491244873 <= deci AND deci < 493027623))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ma
+ (CHECK(493027623 <= deci AND deci < 494824043))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mb
+ (CHECK(494824043 <= deci AND deci < 496626638))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mc
+ (CHECK(496626638 <= deci AND deci < 498431178))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_md
+ (CHECK(498431178 <= deci AND deci < 500246870))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_me
+ (CHECK(500246870 <= deci AND deci < 502069211))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mf
+ (CHECK(502069211 <= deci AND deci < 503884892))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mg
+ (CHECK(503884892 <= deci AND deci < 505690088))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mh
+ (CHECK(505690088 <= deci AND deci < 507499306))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mi
+ (CHECK(507499306 <= deci AND deci < 509330410))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mj
+ (CHECK(509330410 <= deci AND deci < 511161038))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mk
+ (CHECK(511161038 <= deci AND deci < 512994367))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ml
+ (CHECK(512994367 <= deci AND deci < 514838198))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mm
+ (CHECK(514838198 <= deci AND deci < 516678958))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mn
+ (CHECK(516678958 <= deci AND deci < 518528438))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mo
+ (CHECK(518528438 <= deci AND deci < 520372099))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mp
+ (CHECK(520372099 <= deci AND deci < 522210938))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mq
+ (CHECK(522210938 <= deci AND deci < 524040333))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mr
+ (CHECK(524040333 <= deci AND deci < 525896792))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ms
+ (CHECK(525896792 <= deci AND deci < 527764522))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mt
+ (CHECK(527764522 <= deci AND deci < 529623196))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mu
+ (CHECK(529623196 <= deci AND deci < 531491726))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mv
+ (CHECK(531491726 <= deci AND deci < 533367659))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mw
+ (CHECK(533367659 <= deci AND deci < 535258592))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mx
+ (CHECK(535258592 <= deci AND deci < 537137271))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_my
+ (CHECK(537137271 <= deci AND deci < 539003611))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_mz
+ (CHECK(539003611 <= deci AND deci < 540886720))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n0
+ (CHECK(540886720 <= deci AND deci < 542777490))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n1
+ (CHECK(542777490 <= deci AND deci < 544677587))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n2
+ (CHECK(544677587 <= deci AND deci < 546594079))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n3
+ (CHECK(546594079 <= deci AND deci < 548508030))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n4
+ (CHECK(548508030 <= deci AND deci < 550430463))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n5
+ (CHECK(550430463 <= deci AND deci < 552350345))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n6
+ (CHECK(552350345 <= deci AND deci < 554266631))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n7
+ (CHECK(554266631 <= deci AND deci < 556205460))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n8
+ (CHECK(556205460 <= deci AND deci < 558157428))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_n9
+ (CHECK(558157428 <= deci AND deci < 560110670))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_na
+ (CHECK(560110670 <= deci AND deci < 562071496))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nb
+ (CHECK(562071496 <= deci AND deci < 564048415))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nc
+ (CHECK(564048415 <= deci AND deci < 566044497))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nd
+ (CHECK(566044497 <= deci AND deci < 568021263))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ne
+ (CHECK(568021263 <= deci AND deci < 570020547))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nf
+ (CHECK(570020547 <= deci AND deci < 572036980))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ng
+ (CHECK(572036980 <= deci AND deci < 574085119))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nh
+ (CHECK(574085119 <= deci AND deci < 576148797))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ni
+ (CHECK(576148797 <= deci AND deci < 578217854))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nj
+ (CHECK(578217854 <= deci AND deci < 580292921))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nk
+ (CHECK(580292921 <= deci AND deci < 582387100))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nl
+ (CHECK(582387100 <= deci AND deci < 584495292))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nm
+ (CHECK(584495292 <= deci AND deci < 586636834))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nn
+ (CHECK(586636834 <= deci AND deci < 588807699))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_no
+ (CHECK(588807699 <= deci AND deci < 590990907))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_np
+ (CHECK(590990907 <= deci AND deci < 593187342))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nq
+ (CHECK(593187342 <= deci AND deci < 595393042))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nr
+ (CHECK(595393042 <= deci AND deci < 597635215))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ns
+ (CHECK(597635215 <= deci AND deci < 599857173))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nt
+ (CHECK(599857173 <= deci AND deci < 602095903))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nu
+ (CHECK(602095903 <= deci AND deci < 604375960))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nv
+ (CHECK(604375960 <= deci AND deci < 606673228))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nw
+ (CHECK(606673228 <= deci AND deci < 608996585))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nx
+ (CHECK(608996585 <= deci AND deci < 611337293))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ny
+ (CHECK(611337293 <= deci AND deci < 613656614))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_nz
+ (CHECK(613656614 <= deci AND deci < 616011736))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o0
+ (CHECK(616011736 <= deci AND deci < 618388766))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o1
+ (CHECK(618388766 <= deci AND deci < 620797341))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o2
+ (CHECK(620797341 <= deci AND deci < 623215876))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o3
+ (CHECK(623215876 <= deci AND deci < 625639877))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o4
+ (CHECK(625639877 <= deci AND deci < 628099927))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o5
+ (CHECK(628099927 <= deci AND deci < 630553202))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o6
+ (CHECK(630553202 <= deci AND deci < 633046595))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o7
+ (CHECK(633046595 <= deci AND deci < 635566812))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o8
+ (CHECK(635566812 <= deci AND deci < 638101887))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_o9
+ (CHECK(638101887 <= deci AND deci < 640649977))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oa
+ (CHECK(640649977 <= deci AND deci < 643250825))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ob
+ (CHECK(643250825 <= deci AND deci < 645851854))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oc
+ (CHECK(645851854 <= deci AND deci < 648520325))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_od
+ (CHECK(648520325 <= deci AND deci < 651206462))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oe
+ (CHECK(651206462 <= deci AND deci < 653919625))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_of
+ (CHECK(653919625 <= deci AND deci < 656667329))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_og
+ (CHECK(656667329 <= deci AND deci < 659462803))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oh
+ (CHECK(659462803 <= deci AND deci < 662331217))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oi
+ (CHECK(662331217 <= deci AND deci < 665238866))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oj
+ (CHECK(665238866 <= deci AND deci < 668213749))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ok
+ (CHECK(668213749 <= deci AND deci < 671221180))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ol
+ (CHECK(671221180 <= deci AND deci < 674259806))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_om
+ (CHECK(674259806 <= deci AND deci < 677377370))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_on
+ (CHECK(677377370 <= deci AND deci < 680579756))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oo
+ (CHECK(680579756 <= deci AND deci < 683850858))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_op
+ (CHECK(683850858 <= deci AND deci < 687253187))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oq
+ (CHECK(687253187 <= deci AND deci < 690715722))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_or
+ (CHECK(690715722 <= deci AND deci < 694311847))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_os
+ (CHECK(694311847 <= deci AND deci < 698112610))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ot
+ (CHECK(698112610 <= deci AND deci < 701979840))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ou
+ (CHECK(701979840 <= deci AND deci < 705888745))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ov
+ (CHECK(705888745 <= deci AND deci < 709871110))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ow
+ (CHECK(709871110 <= deci AND deci < 713822582))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ox
+ (CHECK(713822582 <= deci AND deci < 717778879))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oy
+ (CHECK(717778879 <= deci AND deci < 721829047))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_oz
+ (CHECK(721829047 <= deci AND deci < 726028676))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p0
+ (CHECK(726028676 <= deci AND deci < 730375481))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p1
+ (CHECK(730375481 <= deci AND deci < 734880205))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p2
+ (CHECK(734880205 <= deci AND deci < 739581756))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p3
+ (CHECK(739581756 <= deci AND deci < 744399009))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p4
+ (CHECK(744399009 <= deci AND deci < 749278943))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p5
+ (CHECK(749278943 <= deci AND deci < 754292182))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p6
+ (CHECK(754292182 <= deci AND deci < 759496858))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p7
+ (CHECK(759496858 <= deci AND deci < 764942229))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p8
+ (CHECK(764942229 <= deci AND deci < 770607232))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_p9
+ (CHECK(770607232 <= deci AND deci < 776515929))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pa
+ (CHECK(776515929 <= deci AND deci < 782752959))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pb
+ (CHECK(782752959 <= deci AND deci < 789451160))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pc
+ (CHECK(789451160 <= deci AND deci < 796508012))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pd
+ (CHECK(796508012 <= deci AND deci < 804133208))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pe
+ (CHECK(804133208 <= deci AND deci < 812415339))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pf
+ (CHECK(812415339 <= deci AND deci < 821629603))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pg
+ (CHECK(821629603 <= deci AND deci < 832220488))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_ph
+ (CHECK(832220488 <= deci AND deci < 844630832))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pi
+ (CHECK(844630832 <= deci AND deci < 861040546))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;
+CREATE TABLE wise_eqi_pj
+ (CHECK(861040546 <= deci))
+ INHERITS (Wise_eqi)
+ TABLESPACE @TS_PREFIX@wise_eqi;

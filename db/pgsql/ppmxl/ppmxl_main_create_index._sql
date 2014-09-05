@@ -1,0 +1,2 @@
+CREATE INDEX ppmxl_@COL@ ON Ppmxl (@COL@)
+ TABLESPACE @TS_PREFIX@ppmxl_main_index;

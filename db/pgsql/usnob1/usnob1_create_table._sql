@@ -1,0 +1,70 @@
+
+CREATE TABLE Usnob1 (
+    objid INT8			NOT NULL, -- PRIMARY KEY,
+    usnob1_id VARCHAR(12)	NOT NULL, -- fixed length
+    tycho2_id VARCHAR(12),		  -- fixed length
+    ra FLOAT8			NOT NULL,
+    dec FLOAT8			NOT NULL,
+    e_ra SMALLINT,
+    e_dec SMALLINT,
+    epoch FLOAT4,
+    pm_ra SMALLINT		NOT NULL,
+    pm_dec SMALLINT		NOT NULL,
+    e_pm_ra SMALLINT,
+    e_pm_dec SMALLINT,
+    pm_prob SMALLINT,
+    e_fit_ra FLOAT4,
+    e_fit_dec FLOAT4,
+    ndet SMALLINT		NOT NULL,
+    flags VARCHAR(3)		NOT NULL, -- fixed length
+
+    b1_mag FLOAT4,
+    b1_cal SMALLINT,
+    b1_survey SMALLINT,
+    b1_field SMALLINT,
+    b1_class SMALLINT,
+    b1_xi FLOAT4,
+    b1_eta FLOAT4,
+
+    r1_mag FLOAT4,
+    r1_cal SMALLINT,
+    r1_survey SMALLINT,
+    r1_field SMALLINT,
+    r1_class SMALLINT,
+    r1_xi FLOAT4,
+    r1_eta FLOAT4,
+
+    b2_mag FLOAT4,
+    b2_cal SMALLINT,
+    b2_survey SMALLINT,
+    b2_field SMALLINT,
+    b2_class SMALLINT,
+    b2_xi FLOAT4,
+    b2_eta FLOAT4,
+
+    r2_mag FLOAT4,
+    r2_cal SMALLINT,
+    r2_survey SMALLINT,
+    r2_field SMALLINT,
+    r2_class SMALLINT,
+    r2_xi FLOAT4,
+    r2_eta FLOAT4,
+
+    i_mag FLOAT4,
+    i_cal SMALLINT,
+    i_survey SMALLINT,
+    i_field SMALLINT,
+    i_class SMALLINT,
+    i_xi FLOAT4,
+    i_eta FLOAT4,
+
+    cx	FLOAT8			NOT NULL,
+    cy	FLOAT8			NOT NULL,
+    cz	FLOAT8			NOT NULL
+) TABLESPACE @TS_PREFIX@usnob1_main;
+
+CREATE TABLE Usnob1_eqi (
+    _objid INT4			NOT NULL, -- PRIMARY KEY,
+    rai	  INT4			NOT NULL,
+    deci  INT4			NOT NULL
+) TABLESPACE @TS_PREFIX@usnob1_eqi;

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>2MASS Catalog Server Kit: Upgrade from Older Version</title>
+<style type="text/css">
+<!-- 
+ body {
+  background-color: #e0e0e0;
+  color: black;
+ }
+ a:link { color: blue; }
+ a:visited { color: #551a8b; }
+ a:active { color: red; }
+ em.c2 { font-size: 80%; }
+ h1.c1 { text-align: center; }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em; }
+ li { margin-bottom: 0.4em; }
+ pre { margin-top: 0.2em; }
+ pre { margin-bottom: 0.2em; }
+ p { text-align: justify; line-height: 1.5; }
+ ul { line-height: 1.5; }
+ pre { line-height: 1.3; }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; }
+ th { text-align: left; white-space: nowrap; font-weight: normal; }
+ td { text-align: left; white-space: nowrap; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ .no_border { border-style: none; }
+  -->
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<h1>2MASS Catalog Server Kit</h1>
+
+<h2>Upgrade from Older Version</h2>
+
+<hr>
+
+<p>
+Page Index:<br>
+<a href="index.html">HOME</a> /
+<a href="others.html">Install Other All-Sky Catalogs</a> /
+<a href="upgrade.html">Upgrade from older version</a>
+</p>
+
+<p>
+Index of Current Page:<br>
+<a href="#V1_0ORV1_1">From Version 1.0 or 1.1</a>
+</p>
+
+
+<hr>
+
+
+<h2>
+<a id="V1_0ORV1_1" name="V1_0ORV1_1">
+From Version 1.0 or 1.1
+</a>
+</h2>
+
+<p>
+Tables and indices are not changed.
+Only updating stored functions makes your database latest.
+</p>
+
+<p>
+If Tycho-2 catalog has been registered,
+remove several stored functions and update the view `Tycho2m' as follows:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; DROP FUNCTION fTycho2mGetObjFromRectEq(FLOAT8,FLOAT8,FLOAT8,FLOAT8);
+2MASS=&gt; DROP FUNCTION _fTycho2mGetObjFromRectEq(tInternalRectArgs);
+2MASS=&gt; DROP FUNCTION fTycho2mGetNearbyObjEq(FLOAT8,FLOAT8,FLOAT8);
+2MASS=&gt; DROP FUNCTION fTycho2mGetNearestObjIDEq(FLOAT8,FLOAT8,FLOAT8);
+2MASS=&gt; DROP VIEW Tycho2m;
+2MASS=&gt; CREATE VIEW Tycho2m AS
+        SELECT objid, ra_m AS ra, dec_m AS dec, cx_m AS cx, cy_m AS cy, cz_m AS cz
+        FROM Tycho2;
+2MASS=&gt; GRANT SELECT ON Tycho2m TO guest;
+</pre>
+
+<p>
+Compile latest 2MASS kit:
+</p>
+
+<pre>
+$ ln -s Makefile.linux64 Makefile
+$ vi Makefile
+$ make
+</pre>
+
+<p>
+Reinstall shared module of 2MASS Kit:
+</p>
+
+<pre>
+$ su
+# /sbin/service postgresql stop
+# make install
+# /sbin/service postgresql start
+</pre>
+
+<p>
+Reinstall stored functions written in C as follows:
+</p>
+
+<pre>
+$ psql -U postgres 2MASS
+Password for user postgres: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=# \i create_c_function.sql
+(Registered stored functions are listed)
+</pre>
+
+<p>
+Append new stored functions written in SQL or PL/pgSQL as follows:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i create_function.sql
+2MASS=&gt; \i 2mass_create_function.sql
+</pre>
+
+<p>
+You can ignore errors like 'xxx already exists ...'.
+</p>
+
+<p>
+Append new stored functions for small catalogs
+written in SQL or PL/pgSQL as follows:
+</p>
+
+<pre>
+2MASS=&gt; \i tycho2_create_function.sql
+</pre>
+
+<p>
+You can ignore errors like 'xxx already exists ...'.
+</p>
+
+<p>
+Congratulations!
+</p>
+
+<hr>
+
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+#define _TABLE_INFO_SRC__C "usnob1_table_info._c"
+#define _RADIALSEARCH_FNC_NAME _usnob1getsqlforradialsearch
+#define _BOXSEARCHSIMPLE_FNC_NAME _usnob1getsqlforboxsearchsimple
+#define _BOXSEARCHDIV_FNC_NAME _usnob1getsqlforboxsearchdiv
+#define _RECTANGULARSEARCH_FNC_NAME _usnob1getsqlforrectangularsearch
+#include "huge_search_fnc_template._c"

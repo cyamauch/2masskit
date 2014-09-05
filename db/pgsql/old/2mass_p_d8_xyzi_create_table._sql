@@ -1,0 +1,2944 @@
+CREATE TABLE twomass_xyzi_aaa0
+ (CHECK(czi < -1991023844))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa1
+ (CHECK(-1991023844 <= czi AND czi < -1982047704))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa2
+ (CHECK(-1982047704 <= czi AND czi < -1973071564))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa3
+ (CHECK(-1973071564 <= czi AND czi < -1964095424))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa4
+ (CHECK(-1964095424 <= czi AND czi < -1955119284))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa5
+ (CHECK(-1955119284 <= czi AND czi < -1946143144))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa6
+ (CHECK(-1946143144 <= czi AND czi < -1937167004))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaa7
+ (CHECK(-1937167004 <= czi AND czi < -1928190808))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab0
+ (CHECK(-1928190808 <= czi AND czi < -1922827326))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab1
+ (CHECK(-1922827326 <= czi AND czi < -1917463861))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab2
+ (CHECK(-1917463861 <= czi AND czi < -1912100397))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab3
+ (CHECK(-1912100397 <= czi AND czi < -1906736933))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab4
+ (CHECK(-1906736933 <= czi AND czi < -1901373468))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab5
+ (CHECK(-1901373468 <= czi AND czi < -1896010004))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab6
+ (CHECK(-1896010004 <= czi AND czi < -1890646540))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aab7
+ (CHECK(-1890646540 <= czi AND czi < -1885282982))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac0
+ (CHECK(-1885282982 <= czi AND czi < -1881418586))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac1
+ (CHECK(-1881418586 <= czi AND czi < -1877554190))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac2
+ (CHECK(-1877554190 <= czi AND czi < -1873689794))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac3
+ (CHECK(-1873689794 <= czi AND czi < -1869825398))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac4
+ (CHECK(-1869825398 <= czi AND czi < -1865961002))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac5
+ (CHECK(-1865961002 <= czi AND czi < -1862096606))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac6
+ (CHECK(-1862096606 <= czi AND czi < -1858232210))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aac7
+ (CHECK(-1858232210 <= czi AND czi < -1854367709))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad0
+ (CHECK(-1854367709 <= czi AND czi < -1851135245))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad1
+ (CHECK(-1851135245 <= czi AND czi < -1847902781))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad2
+ (CHECK(-1847902781 <= czi AND czi < -1844670316))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad3
+ (CHECK(-1844670316 <= czi AND czi < -1841437852))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad4
+ (CHECK(-1841437852 <= czi AND czi < -1838205388))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad5
+ (CHECK(-1838205388 <= czi AND czi < -1834972924))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad6
+ (CHECK(-1834972924 <= czi AND czi < -1831740460))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aad7
+ (CHECK(-1831740460 <= czi AND czi < -1828507910))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae0
+ (CHECK(-1828507910 <= czi AND czi < -1825590733))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae1
+ (CHECK(-1825590733 <= czi AND czi < -1822673584))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae2
+ (CHECK(-1822673584 <= czi AND czi < -1819756435))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae3
+ (CHECK(-1819756435 <= czi AND czi < -1816839286))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae4
+ (CHECK(-1816839286 <= czi AND czi < -1813922136))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae5
+ (CHECK(-1813922136 <= czi AND czi < -1811004987))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae6
+ (CHECK(-1811004987 <= czi AND czi < -1808087838))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aae7
+ (CHECK(-1808087838 <= czi AND czi < -1805170569))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf0
+ (CHECK(-1805170569 <= czi AND czi < -1802670704))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf1
+ (CHECK(-1802670704 <= czi AND czi < -1800170840))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf2
+ (CHECK(-1800170840 <= czi AND czi < -1797670975))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf3
+ (CHECK(-1797670975 <= czi AND czi < -1795171111))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf4
+ (CHECK(-1795171111 <= czi AND czi < -1792671246))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf5
+ (CHECK(-1792671246 <= czi AND czi < -1790171382))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf6
+ (CHECK(-1790171382 <= czi AND czi < -1787671517))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaf7
+ (CHECK(-1787671517 <= czi AND czi < -1785171637))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag0
+ (CHECK(-1785171637 <= czi AND czi < -1782966553))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag1
+ (CHECK(-1782966553 <= czi AND czi < -1780761515))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag2
+ (CHECK(-1780761515 <= czi AND czi < -1778556478))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag3
+ (CHECK(-1778556478 <= czi AND czi < -1776351441))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag4
+ (CHECK(-1776351441 <= czi AND czi < -1774146404))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag5
+ (CHECK(-1774146404 <= czi AND czi < -1771941367))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag6
+ (CHECK(-1771941367 <= czi AND czi < -1769736330))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aag7
+ (CHECK(-1769736330 <= czi AND czi < -1767531260))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah0
+ (CHECK(-1767531260 <= czi AND czi < -1765455960))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah1
+ (CHECK(-1765455960 <= czi AND czi < -1763380693))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah2
+ (CHECK(-1763380693 <= czi AND czi < -1761305425))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah3
+ (CHECK(-1761305425 <= czi AND czi < -1759230158))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah4
+ (CHECK(-1759230158 <= czi AND czi < -1757154890))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah5
+ (CHECK(-1757154890 <= czi AND czi < -1755079623))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah6
+ (CHECK(-1755079623 <= czi AND czi < -1753004355))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aah7
+ (CHECK(-1753004355 <= czi AND czi < -1750929054))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai0
+ (CHECK(-1750929054 <= czi AND czi < -1748569252))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai1
+ (CHECK(-1748569252 <= czi AND czi < -1746209485))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai2
+ (CHECK(-1746209485 <= czi AND czi < -1743849717))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai3
+ (CHECK(-1743849717 <= czi AND czi < -1741489949))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai4
+ (CHECK(-1741489949 <= czi AND czi < -1739130181))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai5
+ (CHECK(-1739130181 <= czi AND czi < -1736770413))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai6
+ (CHECK(-1736770413 <= czi AND czi < -1734410645))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aai7
+ (CHECK(-1734410645 <= czi AND czi < -1732050808))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj0
+ (CHECK(-1732050808 <= czi AND czi < -1729836291))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj1
+ (CHECK(-1729836291 <= czi AND czi < -1727621774))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj2
+ (CHECK(-1727621774 <= czi AND czi < -1725407257))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj3
+ (CHECK(-1725407257 <= czi AND czi < -1723192740))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj4
+ (CHECK(-1723192740 <= czi AND czi < -1720978224))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj5
+ (CHECK(-1720978224 <= czi AND czi < -1718763707))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj6
+ (CHECK(-1718763707 <= czi AND czi < -1716549190))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaj7
+ (CHECK(-1716549190 <= czi AND czi < -1714334601))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak0
+ (CHECK(-1714334601 <= czi AND czi < -1712054810))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak1
+ (CHECK(-1712054810 <= czi AND czi < -1709775018))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak2
+ (CHECK(-1709775018 <= czi AND czi < -1707495226))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak3
+ (CHECK(-1707495226 <= czi AND czi < -1705215434))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak4
+ (CHECK(-1705215434 <= czi AND czi < -1702935642))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak5
+ (CHECK(-1702935642 <= czi AND czi < -1700655850))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak6
+ (CHECK(-1700655850 <= czi AND czi < -1698376058))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aak7
+ (CHECK(-1698376058 <= czi AND czi < -1696096192))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal0
+ (CHECK(-1696096192 <= czi AND czi < -1693513852))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal1
+ (CHECK(-1693513852 <= czi AND czi < -1690931512))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal2
+ (CHECK(-1690931512 <= czi AND czi < -1688349172))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal3
+ (CHECK(-1688349172 <= czi AND czi < -1685766832))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal4
+ (CHECK(-1685766832 <= czi AND czi < -1683184492))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal5
+ (CHECK(-1683184492 <= czi AND czi < -1680602152))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal6
+ (CHECK(-1680602152 <= czi AND czi < -1678019811))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aal7
+ (CHECK(-1678019811 <= czi AND czi < -1675437433))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam0
+ (CHECK(-1675437433 <= czi AND czi < -1673022809))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam1
+ (CHECK(-1673022809 <= czi AND czi < -1670608223))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam2
+ (CHECK(-1670608223 <= czi AND czi < -1668193638))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam3
+ (CHECK(-1668193638 <= czi AND czi < -1665779052))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam4
+ (CHECK(-1665779052 <= czi AND czi < -1663364466))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam5
+ (CHECK(-1663364466 <= czi AND czi < -1660949880))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam6
+ (CHECK(-1660949880 <= czi AND czi < -1658535294))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aam7
+ (CHECK(-1658535294 <= czi AND czi < -1656120669))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan0
+ (CHECK(-1656120669 <= czi AND czi < -1653391783))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan1
+ (CHECK(-1653391783 <= czi AND czi < -1650662937))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan2
+ (CHECK(-1650662937 <= czi AND czi < -1647934090))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan3
+ (CHECK(-1647934090 <= czi AND czi < -1645205244))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan4
+ (CHECK(-1645205244 <= czi AND czi < -1642476397))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan5
+ (CHECK(-1642476397 <= czi AND czi < -1639747550))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan6
+ (CHECK(-1639747550 <= czi AND czi < -1637018704))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aan7
+ (CHECK(-1637018704 <= czi AND czi < -1634289797))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao0
+ (CHECK(-1634289797 <= czi AND czi < -1631485628))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao1
+ (CHECK(-1631485628 <= czi AND czi < -1628681479))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao2
+ (CHECK(-1628681479 <= czi AND czi < -1625877330))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao3
+ (CHECK(-1625877330 <= czi AND czi < -1623073181))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao4
+ (CHECK(-1623073181 <= czi AND czi < -1620269032))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao5
+ (CHECK(-1620269032 <= czi AND czi < -1617464883))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao6
+ (CHECK(-1617464883 <= czi AND czi < -1614660734))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aao7
+ (CHECK(-1614660734 <= czi AND czi < -1611856564))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap0
+ (CHECK(-1611856564 <= czi AND czi < -1608978100))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap1
+ (CHECK(-1608978100 <= czi AND czi < -1606099698))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap2
+ (CHECK(-1606099698 <= czi AND czi < -1603221295))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap3
+ (CHECK(-1603221295 <= czi AND czi < -1600342893))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap4
+ (CHECK(-1600342893 <= czi AND czi < -1597464491))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap5
+ (CHECK(-1597464491 <= czi AND czi < -1594586088))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap6
+ (CHECK(-1594586088 <= czi AND czi < -1591707686))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aap7
+ (CHECK(-1591707686 <= czi AND czi < -1588829241))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq0
+ (CHECK(-1588829241 <= czi AND czi < -1585877599))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq1
+ (CHECK(-1585877599 <= czi AND czi < -1582925999))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq2
+ (CHECK(-1582925999 <= czi AND czi < -1579974399))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq3
+ (CHECK(-1579974399 <= czi AND czi < -1577022800))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq4
+ (CHECK(-1577022800 <= czi AND czi < -1574071200))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq5
+ (CHECK(-1574071200 <= czi AND czi < -1571119600))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq6
+ (CHECK(-1571119600 <= czi AND czi < -1568168000))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaq7
+ (CHECK(-1568168000 <= czi AND czi < -1565216314))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar0
+ (CHECK(-1565216314 <= czi AND czi < -1561914172))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar1
+ (CHECK(-1561914172 <= czi AND czi < -1558612030))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar2
+ (CHECK(-1558612030 <= czi AND czi < -1555309887))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar3
+ (CHECK(-1555309887 <= czi AND czi < -1552007745))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar4
+ (CHECK(-1552007745 <= czi AND czi < -1548705603))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar5
+ (CHECK(-1548705603 <= czi AND czi < -1545403461))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar6
+ (CHECK(-1545403461 <= czi AND czi < -1542101319))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aar7
+ (CHECK(-1542101319 <= czi AND czi < -1538799110))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas0
+ (CHECK(-1538799110 <= czi AND czi < -1535412575))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas1
+ (CHECK(-1535412575 <= czi AND czi < -1532026062))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas2
+ (CHECK(-1532026062 <= czi AND czi < -1528639549))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas3
+ (CHECK(-1528639549 <= czi AND czi < -1525253036))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas4
+ (CHECK(-1525253036 <= czi AND czi < -1521866523))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas5
+ (CHECK(-1521866523 <= czi AND czi < -1518480010))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas6
+ (CHECK(-1518480010 <= czi AND czi < -1515093497))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aas7
+ (CHECK(-1515093497 <= czi AND czi < -1511706938))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat0
+ (CHECK(-1511706938 <= czi AND czi < -1508529749))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat1
+ (CHECK(-1508529749 <= czi AND czi < -1505352606))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat2
+ (CHECK(-1505352606 <= czi AND czi < -1502175462))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat3
+ (CHECK(-1502175462 <= czi AND czi < -1498998319))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat4
+ (CHECK(-1498998319 <= czi AND czi < -1495821175))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat5
+ (CHECK(-1495821175 <= czi AND czi < -1492644031))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat6
+ (CHECK(-1492644031 <= czi AND czi < -1489466888))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aat7
+ (CHECK(-1489466888 <= czi AND czi < -1486289651))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau0
+ (CHECK(-1486289651 <= czi AND czi < -1482745610))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau1
+ (CHECK(-1482745610 <= czi AND czi < -1479201570))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau2
+ (CHECK(-1479201570 <= czi AND czi < -1475657529))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau3
+ (CHECK(-1475657529 <= czi AND czi < -1472113489))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau4
+ (CHECK(-1472113489 <= czi AND czi < -1468569448))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau5
+ (CHECK(-1468569448 <= czi AND czi < -1465025408))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau6
+ (CHECK(-1465025408 <= czi AND czi < -1461481367))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aau7
+ (CHECK(-1461481367 <= czi AND czi < -1457937255))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav0
+ (CHECK(-1457937255 <= czi AND czi < -1454313253))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav1
+ (CHECK(-1454313253 <= czi AND czi < -1450689275))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav2
+ (CHECK(-1450689275 <= czi AND czi < -1447065297))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav3
+ (CHECK(-1447065297 <= czi AND czi < -1443441320))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav4
+ (CHECK(-1443441320 <= czi AND czi < -1439817342))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav5
+ (CHECK(-1439817342 <= czi AND czi < -1436193364))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav6
+ (CHECK(-1436193364 <= czi AND czi < -1432569386))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aav7
+ (CHECK(-1432569386 <= czi AND czi < -1428945359))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw0
+ (CHECK(-1428945359 <= czi AND czi < -1425242988))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw1
+ (CHECK(-1425242988 <= czi AND czi < -1421540666))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw2
+ (CHECK(-1421540666 <= czi AND czi < -1417838343))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw3
+ (CHECK(-1417838343 <= czi AND czi < -1414136021))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw4
+ (CHECK(-1414136021 <= czi AND czi < -1410433698))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw5
+ (CHECK(-1410433698 <= czi AND czi < -1406731376))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw6
+ (CHECK(-1406731376 <= czi AND czi < -1403029053))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaw7
+ (CHECK(-1403029053 <= czi AND czi < -1399326681))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax0
+ (CHECK(-1399326681 <= czi AND czi < -1395547582))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax1
+ (CHECK(-1395547582 <= czi AND czi < -1391768533))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax2
+ (CHECK(-1391768533 <= czi AND czi < -1387989483))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax3
+ (CHECK(-1387989483 <= czi AND czi < -1384210434))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax4
+ (CHECK(-1384210434 <= czi AND czi < -1380431385))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax5
+ (CHECK(-1380431385 <= czi AND czi < -1376652336))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax6
+ (CHECK(-1376652336 <= czi AND czi < -1372873287))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aax7
+ (CHECK(-1372873287 <= czi AND czi < -1369094212))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay0
+ (CHECK(-1369094212 <= czi AND czi < -1364915514))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay1
+ (CHECK(-1364915514 <= czi AND czi < -1360736892))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay2
+ (CHECK(-1360736892 <= czi AND czi < -1356558271))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay3
+ (CHECK(-1356558271 <= czi AND czi < -1352379649))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay4
+ (CHECK(-1352379649 <= czi AND czi < -1348201028))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay5
+ (CHECK(-1348201028 <= czi AND czi < -1344022406))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay6
+ (CHECK(-1344022406 <= czi AND czi < -1339843784))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aay7
+ (CHECK(-1339843784 <= czi AND czi < -1335665111))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz0
+ (CHECK(-1335665111 <= czi AND czi < -1331731531))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz1
+ (CHECK(-1331731531 <= czi AND czi < -1327798003))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz2
+ (CHECK(-1327798003 <= czi AND czi < -1323864475))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz3
+ (CHECK(-1323864475 <= czi AND czi < -1319930947))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz4
+ (CHECK(-1319930947 <= czi AND czi < -1315997418))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz5
+ (CHECK(-1315997418 <= czi AND czi < -1312063890))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz6
+ (CHECK(-1312063890 <= czi AND czi < -1308130362))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aaz7
+ (CHECK(-1308130362 <= czi AND czi < -1304196808))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba0
+ (CHECK(-1304196808 <= czi AND czi < -1299854772))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba1
+ (CHECK(-1299854772 <= czi AND czi < -1295512816))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba2
+ (CHECK(-1295512816 <= czi AND czi < -1291170860))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba3
+ (CHECK(-1291170860 <= czi AND czi < -1286828904))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba4
+ (CHECK(-1286828904 <= czi AND czi < -1282486948))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba5
+ (CHECK(-1282486948 <= czi AND czi < -1278144992))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba6
+ (CHECK(-1278144992 <= czi AND czi < -1273803036))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aba7
+ (CHECK(-1273803036 <= czi AND czi < -1269461026))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb0
+ (CHECK(-1269461026 <= czi AND czi < -1265380453))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb1
+ (CHECK(-1265380453 <= czi AND czi < -1261299934))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb2
+ (CHECK(-1261299934 <= czi AND czi < -1257219415))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb3
+ (CHECK(-1257219415 <= czi AND czi < -1253138895))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb4
+ (CHECK(-1253138895 <= czi AND czi < -1249058376))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb5
+ (CHECK(-1249058376 <= czi AND czi < -1244977857))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb6
+ (CHECK(-1244977857 <= czi AND czi < -1240897337))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abb7
+ (CHECK(-1240897337 <= czi AND czi < -1236816791))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc0
+ (CHECK(-1236816791 <= czi AND czi < -1232668390))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc1
+ (CHECK(-1232668390 <= czi AND czi < -1228520071))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc2
+ (CHECK(-1228520071 <= czi AND czi < -1224371752))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc3
+ (CHECK(-1224371752 <= czi AND czi < -1220223433))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc4
+ (CHECK(-1220223433 <= czi AND czi < -1216075114))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc5
+ (CHECK(-1216075114 <= czi AND czi < -1211926795))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc6
+ (CHECK(-1211926795 <= czi AND czi < -1207778477))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abc7
+ (CHECK(-1207778477 <= czi AND czi < -1203630046))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd0
+ (CHECK(-1203630046 <= czi AND czi < -1199061597))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd1
+ (CHECK(-1199061597 <= czi AND czi < -1194493147))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd2
+ (CHECK(-1194493147 <= czi AND czi < -1189924698))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd3
+ (CHECK(-1189924698 <= czi AND czi < -1185356249))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd4
+ (CHECK(-1185356249 <= czi AND czi < -1180787799))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd5
+ (CHECK(-1180787799 <= czi AND czi < -1176219350))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd6
+ (CHECK(-1176219350 <= czi AND czi < -1171650900))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abd7
+ (CHECK(-1171650900 <= czi AND czi < -1167082423))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe0
+ (CHECK(-1167082423 <= czi AND czi < -1162798619))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe1
+ (CHECK(-1162798619 <= czi AND czi < -1158514900))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe2
+ (CHECK(-1158514900 <= czi AND czi < -1154231182))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe3
+ (CHECK(-1154231182 <= czi AND czi < -1149947463))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe4
+ (CHECK(-1149947463 <= czi AND czi < -1145663745))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe5
+ (CHECK(-1145663745 <= czi AND czi < -1141380026))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe6
+ (CHECK(-1141380026 <= czi AND czi < -1137096308))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abe7
+ (CHECK(-1137096308 <= czi AND czi < -1132812474))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf0
+ (CHECK(-1132812474 <= czi AND czi < -1128831107))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf1
+ (CHECK(-1128831107 <= czi AND czi < -1124849740))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf2
+ (CHECK(-1124849740 <= czi AND czi < -1120868373))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf3
+ (CHECK(-1120868373 <= czi AND czi < -1116887006))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf4
+ (CHECK(-1116887006 <= czi AND czi < -1112905639))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf5
+ (CHECK(-1112905639 <= czi AND czi < -1108924272))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf6
+ (CHECK(-1108924272 <= czi AND czi < -1104942905))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abf7
+ (CHECK(-1104942905 <= czi AND czi < -1100961480))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg0
+ (CHECK(-1100961480 <= czi AND czi < -1096560317))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg1
+ (CHECK(-1096560317 <= czi AND czi < -1092159212))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg2
+ (CHECK(-1092159212 <= czi AND czi < -1087758107))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg3
+ (CHECK(-1087758107 <= czi AND czi < -1083357002))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg4
+ (CHECK(-1083357002 <= czi AND czi < -1078955897))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg5
+ (CHECK(-1078955897 <= czi AND czi < -1074554792))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg6
+ (CHECK(-1074554792 <= czi AND czi < -1070153687))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abg7
+ (CHECK(-1070153687 <= czi AND czi < -1065752552))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh0
+ (CHECK(-1065752552 <= czi AND czi < -1061666745))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh1
+ (CHECK(-1061666745 <= czi AND czi < -1057581027))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh2
+ (CHECK(-1057581027 <= czi AND czi < -1053495309))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh3
+ (CHECK(-1053495309 <= czi AND czi < -1049409591))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh4
+ (CHECK(-1049409591 <= czi AND czi < -1045323872))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh5
+ (CHECK(-1045323872 <= czi AND czi < -1041238154))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh6
+ (CHECK(-1041238154 <= czi AND czi < -1037152436))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abh7
+ (CHECK(-1037152436 <= czi AND czi < -1033066658))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi0
+ (CHECK(-1033066658 <= czi AND czi < -1028555268))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi1
+ (CHECK(-1028555268 <= czi AND czi < -1024043878))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi2
+ (CHECK(-1024043878 <= czi AND czi < -1019532489))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi3
+ (CHECK(-1019532489 <= czi AND czi < -1015021099))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi4
+ (CHECK(-1015021099 <= czi AND czi < -1010509709))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi5
+ (CHECK(-1010509709 <= czi AND czi < -1005998319))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi6
+ (CHECK(-1005998319 <= czi AND czi < -1001486930))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abi7
+ (CHECK(-1001486930 <= czi AND czi < -996975480))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj0
+ (CHECK(-996975480 <= czi AND czi < -993174148))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj1
+ (CHECK(-993174148 <= czi AND czi < -989372817))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj2
+ (CHECK(-989372817 <= czi AND czi < -985571485))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj3
+ (CHECK(-985571485 <= czi AND czi < -981770154))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj4
+ (CHECK(-981770154 <= czi AND czi < -977968822))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj5
+ (CHECK(-977968822 <= czi AND czi < -974167491))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj6
+ (CHECK(-974167491 <= czi AND czi < -970366159))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abj7
+ (CHECK(-970366159 <= czi AND czi < -966564767))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk0
+ (CHECK(-966564767 <= czi AND czi < -961954686))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk1
+ (CHECK(-961954686 <= czi AND czi < -957344605))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk2
+ (CHECK(-957344605 <= czi AND czi < -952734525))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk3
+ (CHECK(-952734525 <= czi AND czi < -948124444))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk4
+ (CHECK(-948124444 <= czi AND czi < -943514364))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk5
+ (CHECK(-943514364 <= czi AND czi < -938904283))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk6
+ (CHECK(-938904283 <= czi AND czi < -934294203))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abk7
+ (CHECK(-934294203 <= czi AND czi < -929684091))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl0
+ (CHECK(-929684091 <= czi AND czi < -925413333))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl1
+ (CHECK(-925413333 <= czi AND czi < -921142605))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl2
+ (CHECK(-921142605 <= czi AND czi < -916871877))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl3
+ (CHECK(-916871877 <= czi AND czi < -912601149))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl4
+ (CHECK(-912601149 <= czi AND czi < -908330422))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl5
+ (CHECK(-908330422 <= czi AND czi < -904059694))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl6
+ (CHECK(-904059694 <= czi AND czi < -899788966))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abl7
+ (CHECK(-899788966 <= czi AND czi < -895518176))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm0
+ (CHECK(-895518176 <= czi AND czi < -890812195))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm1
+ (CHECK(-890812195 <= czi AND czi < -886106214))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm2
+ (CHECK(-886106214 <= czi AND czi < -881400234))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm3
+ (CHECK(-881400234 <= czi AND czi < -876694253))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm4
+ (CHECK(-876694253 <= czi AND czi < -871988272))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm5
+ (CHECK(-871988272 <= czi AND czi < -867282291))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm6
+ (CHECK(-867282291 <= czi AND czi < -862576311))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abm7
+ (CHECK(-862576311 <= czi AND czi < -857870267))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn0
+ (CHECK(-857870267 <= czi AND czi < -853117246))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn1
+ (CHECK(-853117246 <= czi AND czi < -848364225))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn2
+ (CHECK(-848364225 <= czi AND czi < -843611204))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn3
+ (CHECK(-843611204 <= czi AND czi < -838858183))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn4
+ (CHECK(-838858183 <= czi AND czi < -834105162))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn5
+ (CHECK(-834105162 <= czi AND czi < -829352141))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn6
+ (CHECK(-829352141 <= czi AND czi < -824599120))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abn7
+ (CHECK(-824599120 <= czi AND czi < -819846068))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo0
+ (CHECK(-819846068 <= czi AND czi < -815048072))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo1
+ (CHECK(-815048072 <= czi AND czi < -810250107))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo2
+ (CHECK(-810250107 <= czi AND czi < -805452143))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo3
+ (CHECK(-805452143 <= czi AND czi < -800654179))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo4
+ (CHECK(-800654179 <= czi AND czi < -795856214))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo5
+ (CHECK(-795856214 <= czi AND czi < -791058250))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo6
+ (CHECK(-791058250 <= czi AND czi < -786260286))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abo7
+ (CHECK(-786260286 <= czi AND czi < -781462257))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp0
+ (CHECK(-781462257 <= czi AND czi < -776216168))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp1
+ (CHECK(-776216168 <= czi AND czi < -770970079))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp2
+ (CHECK(-770970079 <= czi AND czi < -765723991))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp3
+ (CHECK(-765723991 <= czi AND czi < -760477902))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp4
+ (CHECK(-760477902 <= czi AND czi < -755231813))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp5
+ (CHECK(-755231813 <= czi AND czi < -749985724))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp6
+ (CHECK(-749985724 <= czi AND czi < -744739636))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abp7
+ (CHECK(-744739636 <= czi AND czi < -739493515))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq0
+ (CHECK(-739493515 <= czi AND czi < -734608650))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq1
+ (CHECK(-734608650 <= czi AND czi < -729723819))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq2
+ (CHECK(-729723819 <= czi AND czi < -724838987))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq3
+ (CHECK(-724838987 <= czi AND czi < -719954155))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq4
+ (CHECK(-719954155 <= czi AND czi < -715069323))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq5
+ (CHECK(-715069323 <= czi AND czi < -710184491))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq6
+ (CHECK(-710184491 <= czi AND czi < -705299660))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abq7
+ (CHECK(-705299660 <= czi AND czi < -700414763))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr0
+ (CHECK(-700414763 <= czi AND czi < -695079583))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr1
+ (CHECK(-695079583 <= czi AND czi < -689744403))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr2
+ (CHECK(-689744403 <= czi AND czi < -684409224))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr3
+ (CHECK(-684409224 <= czi AND czi < -679074044))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr4
+ (CHECK(-679074044 <= czi AND czi < -673738865))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr5
+ (CHECK(-673738865 <= czi AND czi < -668403685))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr6
+ (CHECK(-668403685 <= czi AND czi < -663068506))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abr7
+ (CHECK(-663068506 <= czi AND czi < -657733293))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs0
+ (CHECK(-657733293 <= czi AND czi < -652355766))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs1
+ (CHECK(-652355766 <= czi AND czi < -646978271))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs2
+ (CHECK(-646978271 <= czi AND czi < -641600776))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs3
+ (CHECK(-641600776 <= czi AND czi < -636223281))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs4
+ (CHECK(-636223281 <= czi AND czi < -630845786))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs5
+ (CHECK(-630845786 <= czi AND czi < -625468292))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs6
+ (CHECK(-625468292 <= czi AND czi < -620090797))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abs7
+ (CHECK(-620090797 <= czi AND czi < -614713236))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt0
+ (CHECK(-614713236 <= czi AND czi < -609296181))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt1
+ (CHECK(-609296181 <= czi AND czi < -603879127))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt2
+ (CHECK(-603879127 <= czi AND czi < -598462073))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt3
+ (CHECK(-598462073 <= czi AND czi < -593045019))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt4
+ (CHECK(-593045019 <= czi AND czi < -587627964))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt5
+ (CHECK(-587627964 <= czi AND czi < -582210910))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt6
+ (CHECK(-582210910 <= czi AND czi < -576793856))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abt7
+ (CHECK(-576793856 <= czi AND czi < -571376735))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu0
+ (CHECK(-571376735 <= czi AND czi < -565501942))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu1
+ (CHECK(-565501942 <= czi AND czi < -559627149))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu2
+ (CHECK(-559627149 <= czi AND czi < -553752356))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu3
+ (CHECK(-553752356 <= czi AND czi < -547877563))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu4
+ (CHECK(-547877563 <= czi AND czi < -542002770))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu5
+ (CHECK(-542002770 <= czi AND czi < -536127977))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu6
+ (CHECK(-536127977 <= czi AND czi < -530253184))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abu7
+ (CHECK(-530253184 <= czi AND czi < -524378357))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv0
+ (CHECK(-524378357 <= czi AND czi < -518464431))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv1
+ (CHECK(-518464431 <= czi AND czi < -512550505))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv2
+ (CHECK(-512550505 <= czi AND czi < -506636579))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv3
+ (CHECK(-506636579 <= czi AND czi < -500722653))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv4
+ (CHECK(-500722653 <= czi AND czi < -494808727))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv5
+ (CHECK(-494808727 <= czi AND czi < -488894801))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv6
+ (CHECK(-488894801 <= czi AND czi < -482980875))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abv7
+ (CHECK(-482980875 <= czi AND czi < -477066915))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw0
+ (CHECK(-477066915 <= czi AND czi < -471117387))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw1
+ (CHECK(-471117387 <= czi AND czi < -465167858))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw2
+ (CHECK(-465167858 <= czi AND czi < -459218330))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw3
+ (CHECK(-459218330 <= czi AND czi < -453268802))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw4
+ (CHECK(-453268802 <= czi AND czi < -447319273))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw5
+ (CHECK(-447319273 <= czi AND czi < -441369745))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw6
+ (CHECK(-441369745 <= czi AND czi < -435420217))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abw7
+ (CHECK(-435420217 <= czi AND czi < -429470654))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx0
+ (CHECK(-429470654 <= czi AND czi < -423060688))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx1
+ (CHECK(-423060688 <= czi AND czi < -416650721))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx2
+ (CHECK(-416650721 <= czi AND czi < -410240754))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx3
+ (CHECK(-410240754 <= czi AND czi < -403830787))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx4
+ (CHECK(-403830787 <= czi AND czi < -397420821))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx5
+ (CHECK(-397420821 <= czi AND czi < -391010854))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx6
+ (CHECK(-391010854 <= czi AND czi < -384600887))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abx7
+ (CHECK(-384600887 <= czi AND czi < -378190886))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby0
+ (CHECK(-378190886 <= czi AND czi < -371748520))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby1
+ (CHECK(-371748520 <= czi AND czi < -365306154))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby2
+ (CHECK(-365306154 <= czi AND czi < -358863788))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby3
+ (CHECK(-358863788 <= czi AND czi < -352421422))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby4
+ (CHECK(-352421422 <= czi AND czi < -345979057))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby5
+ (CHECK(-345979057 <= czi AND czi < -339536691))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby6
+ (CHECK(-339536691 <= czi AND czi < -333094325))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aby7
+ (CHECK(-333094325 <= czi AND czi < -326651924))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz0
+ (CHECK(-326651924 <= czi AND czi < -320181575))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz1
+ (CHECK(-320181575 <= czi AND czi < -313711225))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz2
+ (CHECK(-313711225 <= czi AND czi < -307240875))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz3
+ (CHECK(-307240875 <= czi AND czi < -300770526))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz4
+ (CHECK(-300770526 <= czi AND czi < -294300176))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz5
+ (CHECK(-294300176 <= czi AND czi < -287829826))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz6
+ (CHECK(-287829826 <= czi AND czi < -281359476))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_abz7
+ (CHECK(-281359476 <= czi AND czi < -274889092))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca0
+ (CHECK(-274889092 <= czi AND czi < -268395193))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca1
+ (CHECK(-268395193 <= czi AND czi < -261901294))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca2
+ (CHECK(-261901294 <= czi AND czi < -255407395))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca3
+ (CHECK(-255407395 <= czi AND czi < -248913496))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca4
+ (CHECK(-248913496 <= czi AND czi < -242419596))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca5
+ (CHECK(-242419596 <= czi AND czi < -235925697))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca6
+ (CHECK(-235925697 <= czi AND czi < -229431798))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_aca7
+ (CHECK(-229431798 <= czi AND czi < -222937864))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb0
+ (CHECK(-222937864 <= czi AND czi < -216424866))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb1
+ (CHECK(-216424866 <= czi AND czi < -209911869))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb2
+ (CHECK(-209911869 <= czi AND czi < -203398871))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb3
+ (CHECK(-203398871 <= czi AND czi < -196885873))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb4
+ (CHECK(-196885873 <= czi AND czi < -190372875))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb5
+ (CHECK(-190372875 <= czi AND czi < -183859877))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb6
+ (CHECK(-183859877 <= czi AND czi < -177346879))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acb7
+ (CHECK(-177346879 <= czi AND czi < -170833846))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc0
+ (CHECK(-170833846 <= czi AND czi < -163870627))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc1
+ (CHECK(-163870627 <= czi AND czi < -156907407))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc2
+ (CHECK(-156907407 <= czi AND czi < -149944187))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc3
+ (CHECK(-149944187 <= czi AND czi < -142980968))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc4
+ (CHECK(-142980968 <= czi AND czi < -136017748))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc5
+ (CHECK(-136017748 <= czi AND czi < -129054528))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc6
+ (CHECK(-129054528 <= czi AND czi < -122091308))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acc7
+ (CHECK(-122091308 <= czi AND czi < -115128054))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd0
+ (CHECK(-115128054 <= czi AND czi < -107717461))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd1
+ (CHECK(-107717461 <= czi AND czi < -100306869))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd2
+ (CHECK(-100306869 <= czi AND czi < -92896276))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd3
+ (CHECK(-92896276 <= czi AND czi < -85485683))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd4
+ (CHECK(-85485683 <= czi AND czi < -78075090))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd5
+ (CHECK(-78075090 <= czi AND czi < -70664498))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd6
+ (CHECK(-70664498 <= czi AND czi < -63253905))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_acd7
+ (CHECK(-63253905 <= czi AND czi < -55843277))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace0
+ (CHECK(-55843277 <= czi AND czi < -48862876))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace1
+ (CHECK(-48862876 <= czi AND czi < -41882476))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace2
+ (CHECK(-41882476 <= czi AND czi < -34902075))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace3
+ (CHECK(-34902075 <= czi AND czi < -27921674))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace4
+ (CHECK(-27921674 <= czi AND czi < -20941273))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace5
+ (CHECK(-20941273 <= czi AND czi < -13960872))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace6
+ (CHECK(-13960872 <= czi AND czi < -6980471))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ace7
+ (CHECK(-6980471 <= czi AND czi < 0))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa0
+ (CHECK(0 <= czi AND czi < 6980405))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa1
+ (CHECK(6980405 <= czi AND czi < 13960811))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa2
+ (CHECK(13960811 <= czi AND czi < 20941216))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa3
+ (CHECK(20941216 <= czi AND czi < 27921621))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa4
+ (CHECK(27921621 <= czi AND czi < 34902027))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa5
+ (CHECK(34902027 <= czi AND czi < 41882432))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa6
+ (CHECK(41882432 <= czi AND czi < 48862837))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baa7
+ (CHECK(48862837 <= czi AND czi < 55843277))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab0
+ (CHECK(55843277 <= czi AND czi < 63253870))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab1
+ (CHECK(63253870 <= czi AND czi < 70664463))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab2
+ (CHECK(70664463 <= czi AND czi < 78075056))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab3
+ (CHECK(78075056 <= czi AND czi < 85485648))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab4
+ (CHECK(85485648 <= czi AND czi < 92896241))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab5
+ (CHECK(92896241 <= czi AND czi < 100306834))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab6
+ (CHECK(100306834 <= czi AND czi < 107717426))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bab7
+ (CHECK(107717426 <= czi AND czi < 115128054))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac0
+ (CHECK(115128054 <= czi AND czi < 122525979))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac1
+ (CHECK(122525979 <= czi AND czi < 129923903))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac2
+ (CHECK(129923903 <= czi AND czi < 137321828))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac3
+ (CHECK(137321828 <= czi AND czi < 144719752))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac4
+ (CHECK(144719752 <= czi AND czi < 152117677))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac5
+ (CHECK(152117677 <= czi AND czi < 159515602))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac6
+ (CHECK(159515602 <= czi AND czi < 166913526))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bac7
+ (CHECK(166913526 <= czi AND czi < 174311485))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad0
+ (CHECK(174311485 <= czi AND czi < 181690230))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad1
+ (CHECK(181690230 <= czi AND czi < 189068974))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad2
+ (CHECK(189068974 <= czi AND czi < 196447718))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad3
+ (CHECK(196447718 <= czi AND czi < 203826463))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad4
+ (CHECK(203826463 <= czi AND czi < 211205207))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad5
+ (CHECK(211205207 <= czi AND czi < 218583951))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad6
+ (CHECK(218583951 <= czi AND czi < 225962695))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bad7
+ (CHECK(225962695 <= czi AND czi < 233341474))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae0
+ (CHECK(233341474 <= czi AND czi < 240694543))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae1
+ (CHECK(240694543 <= czi AND czi < 248047611))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae2
+ (CHECK(248047611 <= czi AND czi < 255400680))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae3
+ (CHECK(255400680 <= czi AND czi < 262753748))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae4
+ (CHECK(262753748 <= czi AND czi < 270106817))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae5
+ (CHECK(270106817 <= czi AND czi < 277459885))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae6
+ (CHECK(277459885 <= czi AND czi < 284812954))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bae7
+ (CHECK(284812954 <= czi AND czi < 292166057))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf0
+ (CHECK(292166057 <= czi AND czi < 299486977))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf1
+ (CHECK(299486977 <= czi AND czi < 306807897))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf2
+ (CHECK(306807897 <= czi AND czi < 314128817))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf3
+ (CHECK(314128817 <= czi AND czi < 321449737))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf4
+ (CHECK(321449737 <= czi AND czi < 328770658))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf5
+ (CHECK(328770658 <= czi AND czi < 336091578))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf6
+ (CHECK(336091578 <= czi AND czi < 343412498))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baf7
+ (CHECK(343412498 <= czi AND czi < 350733452))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag0
+ (CHECK(350733452 <= czi AND czi < 358015779))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag1
+ (CHECK(358015779 <= czi AND czi < 365298107))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag2
+ (CHECK(365298107 <= czi AND czi < 372580434))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag3
+ (CHECK(372580434 <= czi AND czi < 379862761))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag4
+ (CHECK(379862761 <= czi AND czi < 387145088))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag5
+ (CHECK(387145088 <= czi AND czi < 394427415))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag6
+ (CHECK(394427415 <= czi AND czi < 401709742))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bag7
+ (CHECK(401709742 <= czi AND czi < 408992104))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah0
+ (CHECK(408992104 <= czi AND czi < 416653615))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah1
+ (CHECK(416653615 <= czi AND czi < 424315126))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah2
+ (CHECK(424315126 <= czi AND czi < 431976637))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah3
+ (CHECK(431976637 <= czi AND czi < 439638148))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah4
+ (CHECK(439638148 <= czi AND czi < 447299659))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah5
+ (CHECK(447299659 <= czi AND czi < 454961170))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah6
+ (CHECK(454961170 <= czi AND czi < 462622681))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bah7
+ (CHECK(462622681 <= czi AND czi < 470284226))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai0
+ (CHECK(470284226 <= czi AND czi < 477467016))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai1
+ (CHECK(477467016 <= czi AND czi < 484649737))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai2
+ (CHECK(484649737 <= czi AND czi < 491832459))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai3
+ (CHECK(491832459 <= czi AND czi < 499015180))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai4
+ (CHECK(499015180 <= czi AND czi < 506197902))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai5
+ (CHECK(506197902 <= czi AND czi < 513380623))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai6
+ (CHECK(513380623 <= czi AND czi < 520563345))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bai7
+ (CHECK(520563345 <= czi AND czi < 527746100))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj0
+ (CHECK(527746100 <= czi AND czi < 534870755))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj1
+ (CHECK(534870755 <= czi AND czi < 541995411))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj2
+ (CHECK(541995411 <= czi AND czi < 549120066))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj3
+ (CHECK(549120066 <= czi AND czi < 556244721))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj4
+ (CHECK(556244721 <= czi AND czi < 563369377))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj5
+ (CHECK(563369377 <= czi AND czi < 570494032))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj6
+ (CHECK(570494032 <= czi AND czi < 577618687))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baj7
+ (CHECK(577618687 <= czi AND czi < 584743409))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak0
+ (CHECK(584743409 <= czi AND czi < 592216903))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak1
+ (CHECK(592216903 <= czi AND czi < 599690396))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak2
+ (CHECK(599690396 <= czi AND czi < 607163890))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak3
+ (CHECK(607163890 <= czi AND czi < 614637383))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak4
+ (CHECK(614637383 <= czi AND czi < 622110877))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak5
+ (CHECK(622110877 <= czi AND czi < 629584370))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak6
+ (CHECK(629584370 <= czi AND czi < 637057864))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bak7
+ (CHECK(637057864 <= czi AND czi < 644531390))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal0
+ (CHECK(644531390 <= czi AND czi < 651925399))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal1
+ (CHECK(651925399 <= czi AND czi < 659319375))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal2
+ (CHECK(659319375 <= czi AND czi < 666713351))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal3
+ (CHECK(666713351 <= czi AND czi < 674107327))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal4
+ (CHECK(674107327 <= czi AND czi < 681501303))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal5
+ (CHECK(681501303 <= czi AND czi < 688895279))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal6
+ (CHECK(688895279 <= czi AND czi < 696289255))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bal7
+ (CHECK(696289255 <= czi AND czi < 703683297))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam0
+ (CHECK(703683297 <= czi AND czi < 710990471))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam1
+ (CHECK(710990471 <= czi AND czi < 718297645))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam2
+ (CHECK(718297645 <= czi AND czi < 725604819))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam3
+ (CHECK(725604819 <= czi AND czi < 732911992))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam4
+ (CHECK(732911992 <= czi AND czi < 740219166))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam5
+ (CHECK(740219166 <= czi AND czi < 747526340))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam6
+ (CHECK(747526340 <= czi AND czi < 754833514))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bam7
+ (CHECK(754833514 <= czi AND czi < 762140753))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban0
+ (CHECK(762140753 <= czi AND czi < 769353913))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban1
+ (CHECK(769353913 <= czi AND czi < 776567073))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban2
+ (CHECK(776567073 <= czi AND czi < 783780234))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban3
+ (CHECK(783780234 <= czi AND czi < 790993394))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban4
+ (CHECK(790993394 <= czi AND czi < 798206555))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban5
+ (CHECK(798206555 <= czi AND czi < 805419715))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban6
+ (CHECK(805419715 <= czi AND czi < 812632875))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_ban7
+ (CHECK(812632875 <= czi AND czi < 819846068))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao0
+ (CHECK(819846068 <= czi AND czi < 827350122))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao1
+ (CHECK(827350122 <= czi AND czi < 834854144))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao2
+ (CHECK(834854144 <= czi AND czi < 842358166))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao3
+ (CHECK(842358166 <= czi AND czi < 849862188))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao4
+ (CHECK(849862188 <= czi AND czi < 857366210))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao5
+ (CHECK(857366210 <= czi AND czi < 864870233))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao6
+ (CHECK(864870233 <= czi AND czi < 872374255))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bao7
+ (CHECK(872374255 <= czi AND czi < 879878340))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap0
+ (CHECK(879878340 <= czi AND czi < 887261430))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap1
+ (CHECK(887261430 <= czi AND czi < 894644521))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap2
+ (CHECK(894644521 <= czi AND czi < 902027611))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap3
+ (CHECK(902027611 <= czi AND czi < 909410702))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap4
+ (CHECK(909410702 <= czi AND czi < 916793792))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap5
+ (CHECK(916793792 <= czi AND czi < 924176883))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap6
+ (CHECK(924176883 <= czi AND czi < 931559973))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bap7
+ (CHECK(931559973 <= czi AND czi < 938943126))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq0
+ (CHECK(938943126 <= czi AND czi < 946197162))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq1
+ (CHECK(946197162 <= czi AND czi < 953451199))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq2
+ (CHECK(953451199 <= czi AND czi < 960705236))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq3
+ (CHECK(960705236 <= czi AND czi < 967959272))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq4
+ (CHECK(967959272 <= czi AND czi < 975213309))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq5
+ (CHECK(975213309 <= czi AND czi < 982467346))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq6
+ (CHECK(982467346 <= czi AND czi < 989721382))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baq7
+ (CHECK(989721382 <= czi AND czi < 996975480))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar0
+ (CHECK(996975480 <= czi AND czi < 1004463121))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar1
+ (CHECK(1004463121 <= czi AND czi < 1011950762))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar2
+ (CHECK(1011950762 <= czi AND czi < 1019438404))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar3
+ (CHECK(1019438404 <= czi AND czi < 1026926045))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar4
+ (CHECK(1026926045 <= czi AND czi < 1034413686))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar5
+ (CHECK(1034413686 <= czi AND czi < 1041901328))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar6
+ (CHECK(1041901328 <= czi AND czi < 1049388969))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bar7
+ (CHECK(1049388969 <= czi AND czi < 1056876669))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas0
+ (CHECK(1056876669 <= czi AND czi < 1063840986))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas1
+ (CHECK(1063840986 <= czi AND czi < 1070805303))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas2
+ (CHECK(1070805303 <= czi AND czi < 1077769619))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas3
+ (CHECK(1077769619 <= czi AND czi < 1084733936))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas4
+ (CHECK(1084733936 <= czi AND czi < 1091698252))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas5
+ (CHECK(1091698252 <= czi AND czi < 1098662569))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas6
+ (CHECK(1098662569 <= czi AND czi < 1105626885))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bas7
+ (CHECK(1105626885 <= czi AND czi < 1112591231))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat0
+ (CHECK(1112591231 <= czi AND czi < 1119756818))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat1
+ (CHECK(1119756818 <= czi AND czi < 1126922319))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat2
+ (CHECK(1126922319 <= czi AND czi < 1134087819))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat3
+ (CHECK(1134087819 <= czi AND czi < 1141253320))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat4
+ (CHECK(1141253320 <= czi AND czi < 1148418820))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat5
+ (CHECK(1148418820 <= czi AND czi < 1155584321))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat6
+ (CHECK(1155584321 <= czi AND czi < 1162749821))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bat7
+ (CHECK(1162749821 <= czi AND czi < 1169915350))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau0
+ (CHECK(1169915350 <= czi AND czi < 1176902766))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau1
+ (CHECK(1176902766 <= czi AND czi < 1183890096))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau2
+ (CHECK(1183890096 <= czi AND czi < 1190877427))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau3
+ (CHECK(1190877427 <= czi AND czi < 1197864757))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau4
+ (CHECK(1197864757 <= czi AND czi < 1204852088))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau5
+ (CHECK(1204852088 <= czi AND czi < 1211839419))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau6
+ (CHECK(1211839419 <= czi AND czi < 1218826749))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bau7
+ (CHECK(1218826749 <= czi AND czi < 1225814107))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav0
+ (CHECK(1225814107 <= czi AND czi < 1232949817))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav1
+ (CHECK(1232949817 <= czi AND czi < 1240085445))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav2
+ (CHECK(1240085445 <= czi AND czi < 1247221072))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav3
+ (CHECK(1247221072 <= czi AND czi < 1254356700))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav4
+ (CHECK(1254356700 <= czi AND czi < 1261492327))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav5
+ (CHECK(1261492327 <= czi AND czi < 1268627955))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav6
+ (CHECK(1268627955 <= czi AND czi < 1275763582))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bav7
+ (CHECK(1275763582 <= czi AND czi < 1282899263))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw0
+ (CHECK(1282899263 <= czi AND czi < 1289819541))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw1
+ (CHECK(1289819541 <= czi AND czi < 1296739765))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw2
+ (CHECK(1296739765 <= czi AND czi < 1303659989))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw3
+ (CHECK(1303659989 <= czi AND czi < 1310580213))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw4
+ (CHECK(1310580213 <= czi AND czi < 1317500437))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw5
+ (CHECK(1317500437 <= czi AND czi < 1324420661))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw6
+ (CHECK(1324420661 <= czi AND czi < 1331340885))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baw7
+ (CHECK(1331340885 <= czi AND czi < 1338261213))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax0
+ (CHECK(1338261213 <= czi AND czi < 1345269827))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax1
+ (CHECK(1345269827 <= czi AND czi < 1352278442))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax2
+ (CHECK(1352278442 <= czi AND czi < 1359287057))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax3
+ (CHECK(1359287057 <= czi AND czi < 1366295672))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax4
+ (CHECK(1366295672 <= czi AND czi < 1373304286))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax5
+ (CHECK(1373304286 <= czi AND czi < 1380312901))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax6
+ (CHECK(1380312901 <= czi AND czi < 1387321516))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bax7
+ (CHECK(1387321516 <= czi AND czi < 1394330206))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay0
+ (CHECK(1394330206 <= czi AND czi < 1401081911))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay1
+ (CHECK(1401081911 <= czi AND czi < 1407833592))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay2
+ (CHECK(1407833592 <= czi AND czi < 1414585272))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay3
+ (CHECK(1414585272 <= czi AND czi < 1421336953))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay4
+ (CHECK(1421336953 <= czi AND czi < 1428088633))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay5
+ (CHECK(1428088633 <= czi AND czi < 1434840314))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay6
+ (CHECK(1434840314 <= czi AND czi < 1441591994))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bay7
+ (CHECK(1441591994 <= czi AND czi < 1448343723))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz0
+ (CHECK(1448343723 <= czi AND czi < 1454539718))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz1
+ (CHECK(1454539718 <= czi AND czi < 1460735666))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz2
+ (CHECK(1460735666 <= czi AND czi < 1466931613))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz3
+ (CHECK(1466931613 <= czi AND czi < 1473127560))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz4
+ (CHECK(1473127560 <= czi AND czi < 1479323507))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz5
+ (CHECK(1479323507 <= czi AND czi < 1485519455))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz6
+ (CHECK(1485519455 <= czi AND czi < 1491715402))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_baz7
+ (CHECK(1491715402 <= czi AND czi < 1497911442))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba0
+ (CHECK(1497911442 <= czi AND czi < 1504132556))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba1
+ (CHECK(1504132556 <= czi AND czi < 1510353669))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba2
+ (CHECK(1510353669 <= czi AND czi < 1516574783))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba3
+ (CHECK(1516574783 <= czi AND czi < 1522795897))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba4
+ (CHECK(1522795897 <= czi AND czi < 1529017011))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba5
+ (CHECK(1529017011 <= czi AND czi < 1535238125))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba6
+ (CHECK(1535238125 <= czi AND czi < 1541459239))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bba7
+ (CHECK(1541459239 <= czi AND czi < 1547680419))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb0
+ (CHECK(1547680419 <= czi AND czi < 1553879253))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb1
+ (CHECK(1553879253 <= czi AND czi < 1560078065))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb2
+ (CHECK(1560078065 <= czi AND czi < 1566276877))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb3
+ (CHECK(1566276877 <= czi AND czi < 1572475689))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb4
+ (CHECK(1572475689 <= czi AND czi < 1578674501))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb5
+ (CHECK(1578674501 <= czi AND czi < 1584873312))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb6
+ (CHECK(1584873312 <= czi AND czi < 1591072124))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbb7
+ (CHECK(1591072124 <= czi AND czi < 1597271020))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc0
+ (CHECK(1597271020 <= czi AND czi < 1602899437))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc1
+ (CHECK(1602899437 <= czi AND czi < 1608527855))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc2
+ (CHECK(1608527855 <= czi AND czi < 1614156272))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc3
+ (CHECK(1614156272 <= czi AND czi < 1619784689))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc4
+ (CHECK(1619784689 <= czi AND czi < 1625413107))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc5
+ (CHECK(1625413107 <= czi AND czi < 1631041524))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc6
+ (CHECK(1631041524 <= czi AND czi < 1636669941))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbc7
+ (CHECK(1636669941 <= czi AND czi < 1642298418))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd0
+ (CHECK(1642298418 <= czi AND czi < 1647858985))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd1
+ (CHECK(1647858985 <= czi AND czi < 1653419533))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd2
+ (CHECK(1653419533 <= czi AND czi < 1658980080))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd3
+ (CHECK(1658980080 <= czi AND czi < 1664540627))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd4
+ (CHECK(1664540627 <= czi AND czi < 1670101175))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd5
+ (CHECK(1670101175 <= czi AND czi < 1675661722))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd6
+ (CHECK(1675661722 <= czi AND czi < 1681222269))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbd7
+ (CHECK(1681222269 <= czi AND czi < 1686782892))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe0
+ (CHECK(1686782892 <= czi AND czi < 1692441372))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe1
+ (CHECK(1692441372 <= czi AND czi < 1698099853))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe2
+ (CHECK(1698099853 <= czi AND czi < 1703758334))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe3
+ (CHECK(1703758334 <= czi AND czi < 1709416815))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe4
+ (CHECK(1709416815 <= czi AND czi < 1715075295))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe5
+ (CHECK(1715075295 <= czi AND czi < 1720733776))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe6
+ (CHECK(1720733776 <= czi AND czi < 1726392257))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbe7
+ (CHECK(1726392257 <= czi AND czi < 1732050808))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf0
+ (CHECK(1732050808 <= czi AND czi < 1737698759))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf1
+ (CHECK(1737698759 <= czi AND czi < 1743346710))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf2
+ (CHECK(1743346710 <= czi AND czi < 1748994661))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf3
+ (CHECK(1748994661 <= czi AND czi < 1754642612))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf4
+ (CHECK(1754642612 <= czi AND czi < 1760290564))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf5
+ (CHECK(1760290564 <= czi AND czi < 1765938515))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf6
+ (CHECK(1765938515 <= czi AND czi < 1771586466))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbf7
+ (CHECK(1771586466 <= czi AND czi < 1777234465))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg0
+ (CHECK(1777234465 <= czi AND czi < 1783643656))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg1
+ (CHECK(1783643656 <= czi AND czi < 1790052832))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg2
+ (CHECK(1790052832 <= czi AND czi < 1796462007))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg3
+ (CHECK(1796462007 <= czi AND czi < 1802871182))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg4
+ (CHECK(1802871182 <= czi AND czi < 1809280357))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg5
+ (CHECK(1809280357 <= czi AND czi < 1815689532))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg6
+ (CHECK(1815689532 <= czi AND czi < 1822098707))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbg7
+ (CHECK(1822098707 <= czi AND czi < 1828507910))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh0
+ (CHECK(1828507910 <= czi AND czi < 1837843094))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh1
+ (CHECK(1837843094 <= czi AND czi < 1847178193))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh2
+ (CHECK(1847178193 <= czi AND czi < 1856513292))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh3
+ (CHECK(1856513292 <= czi AND czi < 1865848391))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh4
+ (CHECK(1865848391 <= czi AND czi < 1875183490))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh5
+ (CHECK(1875183490 <= czi AND czi < 1884518589))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh6
+ (CHECK(1884518589 <= czi AND czi < 1893853687))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbh7
+ (CHECK(1893853687 <= czi AND czi < 1903188808))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi0
+ (CHECK(1903188808 <= czi AND czi < 1915290259))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi1
+ (CHECK(1915290259 <= czi AND czi < 1927391647))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi2
+ (CHECK(1927391647 <= czi AND czi < 1939493034))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi3
+ (CHECK(1939493034 <= czi AND czi < 1951594421))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi4
+ (CHECK(1951594421 <= czi AND czi < 1963695808))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi5
+ (CHECK(1963695808 <= czi AND czi < 1975797196))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi6
+ (CHECK(1975797196 <= czi AND czi < 1987898583))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;
+CREATE TABLE twomass_xyzi_bbi7
+ (CHECK(1987898583 <= czi))
+ INHERITS (twomass_xyzi)
+ TABLESPACE @TS_PREFIX@twomass_xyzi;

@@ -1,0 +1,800 @@
+CREATE INDEX ucac3_eqi_00_radeci ON ucac3_eqi_00 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_01_radeci ON ucac3_eqi_01 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_02_radeci ON ucac3_eqi_02 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_03_radeci ON ucac3_eqi_03 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_04_radeci ON ucac3_eqi_04 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_05_radeci ON ucac3_eqi_05 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_06_radeci ON ucac3_eqi_06 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_07_radeci ON ucac3_eqi_07 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_08_radeci ON ucac3_eqi_08 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_09_radeci ON ucac3_eqi_09 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0a_radeci ON ucac3_eqi_0a (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0b_radeci ON ucac3_eqi_0b (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0c_radeci ON ucac3_eqi_0c (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0d_radeci ON ucac3_eqi_0d (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0e_radeci ON ucac3_eqi_0e (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0f_radeci ON ucac3_eqi_0f (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0g_radeci ON ucac3_eqi_0g (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0h_radeci ON ucac3_eqi_0h (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0i_radeci ON ucac3_eqi_0i (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0j_radeci ON ucac3_eqi_0j (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0k_radeci ON ucac3_eqi_0k (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0l_radeci ON ucac3_eqi_0l (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0m_radeci ON ucac3_eqi_0m (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0n_radeci ON ucac3_eqi_0n (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0o_radeci ON ucac3_eqi_0o (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0p_radeci ON ucac3_eqi_0p (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0q_radeci ON ucac3_eqi_0q (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0r_radeci ON ucac3_eqi_0r (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0s_radeci ON ucac3_eqi_0s (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0t_radeci ON ucac3_eqi_0t (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0u_radeci ON ucac3_eqi_0u (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0v_radeci ON ucac3_eqi_0v (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0w_radeci ON ucac3_eqi_0w (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0x_radeci ON ucac3_eqi_0x (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0y_radeci ON ucac3_eqi_0y (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0z_radeci ON ucac3_eqi_0z (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_10_radeci ON ucac3_eqi_10 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_11_radeci ON ucac3_eqi_11 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_12_radeci ON ucac3_eqi_12 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_13_radeci ON ucac3_eqi_13 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_14_radeci ON ucac3_eqi_14 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_15_radeci ON ucac3_eqi_15 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_16_radeci ON ucac3_eqi_16 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_17_radeci ON ucac3_eqi_17 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_18_radeci ON ucac3_eqi_18 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_19_radeci ON ucac3_eqi_19 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1a_radeci ON ucac3_eqi_1a (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1b_radeci ON ucac3_eqi_1b (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1c_radeci ON ucac3_eqi_1c (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1d_radeci ON ucac3_eqi_1d (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1e_radeci ON ucac3_eqi_1e (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1f_radeci ON ucac3_eqi_1f (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1g_radeci ON ucac3_eqi_1g (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1h_radeci ON ucac3_eqi_1h (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1i_radeci ON ucac3_eqi_1i (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1j_radeci ON ucac3_eqi_1j (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1k_radeci ON ucac3_eqi_1k (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1l_radeci ON ucac3_eqi_1l (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1m_radeci ON ucac3_eqi_1m (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1n_radeci ON ucac3_eqi_1n (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1o_radeci ON ucac3_eqi_1o (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1p_radeci ON ucac3_eqi_1p (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1q_radeci ON ucac3_eqi_1q (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1r_radeci ON ucac3_eqi_1r (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1s_radeci ON ucac3_eqi_1s (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1t_radeci ON ucac3_eqi_1t (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1u_radeci ON ucac3_eqi_1u (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1v_radeci ON ucac3_eqi_1v (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1w_radeci ON ucac3_eqi_1w (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1x_radeci ON ucac3_eqi_1x (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1y_radeci ON ucac3_eqi_1y (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1z_radeci ON ucac3_eqi_1z (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_20_radeci ON ucac3_eqi_20 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_21_radeci ON ucac3_eqi_21 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_22_radeci ON ucac3_eqi_22 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_23_radeci ON ucac3_eqi_23 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_24_radeci ON ucac3_eqi_24 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_25_radeci ON ucac3_eqi_25 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_26_radeci ON ucac3_eqi_26 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_27_radeci ON ucac3_eqi_27 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_28_radeci ON ucac3_eqi_28 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_29_radeci ON ucac3_eqi_29 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2a_radeci ON ucac3_eqi_2a (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2b_radeci ON ucac3_eqi_2b (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2c_radeci ON ucac3_eqi_2c (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2d_radeci ON ucac3_eqi_2d (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2e_radeci ON ucac3_eqi_2e (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2f_radeci ON ucac3_eqi_2f (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2g_radeci ON ucac3_eqi_2g (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2h_radeci ON ucac3_eqi_2h (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2i_radeci ON ucac3_eqi_2i (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2j_radeci ON ucac3_eqi_2j (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2k_radeci ON ucac3_eqi_2k (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2l_radeci ON ucac3_eqi_2l (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2m_radeci ON ucac3_eqi_2m (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2n_radeci ON ucac3_eqi_2n (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2o_radeci ON ucac3_eqi_2o (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2p_radeci ON ucac3_eqi_2p (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2q_radeci ON ucac3_eqi_2q (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2r_radeci ON ucac3_eqi_2r (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2s_radeci ON ucac3_eqi_2s (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2t_radeci ON ucac3_eqi_2t (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2u_radeci ON ucac3_eqi_2u (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2v_radeci ON ucac3_eqi_2v (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2w_radeci ON ucac3_eqi_2w (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2x_radeci ON ucac3_eqi_2x (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2y_radeci ON ucac3_eqi_2y (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2z_radeci ON ucac3_eqi_2z (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_30_radeci ON ucac3_eqi_30 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_31_radeci ON ucac3_eqi_31 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_32_radeci ON ucac3_eqi_32 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_33_radeci ON ucac3_eqi_33 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_34_radeci ON ucac3_eqi_34 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_35_radeci ON ucac3_eqi_35 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_36_radeci ON ucac3_eqi_36 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_37_radeci ON ucac3_eqi_37 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_38_radeci ON ucac3_eqi_38 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_39_radeci ON ucac3_eqi_39 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3a_radeci ON ucac3_eqi_3a (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3b_radeci ON ucac3_eqi_3b (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3c_radeci ON ucac3_eqi_3c (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3d_radeci ON ucac3_eqi_3d (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3e_radeci ON ucac3_eqi_3e (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3f_radeci ON ucac3_eqi_3f (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3g_radeci ON ucac3_eqi_3g (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3h_radeci ON ucac3_eqi_3h (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3i_radeci ON ucac3_eqi_3i (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3j_radeci ON ucac3_eqi_3j (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3k_radeci ON ucac3_eqi_3k (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3l_radeci ON ucac3_eqi_3l (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3m_radeci ON ucac3_eqi_3m (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3n_radeci ON ucac3_eqi_3n (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3o_radeci ON ucac3_eqi_3o (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3p_radeci ON ucac3_eqi_3p (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3q_radeci ON ucac3_eqi_3q (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3r_radeci ON ucac3_eqi_3r (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3s_radeci ON ucac3_eqi_3s (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3t_radeci ON ucac3_eqi_3t (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3u_radeci ON ucac3_eqi_3u (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3v_radeci ON ucac3_eqi_3v (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3w_radeci ON ucac3_eqi_3w (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3x_radeci ON ucac3_eqi_3x (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3y_radeci ON ucac3_eqi_3y (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3z_radeci ON ucac3_eqi_3z (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_40_radeci ON ucac3_eqi_40 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_41_radeci ON ucac3_eqi_41 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_42_radeci ON ucac3_eqi_42 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_43_radeci ON ucac3_eqi_43 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_44_radeci ON ucac3_eqi_44 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_45_radeci ON ucac3_eqi_45 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_46_radeci ON ucac3_eqi_46 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_47_radeci ON ucac3_eqi_47 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_48_radeci ON ucac3_eqi_48 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_49_radeci ON ucac3_eqi_49 (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4a_radeci ON ucac3_eqi_4a (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4b_radeci ON ucac3_eqi_4b (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4c_radeci ON ucac3_eqi_4c (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4d_radeci ON ucac3_eqi_4d (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4e_radeci ON ucac3_eqi_4e (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4f_radeci ON ucac3_eqi_4f (rai,deci)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_00_decrai ON ucac3_eqi_00 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_01_decrai ON ucac3_eqi_01 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_02_decrai ON ucac3_eqi_02 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_03_decrai ON ucac3_eqi_03 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_04_decrai ON ucac3_eqi_04 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_05_decrai ON ucac3_eqi_05 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_06_decrai ON ucac3_eqi_06 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_07_decrai ON ucac3_eqi_07 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_08_decrai ON ucac3_eqi_08 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_09_decrai ON ucac3_eqi_09 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0a_decrai ON ucac3_eqi_0a (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0b_decrai ON ucac3_eqi_0b (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0c_decrai ON ucac3_eqi_0c (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0d_decrai ON ucac3_eqi_0d (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0e_decrai ON ucac3_eqi_0e (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0f_decrai ON ucac3_eqi_0f (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0g_decrai ON ucac3_eqi_0g (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0h_decrai ON ucac3_eqi_0h (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0i_decrai ON ucac3_eqi_0i (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0j_decrai ON ucac3_eqi_0j (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0k_decrai ON ucac3_eqi_0k (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0l_decrai ON ucac3_eqi_0l (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0m_decrai ON ucac3_eqi_0m (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0n_decrai ON ucac3_eqi_0n (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0o_decrai ON ucac3_eqi_0o (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0p_decrai ON ucac3_eqi_0p (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0q_decrai ON ucac3_eqi_0q (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0r_decrai ON ucac3_eqi_0r (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0s_decrai ON ucac3_eqi_0s (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0t_decrai ON ucac3_eqi_0t (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0u_decrai ON ucac3_eqi_0u (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0v_decrai ON ucac3_eqi_0v (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0w_decrai ON ucac3_eqi_0w (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0x_decrai ON ucac3_eqi_0x (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0y_decrai ON ucac3_eqi_0y (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_0z_decrai ON ucac3_eqi_0z (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_10_decrai ON ucac3_eqi_10 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_11_decrai ON ucac3_eqi_11 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_12_decrai ON ucac3_eqi_12 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_13_decrai ON ucac3_eqi_13 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_14_decrai ON ucac3_eqi_14 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_15_decrai ON ucac3_eqi_15 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_16_decrai ON ucac3_eqi_16 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_17_decrai ON ucac3_eqi_17 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_18_decrai ON ucac3_eqi_18 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_19_decrai ON ucac3_eqi_19 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1a_decrai ON ucac3_eqi_1a (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1b_decrai ON ucac3_eqi_1b (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1c_decrai ON ucac3_eqi_1c (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1d_decrai ON ucac3_eqi_1d (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1e_decrai ON ucac3_eqi_1e (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1f_decrai ON ucac3_eqi_1f (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1g_decrai ON ucac3_eqi_1g (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1h_decrai ON ucac3_eqi_1h (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1i_decrai ON ucac3_eqi_1i (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1j_decrai ON ucac3_eqi_1j (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1k_decrai ON ucac3_eqi_1k (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1l_decrai ON ucac3_eqi_1l (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1m_decrai ON ucac3_eqi_1m (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1n_decrai ON ucac3_eqi_1n (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1o_decrai ON ucac3_eqi_1o (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1p_decrai ON ucac3_eqi_1p (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1q_decrai ON ucac3_eqi_1q (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1r_decrai ON ucac3_eqi_1r (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1s_decrai ON ucac3_eqi_1s (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1t_decrai ON ucac3_eqi_1t (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1u_decrai ON ucac3_eqi_1u (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1v_decrai ON ucac3_eqi_1v (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1w_decrai ON ucac3_eqi_1w (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1x_decrai ON ucac3_eqi_1x (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1y_decrai ON ucac3_eqi_1y (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_1z_decrai ON ucac3_eqi_1z (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_20_decrai ON ucac3_eqi_20 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_21_decrai ON ucac3_eqi_21 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_22_decrai ON ucac3_eqi_22 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_23_decrai ON ucac3_eqi_23 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_24_decrai ON ucac3_eqi_24 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_25_decrai ON ucac3_eqi_25 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_26_decrai ON ucac3_eqi_26 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_27_decrai ON ucac3_eqi_27 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_28_decrai ON ucac3_eqi_28 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_29_decrai ON ucac3_eqi_29 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2a_decrai ON ucac3_eqi_2a (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2b_decrai ON ucac3_eqi_2b (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2c_decrai ON ucac3_eqi_2c (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2d_decrai ON ucac3_eqi_2d (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2e_decrai ON ucac3_eqi_2e (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2f_decrai ON ucac3_eqi_2f (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2g_decrai ON ucac3_eqi_2g (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2h_decrai ON ucac3_eqi_2h (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2i_decrai ON ucac3_eqi_2i (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2j_decrai ON ucac3_eqi_2j (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2k_decrai ON ucac3_eqi_2k (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2l_decrai ON ucac3_eqi_2l (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2m_decrai ON ucac3_eqi_2m (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2n_decrai ON ucac3_eqi_2n (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2o_decrai ON ucac3_eqi_2o (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2p_decrai ON ucac3_eqi_2p (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2q_decrai ON ucac3_eqi_2q (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2r_decrai ON ucac3_eqi_2r (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2s_decrai ON ucac3_eqi_2s (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2t_decrai ON ucac3_eqi_2t (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2u_decrai ON ucac3_eqi_2u (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2v_decrai ON ucac3_eqi_2v (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2w_decrai ON ucac3_eqi_2w (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2x_decrai ON ucac3_eqi_2x (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2y_decrai ON ucac3_eqi_2y (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_2z_decrai ON ucac3_eqi_2z (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_30_decrai ON ucac3_eqi_30 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_31_decrai ON ucac3_eqi_31 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_32_decrai ON ucac3_eqi_32 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_33_decrai ON ucac3_eqi_33 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_34_decrai ON ucac3_eqi_34 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_35_decrai ON ucac3_eqi_35 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_36_decrai ON ucac3_eqi_36 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_37_decrai ON ucac3_eqi_37 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_38_decrai ON ucac3_eqi_38 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_39_decrai ON ucac3_eqi_39 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3a_decrai ON ucac3_eqi_3a (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3b_decrai ON ucac3_eqi_3b (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3c_decrai ON ucac3_eqi_3c (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3d_decrai ON ucac3_eqi_3d (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3e_decrai ON ucac3_eqi_3e (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3f_decrai ON ucac3_eqi_3f (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3g_decrai ON ucac3_eqi_3g (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3h_decrai ON ucac3_eqi_3h (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3i_decrai ON ucac3_eqi_3i (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3j_decrai ON ucac3_eqi_3j (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3k_decrai ON ucac3_eqi_3k (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3l_decrai ON ucac3_eqi_3l (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3m_decrai ON ucac3_eqi_3m (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3n_decrai ON ucac3_eqi_3n (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3o_decrai ON ucac3_eqi_3o (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3p_decrai ON ucac3_eqi_3p (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3q_decrai ON ucac3_eqi_3q (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3r_decrai ON ucac3_eqi_3r (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3s_decrai ON ucac3_eqi_3s (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3t_decrai ON ucac3_eqi_3t (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3u_decrai ON ucac3_eqi_3u (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3v_decrai ON ucac3_eqi_3v (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3w_decrai ON ucac3_eqi_3w (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3x_decrai ON ucac3_eqi_3x (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3y_decrai ON ucac3_eqi_3y (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_3z_decrai ON ucac3_eqi_3z (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_40_decrai ON ucac3_eqi_40 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_41_decrai ON ucac3_eqi_41 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_42_decrai ON ucac3_eqi_42 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_43_decrai ON ucac3_eqi_43 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_44_decrai ON ucac3_eqi_44 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_45_decrai ON ucac3_eqi_45 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_46_decrai ON ucac3_eqi_46 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_47_decrai ON ucac3_eqi_47 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_48_decrai ON ucac3_eqi_48 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_49_decrai ON ucac3_eqi_49 (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4a_decrai ON ucac3_eqi_4a (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4b_decrai ON ucac3_eqi_4b (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4c_decrai ON ucac3_eqi_4c (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4d_decrai ON ucac3_eqi_4d (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4e_decrai ON ucac3_eqi_4e (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_4f_decrai ON ucac3_eqi_4f (deci,rai)
+ TABLESPACE @TS_PREFIX@ucac3_eqi_index_radeci;
+CREATE INDEX ucac3_eqi_00_xyzi16 ON ucac3_eqi_00 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_01_xyzi16 ON ucac3_eqi_01 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_02_xyzi16 ON ucac3_eqi_02 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_03_xyzi16 ON ucac3_eqi_03 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_04_xyzi16 ON ucac3_eqi_04 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_05_xyzi16 ON ucac3_eqi_05 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_06_xyzi16 ON ucac3_eqi_06 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_07_xyzi16 ON ucac3_eqi_07 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_08_xyzi16 ON ucac3_eqi_08 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_09_xyzi16 ON ucac3_eqi_09 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0a_xyzi16 ON ucac3_eqi_0a (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0b_xyzi16 ON ucac3_eqi_0b (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0c_xyzi16 ON ucac3_eqi_0c (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0d_xyzi16 ON ucac3_eqi_0d (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0e_xyzi16 ON ucac3_eqi_0e (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0f_xyzi16 ON ucac3_eqi_0f (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0g_xyzi16 ON ucac3_eqi_0g (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0h_xyzi16 ON ucac3_eqi_0h (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0i_xyzi16 ON ucac3_eqi_0i (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0j_xyzi16 ON ucac3_eqi_0j (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0k_xyzi16 ON ucac3_eqi_0k (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0l_xyzi16 ON ucac3_eqi_0l (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0m_xyzi16 ON ucac3_eqi_0m (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0n_xyzi16 ON ucac3_eqi_0n (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0o_xyzi16 ON ucac3_eqi_0o (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0p_xyzi16 ON ucac3_eqi_0p (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0q_xyzi16 ON ucac3_eqi_0q (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0r_xyzi16 ON ucac3_eqi_0r (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0s_xyzi16 ON ucac3_eqi_0s (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0t_xyzi16 ON ucac3_eqi_0t (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0u_xyzi16 ON ucac3_eqi_0u (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0v_xyzi16 ON ucac3_eqi_0v (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0w_xyzi16 ON ucac3_eqi_0w (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0x_xyzi16 ON ucac3_eqi_0x (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0y_xyzi16 ON ucac3_eqi_0y (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_0z_xyzi16 ON ucac3_eqi_0z (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_10_xyzi16 ON ucac3_eqi_10 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_11_xyzi16 ON ucac3_eqi_11 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_12_xyzi16 ON ucac3_eqi_12 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_13_xyzi16 ON ucac3_eqi_13 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_14_xyzi16 ON ucac3_eqi_14 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_15_xyzi16 ON ucac3_eqi_15 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_16_xyzi16 ON ucac3_eqi_16 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_17_xyzi16 ON ucac3_eqi_17 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_18_xyzi16 ON ucac3_eqi_18 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_19_xyzi16 ON ucac3_eqi_19 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1a_xyzi16 ON ucac3_eqi_1a (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1b_xyzi16 ON ucac3_eqi_1b (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1c_xyzi16 ON ucac3_eqi_1c (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1d_xyzi16 ON ucac3_eqi_1d (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1e_xyzi16 ON ucac3_eqi_1e (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1f_xyzi16 ON ucac3_eqi_1f (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1g_xyzi16 ON ucac3_eqi_1g (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1h_xyzi16 ON ucac3_eqi_1h (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1i_xyzi16 ON ucac3_eqi_1i (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1j_xyzi16 ON ucac3_eqi_1j (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1k_xyzi16 ON ucac3_eqi_1k (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1l_xyzi16 ON ucac3_eqi_1l (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1m_xyzi16 ON ucac3_eqi_1m (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1n_xyzi16 ON ucac3_eqi_1n (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1o_xyzi16 ON ucac3_eqi_1o (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1p_xyzi16 ON ucac3_eqi_1p (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1q_xyzi16 ON ucac3_eqi_1q (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1r_xyzi16 ON ucac3_eqi_1r (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1s_xyzi16 ON ucac3_eqi_1s (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1t_xyzi16 ON ucac3_eqi_1t (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1u_xyzi16 ON ucac3_eqi_1u (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1v_xyzi16 ON ucac3_eqi_1v (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1w_xyzi16 ON ucac3_eqi_1w (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1x_xyzi16 ON ucac3_eqi_1x (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1y_xyzi16 ON ucac3_eqi_1y (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_1z_xyzi16 ON ucac3_eqi_1z (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_20_xyzi16 ON ucac3_eqi_20 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_21_xyzi16 ON ucac3_eqi_21 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_22_xyzi16 ON ucac3_eqi_22 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_23_xyzi16 ON ucac3_eqi_23 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_24_xyzi16 ON ucac3_eqi_24 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_25_xyzi16 ON ucac3_eqi_25 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_26_xyzi16 ON ucac3_eqi_26 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_27_xyzi16 ON ucac3_eqi_27 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_28_xyzi16 ON ucac3_eqi_28 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_29_xyzi16 ON ucac3_eqi_29 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2a_xyzi16 ON ucac3_eqi_2a (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2b_xyzi16 ON ucac3_eqi_2b (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2c_xyzi16 ON ucac3_eqi_2c (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2d_xyzi16 ON ucac3_eqi_2d (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2e_xyzi16 ON ucac3_eqi_2e (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2f_xyzi16 ON ucac3_eqi_2f (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2g_xyzi16 ON ucac3_eqi_2g (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2h_xyzi16 ON ucac3_eqi_2h (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2i_xyzi16 ON ucac3_eqi_2i (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2j_xyzi16 ON ucac3_eqi_2j (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2k_xyzi16 ON ucac3_eqi_2k (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2l_xyzi16 ON ucac3_eqi_2l (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2m_xyzi16 ON ucac3_eqi_2m (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2n_xyzi16 ON ucac3_eqi_2n (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2o_xyzi16 ON ucac3_eqi_2o (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2p_xyzi16 ON ucac3_eqi_2p (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2q_xyzi16 ON ucac3_eqi_2q (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2r_xyzi16 ON ucac3_eqi_2r (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2s_xyzi16 ON ucac3_eqi_2s (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2t_xyzi16 ON ucac3_eqi_2t (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2u_xyzi16 ON ucac3_eqi_2u (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2v_xyzi16 ON ucac3_eqi_2v (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2w_xyzi16 ON ucac3_eqi_2w (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2x_xyzi16 ON ucac3_eqi_2x (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2y_xyzi16 ON ucac3_eqi_2y (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_2z_xyzi16 ON ucac3_eqi_2z (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_30_xyzi16 ON ucac3_eqi_30 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_31_xyzi16 ON ucac3_eqi_31 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_32_xyzi16 ON ucac3_eqi_32 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_33_xyzi16 ON ucac3_eqi_33 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_34_xyzi16 ON ucac3_eqi_34 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_35_xyzi16 ON ucac3_eqi_35 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_36_xyzi16 ON ucac3_eqi_36 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_37_xyzi16 ON ucac3_eqi_37 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_38_xyzi16 ON ucac3_eqi_38 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_39_xyzi16 ON ucac3_eqi_39 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3a_xyzi16 ON ucac3_eqi_3a (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3b_xyzi16 ON ucac3_eqi_3b (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3c_xyzi16 ON ucac3_eqi_3c (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3d_xyzi16 ON ucac3_eqi_3d (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3e_xyzi16 ON ucac3_eqi_3e (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3f_xyzi16 ON ucac3_eqi_3f (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3g_xyzi16 ON ucac3_eqi_3g (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3h_xyzi16 ON ucac3_eqi_3h (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3i_xyzi16 ON ucac3_eqi_3i (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3j_xyzi16 ON ucac3_eqi_3j (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3k_xyzi16 ON ucac3_eqi_3k (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3l_xyzi16 ON ucac3_eqi_3l (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3m_xyzi16 ON ucac3_eqi_3m (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3n_xyzi16 ON ucac3_eqi_3n (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3o_xyzi16 ON ucac3_eqi_3o (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3p_xyzi16 ON ucac3_eqi_3p (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3q_xyzi16 ON ucac3_eqi_3q (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3r_xyzi16 ON ucac3_eqi_3r (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3s_xyzi16 ON ucac3_eqi_3s (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3t_xyzi16 ON ucac3_eqi_3t (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3u_xyzi16 ON ucac3_eqi_3u (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3v_xyzi16 ON ucac3_eqi_3v (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3w_xyzi16 ON ucac3_eqi_3w (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3x_xyzi16 ON ucac3_eqi_3x (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3y_xyzi16 ON ucac3_eqi_3y (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_3z_xyzi16 ON ucac3_eqi_3z (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_40_xyzi16 ON ucac3_eqi_40 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_41_xyzi16 ON ucac3_eqi_41 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_42_xyzi16 ON ucac3_eqi_42 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_43_xyzi16 ON ucac3_eqi_43 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_44_xyzi16 ON ucac3_eqi_44 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_45_xyzi16 ON ucac3_eqi_45 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_46_xyzi16 ON ucac3_eqi_46 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_47_xyzi16 ON ucac3_eqi_47 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_48_xyzi16 ON ucac3_eqi_48 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_49_xyzi16 ON ucac3_eqi_49 (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_4a_xyzi16 ON ucac3_eqi_4a (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_4b_xyzi16 ON ucac3_eqi_4b (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_4c_xyzi16 ON ucac3_eqi_4c (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_4d_xyzi16 ON ucac3_eqi_4d (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_4e_xyzi16 ON ucac3_eqi_4e (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;
+CREATE INDEX ucac3_eqi_4f_xyzi16 ON ucac3_eqi_4f (_fEqI2XI16(rai,deci),_fEqI2YI16(rai,deci),_fEqI2ZI16(rai,deci))  TABLESPACE @TS_PREFIX@ucac3_eqi_index_xyzi16;

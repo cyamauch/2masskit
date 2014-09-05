@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# UNIX "postgres" user has to do this:
+
+mkdir -p @TS_DIR@/wise3band_main
+mkdir -p @TS_DIR@/wise3band_main_pkey
+mkdir -p @TS_DIR@/wise3band_main_index
+mkdir -p @TS_DIR@/wise3band_eqi
+mkdir -p @TS_DIR@/wise3band_eqi_index_radeci
+mkdir -p @TS_DIR@/wise3band_eqi_index_xyzi16

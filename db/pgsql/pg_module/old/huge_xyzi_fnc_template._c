@@ -1,0 +1,567 @@
+/* -*- Mode: C ; Coding: euc-japan -*- */
+/* Time-stamp: <2011-10-13 11:07:24 cyamauch> */
+
+#include <postgres.h>
+#include <fmgr.h>
+
+#include <math.h>
+
+#include "common_defs.h"
+
+#include _C_XYZI_TEMPLATE__C
+
+PG_FUNCTION_INFO_V1(_RADIALSEARCH_XYZI_FNC_NAME);
+PG_FUNCTION_INFO_V1(_BOXSEARCHSIMPLE_XYZI_FNC_NAME);
+PG_FUNCTION_INFO_V1(_BOXSEARCHDIV_XYZI_FNC_NAME);
+extern Datum _RADIALSEARCH_XYZI_FNC_NAME(PG_FUNCTION_ARGS);
+extern Datum _BOXSEARCHSIMPLE_XYZI_FNC_NAME(PG_FUNCTION_ARGS);
+extern Datum _BOXSEARCHDIV_XYZI_FNC_NAME(PG_FUNCTION_ARGS);
+
+/*                                    */
+/* for radial search of huge catalogs */
+/*                                    */
+Datum _RADIALSEARCH_XYZI_FNC_NAME(PG_FUNCTION_ARGS)
+{
+    double ra0  = PG_GETARG_FLOAT8(0) * CC_DEG_TO_RAD;
+    double dec0 = PG_GETARG_FLOAT8(1) * CC_DEG_TO_RAD;
+    double dist = PG_GETARG_FLOAT8(2);
+    int  res  = PG_GETARG_INT32(3);
+    bool do_objid  = PG_GETARG_BOOL(4);
+    double dist_radian = dist * CC_ARCMIN_TO_RAD;
+
+    double cx0 = cos(ra0) * cos(dec0);
+    double cy0 = sin(ra0) * cos(dec0);
+    double cz0 =            sin(dec0);
+
+    double cx0_begin = cx0 - dist_radian;
+    double cx0_end   = cx0 + dist_radian;
+    double cy0_begin = cy0 - dist_radian;
+    double cy0_end   = cy0 + dist_radian;
+    double cz0_begin = cz0 - dist_radian;
+    double cz0_end   = cz0 + dist_radian;
+
+    int cz0_begin_i4, cz0_end_i4;
+
+    /* 92テーブルなら 30kb ほどあれば十分かと */
+    const int sz_sql_text_tmp = 128 + (384 * Huge_n_tables);
+    char sql_text_tmp[sz_sql_text_tmp];
+    text *sql_text = NULL;
+
+    char o_sel_columns[64];
+    const char *order_str;
+    const char *limit_str;
+
+    int i, tbl_begin, tbl_nscan;
+    int sn, sql_text_len;
+    int fac, d;
+    int ret_status = -1;
+
+    if ( cx0_begin < -1.0 ) cx0_begin = -1.0;
+    if ( cy0_begin < -1.0 ) cy0_begin = -1.0;
+    if ( cz0_begin < -1.0 ) cz0_begin = -1.0;
+    if ( 1.0 < cx0_end ) cx0_end = 1.0;
+    if ( 1.0 < cy0_end ) cy0_end = 1.0;
+    if ( 1.0 < cz0_end ) cz0_end = 1.0;
+
+    cz0_begin_i4 = round_d2i(cz0_begin * SC_XYZI);
+    cz0_end_i4   = round_d2i(cz0_end * SC_XYZI);
+
+    /* 検索するテーブルの範囲を決定する */
+
+    /* 全体を半分に割り、さらに半分に… を繰り返して */
+    /* 近いテーブル番号 i を求める */
+    i = 0;
+    fac = 1;
+    while ( 0 < (d = Huge_n_tables / (fac *= 2)) ) {
+      int mid_i = i + d;
+      if ( !(cz0_begin_i4 < Huge_check_czi[mid_i]) ) i = mid_i;
+    }
+
+    /* 正確なテーブル番号 i を求める */
+    tbl_begin = 0;
+    for ( ; i < Huge_n_tables ; i++ ) {
+      if ( cz0_begin_i4 < Huge_check_czi[i] ) {
+	tbl_begin = i;
+	break;
+      }
+    }
+    /* ここは順々にチェック。手抜きだが、これで十分かと */
+    for ( ; i+1 < Huge_n_tables ; i++ ) {
+      if ( cz0_end_i4 < Huge_check_czi[i] ) break;
+    }
+    tbl_nscan = i - tbl_begin + 1;
+ 
+
+    /* SQL 文を作る */
+
+    sql_text_len = 0;
+
+    /* for debug */
+    /*
+    sn = snprintf(sql_text_tmp + sql_text_len, sz_sql_text_tmp - sql_text_len,
+		  "<< begin:%d nscan:%d z-range::%.15g-%.15g >>",
+		  tbl_begin, tbl_nscan, cz0_begin, cz0_end);
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+    */
+
+    if ( do_objid ) {
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "SELECT %s "
+		    "FROM (", Huge_o_objid_str);
+      snprintf(o_sel_columns,64, "%s",Huge_objid_str);
+      order_str = "ORDER BY o.distance";
+      limit_str = "LIMIT 1";
+    }
+    else {
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "SELECT %s,"
+		    "CAST(o.cxi AS FLOAT8)/%g,"
+		    "CAST(o.cyi AS FLOAT8)/%g,"
+		    "CAST(o.czi AS FLOAT8)/%g,"
+		    "o.distance "
+		    "FROM (", Huge_o_objid_str,
+		    (double)SC_XYZI,(double)SC_XYZI,(double)SC_XYZI);
+      snprintf(o_sel_columns,64, "%s,cxi,cyi,czi",Huge_objid_str);
+      order_str = "";
+      limit_str = "";
+    }
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+
+    for ( i=0 ; i < tbl_nscan ; i++ ) {
+      const char *u_str = "";
+      if ( 0 < i ) u_str = "UNION ALL ";
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "%s"
+		    "SELECT %s,"
+		    "fDistanceArcMinXYZI4(cxi,cyi,czi,%.17g,%.17g,%.17g) AS distance "
+		    "FROM %s "
+		    "WHERE (fGetI16UVecI4(cxi,%d) BETWEEN %d AND %d) AND "
+	                  "(fGetI16UVecI4(cyi,%d) BETWEEN %d AND %d) AND "
+	                  "(fGetI16UVecI4(czi,%d) BETWEEN %d AND %d) ",
+		    u_str,
+		    o_sel_columns,
+		    cx0,cy0,cz0,
+		    Huge_tables[tbl_begin + i],
+		    res,
+		    GET_I16_UVEC_FLOOR(cx0_begin,res),
+		    GET_I16_UVEC_CEIL(cx0_end,res),
+		    res,
+		    GET_I16_UVEC_FLOOR(cy0_begin,res),
+		    GET_I16_UVEC_CEIL(cy0_end,res),
+		    res,
+		    GET_I16_UVEC_FLOOR(cz0_begin,res),
+		    GET_I16_UVEC_CEIL(cz0_end,res));
+      sql_text_len += sn;
+      if ( sz_sql_text_tmp <= sql_text_len ) {
+	goto quit;
+      }
+    }
+
+    sn = snprintf(sql_text_tmp + sql_text_len, sz_sql_text_tmp - sql_text_len,
+		  ") o "
+		  "WHERE o.distance <= %.17g "
+		  "%s "
+		  "%s", dist, order_str, limit_str);
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+
+    ret_status = 0;
+ quit:
+    if ( ret_status != 0 ) {
+      const char *err_mes = "[INTERNAL ERROR] Too small buffer: sql_text_tmp";
+      sql_text = (text *)palloc(strlen(err_mes) + VARHDRSZ);
+      SET_VARSIZE(sql_text, strlen(err_mes) + VARHDRSZ);
+      memcpy(VARDATA(sql_text), err_mes, strlen(err_mes));
+    }
+    else {
+      sql_text = (text *)palloc(sql_text_len + VARHDRSZ);
+      SET_VARSIZE(sql_text, sql_text_len + VARHDRSZ);
+      memcpy(VARDATA(sql_text), sql_text_tmp, sql_text_len);
+    }
+
+    PG_RETURN_TEXT_P(sql_text);
+}
+
+/*                                                    */
+/* for box search of huge catalogs with simple method */
+/*              (performance test only)               */
+/*                                                    */
+Datum _BOXSEARCHSIMPLE_XYZI_FNC_NAME(PG_FUNCTION_ARGS)
+{
+    text *arg_val = PG_GETARG_TEXT_P(0);
+    unsigned char *str_val = (unsigned char *)(VARDATA(arg_val));
+    int len_val = VARSIZE(arg_val) - VARHDRSZ;
+    double lon0 = PG_GETARG_FLOAT8(1);
+    double lat0 = PG_GETARG_FLOAT8(2);
+    double dist_lon = PG_GETARG_FLOAT8(3);
+    double dist_lat = PG_GETARG_FLOAT8(4);
+    int res  = PG_GETARG_INT32(5);
+    double dist_radian = get_max_distance_rad_for_box_cel(
+			 dist_lon*CC_ARCMIN_TO_RAD, dist_lat*CC_ARCMIN_TO_RAD,
+			 0, 0);
+
+    float8 ra0, dec0;
+    double cx0, cy0, cz0;
+    double cx0_begin, cx0_end, cy0_begin, cy0_end, cz0_begin, cz0_end;
+
+    int cz0_begin_i4, cz0_end_i4;
+
+    /* 92テーブルなら 30kb ほどあれば十分かと */
+    const int sz_sql_text_tmp = 256 + (384 * Huge_n_tables);
+    char sql_text_tmp[sz_sql_text_tmp];
+    text *sql_text = NULL;
+
+    int i, tbl_begin, tbl_nscan;
+    int sn, sql_text_len;
+    int fac, d;
+    int ret_status = -1;
+
+    unsigned char coo_ch = 'j';
+
+    for ( i=0 ; i < len_val ; i++ ) {
+        if ( str_val[i] != ' ' ) break;
+    }
+    if ( i < len_val ) {
+        coo_ch = str_val[i];
+        /* to lower */
+        if ( 'A' <= coo_ch && coo_ch <= 'Z' ) coo_ch += 32;
+    }
+
+    ra0 = lon0;
+    dec0 = lat0;
+    cel_to_j2000(coo_ch, &ra0, &dec0);
+    ra0 *= CC_DEG_TO_RAD;
+    dec0 *= CC_DEG_TO_RAD;
+
+    cx0 = cos(ra0) * cos(dec0);
+    cy0 = sin(ra0) * cos(dec0);
+    cz0 =            sin(dec0);
+
+    cx0_begin = cx0 - dist_radian;
+    cx0_end   = cx0 + dist_radian;
+    cy0_begin = cy0 - dist_radian;
+    cy0_end   = cy0 + dist_radian;
+    cz0_begin = cz0 - dist_radian;
+    cz0_end   = cz0 + dist_radian;
+
+    if ( cx0_begin < -1.0 ) cx0_begin = -1.0;
+    if ( cy0_begin < -1.0 ) cy0_begin = -1.0;
+    if ( cz0_begin < -1.0 ) cz0_begin = -1.0;
+    if ( 1.0 < cx0_end ) cx0_end = 1.0;
+    if ( 1.0 < cy0_end ) cy0_end = 1.0;
+    if ( 1.0 < cz0_end ) cz0_end = 1.0;
+
+    cz0_begin_i4 = round_d2i(cz0_begin * SC_XYZI);
+    cz0_end_i4   = round_d2i(cz0_end * SC_XYZI);
+
+    /* 検索するテーブルの範囲を決定する */
+
+    /* 全体を半分に割り、さらに半分に… を繰り返して */
+    /* 近いテーブル番号 i を求める */
+    i = 0;
+    fac = 1;
+    while ( 0 < (d = Huge_n_tables / (fac *= 2)) ) {
+      int mid_i = i + d;
+      if ( !(cz0_begin_i4 < Huge_check_czi[mid_i]) ) i = mid_i;
+    }
+
+    /* 正確なテーブル番号 i を求める */
+    tbl_begin = 0;
+    for ( ; i < Huge_n_tables ; i++ ) {
+      if ( cz0_begin_i4 < Huge_check_czi[i] ) {
+	tbl_begin = i;
+	break;
+      }
+    }
+    /* ここは順々にチェック。手抜きだが、これで十分かと */
+    for ( ; i+1 < Huge_n_tables ; i++ ) {
+      if ( cz0_end_i4 < Huge_check_czi[i] ) break;
+    }
+    tbl_nscan = i - tbl_begin + 1;
+ 
+
+    /* SQL 文を作る */
+
+    sql_text_len = 0;
+
+    /* for debug */
+    /*
+    sn = snprintf(sql_text_tmp + sql_text_len, sz_sql_text_tmp - sql_text_len,
+		  "<< begin:%d nscan:%d z-range::%.15g-%.15g >>",
+		  tbl_begin, tbl_nscan, cz0_begin, cz0_end);
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+    */
+
+    {
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "SELECT %s,"
+		    "CAST(o.cxi AS FLOAT8)/%g,"
+		    "CAST(o.cyi AS FLOAT8)/%g,"
+		    "CAST(o.czi AS FLOAT8)/%g,"
+		    "o.lon,o.lat "
+		    "FROM (", Huge_o_objid_str,
+		    (double)SC_XYZI,(double)SC_XYZI,(double)SC_XYZI);
+    }
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+
+    for ( i=0 ; i < tbl_nscan ; i++ ) {
+      const char *u_str = "";
+      if ( 0 < i ) u_str = "UNION ALL ";
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "%s"
+		    "SELECT %s,cxi,cyi,czi,"
+		    "fXYZI42Lon(cxi,cyi,czi,'%c') AS lon,"
+		    "fXYZI42Lat(cxi,cyi,czi,'%c') AS lat "
+		    "FROM %s "
+		    "WHERE (fGetI16UVecI4(cxi,%d) BETWEEN %d AND %d) AND "
+	                  "(fGetI16UVecI4(cyi,%d) BETWEEN %d AND %d) AND "
+	                  "(fGetI16UVecI4(czi,%d) BETWEEN %d AND %d) ",
+		    u_str, Huge_objid_str, coo_ch, coo_ch,
+		    Huge_tables[tbl_begin + i],
+		    res,
+		    GET_I16_UVEC_FLOOR(cx0_begin,res),
+		    GET_I16_UVEC_CEIL(cx0_end,res),
+		    res,
+		    GET_I16_UVEC_FLOOR(cy0_begin,res),
+		    GET_I16_UVEC_CEIL(cy0_end,res),
+		    res,
+		    GET_I16_UVEC_FLOOR(cz0_begin,res),
+		    GET_I16_UVEC_CEIL(cz0_end,res));
+      sql_text_len += sn;
+      if ( sz_sql_text_tmp <= sql_text_len ) {
+	goto quit;
+      }
+    }
+
+    sn = snprintf(sql_text_tmp + sql_text_len, sz_sql_text_tmp - sql_text_len,
+		  ") o "
+		  "WHERE fEvalPositionInBoxCel(%.17g,%.17g,%.17g,%.17g,o.lon,o.lat) = true",
+		  lon0,lat0, dist_lon,dist_lat );
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+
+    ret_status = 0;
+ quit:
+    if ( ret_status != 0 ) {
+      const char *err_mes = "[INTERNAL ERROR] Too small buffer: sql_text_tmp";
+      sql_text = (text *)palloc(strlen(err_mes) + VARHDRSZ);
+      SET_VARSIZE(sql_text, strlen(err_mes) + VARHDRSZ);
+      memcpy(VARDATA(sql_text), err_mes, strlen(err_mes));
+    }
+    else {
+      sql_text = (text *)palloc(sql_text_len + VARHDRSZ);
+      SET_VARSIZE(sql_text, sql_text_len + VARHDRSZ);
+      memcpy(VARDATA(sql_text), sql_text_tmp, sql_text_len);
+    }
+
+    PG_RETURN_TEXT_P(sql_text);
+}
+
+/*                                 */
+/* for box search of huge catalogs */
+/*                                 */
+Datum _BOXSEARCHDIV_XYZI_FNC_NAME(PG_FUNCTION_ARGS)
+{
+    text *arg_val = PG_GETARG_TEXT_P(0);
+    unsigned char *str_val = (unsigned char *)(VARDATA(arg_val));
+    int len_val = VARSIZE(arg_val) - VARHDRSZ;
+    double lon_c = PG_GETARG_FLOAT8(1);
+    double lon_r = PG_GETARG_FLOAT8(2);
+    int i_lon = PG_GETARG_INT32(3);
+    int ndiv_lon = PG_GETARG_INT32(4);
+    double lat_c = PG_GETARG_FLOAT8(5);
+    double lat_r = PG_GETARG_FLOAT8(6);
+    int i_lat = PG_GETARG_INT32(7);
+    int ndiv_lat = PG_GETARG_INT32(8);
+    int res  = PG_GETARG_INT32(9);
+
+    double lon_c_radian, lon_r_radian;
+    double lat_c_radian, lat_r_radian;
+    double cx0, cy0, cz0, dist_radian;
+    double cx0_begin, cx0_end, cy0_begin, cy0_end, cz0_begin, cz0_end;
+
+    int cz0_begin_i4, cz0_end_i4;
+
+    /* 92テーブルなら 30kb ほどあれば十分かと */
+    const int sz_sql_text_tmp = 384 + (384 * Huge_n_tables);
+    char sql_text_tmp[sz_sql_text_tmp];
+    text *sql_text = NULL;
+
+    int i, tbl_begin, tbl_nscan;
+    int sn, sql_text_len;
+    int fac, d;
+    int ret_status = -1;
+
+    unsigned char coo_ch = 'j';
+
+    for ( i=0 ; i < len_val ; i++ ) {
+        if ( str_val[i] != ' ' ) break;
+    }
+    if ( i < len_val ) {
+        coo_ch = str_val[i];
+        /* to lower */
+        if ( 'A' <= coo_ch && coo_ch <= 'Z' ) coo_ch += 32;
+    }
+
+    lon_c_radian = lon_c * CC_DEG_TO_RAD;
+    lon_r_radian = lon_r * CC_ARCMIN_TO_RAD;
+    lat_c_radian = lat_c * CC_DEG_TO_RAD;
+    lat_r_radian = lat_r * CC_ARCMIN_TO_RAD;
+    get_xyz_center_for_box_cel_div( coo_ch, 
+	lon_c_radian, lon_r_radian, i_lon, ndiv_lon,
+	lat_c_radian, lat_r_radian, i_lat, ndiv_lat,
+	&cx0, &cy0, &cz0 );
+    dist_radian = get_max_distance_rad_for_box_cel_div( 
+	lon_r_radian, i_lon, ndiv_lon,
+	lat_r_radian, i_lat, ndiv_lat );
+
+    cx0_begin = cx0 - dist_radian;
+    cx0_end   = cx0 + dist_radian;
+    cy0_begin = cy0 - dist_radian;
+    cy0_end   = cy0 + dist_radian;
+    cz0_begin = cz0 - dist_radian;
+    cz0_end   = cz0 + dist_radian;
+
+    if ( cx0_begin < -1.0 ) cx0_begin = -1.0;
+    if ( cy0_begin < -1.0 ) cy0_begin = -1.0;
+    if ( cz0_begin < -1.0 ) cz0_begin = -1.0;
+    if ( 1.0 < cx0_end ) cx0_end = 1.0;
+    if ( 1.0 < cy0_end ) cy0_end = 1.0;
+    if ( 1.0 < cz0_end ) cz0_end = 1.0;
+
+    cz0_begin_i4 = round_d2i(cz0_begin * SC_XYZI);
+    cz0_end_i4   = round_d2i(cz0_end * SC_XYZI);
+
+    /* 検索するテーブルの範囲を決定する */
+
+    /* 全体を半分に割り、さらに半分に… を繰り返して */
+    /* 近いテーブル番号 i を求める */
+    i = 0;
+    fac = 1;
+    while ( 0 < (d = Huge_n_tables / (fac *= 2)) ) {
+      int mid_i = i + d;
+      if ( !(cz0_begin_i4 < Huge_check_czi[mid_i]) ) i = mid_i;
+    }
+
+    /* 正確なテーブル番号 i を求める */
+    tbl_begin = 0;
+    for ( ; i < Huge_n_tables ; i++ ) {
+      if ( cz0_begin_i4 < Huge_check_czi[i] ) {
+	tbl_begin = i;
+	break;
+      }
+    }
+    /* ここは順々にチェック。手抜きだが、これで十分かと */
+    for ( ; i+1 < Huge_n_tables ; i++ ) {
+      if ( cz0_end_i4 < Huge_check_czi[i] ) break;
+    }
+    tbl_nscan = i - tbl_begin + 1;
+ 
+
+    /* SQL 文を作る */
+
+    sql_text_len = 0;
+
+    /* for debug */
+    /*
+    sn = snprintf(sql_text_tmp + sql_text_len, sz_sql_text_tmp - sql_text_len,
+		  "<< begin:%d nscan:%d z-range::%.15g-%.15g >>",
+		  tbl_begin, tbl_nscan, cz0_begin, cz0_end);
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+    */
+
+    {
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "SELECT %s,"
+		    "CAST(o.cxi AS FLOAT8)/%g,"
+		    "CAST(o.cyi AS FLOAT8)/%g,"
+		    "CAST(o.czi AS FLOAT8)/%g,"
+		    "o.lon,o.lat "
+		    "FROM (", Huge_o_objid_str,
+		    (double)SC_XYZI,(double)SC_XYZI,(double)SC_XYZI);
+    }
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+
+    for ( i=0 ; i < tbl_nscan ; i++ ) {
+      const char *u_str = "";
+      if ( 0 < i ) u_str = "UNION ALL ";
+      sn = snprintf(sql_text_tmp + sql_text_len,
+		    sz_sql_text_tmp - sql_text_len,
+		    "%s"
+		    "SELECT %s,cxi,cyi,czi,"
+		    "fXYZI42Lon(cxi,cyi,czi,'%c') AS lon,"
+		    "fXYZI42Lat(cxi,cyi,czi,'%c') AS lat "
+		    "FROM %s "
+		    "WHERE (fGetI16UVecI4(cxi,%d) BETWEEN %d AND %d) AND "
+	                  "(fGetI16UVecI4(cyi,%d) BETWEEN %d AND %d) AND "
+	                  "(fGetI16UVecI4(czi,%d) BETWEEN %d AND %d) ",
+		    u_str, Huge_objid_str, coo_ch, coo_ch,
+		    Huge_tables[tbl_begin + i],
+		    res,
+		    GET_I16_UVEC_FLOOR(cx0_begin,res),
+		    GET_I16_UVEC_CEIL(cx0_end,res),
+		    res,
+		    GET_I16_UVEC_FLOOR(cy0_begin,res),
+		    GET_I16_UVEC_CEIL(cy0_end,res),
+		    res,
+		    GET_I16_UVEC_FLOOR(cz0_begin,res),
+		    GET_I16_UVEC_CEIL(cz0_end,res));
+      sql_text_len += sn;
+      if ( sz_sql_text_tmp <= sql_text_len ) {
+	goto quit;
+      }
+    }
+
+    sn = snprintf(sql_text_tmp + sql_text_len, sz_sql_text_tmp - sql_text_len,
+		  ") o "
+		  "WHERE fEvalPositionInBoxCelDiv(%.17g,%.17g,%d,%d,%.17g,%.17g,%d,%d,o.lon,o.lat) = true",
+		  lon_c,lon_r,i_lon,ndiv_lon, lat_c,lat_r,i_lat,ndiv_lat);
+    sql_text_len += sn;
+    if ( sz_sql_text_tmp <= sql_text_len ) {
+      goto quit;
+    }
+
+    ret_status = 0;
+ quit:
+    if ( ret_status != 0 ) {
+      const char *err_mes = "[INTERNAL ERROR] Too small buffer: sql_text_tmp";
+      sql_text = (text *)palloc(strlen(err_mes) + VARHDRSZ);
+      SET_VARSIZE(sql_text, strlen(err_mes) + VARHDRSZ);
+      memcpy(VARDATA(sql_text), err_mes, strlen(err_mes));
+    }
+    else {
+      sql_text = (text *)palloc(sql_text_len + VARHDRSZ);
+      SET_VARSIZE(sql_text, sql_text_len + VARHDRSZ);
+      memcpy(VARDATA(sql_text), sql_text_tmp, sql_text_len);
+    }
+
+    PG_RETURN_TEXT_P(sql_text);
+}

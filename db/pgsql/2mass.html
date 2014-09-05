@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="keywords" content="2MASS,Kit" />
+  <meta name="description" content="2MASS Catalog Server Kit" />
+  <title>2MASS Catalog Server Kit: Install Huge Catalogs</title>
+<style type="text/css">
+ body {
+  background-color: #efefef;
+  color: black;
+ }
+ a:link { color: blue; }
+ a:visited { color: #551a8b; }
+ a:active { color: red; }
+ em.c2 { font-size: 80%; }
+ h1.c1 { text-align: center; }
+ /* ul { margin-top: 0.1em } */
+ /* ul { margin-bottom: 0.1em } */
+ li { margin-top: 0.3em; }
+ li { margin-bottom: 0.4em; }
+ pre { margin-top: 0.2em; }
+ pre { margin-bottom: 0.2em; }
+ p { text-align: justify; line-height: 1.5; }
+ ul { line-height: 1.5; }
+ pre { line-height: 1.3; }
+ /* pre { color: #a0ffa0; } */
+ /* pre { background-color: #080808; } */
+ pre { color: #000000; }
+ pre { background-color: #c0d0e0; }
+ pre {
+  white-space: -moz-pre-wrap;	/* Mozilla */
+  white-space: -pre-wrap;	/* Opera 4-6 */
+  white-space: -o-pre-wrap;	/* Opera 7 */
+  white-space: pre-wrap;	/* CSS3 */
+  word-wrap: break-word;	/* IE 5.5+ */
+ }
+ table { background: #fff8dc; }
+ th { text-align: left; white-space: nowrap; font-weight: normal; }
+ td { text-align: left; white-space: nowrap; background: #eeeeff; }
+ span.smaller { font-size: smaller; }
+ span.larger { font-size: larger; }
+ .no_border { border-style: none; }
+</style>
+</head>
+
+<body bgcolor="#efefef" text="#000000" link="#0000ff" vlink="#8040ff" alink="#ffff00">
+
+<h1>2MASS Catalog Server Kit</h1>
+
+<h2>Install Huge Catalogs</h2>
+
+<hr />
+
+<p>
+Page Index:<br />
+<a href="index.html">HOME</a> /
+<a href="2mass.html">Install Huge Catalogs</a> /
+<a href="others.html">Install Small Catalogs</a> /
+<a href="tableinfo.html">Information about table columns</a> /
+<a href="copyservice.html">Hard Drive Copy Service</a>
+</p>
+
+
+<hr />
+
+<h2>Before Installing Catalogs</h2>
+
+<p>
+Before installing catalogs, 
+you have to setup OS, PostgreSQL and 2MASS Kit following the
+<a href="index.html#INSTALL">installation procedure</a>.
+</p>
+
+<h2>Installing 2MASS PSC</h2>
+
+<p>
+We show the procedure of installing 2MASS PSC.
+You can also install other huge catalogs supported in this kit
+with instructions in this page.
+Replace `<code>twomass</code>' when installing other catalogs.
+</p>
+
+<h3>Download data files</h3>
+
+<p>
+Download all required data files and then extract them all.
+</p>
+
+<ul>
+ <li>Data files:
+  <a href="http://darts.jaxa.jp/pub/ir/2masskit/v2/">HTTP</a> /
+  <a href="ftp://darts.jaxa.jp/pub/ir/2masskit/v2/">FTP</a>
+ </li>
+</ul>
+
+<p>
+Here is an example using wget command:
+</p>
+
+<pre>
+$ mkdir twomass_data
+$ cd twomass_data
+$ wget -nd -r http://darts.jaxa.jp/pub/ir/2masskit/v2/twomass/
+$ gunzip *.db.txt.gz
+</pre>
+
+<h3>Creating Symbolic Links</h3>
+
+<p>
+In `<code>twomass</code>' directory of 2MASS Kit,
+create symbolic links to downloaded data files.
+</p>
+
+<pre>
+$ cd twomass
+$ ln -s (somewhere)/twomass_data/*.db.txt .
+</pre>
+
+<h3>Setting-up SQL Files</h3>
+
+<p>
+Edit the Makefile:
+</p>
+
+<pre>
+$ vi Makefile
+</pre>
+
+<p>
+Two tables are created for 2MASS PSC: &quot;Main
+Table,&quot; and &quot;Dedicated Positional Search Table.&quot;
+Basically all positional searches use 
+the Dedicated Positional Search Table via stored functions.
+With other searches the vanilla
+<code>SELECT ... FROM ... WHERE ...</code>
+syntax is used for searching the Main Table.
+However, if you don&#39;t specify coordinates and force a search with
+flux or the like you will not be able to search at a reasonable speed,
+even if you did create an index, unless the search space is narrowed
+down to several thousand near the center of the distribution using a
+&quot;<code>LIMIT</code>&quot; clause.
+</p>
+
+<p>
+In the Makefile,
+<code>INDICES</code>
+specifies which columns in Main Table are populated with indices.
+The default is <code>j_m,h_m,k_m</code>,
+which creates indices for flux j, h, and k.  Add column names as needed.
+However, do not add <code>objid</code>
+because an index is created for it even if unspecified.
+</p>
+
+<p>
+And then, run make.
+</p>
+
+<pre>
+$ make
+</pre>
+
+<p>
+SQL files will be generated.
+</p>
+
+<h3>Registering table spaces for PostgreSQL</h3>
+
+<p>
+As a normal user in UNIX log in 
+to the database &quot;2MASS&quot; as &#39;postgres&#39; 
+(superuser in PostgreSQL) to register the table spaces:
+</p>
+
+<pre>
+$ psql -U postgres 2MASS
+Password for user postgres: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=# \i twomass_create_tablespace.sql 
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+CREATE TABLESPACE
+2MASS=# \q
+</pre>
+
+<h3>Registering Parent Tables</h3>
+
+<p>
+As a normal user in UNIX log in 
+to the database &quot;2MASS&quot; as &#39;admin&#39; to register tables:
+</p>
+
+<pre>
+$ psql -U admin 2MASS
+Password for user admin: xxxxxx
+psql (8.4.5)
+Type &quot;help&quot; for help.
+
+2MASS=&gt; \i twomass_create_table.sql 
+CREATE TABLE
+CREATE TABLE
+</pre>
+
+<p>
+<strong>Note:</strong>
+From here on in we will be using commands 
+that take quite a long time to execute.
+I will include the time required 
+with an Adaptec RAID 2405 + S-ATA2 HDD x 2 (RAID 1), 
+but twice to ten times longer could be required 
+depending on the environment used. 
+</p>
+
+<h3>Registering Data in the Main Table</h3>
+
+<p>
+The next step involving registering data 
+and creating the primary keys in the Main Table. 
+<strong>This will take several hours (five hours or more) to complete:</strong>
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_main_copy.sql 
+SET
+psql:twomass_main_copy.sql:xxxxxxxxx: NOTICE:  ALTER TABLE / ADD PRIMARY KEY will create implicit index &quot;twomass_pkey&quot; for table &quot;twomass&quot;
+ALTER TABLE
+SET
+</pre>
+
+<p>
+The following type of message may occasionally seen, 
+which can be safely ignored:
+</p>
+
+<pre>
+LOG:  checkpoints are occurring too frequently (7 seconds apart)
+HINT:  Consider increasing the configuration parameter &quot;checkpoint_segments&quot;.
+</pre>
+
+<p>
+If the data registration process does not finish within three days or so 
+you may have some problematic BIOS settings with the S-ATA interface. Refer to
+<a href="index.html#FAQ">FAQ</a>
+section for more details.
+</p>
+
+<h3>Creating Dedicated Positional Search Table</h3>
+
+<p>
+Create the table, register the data, and create indices as shown below.
+<strong>It will take about 30 minutes to register the data and 
+80 minutes to create the indices:</strong>
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_eqi_create_table.sql
+2MASS=&gt; \i twomass_eqi_copy.sql
+2MASS=&gt; \i twomass_eqi_create_index.sql
+</pre>
+
+<p>
+The floowing type of message may occasionally be seen during the index creation, which can be safely ignored:
+</p>
+
+<pre>
+ERROR:  canceling autovacuum task
+CONTEXT:  automatic analyze of table &quot;xxxxxxxx&quot;
+</pre>
+
+<h3>Registering Stored Functions for 2MASS</h3>
+
+<p>
+Register stored functions for 2MASS:
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_create_function.sql
+</pre>
+
+<h3>Granting Table Access to &#39;guest&#39; Role</h3>
+
+<pre>
+2MASS=&gt; \i twomass_main_grant.sql
+2MASS=&gt; \i twomass_eqi_grant.sql
+</pre>
+
+<h3>Create Index of Main Table (Optional)</h3>
+
+<p>
+If you are using something other than coordinates 
+as the top priority search conditions of you may wish 
+to create indices in the Main Table.
+<strong>It will take several hours 
+to complete with standard settings.</strong>
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_main_create_index.sql
+</pre>
+
+<p>
+Indices can be added to the Main Table later if preferred. After adding column names to 
+<code>INDICES</code>
+in the Makefile run, make and then execute &quot;<code>twomass_main_create_index.sql</code>&quot; as above.
+In this case ensure to run
+&quot;<code>VACUUM ANALYZE Twomass;</code>&quot;
+after the indices have been created.
+</p>
+
+<h3>VACUUM</h3>
+
+<p>
+At long last we have arrived at the end of our command sequence.
+<strong>Enter this command and wait a few hours, upon which you should then be able to perform searches.</strong>
+Congratulations!
+</p>
+
+<pre>
+2MASS=&gt; \i twomass_vacuum.sql
+</pre>
+
+<p>
+During the execution of VACUUM ANALYZE without arguments
+you will see a lot of messages like
+&quot;<code>WARNING: skipping &quot;pg_type&quot; --- only superuser or database owner can vacuum it</code>&quot;,
+but you can safely ignore them.
+</p>
+
+
+<hr />
+
+
+</body>
+</html>
